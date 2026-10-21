@@ -2,13 +2,13 @@
 
 > Aprobación posterior: el propietario declaró «APRUEBO LOTE 1» el 2026-10-21 para el contenido revisado en HEAD e38cc84950858e072c1a3f06ffbf854cf7e544f5. PR #1 integrado por squash en main: 329b7c1059e8a74f191c256870734e8ae8259966. Este registro prevalece sobre menciones históricas de revisión pendiente; no acredita producto probado. Los permisos actuales se consultan en AGENTS y PLANS.
 
-ID: CONF · Versión: 0.2 · Fecha: 2026-10-21 · Estado documental: APROBADO · Owner: C; responsables técnicos por caso.
+ID: CONF · Versión: 0.5 · Fecha: 2026-10-21 · Estado documental: EN_REVISIÓN · Owner: C; responsables técnicos por caso.
 
 ## Estado y reglas de uso
 
 No existían documentos de producto que contradijeran el maestro: el árbol de trabajo estaba vacío en ETAPA 0 y al iniciar lote 1. La fuente aprobada y el inventario se preservan. Esta lista distingue riesgo de factibilidad, detalle de diseño pendiente y discrepancia textual ya matizada por el propio anexo. No acredita incidentes de un producto existente.
 
-Un `POR_VERIFICAR` nunca se transforma en hecho probado por tener una ADR o una página oficial. Una `PROPUESTA` necesita aprobación si altera alcance, arquitectura, parámetros aprobados o rutas autorizadas. No se resuelven aquí reglas oficiales ni se ejecuta el spike futuro.
+Un `POR_VERIFICAR` nunca se transforma en hecho probado por tener una ADR o una página oficial. Una `PROPUESTA` necesita aprobación si altera alcance, arquitectura, parámetros aprobados o rutas autorizadas. El lote 2 añade investigación documental y propuestas; no resuelve por preferencia las interpretaciones reglamentarias ni ejecuta el spike futuro. NORM-01/02/03 y el alcance reglamentario de RISK-01 quedan resueltos para TK-N1-1.0.0 por la adenda vigente. Las verificaciones técnicas y los demás riesgos continúan sin acreditar.
 
 Referencias: [registro](decision-register.md), [trazabilidad](traceability.md), [inventario](index.md), [gates](../PLANS.md).
 
@@ -22,11 +22,11 @@ Referencias: [registro](decision-register.md), [trazabilidad](traceability.md), 
 6. Conservar aprobación humana textual y fecha; añadir ADR/cambio de requisitos cuando corresponda y actualizar matriz/consumidores.
 7. Separar resolución documental de validación técnica. Una decisión puede seguir APROBADO y su implementación POR_VERIFICAR.
 
-## Riesgos abiertos
+## Estado de riesgos
 
 | Caso | Naturaleza | Owner | Cierre documental / técnico |
 |---|---|---|---|
-| RISK-01 | POR_VERIFICAR | M | Fuente normativa y corpus / motor futuro |
+| RISK-01 | RESUELTO_POR_DECISIÓN_DE_PRODUCTO para TK-N1-1.0.0 | Propietario / M | Reglas cerradas; pruebas del motor pendientes, sin certificación federativa |
 | RISK-02 | POR_VERIFICAR | A | Plan de factibilidad / spike autorizado |
 | RISK-03 | POR_VERIFICAR | A | Modelo de consumo / cuotas y mediciones |
 | RISK-04 | POR_VERIFICAR | S | Política Ably / capacidad medida |
@@ -45,9 +45,65 @@ Referencias: [registro](decision-register.md), [trazabilidad](traceability.md), 
 
 ### RISK-01 — Reglamento y edición normativa
 
-Fuentes: [PRE-03.A1](decision-register.md#pre-03-a1), [A3](decision-register.md#pre-03-a3), [E1](decision-register.md#pre-03-e1), más jerarquía inmutable del anexo. Falta confirmar autoridad, vigencia y cláusulas de siembra, atsyrau, tuzdyk, repetición y finales. Se localizó en ETAPA 0 un [PDF alojado por Mind Sports Olympiad](https://mindsportsolympiad.com/wp-content/uploads/2021/07/Rules-toguz-en-official.pdf); su edición y adecuación normativa permanecen pendientes, sin afirmar un cotejo integral.
+<a id="adenda-tk-n1-100"></a>
 
-Impacto: bloquear el cierre de los algoritmos afectados en [03.01](index.md#spec-03-01), 03.02–03.04 y escenarios IA/tutorial. Evidencia futura: referencia normativa identificable, cláusula→regla→posición→resultado esperado y discrepancias sometidas al propietario. No aplicar automáticamente otra variante del juego.
+#### Adenda vigente AD-NORM-001 — 2026-10-21
+
+El propietario adopta expresamente **TK-N1-1.0.0** definido en [resolución íntegra de REG](decision-register.md#ad-norm-001). Fuente contractual única N1, sin afirmar vigencia federativa actual. Las convenciones digitales se atribuyen al propietario, no al texto ministerial.
+
+| Caso | Estado vigente | Resolución aplicada |
+|---|---|---|
+| NORM-01 | RESUELTO_POR_DECISIÓN_DE_PRODUCTO | N1 único, adopción contractual2026-10-21; no se exige autenticar vigencia federativa para aplicar este perfil |
+| NORM-02 | RESUELTO_POR_DECISIÓN_DE_PRODUCTO | R-05/R-06: target→equal→turno del siguiente; atsyrau si ese jugador no tiene piedras, resultado por su kazán; sin adicional/barrido/transferencia de remanentes |
+| NORM-03 | RESUELTO_POR_DECISIÓN_DE_PRODUCTO | R-07: igualdad exacta regla/tablero/kazanes/tuz/turno; inicial+confirmados activos;≥3 habilita a ambos, ventana hasta siguiente movimiento/cierre, revisión y transacción atómica |
+| NORM-04, detalle de ofertas de otras fuentes | NO_APLICA_AL_PERFIL | Se descarta importar límite1/2 o reloj de fuentes excluidas. N1+R-05 exige consentimiento bilateral y no agrega aquellas restricciones |
+
+No queda ninguna elección reglamentaria pendiente en este perfil. Se retiran peticiones de edición/interpretaciones nuevas y comparaciones con fuentes/motores externos para decidir conducta. Una variante futura exige otro perfil y autorización expresa; no es trabajo del lote3. PRE-01–PRE-11 permanecen literales con adenda posterior; tres servicios y funcionalidades no cambian.
+
+Las ocho reglas y14 casos se integran en [03.01](specs/03-game-engine/03.01-normative-rules-and-corpus.md#matriz-normativa) y [03.04](specs/03-game-engine/03.04-outcomes-repetition-and-replay.md#atsyrau-y-prioridad). PRE-09 conserva pruebas automatizadas de integridad/corrección, historia e integración. Datos/historia corruptos o perfil desconocido siguen siendo errores técnicos: **no son bloqueos normativos de TK-N1-1.0.0**. La adopción no afirma motor implementado, seguro o probado, y el gate documental del lote2 sigue pendiente.
+
+<details>
+<summary>Historial anterior a AD-NORM-001, sustituido para TK-N1-1.0.0</summary>
+
+Los estados, alternativas y solicitudes que siguen describen la investigación previa; no son vigentes para decidir las reglas de este perfil.
+
+Fuentes canónicas: [PRE-03.A1](decision-register.md#pre-03-a1), [A3](decision-register.md#pre-03-a3), [E1](decision-register.md#pre-03-e1); no se reescriben por investigación. Consulta documental: 2026-10-21.
+
+| Evidencia identificada | Acceso y límite |
+|---|---|
+| N1: [Laws of Togyzkumalak Game, PDF inglés, dos páginas](https://mindsportsolympiad.com/wp-content/uploads/2021/07/Rules-toguz-en-official.pdf) | Lectura íntegra; encabezado Ministerio de Turismo y Deportes de Kazajistán/Comité de Deportes. No constan edición, fecha, acto firmado o vigencia; 2021/07 es ruta de alojamiento. |
+| N2: [Asociación, Astana 2013, artículo 375](https://9kumalak.com/index.php/zhyldy-zhospar/375-ojyn-a-idasy-men-erezheleri) | Encabezado, cláusulas y cierre recuperados por búsqueda; apertura directa falló. Campos de aprobación sin completar; sin autenticación íntegra ni acto vigente verificado. |
+| AUX-509: [artículo 509](https://9kumalak.com/index.php/zhyldy-zhospar/509-to-yz-mala-a-idasy-men-erezhesi) | Solo información indexada; timeout directo. No se presenta como fuente íntegra ni edición vigente adoptada. |
+
+N1 §1.5.5 describe repetición reclamada y §1.4 la declaración obligatoria de tuzdyk; no se ha demostrado contradicción con PRE-03.A1/A3. La automatización digital del tuzdyk conserva la decisión aprobada, sin afirmar certificación federativa. N1 §1.5.3 evalúa el kazán del jugador sin movimientos y no ordena expresamente barrer; N2 §1.5.1 menciona un movimiento adicional y recogida. La relación precisa entre esas formulaciones sigue pendiente; no se convierte una inferencia en regla.
+
+| Bloqueo de aprobación normativa | Impacto / resolución exigida |
+|---|---|
+| NORM-01 — edición y vigencia | Todas las reglas de 03.01–03.04: identificar edición adoptable, autoridad y procedencia; revisión humana. |
+| NORM-02 — atsyrau y prioridad terminal | Precisar instante de detección, significado del movimiento adicional, recogida/remanentes y precedencia con umbral de victoria; no implementar barrido por intuición. |
+| NORM-03 — repetición reclamada | Resolver equivalencia de posición, actor/ventana de reclamación y rechazo inválido. PositionKey propuesto no constituye regla oficial. |
+
+Owner M + propietario. Estado de los tres: **BLOQUEADO_PARA_APROBACIÓN_NORMATIVA**; la entrega Markdown EN_REVISIÓN es revisable, no acepta los algoritmos afectados. [03.01](specs/03-game-engine/03.01-normative-rules-and-corpus.md) registra cláusulas y corpus directo/derivado/pendiente; [03.04](specs/03-game-engine/03.04-outcomes-repetition-and-replay.md) conserva los bloqueos terminales. Se exige fuente→cláusula→lectura→posición→oráculo aprobado y resolución humana identificable. Un estado sintético que suma 162 no demuestra alcanzabilidad. El contraste con implementación independiente identificada/versionada de PRE-03.E1 sigue PENDIENTE. No adoptar variantes por similitud de nombre ni declarar victoria por una limpieza de sala.
+
+<a id="revision-normativa-lote-2"></a>
+
+#### Corrección normativa del PR #2 — 2026-10-21
+
+El propietario **NO APRUEBA TODAVÍA LOTE 2** y autoriza corregir únicamente03.01–03.04 y registros necesarios, en la misma rama/PR, sin producto, lote3 ni merge. La [matriz NM-01–10](specs/03-game-engine/03.01-normative-rules-and-corpus.md#matriz-normativa) relaciona cláusula, interpretación, algoritmo candidato y caso; [03.04](specs/03-game-engine/03.04-outcomes-repetition-and-replay.md#atsyrau-y-prioridad) distingue detección/adicional/repoblación/liquidación/adjudicación.
+
+| Bloqueo | Avance demostrado / lo que sigue sin demostrarse |
+|---|---|
+| NORM-01 — edición | N1 íntegro sigue sin acto/fecha/vigencia; N2/AUX-509 con acceso parcial no son una misma edición: ofertas1 vs2 en§2.6.9/§2.6.8. Reglamento federativo de torneo Almaty2023§VII y noticia gubernamental del torneo2023-11-13 remiten a reglas aprobadas, sin identificar edición. No se consiguió una edición completa verificable para adoptar. |
+| NORM-02 — atsyrau | N1§1.5.3 compara kazán afectado; N2/AUX-509§1.5.1–2 mencionan adicional/recogida. Artículo didáctico KazAST2023 p.20 punto9 contempla continuidad si se devuelven jugadas, sin autoridad para adoptarla. ATS-DRAIN/DRAW/REFEED concretan impactos; salida aceptada bloqueada. |
+| NORM-03 — repetición | N1§1.5.5 respalda ≥3 y declaración por un participante; no exclusividad de turno ni ventana/igualdad detalladas. REP-* son ledgers sintéticos sin ciclo legal comprobado. Contador/hashes no acreditan historia. Actor participante aclarado; habilitación por turno/ventana y definición formal continúan bloqueadas. |
+
+Los tres permanecen **BLOQUEADO_PARA_APROBACIÓN_NORMATIVA**. La divergencia de límites de ofertas abre detalle NORM-04: confirmar texto aplicable o adaptación expresa; no imponer límite1/2 ni trasladar reloj físico al MVP. No se declara contradicción de resultados en atsyrau donde solo hay diferencias de formulación.
+
+[REF-01](specs/03-game-engine/03.01-normative-rules-and-corpus.md#referencia-independiente) queda identificada y fijada a commit: selección documental completada; contraste de resultados **PENDIENTE**. Desactiva repetición y no muestra fase adicional explícita, de modo que no cierra ninguno de los tres bloqueos. Su marca de tuz1 se adapta a cero piedras lógicas. El corpus incorpora una ruta publicada de seis jugadas con revisión manual completa; no se ejecutó motor, replay ni prueba.
+
+**Decisión humana solicitada, todavía sin respuesta:** (A) aportar/identificar edición completa con aprobación y aclaraciones verificables; o (B) autorizar expresamente una adaptación del producto, versionada y diferenciada de norma federativa, resolviendo frontera/adicional/continuidad/recogida/prioridad de atsyrau, igualdad/historia/reclamante/ventana y política de ofertas. B no se considera autorizada por pedir esta investigación. Fuente y PRE permanecen intactos. Aprobación documental general no se presume resolución de cada punto: exigir decisión identificable por alcance.
+
+</details>
 
 <a id="risk-02"></a>
 
@@ -179,3 +235,15 @@ El §6 del maestro ejemplifica `PRE-xx.Cy`; los identificadores reales son `PRE-
 - AC-CONF-02: una preferencia técnica no sustituye una decisión; se exige aprobación y trazabilidad antes de alterar registro o consumidores.
 - AC-CONF-03: una validación documental satisfactoria no cambia factibilidad a probada.
 - AC-CONF-04: cerrar lote 1 no cierra automáticamente ninguno de los 14 riesgos técnicos ni aprueba las tres interpretaciones documentales.
+
+
+## Avance documental del lote 2, sin cierre técnico
+
+[01.01](specs/01-infrastructure/01.01-stack-monorepo.md) conserva tres Go/Gin, único motor Go y propiedad separada. [01.02](specs/01-infrastructure/01.02-platform-feasibility.md) desarrolla POC-01–11, todos PENDIENTE: Go/Vercel beta, empaquetado compartido, Neon transaccional, avisos Ably y entornos no han sido probados. [01.03](specs/01-infrastructure/01.03-cost-capacity-evolution.md) identifica cuotas oficiales fechadas y presupuesto por cuenta/proyecto/entorno, sin consumos reales ni gasto autorizado. RISK-02/03/04/06/09/11 no se cierran por esas lecturas.
+
+[02.01](specs/02-product/02.01-scope-and-modes.md) conserva base y ampliado para lanzamiento; [02.02](specs/02-product/02.02-local-flows-and-i18n.md) distingue persistencia de navegador y autoridad Go, sin offline. [02.03](specs/02-product/02.03-accounts-history-and-licensing.md) mantiene pendientes jurisdicción/política y elección de licencia; RISK-10/13 siguen abiertos. Las propuestas de estructura, campos, migración local, concurrencia y PositionKey necesitan revisión de diseño; no alteran PRE. La evidencia y los hallazgos de integración se registran en [reporte L2](../PLANS.md#informe-lote-2).
+
+
+## Prevalencia de la adenda normativa
+
+Las menciones anteriores de investigación o validación de RISK-01, incluida DISCREPANCY-03 y avances previos, quedan sustituidas en su alcance reglamentario por [AD-NORM-001](#adenda-tk-n1-100). Las fuentes ajenas a N1 se conservan solo como historia, no como alternativas normativas disponibles. La resolución por decisión no cierra pruebas, rendimiento, seguridad, licencias o factibilidad; esos controles siguen siendo POR_VERIFICAR. No existe una nueva solicitud de pronunciamiento normativo para TK-N1-1.0.0.

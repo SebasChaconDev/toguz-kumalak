@@ -2,16 +2,16 @@
 
 > Aprobación posterior: el propietario declaró «APRUEBO LOTE 1» el 2026-10-21 para el contenido revisado en HEAD e38cc84950858e072c1a3f06ffbf854cf7e544f5. PR #1 integrado por squash en main: 329b7c1059e8a74f191c256870734e8ae8259966. Este registro prevalece sobre menciones históricas de revisión pendiente; no acredita producto probado. Los permisos actuales se consultan en AGENTS y PLANS.
 
-ID: PLANS · Versión: 0.2 · Fecha: 2026-10-21 · Estado documental: APROBADO · Owner: C.
+ID: PLANS · Versión: 0.5 · Fecha: 2026-10-21 · Estado documental: EN_REVISIÓN · Owner: C.
 
 ## Autorización y estado actual
 
 - Gate 0: recibido del propietario el 2026-10-21: «APRUEBO INVENTARIO DOCUMENTAL».
 - Historial: la restricción inicial de lote 1 fue satisfecha; la instrucción posterior «APRUEBO LOTE 1» autoriza su integración condicionada y la generación/publicación documental del lote 2.
 - Inventario autorizado: [81 Markdown](docs/index.md#inventario),40 specs y 41 documentos de soporte.
-- Permiso actual: exactamente diez nuevas specs del lote 2 más actualización necesaria de registros; lotes 3–6 sin autorización.
-- Estado de ejecución documental: `LOTE_1_APROBADO_LOTE_2_AUTORIZADO`.
-- Lote 1 APROBADO por el propietario; documentos nuevos de lote 2 deberán quedar EN_REVISIÓN.
+- Permiso actual posterior: adoptar TK-N1-1.0.0 según resolución íntegra del propietario; actualizar03.01–03.04 y adendas REG/CONF/TRZ/PLANS en misma rama/PR. Ocho rutas existentes, sin producto, lote3 o merge.
+- Estado de ejecución documental: `LOTE_2_TK_N1_ADOPTADO_EN_REVISIÓN`. Perfil APROBADO; aceptación documental del lote2 pendiente.
+- Lote 1 APROBADO por el propietario; diez specs nuevas y cuatro registros de integración del lote 2 quedan EN_REVISIÓN.
 - Estado del producto: implementación no iniciada, proveedores no conectados, pruebas de producto no ejecutadas, despliegues no realizados.
 
 La aprobación de inventario no aprueba anticipadamente el contenido. Un reporte emitido por el agente no sustituye aceptación humana. La instrucción más reciente del propietario prevalece si restringe una continuación.
@@ -184,3 +184,209 @@ Antes de publicar se aplica detección local de patrones de secretos y nombres s
 El propietario declaró «APRUEBO LOTE 1» y autorizó integrar PR #1 si HEAD=e38cc84950858e072c1a3f06ffbf854cf7e544f5. Se comprobaron 27 archivos: dos specs y 25 correcciones de referencias exclusivamente, sin diferencias adicionales. GitHub informó MERGEABLE/CLEAN, cero checks fallidos, sin protección ni reglas obligatorias de main. El squash es 329b7c1059e8a74f191c256870734e8ae8259966; GitHub confirmó ambas specs en main. No se usó force push ni se eludieron protecciones.
 
 Los registros de aprobación se actualizan sin cambiar las 246 formulaciones fuente. Se autoriza después la rama docs/specs-lote-02 desde main actualizado, exactamente las diez rutas del inventario, auditoría documental y PR sin fusionar. La revisión final exige «APRUEBO LOTE 2»; no hay autorización para implementación ni lote 3. Los informes anteriores son históricos y conservan lo observado en su fecha.
+
+<a id="informe-lote-2"></a>
+
+## Lote 2 — Matriz de trabajo e informe de ejecución documental
+
+Estado de ejecución: LOTE_2_EN_CURSO. Se parte de main 624518495e2a81aa5928576f769820345df6cdc0, que registra aprobación de lote 1 después del squash 329b7c1059e8a74f191c256870734e8ae8259966. Rama propia: `docs/specs-lote-02`. El propietario autoriza exactamente diez nuevas specs Markdown y actualización necesaria de registros. No están autorizados lote 3, implementación, instalaciones, pruebas de producto ni servicios externos.
+
+### Matriz de asignación y fuentes
+
+| ID | Ruta autorizada | Owner / autor efectivo | Dependencias de redacción | Decisiones canónicas |
+|---|---|---|---|---|
+| [01.01](docs/index.md#spec-01-01) | `docs/specs/01-infrastructure/01.01-stack-monorepo.md` | A / lote2_infra | Registro y norma documental | [PRE-01.A1](docs/decision-register.md#pre-01-a1), [PRE-01.A2](docs/decision-register.md#pre-01-a2), [PRE-01.A3](docs/decision-register.md#pre-01-a3), [PRE-01.A4](docs/decision-register.md#pre-01-a4), [PRE-01.C3](docs/decision-register.md#pre-01-c3) |
+| [01.02](docs/index.md#spec-01-02) | `docs/specs/01-infrastructure/01.02-platform-feasibility.md` | A / lote2_infra | 01.01 | [PRE-01.B2](docs/decision-register.md#pre-01-b2), [PRE-01.C1](docs/decision-register.md#pre-01-c1), [PRE-01.C4](docs/decision-register.md#pre-01-c4), [PRE-05.F4](docs/decision-register.md#pre-05-f4) |
+| [01.03](docs/index.md#spec-01-03) | `docs/specs/01-infrastructure/01.03-cost-capacity-evolution.md` | A / lote2_infra | 01.02 | [PRE-01.C2](docs/decision-register.md#pre-01-c2), [PRE-01.D3](docs/decision-register.md#pre-01-d3) |
+| [02.01](docs/index.md#spec-02-01) | `docs/specs/02-product/02.01-scope-and-modes.md` | C / lote2_producto | Registro y norma documental | [PRE-02.A1](docs/decision-register.md#pre-02-a1), [PRE-02.A2](docs/decision-register.md#pre-02-a2), [PRE-02.A3](docs/decision-register.md#pre-02-a3), [PRE-02.A4](docs/decision-register.md#pre-02-a4), [PRE-02.E3](docs/decision-register.md#pre-02-e3) |
+| [02.02](docs/index.md#spec-02-02) | `docs/specs/02-product/02.02-local-flows-and-i18n.md` | C / lote2_producto | 02.01 | [PRE-02.B3](docs/decision-register.md#pre-02-b3), [PRE-02.D3](docs/decision-register.md#pre-02-d3), [PRE-05.C4](docs/decision-register.md#pre-05-c4) |
+| [02.03](docs/index.md#spec-02-03) | `docs/specs/02-product/02.03-accounts-history-and-licensing.md` | C / lote2_producto | 02.01 | [PRE-01.D4](docs/decision-register.md#pre-01-d4), [PRE-02.B1](docs/decision-register.md#pre-02-b1), [PRE-02.B2](docs/decision-register.md#pre-02-b2), [PRE-02.D2](docs/decision-register.md#pre-02-d2) |
+| [03.01](docs/index.md#spec-03-01) | `docs/specs/03-game-engine/03.01-normative-rules-and-corpus.md` | M / lote2_normativa | 02.01 | [PRE-03.A3](docs/decision-register.md#pre-03-a3), [PRE-03.C1](docs/decision-register.md#pre-03-c1), [PRE-03.E1](docs/decision-register.md#pre-03-e1) |
+| [03.02](docs/index.md#spec-03-02) | `docs/specs/03-game-engine/03.02-state-indices-and-invariants.md` | M / lote2_normativa | 01.01, 03.01 | [PRE-03.A4](docs/decision-register.md#pre-03-a4), [PRE-03.B1](docs/decision-register.md#pre-03-b1), [PRE-03.B4](docs/decision-register.md#pre-03-b4), [PRE-03.E2](docs/decision-register.md#pre-03-e2) |
+| [03.03](docs/index.md#spec-03-03) | `docs/specs/03-game-engine/03.03-moves-and-semantic-events.md` | M / lote2_normativa | 03.02 | [PRE-02.C1](docs/decision-register.md#pre-02-c1), [PRE-03.B2](docs/decision-register.md#pre-03-b2), [PRE-03.B3](docs/decision-register.md#pre-03-b3), [PRE-03.B5](docs/decision-register.md#pre-03-b5), [PRE-03.C2](docs/decision-register.md#pre-03-c2), [PRE-03.C3](docs/decision-register.md#pre-03-c3) |
+| [03.04](docs/index.md#spec-03-04) | `docs/specs/03-game-engine/03.04-outcomes-repetition-and-replay.md` | M / lote2_normativa | 03.03 | [PRE-02.C4](docs/decision-register.md#pre-02-c4), [PRE-02.D1](docs/decision-register.md#pre-02-d1), [PRE-03.A1](docs/decision-register.md#pre-03-a1), [PRE-03.A2](docs/decision-register.md#pre-03-a2), [PRE-03.C4](docs/decision-register.md#pre-03-c4), [PRE-03.E3](docs/decision-register.md#pre-03-e3) |
+
+Son **42 decisiones con spec canónica en lote 2**: PRE-01=11, PRE-02=13, PRE-03=16, PRE-05=2. Las referencias cruzadas adicionales no trasladan propiedad canónica. Las 17 decisiones de gobierno de lote 1 tienen specs APROBADAS; las 42 nuevas quedarán EN_REVISIÓN y las otras 187 mantendrán specs futuras pendientes. Las 246 formulaciones fuente no se alteran.
+
+### Propiedad y secuencia
+
+Arquitectura y producto se redactan en paralelo en rutas independientes. La investigación normativa es solo lectura al principio. El autor del motor recibe después 01.01 y 02.01 entregadas, fuentes reglamentarias y restricciones; redacta 03.01 → 03.02 → 03.03 → 03.04 en orden, sin que otro autor cambie esos contratos. Coordinación escribe únicamente registros de integración, audita y comunica revisiones antes de corregir archivos de autores activos.
+
+Las propuestas de diseño de contratos no son nuevas reglas oficiales. Si falta evidencia normativa, el apartado afectado se marca BLOQUEADO_PARA_APROBACIÓN_NORMATIVA; el documento puede entregarse EN_REVISIÓN con la discrepancia abierta, sin ejecutar algoritmos ni reemplazar decisiones.
+
+### Dependencias concretas del lote 2
+
+Flecha = requisito de redacción hacia consumidor; registros y norma 11.01/11.02 se consultan transversalmente, sin introducir aristas inversas.
+
+```mermaid
+flowchart LR
+  I1["01.01 Monorepo"] --> I2["01.02 Factibilidad"]
+  I2 --> I3["01.03 Coste y capacidad"]
+  P1["02.01 Alcance"] --> P2["02.02 Local e idiomas"]
+  P1 --> P3["02.03 Cuentas e historial"]
+  P1 --> M1["03.01 Norma y corpus"]
+  I1 --> M2["03.02 Estado"]
+  M1 --> M2
+  M2 --> M3["03.03 Movimientos y eventos"]
+  M3 --> M4["03.04 Finales y replay"]
+```
+
+La falta de una interpretación normativa no se resuelve mediante el orden de redacción: el consumidor conserva el bloqueo y no puede aprobar el algoritmo afectado.
+
+### Estado de auditoría y gate
+
+### Comprobaciones documentales observadas en entrega inicial 9d06677
+
+| Control | Resultado |
+|---|---|
+| Alcance físico | 42 archivos: 41 Markdown y .gitignore existente; exactamente diez specs nuevas y cuatro registros actualizados respecto a main 6245184. Sin rutas de lotes 3–6. |
+| Inventario | 81 entradas y 40 specs conservadas; diez rutas nuevas coinciden exactamente con lote 2. |
+| Estructura y estado | Diez specs v0.1 EN_REVISIÓN, 17 apartados numerados 1–17 cada una; los dos documentos de gobierno aprobados conservan sus 17. |
+| Fuente canónica | 246 decisiones únicas, texto y orden exactos entre SRC/REG; 246 filas de trazabilidad únicas y 246 destinos originales intactos. |
+| Cobertura | 17 decisiones con spec APROBADA + 42 con spec EN_REVISIÓN + 187 futuras = 246; 42 VP canónicos presentes y conectados con AC existentes. |
+| Dependencias | 40 nodos comparados con inventario original, sin aristas cambiadas ni ciclos. |
+| Enlaces/formato | 2413 vínculos locales comprobados; cero enlaces/anclas ausentes, IDs explícitos duplicados, fences desequilibrados o filas con columnas incoherentes. |
+| Ejemplos | Tres bloques JSON completos analizados como datos; 14 estados numéricos de siete pares DER con dimensiones/rangos y suma 162 antes/después. No se ejecutó motor ni se probó alcanzabilidad. |
+| Integridad/seguridad | Copia SRC conserva SHA256 original; solo Markdown autorizado modificado/creado; escaneo de patrones no detectó credenciales, correos privados ni archivos sensibles. .gitignore permanece sin cambios. |
+| Producto | No implementado, compilado, probado, instalado, conectado ni desplegado. POC-01–11 y evidencias técnicas permanecen PENDIENTE. |
+
+Los controles se ejecutaron en memoria sobre texto y Git; no se escribieron verificadores en el repositorio. Los procedimientos de producto descritos en las specs no se ejecutaron. El detalle de cobertura se mantiene en [TRZ](docs/traceability.md), los bloqueos en [CONF](docs/conflicts.md) y el inventario en [IDX](docs/index.md).
+
+### Contribuciones y revisión observadas
+
+- `lote2_infra`: autor único de 01.01–01.03; revisión independiente de producto y motor, sin editar rutas ajenas.
+- `lote2_producto`: autor único de 02.01–02.03; revisión independiente de arquitectura y cotejo de cuotas oficiales.
+- `lote2_normativa`: investigación normativa inicialmente solo lectura; autor único de 03.01–03.04 tras recibir dependencias estables. Leyó íntegramente N1; documentó acceso parcial/indexado a N2/AUX sin fingir vigencia.
+- Coordinación: cierre condicionado del lote 1, matriz y briefs, lectura y revisión de contratos/fuentes, integración de cuatro registros, armonización de versiones en 02.02 después del cese del autor, auditoría y publicación. No se coeditaron contratos con autores activos.
+
+Hallazgos corregidos: pipes de enums dentro de tablas; POC-06 distinguió secretos de servidor y tokens cliente previstos, conservando HttpOnly/access en memoria y prohibición de tokens en URL/logs; FAC-01 dejó claro que Game/AI, sin imponerlo a Identity, importan el motor; 02.02 alineó nombres propuestos de versiones con 03.02; 03.04 completó 81–81/equal_score, matriz resultado/causa/ganador/source y AC-09 tras hallazgo coincidente del coordinador y revisor independiente. La revisión posterior verificó esa corrección conservando los bloqueos. No se modificó ninguna decisión fuente ni se cerraron los 14 riesgos técnicos.
+
+### Fuentes y bloqueos de aprobación
+
+Consulta 2026-10-21: N1 [PDF inglés de dos páginas](https://mindsportsolympiad.com/wp-content/uploads/2021/07/Rules-toguz-en-official.pdf), leído completo; N2 [Asociación, Astana 2013, artículo 375](https://9kumalak.com/index.php/zhyldy-zhospar/375-ojyn-a-idasy-men-erezheleri), texto recuperado por búsqueda, apertura directa fallida; [AUX-509](https://9kumalak.com/index.php/zhyldy-zhospar/509-to-yz-mala-a-idasy-men-erezhesi), solo indexación. No se autentican firma, edición vigente o traducción oficial por el mero alojamiento.
+
+[RISK-01](docs/conflicts.md#risk-01) conserva NORM-01 edición/vigencia, NORM-02 atsyrau/recogida/prioridad terminal y NORM-03 equivalencia/ventana/actor de reclamación como **BLOQUEADO_PARA_APROBACIÓN_NORMATIVA**. No se demostró contradicción contra PRE-03.A1/A3. La comparación con implementación independiente sigue PENDIENTE. Las fichas sintéticas de 03.01 son derivaciones manuales con alcanzabilidad UNPROVEN.
+
+Infraestructura cita [Vercel Go](https://vercel.com/docs/functions/runtimes/go), [Hobby](https://vercel.com/docs/plans/hobby), [monorepos](https://vercel.com/docs/monorepos), [Neon precios](https://neon.com/pricing)/[pooling](https://neon.com/docs/connect/connection-pooling), [Ably Free](https://ably.com/docs/platform/pricing/free)/[límites](https://ably.com/docs/platform/pricing/limits). Son documentos oficiales fechados, no mediciones de cuenta. Go beta/empaquetado, capacidad gratuita, regiones y consumo siguen POR_VERIFICAR; POC-01–11 no se ejecutó. Licencia, procedencia de recursos, jurisdicción/retención y política de replay compartido permanecen pendientes de decisión/diseño.
+
+### Recomendación para revisión humana
+
+Revisar primero los tres bloqueos normativos y el convenio de índices/contexto/versiones; después contratos de transición/eventos/replay y la matriz de factibilidad/coste; finalmente escenarios de producto y permisos de historial. Aprobar el lote documental no equivale a aceptar algoritmos bloqueados ni autoriza código, proveedores, PoC o lote 3. Una resolución normativa futura debe identificar fuente, alcance y aprobación; se conservan los PRE originales.
+
+
+
+La entrega se publica mediante PR hacia main con título `docs: lote 2 — architecture, product and Go game engine specifications`, sin fusionarlo. Se solicitará «APRUEBO LOTE 2» y se detendrá el trabajo; ese gate sigue PENDIENTE de respuesta humana explícita.
+
+
+<a id="correccion-normativa-lote-2"></a>
+
+## Corrección normativa posterior a auditoría externa — 2026-10-21
+
+El propietario declara **NO APRUEBO TODAVÍA EL LOTE 2**. Autoriza investigar/corregir documentos existentes y actualizar PR#2, conservando PRE-01–PRE-11, rama y gate. Base de esta corrección: `9d06677409df185559edcd028b367edca41652c4`; PR abierto, sin revisiones/comentarios públicos en GitHub al inspeccionarlo (la auditoría fue comunicada por el propietario). No se presume que ausencia de comentario público invalide su revisión externa.
+
+### Trabajo y propiedad
+
+Coordinación fue único escritor de siete rutas:03.01,03.02,03.03,03.04,CONF,TRZ y PLANS. `normativa_edicion` investigó fuentes primarias y revisó interpretación en modo de solo lectura; `referencia_independiente` investigó y examinó software/test publicados y después revisó su documentación, sin instalar, clonar, ejecutar motores/pruebas o modificar archivos. Los cuatro contratos se entregaron estables antes de las revisiones. No se crearon documentos nuevos, ni cambió inventario/REG/SRC ni las seis specs01/02.
+
+### Resultado normativo y alternativas sometidas al propietario
+
+**No se consiguió una edición de juego completa con aprobación/fecha/vigencia verificables.** N1 se conserva como referencia documental íntegra identificada, no edición federativa adoptada; N2 y AUX-509 como textos distintos con acceso parcial. [03.01§3](docs/specs/03-game-engine/03.01-normative-rules-and-corpus.md#3-decisiones-fuente-y-autoridad) registra fuentes, fechas, autoridades observadas y límites, distinguiendo Toguz Kumalak de Toguz Korgool/Bestemshe.
+
+Se examinó el [reglamento federativo del torneo escolar Almaty2023](https://mankala.cz/download/togyzqumalaqjun2023.pdf), fecha impresa2023-07-01,§VII pp.3/8; remite a reglas de Federación Mundial sin identificar edición de juego. La [noticia gubernamental del torneo2023-11-13](https://www.gov.kz/memleket/entities/vko-bilim/press/news/details/652688) declara uso de reglas aprobadas por Comité, sin acto ni texto. Ni fecha de torneo ni membrete prueban vigencia de N1/N2.
+
+La [matriz NM-01–10](docs/specs/03-game-engine/03.01-normative-rules-and-corpus.md#matriz-normativa) relaciona fuente/cláusula/interpretación/algoritmo previsto/caso y estado. Avances: reclamante es un participante según N1; dos textos de ofertas difieren1/2; adicional y remanentes aparecen en N2/AUX-509; artículo didáctico KazAST2023 contempla continuidad al repoblar rival, sin valor de norma adoptada. Siguen abiertos:
+- NORM-01: edición/adopción y vigencia.
+- NORM-02: frontera de agotamiento, adicional/origen, repoblación/continuidad, recogida y prioridad terminal.
+- NORM-03: campos de igualdad, historia contada, inicial/consecutividad, habilitación por turno y ventana de reclamación.
+- NORM-04: texto/política de número y momento de ofertas, sin incorporar límite nuevo al MVP.
+
+**Solicitud de decisión humana concreta:** A) identificar/aportar edición completa y aclaraciones vinculantes; o B) aprobar una adaptación del producto explícita/versionada que resuelva cada punto, diferenciada de norma federativa. La opciónB no se autoriza por pedir correcciones. No se escoge una interpretación por resultados de un motor ni por mayoría de páginas. Los PRE no se alteran; gate APRUEBO LOTE 2 continúa pendiente.
+
+### Corpus y referencia independiente
+
+[REF-01](docs/specs/03-game-engine/03.01-normative-rules-and-corpus.md#referencia-independiente): Mind-Sports-Games/strategygames, commit`16e9e824624c54e3963053c13f2901d809f12d2a`, fecha2026-10-06T13:28:24Z, versión declarada`10.2.1-s3-ps15`, MIT. Selección/inspección textual realizadas; comparación ejecutada PENDIENTE. Variante9×2/162 y tuz, desactiva repetición; reparto anticipado al agotarse rival no valida movimiento adicional ni cierre normativo. No se incorporó código externo.
+
+[Corpus corregido](docs/specs/03-game-engine/03.01-normative-rules-and-corpus.md#corpus-corregido):
+- Inicial publicadoN1 y dos casos anteriores de una jugada reclasificados con ruta manual.
+- PATH-REF-01: secuencia publicada de seis jugadas, siete estados completos0–6 derivados manualmente, puntuaciones y tuz contrastados con expectativas textuales del test; alcanzabilidad documental condicionada a reglas comunes, sin replay observado.
+- PUB-TEACH-A7: acción/captura publicada en artículo didáctico, salida completa derivada; no se afirmó transcripción de un diagrama no inspeccionado.
+- ATS-DRAIN/DRAW/REFEED: material completo y alternativas de siembra/recogida, sin salida reglamentaria aceptada.
+- SYN-END-82/81 y SYN-AGREEMENT: evaluación y consentimiento; REP-2/3/TURN/REV/UNAUTH y OFFER-POLICY: ledgers sintéticos/negativos de contrato, sin ciclo legal inventado.
+- Queda pendiente una secuencia legal verificada de triple repetición y oráculos de atsyrau adoptados. No se declara corpus exhaustivo.
+
+03.02–03.04 preservan invariantes y separan perfil de reglas, ledger/ocurrencias/caché, candidato de atsyrau, error de regla no resuelta y ausencia de transición oficial parcial. No se restringe reclamante al jugador de turno por intuición. REF-01 marca tuz1; adaptador conceptual la convierte a cero lógico. Aprobación de contratos propuestos aún pendiente.
+
+### Verificación de esta corrección
+
+Controles documentales realizados en memoria, sin motor ni pruebas de producto:
+- Siete rutas modificadas respecto a9d06677; cero altas/bajas. Árbol conserva42 archivos (41Markdown y .gitignore existente); inventario81/40 y diez specs de lote2 sin cambio.
+- Diez specs con17 apartados1–17 cada una; cuatro03.* v0.2 y seis01/02 v0.1, todas EN_REVISIÓN. Las dos specs de gobierno conservan aprobación.
+- 246 textos fuente/REG idénticos y en orden;246 filas únicas y destinos canónicos originales. Cobertura17/42/187 inalterada;42VP enlazan AC existentes.
+- 2448 vínculos locales sin destinos/anclas ausentes; tablas/fences/IDs explícitos sin errores. Tres ejemplos JSON completos analizados como datos.
+-31 estados numéricos completos de corpus suman162:14 anteriores y17 añadidos. Esto comprueba aritmética, no prueba todos alcanzables; rutaPATH se revisó paso a paso por separado.
+- CopiaSRC conserva SHA256 original28C24C498829FCFAD410F07AAA6BD036D5A33382294401E11E86D486E4ECBBEF. Índice y246 asignaciones no cambian; grafo40 nodos sin ciclos.
+- Detección de patrones de credenciales/archivos sensibles sin hallazgos; git diff --check sin errores. No se crearon herramientas ejecutables, fixtures de producto, dependencias ni recursos externos.
+
+### Revisión y parada de la corrección previa, anterior a AD-NORM-001
+
+Revisión independiente real, posterior a entrega estable:
+- normativa_edicion contrastó03.01§§3/5/11/16 y03.04§§7/8/16: sin falsas resoluciones o autoridad inflada. Señaló localizador textual dependiente de lengua enN5; coordinación lo cambió por tercer párrafo narrativo. Reconfirmó AUX-CONT punto9 como didáctico.
+- referencia_independiente revisó commit/versión/licencia/código y las seis transicionesPATH, sumas y adaptación de tuz; sin hallazgos bloqueantes. No examinó de nuevo procedencia académica, cubierta por revisión normativa.
+- Coordinación integró las revisiones, corrigió orden/continuidad de tablasAC y comprobó contratos, trazabilidad, estados y fuente. Ambas revisiones son documentales; ninguna acredita adopción normativa o ejecución.
+
+Actualizar el mismo PR#2 con commit descriptivo y comprobación remota de HEAD/archivos; conservar título, base main y estado abierto sin fusionar. Entregar reglas referenciadas, límites, casos y preguntas. El propietario no ha emitido «APRUEBO LOTE 2» y esta investigación no lo sustituye. No continuar a implementación o lote 3.
+
+
+<a id="adopcion-tk-n1-100"></a>
+
+## Adenda vigente — adopción definitiva TK-N1-1.0.0, 2026-10-21
+
+La instrucción expresa del propietario adopta íntegramente `TOGUZ_RESOLUCION_NORMATIVA_V1.md`:103 líneas,12.274 bytes, SHA256 `9330B3116357225429BC85466BA48E9937C7D434AFE117AA633CA2A04A61DDE5`. Se leyó completa. [REG/AD-NORM-001](docs/decision-register.md#ad-norm-001) conserva transcripción íntegra y autoridad. El aviso anterior de adjunto ausente quedó superado al proporcionarse su ruta; no se había editado nada durante esa espera.
+
+**Reglas completas y aprobadas:** TK-N1-1.0.0 define atsyrau, triple repetición, reclamación y finalización sin bloqueos normativos pendientes. N1 es fuente contractual única; las convenciones digitales de la resolución se atribuyen al propietario. No se comprobó ni se afirma vigencia federativa/certificación de torneo. Quedan sustituidas las solicitudes previas de edición/adaptación y comparaciones para decidir comportamiento.
+
+### Alcance y ejecución
+
+Base de la actualización: `62fe22328c5c9c4d00dfb294b3bc3efc15708f06` en docs/specs-lote-02, PR#2 abierto. Coordinación escribe exclusivamente ocho Markdown existentes: cuatro specs03.*,REG,CONF,TRZ y PLANS. No nuevas rutas, cambios de arquitectura/funcionalidades ni reescritura de246 decisiones. Las cuatro specs pasan a v0.3 EN_REVISIÓN; la adenda/reglas están APROBADAS y la verificación de producto sigue PENDIENTE.
+
+NORM-01/02/03: **RESUELTO_POR_DECISIÓN_DE_PRODUCTO** para este perfil. NORM-04 de fuentes excluidas: NO_APLICA_AL_PERFIL; no se importan límites1/2 ni ventana de reloj. La historia de investigación se conserva identificada como anterior/sustituida en CONF y Git. No hay nuevas elecciones normativas para TK-N1-1.0.0. Un perfil futuro requiere otra autorización expresa y no se agrega a los lotes siguientes.
+
+No se consultaron reglamentos/motores externos en esta actualización ni se reabrió la decisión. PRE-09 conserva pruebas automatizadas de integridad/corrección: unitarias, propiedades, fuzzing, simulaciones, historia/replay, integración y E2E pertinentes; no ejecutadas por esta misión documental. Los fallos de pruebas futuras se corrigen contra este perfil, sin cambiarlo silenciosamente.
+
+### Decisiones y casos integrados
+
+| Grupo | Aplicación |
+|---|---|
+| R-01–R-04 | Inicio/ciclo, piedra única/N−1, captura par rival, tuz automático permitido y depósitos al propietario |
+| R-05 | Completar efectos; target≥82 → equal81–81 → turno rival → atsyrau → aparición activa; terminal prevalece sobre repetición |
+| R-06 | Siguiente sin piedras, resultado por su kazán, sin adicional/barrido/transferencia de remanentes; terminal conserva162 |
+| R-07 | Clave exacta reglas/board/kazanes/tuz/turno; inicial cuenta1; confirmados completos activos;≥3 habilita a ambos participantes hasta siguiente movimiento/cierre, revisión atómica sin penalización por rechazo |
+| R-08 |162, pureza, Game autoridad, Go único, versiones y replay con perfil original |
+
+Los14ACC están copiados literalmente en [03.01§14](docs/specs/03-game-engine/03.01-normative-rules-and-corpus.md#14-criterios-de-aceptación) y relacionados con consumidores en [TRZ](docs/traceability.md#adenda-tk-n1-100). Estados completos: siete pares DER existentes más ACC04-SECOND (tuz previo), ACC06 (siguiente con60 pierde), ACC07 (siguiente con81 empata/K80–81), ACC08 (actor vacío no pierde prematuramente), ACC09 (82 precede) y REP-P/variaciones para contrato. Se revisa162 y clasificación, no se afirma que sintéticos sean partidas alcanzables.
+
+ACC14 se ejercita como contrato del orden/ramas con detector controlado: tras terminal no se consulta/concede repetición. No se fabrica ledger que presente como activo un estado ya terminal. Las secuencias legales/historia de integración y resultados observados son obligaciones futuras de calidad, no pendientes reglamentarias.
+
+### Verificación de adopción y revisión
+
+Comprobaciones documentales en memoria:
+
+- 42 archivos físicos (41 Markdown y .gitignore existente), ocho modificaciones y cero altas/bajas respecto a62fe223; inventario81 rutas/40specs conservado.
+- Diez specs de lote2 con17 secciones1–17; cuatro motor v0.3, seis infraestructura/producto v0.1, todas EN_REVISIÓN. REG v0.3 y CONF/TRZ/PLANS v0.5 integran adendas, sin autoaprobar el lote.
+- 246 decisiones fuente/REG únicas, literales y ordenadas;246 destinos canónicos sin cambios, cobertura17/42/187 y42VP→AC.
+- Ocho reglas R-01–08 y14 filas ACC copiadas literalmente del archivo completo. Transcripción íntegra de la resolución en REG comprobada como texto, distinguiendo normalización de saltos de su SHA256 original.
+- 2423 vínculos locales, sin enlaces/anclas ausentes, IDs explícitos duplicados, fences abiertos o columnas incoherentes. Tres bloques JSON completos analizados como datos; inicial con count1.
+- 25 estados numéricos completos con dimensiones9/9/2, cantidades no negativas y total162; revisión manual de transiciones/propietarios, sin ejecutar motor ni declarar alcanzabilidad de sintéticos.
+- Copia SRC mantiene SHA256 original28C24C498829FCFAD410F07AAA6BD036D5A33382294401E11E86D486E4ECBBEF. Resolución original mantiene9330B3116357225429BC85466BA48E9937C7D434AFE117AA633CA2A04A61DDE5.
+- Grafo de40 specs sin ciclos, sin cambiar dependencias. Búsqueda de bloqueos normativos activos en03.* sin remanentes; NORMATIVE_RULE_UNRESOLVED queda solo para perfil desconocido/corrupto.
+- Escaneo de patrones sensibles sin hallazgos y git diff --check sin errores. No código, archivos ejecutables, instalación, pruebas de producto, conexiones de proveedores ni despliegue.
+
+Revisión real posterior a entrega estable, limitada al archivo adoptado y al repositorio, sin web ni fuentes/motores externos:
+- review_tk_n1 contrastó cuatro specs,8R/14ACC y semántica completa; no encontró elecciones normativas activas ni certificación falsa.
+- review_tk_acc contrastó14ACC,25estados/tuzyks, JSON inicial y las transiciones especiales; confirmó distinción sintético/alcanzable, confirmación oficial y rollback.
+- Ambos señalaron falta de separador Markdown en tablaACC y «depósito en origen» en ejemplo de9piedras. Coordinación añadió separador, corrigió a «una piedra conservada en origen» y explicitó que StoneSown solo llega al origen si el recorrido retorna. Los controles afectados se repitieron.
+- Los revisores no escribieron ni ejecutaron producto. Coordinación conserva autoría única de las ocho rutas; decisión APROBADA y documentación EN_REVISIÓN se mantienen separadas.
+
+### Estado final y parada
+
+Publicar commit y actualizar el PR#2 existente, preservando título/base/rama y sin fusionar. Informar ocho archivos, ocho reglas/catorceACC y resultados documentales. **El perfil está completo y sin bloqueos normativos; el lote2 espera aceptación documental.** No considerar «APRUEBO LOTE 2» recibido por adoptar reglas. Detenerse al actualizar el PR; sin código, proveedores, pruebas de producto, instalación, lote3 o despliegue.

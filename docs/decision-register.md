@@ -2,7 +2,7 @@
 
 > Aprobación posterior: el propietario declaró «APRUEBO LOTE 1» el 2026-10-21 para el contenido revisado en HEAD e38cc84950858e072c1a3f06ffbf854cf7e544f5. PR #1 integrado por squash en main: 329b7c1059e8a74f191c256870734e8ae8259966. Este registro prevalece sobre menciones históricas de revisión pendiente; no acredita producto probado. Los permisos actuales se consultan en AGENTS y PLANS.
 
-ID: REG · Versión: 0.2 · Fecha: 2026-10-21 · Estado documental: APROBADO · Owner: C.
+ID: REG · Versión: 0.3 · Fecha: 2026-10-21 · Estado documental: EN_REVISIÓN · Owner: C.
 
 ## Procedencia y autoridad
 
@@ -1564,3 +1564,132 @@ Los IDs son los originales `PRE-NN.Xn`; no se reconstruyen opciones de cuestiona
 Toda modificación semántica exige propuesta de cambio, impacto sobre consumidores, ADR cuando corresponda y aprobación humana. No reemplazar el texto histórico: añadir resolución aprobada y su relación de sustitución. [11.01](specs/11-orchestration/11.01-document-standard-and-change-control.md) define el procedimiento.
 
 Aceptación de este registro: 246 IDs únicos; conteos PRE iguales a la fuente; 246 textos iguales al anexo; un destino canónico válido por ID; sustituciones conservadas; ninguna afirmación de implementación. Las comprobaciones y pendientes del lote se registran en [PLANS](../PLANS.md#informe-lote-1).
+
+<a id="ad-norm-001"></a>
+
+## AD-NORM-001 — Adopción vinculante de TK-N1-1.0.0
+
+- Fecha: 2026-10-21. Autoridad: instrucción expresa y posterior del propietario en esta conversación, que adopta íntegramente `TOGUZ_RESOLUCION_NORMATIVA_V1.md`.
+- Estado de la decisión: **APROBADO**. Estado de la integración documental: **EN_REVISIÓN**, sin aprobación implícita del lote2 ni permiso de implementación.
+- Perfil: **TK-N1-1.0.0**. Fuente normativa contractual única: [Laws of Togyzkumalak Game, capítulo I, dos páginas](https://mindsportsolympiad.com/wp-content/uploads/2021/07/Rules-toguz-en-official.pdf), encabezado Ministerio de Turismo y Deportes de Kazajistán/Comité de Deportes.
+- Convenciones digitales: R-02/R-04/R-05/R-06/R-07/R-08 de la resolución, con la distinción fuente/convención que contiene. No se afirma autenticación de fecha/vigencia federativa ni certificación del producto.
+- Sustituye: necesidad de más investigación, selección entre textos y decisiones de atsyrau, repetición y precedencia antes pendientes en NORM-01/02/03, **solo para este perfil**. Las alternativas anteriores son historia de la investigación, no políticas disponibles de esta versión.
+- Conserva: los246 textos originales, sus IDs y destinos; tres microservicios Go/Gin, Go único, Vercel/Neon/Ably/Three.js y funcionalidades base/ampliadas. PRE-09 y sus pruebas de integridad/corrección siguen obligatorias. PRE-03.E1 conserva su texto histórico, pero el comportamiento de este perfil no depende de comparar otros reglamentos/motores y no podrá redefinirse por divergencias externas.
+- Alcance: las cuatro specs03.01–03.04 y adendas a CONF/TRZ/PLANS/REG; sin archivos nuevos, producto, lote3 o merge del PR#2.
+- Archivo original leído completo:103 líneas,12.274 bytes, SHA256 `9330B3116357225429BC85466BA48E9937C7D434AFE117AA633CA2A04A61DDE5`. La transcripción siguiente conserva el contenido, normalizando únicamente saltos de línea y el terminador final para incluirlo en Markdown.
+
+<a id="resolucion-normativa-v1"></a>
+
+### Resolución íntegra adoptada
+
+El bloque es evidencia documental de la decisión del propietario. Sus convenciones son vinculantes por la adopción expresa; sus instrucciones de trabajo se aplican dentro de los permisos actuales del chat. No se interpreta como código ejecutable ni como certificación de una federación.
+
+```markdown
+# TOGUZ KUMALAK — RESOLUCIÓN NORMATIVA VINCULANTE 1.0
+
+- **Fecha de adopción del proyecto:** 2026-10-21
+- **Identificador del perfil de reglas:** `TK-N1-1.0.0`
+- **Estado de decisión:** APROBADO POR INSTRUCCIÓN EXPRESA DEL PROPIETARIO (seleccionar la fuente más confiable y cerrar las ambigüedades sin comparaciones posteriores).
+- **Alcance:** reglas digitales del juego clásico en el motor Go y sus consumidores. No cambia la infraestructura, la IA ni el alcance del MVP.
+- **Fuente normativa única de referencia:** *Laws of Togyzkumalak Game*, capítulo I, documento completo de dos páginas encabezado por el Ministerio de Turismo y Deportes de la República de Kazajistán y el Comité de Deportes, alojado en Mind Sports Olympiad: <https://mindsportsolympiad.com/wp-content/uploads/2021/07/Rules-toguz-en-official.pdf>.
+- **Nota de procedencia:** no se ha autenticado la fecha o vigencia federativa actual de este documento; se adopta como fuente normativa contractual **del proyecto**, no como certificación oficial de un torneo de 2026.
+
+## Política vinculante de interpretación
+
+1. La fuente anterior es la **única fuente normativa aplicable** a `TK-N1-1.0.0`. No comparar ni sustituir más adelante sus reglas por versiones de otras federaciones, software de terceros, resúmenes de campeonatos o reglas del juego relacionado Toguz Korgool.
+2. Cuando el documento no especifica una decisión necesaria para software, se aplican las **convenciones digitales expresas** de este documento, distinguiéndolas de afirmaciones textuales de la fuente.
+3. No quedan bloqueos normativos `NORM-01`, `NORM-02` ni `NORM-03` para **este perfil de reglas**. Las pruebas de implementación, integridad, rendimiento y seguridad siguen siendo obligatorias, pero no pueden usarse para redefinir silenciosamente este reglamento.
+4. Cualquier variante reglamentaria posterior exige nuevo perfil/versionado y autorización explícita del propietario; no forma parte de las tareas de los lotes siguientes.
+
+## Reglas congeladas
+
+### R-01 — Inicio y tablero (fuente §1.1–1.2)
+
+Dos jugadores; blancas comienzan. Tablero de 18 otau (9 por lado), más dos kazanes; cada otau empieza con nueve piedras; total lógico constante 162. Recorrido circular: `white1→white2→…→white9→black1→…→black9→white1` (independiente de la perspectiva/cámara). Los kazanes no son destinos de siembra.
+
+### R-02 — Movimiento y siembra (fuente §1.3)
+
+Solo puede jugar quien tiene el turno, desde uno de sus otau no vacíos y no convertidos en tuzdyk del adversario. Si el otau tiene una piedra, se traslada a la casilla siguiente y el origen queda vacío. Si tiene N > 1 piedras, se conserva una en el otau de origen y las N−1 restantes se siembran una a una empezando por el siguiente. Deben procesarse todos los depósitos y los efectos antes de verificar el final de partida.
+
+### R-03 — Captura par (fuente §1.3.3)
+
+Si la última piedra cae en un otau del adversario que no es tuzdyk y deja allí un número par, se transfieren **todas** las piedras de ese otau al kazán del jugador que mueve y el otau queda en cero. No hay captura par al terminar en campo propio.
+
+### R-04 — Tuzdyk (fuente §1.4)
+
+Cuando la última piedra cae en un otau adversario con dos piedras previas, creando exactamente tres, se declara el tuzdyk automáticamente **si**: el jugador aún no posee otro, el otau no es el número 9 y su número no coincide con el número del tuzdyk ya poseído por el adversario. Se transfieren las tres piedras al kazán del que mueve, se marca propietario/posición y el otau permanece vacío lógicamente. Cada piedra que llegue después a un tuzdyk se ingresa inmediatamente en el kazán de su propietario. Cuando la creación esté prohibida, la jugada sigue siendo legal y las tres piedras permanecen normalmente en el otau, sin captura por paridad. Máximo un tuzdyk por jugador.
+
+### R-05 — Condiciones de fin y orden de precedencia (fuente §1.5; convención digital de frontera)
+
+Después de completar la siembra y todos sus efectos, evaluar estrictamente en este orden:
+
+1. Si un kazán tiene **82 o más**, declarar victoria de ese propietario (`target_reached`); no interrumpir una siembra a mitad de ejecución.
+2. Si ambos kazanes tienen exactamente **81**, declarar tablas (`equal_score`).
+3. Transferir conceptualmente el turno al rival. **Si el jugador al que corresponde mover no tiene ninguna piedra en sus nueve otau**, finalizar por `atsyrau`; de lo contrario, continuar normalmente.
+4. Cuando se llega a un estado activo no terminal, actualizar el contexto de apariciones de posición y determinar si la reclamación por repetición está disponible. La tercera repetición **no produce tablas automáticas**.
+
+Las renuncias y tablas por acuerdo son comandos administrativos autorizados de Game Service, no efectos del motor de siembra: rendición aceptada termina de inmediato; empate consensual exige aceptación de ambos participantes.
+
+### R-06 — Atsyrau: decisión determinista definitiva (fuente §1.5.3 + convención de activación)
+
+- Se activa **al comienzo del turno de quien no puede mover**, una vez terminada la jugada anterior; no por observar fugazmente un campo vacío en medio de la siembra ni por quedar vacío el campo de quien acaba de mover mientras el rival aún puede jugar.
+- Se determina el resultado por el número de piedras **ya capturadas en el kazán del jugador sin movimientos**:
+  - Menos de 81 → **pierde** el jugador sin movimientos.
+  - Exactamente 81 → **tablas**.
+  - 82 o más → victoria de ese jugador, aunque normalmente la condición R-05 ya habrá terminado la partida antes.
+- **No hay movimiento adicional, barrido automático de piedras restantes ni transferencia de remanentes al kazán**. Las piedras que aún estén en el tablero se conservan allí en el estado terminal para preservar la historia exacta.
+- Código de causa `atsyrau`; resultado (`white_win`, `black_win`, `draw`) registrado separadamente. Un estado terminal no admite movimientos.
+
+La cláusula §1.5.3 considera las piedras ya capturadas en el kazán del jugador sin jugadas y no prescribe una liquidación de remanentes. La activación al inicio del turno sin movimientos es la convención digital elegida a partir de su definición como imposibilidad de efectuar una jugada legal.
+
+### R-07 — Triple repetición: decisión determinista definitiva (fuente §1.5.5 + convenciones digitales)
+
+- Una **posición idéntica** exige igualdad exacta de: versión de reglas, matriz de los 18 otau, ambos kazanes, propietarios y localizaciones de ambos tuzdyks, y **jugador al que corresponde mover**. No incluye revisión técnica, IDs, timestamps, cámara, alias ni aspectos visuales.
+- Registrar una aparición de la posición inicial y una después de cada **movimiento confirmado y completo** que produzca un estado activo. No contar previews, simulaciones, reintentos idempotentes, intentos inválidos, resignación ni acuerdos.
+- Al alcanzar **tres o más apariciones de la posición activa**, ambos participantes de esa partida tienen derecho a **reclamar** tablas durante el intervalo entre esa confirmación y el siguiente movimiento o cierre aceptado. No restringir la reclamación al jugador que tiene el turno: §1.5.5 habla de «uno de los jugadores».
+- La reclamación se verifica de nuevo de forma autoritativa y atómica en Game Service; si la versión de estado cambió, el juego terminó o no se alcanza el umbral, se rechaza **sin modificar el tablero ni adjudicar penalización**.
+- Si es válida, se fija `outcome=draw`, `reason=repetition_claim`, sin ganador. Sin reclamación no hay tablas automáticas. La reclamación compite transaccionalmente con un movimiento concurrente: solo puede prevalecer la primera operación aceptada sobre la revisión vigente.
+- Esta política de igualdad exacta y ventana de reclamación es una **convención de implementación** para cerrar los detalles no definidos por el documento, no una cita textual atribuida al ministerio.
+
+### R-08 — Invariantes y contratos
+
+- En cualquier estado completo (activo o terminal), `sum(board)+sum(kazans)==162`, sin cantidades negativas ni doble conteo de tuzdyk.
+- El motor Go es puro/determinista y no modifica la entrada. Devuelve estado nuevo, eventos semánticos tipados o error sin efectos.
+- Game Service es autoridad exclusiva de partidas oficiales. AI Service y UI reutilizan el motor versionado, sin segundo motor de reglas en TypeScript.
+- El resultado es independiente de su causa y de la puntuación Elo; replay reproduce el perfil de reglas con el que se jugó, sin recalcular la historia con otra versión.
+
+## Casos de aceptación obligatorios para `TK-N1-1.0.0`
+
+| ID | Caso | Resultado exigido |
+|---|---|---|
+| ACC-N1-01 | Mover con una sola piedra | Origen vacío; piedra en siguiente otau |
+| ACC-N1-02 | Siembra que acaba en rival con número par | Captura completa hacia kazán del actor |
+| ACC-N1-03 | Último depósito deja tres en rival, permitido | Tuzdyk automático y tres al kazán |
+| ACC-N1-04 | Llegada final a pozo 9/homólogo o dueño ya con tuzdyk | Movimiento legal sin crear nuevo tuzdyk |
+| ACC-N1-05 | Depósito en tuzdyk existente | Otau sigue cero y kazán del propietario aumenta en uno |
+| ACC-N1-06 | Al terminar jugada el jugador **siguiente** no tiene piedras y su kazán es 60 | Pierde por `atsyrau`; no hay barrido ni movimiento extra |
+| ACC-N1-07 | Igual situación pero kazán del siguiente jugador es 81 | Tablas por `atsyrau` sin exigir 81–81 en kazanes |
+| ACC-N1-08 | Jugador que acaba de mover queda sin piedras, pero el siguiente conserva movimientos | No se declara atsyrau antes del turno del rival |
+| ACC-N1-09 | Estado tras jugada lleva kazán a 82 | Victoria `target_reached` antes de evaluar atsyrau/repetición |
+| ACC-N1-10 | Posición idéntica aparece tres veces tras estados confirmados | No hay empate automático; aparece derecho a reclamar |
+| ACC-N1-11 | Reclama cualquiera de los dos participantes antes de la siguiente jugada válida | Tablas `repetition_claim`, con validación de revisión |
+| ACC-N1-12 | Mismo tablero pero distinto turno/tuzdyk/kazán, o estado obsoleto | No es posición idéntica / rechazo de reclamación |
+| ACC-N1-13 | Simulación, preview o comando duplicado | No añade aparición a la historia oficial |
+| ACC-N1-14 | Triple repetición y llegada a resultado terminal definitivo en la misma transición | Prima el resultado terminal definitivo; no hay derecho a reclamar tras cierre |
+
+Los casos sintéticos para ejercitar cada condición deben conservar 162 piedras, validación de estado y una clasificación explícita entre pruebas de contrato y secuencias legalmente alcanzables. No se requiere contrastar **otras fuentes normativas ni otros motores de terceros** para reabrir la decisión de reglas; sí se requieren pruebas de unidad, propiedades, historia e integración según PRE-09.
+
+## Cambios documentales obligatorios en PR #2
+
+1. Integrar esta resolución en `docs/specs/03-game-engine/03.01-normative-rules-and-corpus.md` y `03.04-outcomes-repetition-and-replay.md`, propagando solo lo necesario a `03.02` y `03.03`.
+2. Convertir `NORM-01`, `NORM-02`, `NORM-03` en **RESUELTO_POR_DECISIÓN_DE_PRODUCTO**, con referencia a esta resolución, fecha y perfil `TK-N1-1.0.0`; no declarar comprobadas vigencia federativa ni funcionalidades no implementadas.
+3. Eliminar `NORMATIVE_RULE_UNRESOLVED` como bloqueo de las reglas base de este perfil, pero mantenerlo como error razonable para un `rulesVersion` desconocido o corrupto.
+4. Actualizar `docs/conflicts.md`, `docs/traceability.md`, `PLANS.md` y, si corresponde, el registro de decisiones mediante una **adenda nueva**, conservando sin reescribir las 246 decisiones originales.
+5. Retirar pasos que exijan futuras comparaciones con otros reglamentos o implementaciones externas como requisito para decidir el comportamiento de `TK-N1-1.0.0`.
+6. Conservar sin cambios arquitectura de tres microservicios Go, Go/Gin, Vercel, Neon, Ably, Three.js y todos los criterios de calidad pertinentes.
+7. Mantener el PR #2 sin fusionar hasta completar la revisión documental y el gate de aceptación. No generar lote 3 ni implementar producto.
+```
+
+### Efecto y trazabilidad de la adenda
+
+R-01–R-08 y ACC-N1-01–ACC-N1-14 se integran en [03.01](specs/03-game-engine/03.01-normative-rules-and-corpus.md) y [03.04](specs/03-game-engine/03.04-outcomes-repetition-and-replay.md), con propagación de contratos a03.02/03.03. [CONF](conflicts.md#adenda-tk-n1-100) registra NORM-01/02/03 como RESUELTO_POR_DECISIÓN_DE_PRODUCTO; [TRZ](traceability.md#adenda-tk-n1-100) relaciona fuente/ACC/consumidores; [PLANS](../PLANS.md#adopcion-tk-n1-100) registra ejecución y verificación. Cualquier cambio reglamentario posterior exige otro perfil y autorización expresa: no se añade como tarea de los siguientes lotes.
