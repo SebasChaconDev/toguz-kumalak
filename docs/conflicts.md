@@ -1,8 +1,10 @@
 # CONF — Conflictos, riesgos y validaciones pendientes
 
+> Aprobación posterior del lote 2: el propietario declaró «APRUEBO LOTE 2» y autorizó fusionar PR #2 en main. Contenido aprobado: HEAD 598ac9a4fc6ce14cf512785fb1c4160fafb4eb9e; integrado por squash 1f401af8d76794981bbcfdf9a3aa1831cf2621f5 (2026-10-21T21:10:14Z). Este registro sustituye las menciones históricas a revisión pendiente o prohibición de esa fusión. No autoriza lote 3 ni implementación; el producto sigue sin verificar.
+
 > Aprobación posterior: el propietario declaró «APRUEBO LOTE 1» el 2026-10-21 para el contenido revisado en HEAD e38cc84950858e072c1a3f06ffbf854cf7e544f5. PR #1 integrado por squash en main: 329b7c1059e8a74f191c256870734e8ae8259966. Este registro prevalece sobre menciones históricas de revisión pendiente; no acredita producto probado. Los permisos actuales se consultan en AGENTS y PLANS.
 
-ID: CONF · Versión: 0.5 · Fecha: 2026-10-21 · Estado documental: EN_REVISIÓN · Owner: C; responsables técnicos por caso.
+ID: CONF · Versión: 0.6 · Fecha: 2026-10-21 · Estado documental: APROBADO · Owner: C; responsables técnicos por caso.
 
 ## Estado y reglas de uso
 
@@ -247,3 +249,7 @@ El §6 del maestro ejemplifica `PRE-xx.Cy`; los identificadores reales son `PRE-
 ## Prevalencia de la adenda normativa
 
 Las menciones anteriores de investigación o validación de RISK-01, incluida DISCREPANCY-03 y avances previos, quedan sustituidas en su alcance reglamentario por [AD-NORM-001](#adenda-tk-n1-100). Las fuentes ajenas a N1 se conservan solo como historia, no como alternativas normativas disponibles. La resolución por decisión no cierra pruebas, rendimiento, seguridad, licencias o factibilidad; esos controles siguen siendo POR_VERIFICAR. No existe una nueva solicitud de pronunciamiento normativo para TK-N1-1.0.0.
+
+## Adenda de estado — lote 2 aprobado e integrado
+
+La instrucción expresa «APRUEBO LOTE 2» satisface el gate documental y autoriza el cierre de PR #2, integrado por squash `1f401af8d76794981bbcfdf9a3aa1831cf2621f5` desde HEAD aprobado `598ac9a4fc6ce14cf512785fb1c4160fafb4eb9e`. CONF y las especificaciones del lote están APROBADOS documentalmente. No se cierran por ello riesgos técnicos ni pruebas POR_VERIFICAR. NORM-01/02/03 conservan RESUELTO_POR_DECISIÓN_DE_PRODUCTO para TK-N1-1.0.0; no hay bloqueos normativos pendientes para ese perfil. Los informes de gate pendiente son históricos. No se inicia lote 3 ni implementación.

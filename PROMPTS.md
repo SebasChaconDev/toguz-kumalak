@@ -1,14 +1,16 @@
 # PROMPTS — Contratos de trabajo documental
 
+> Aprobación posterior del lote 2: el propietario declaró «APRUEBO LOTE 2» y autorizó fusionar PR #2 en main. Contenido aprobado: HEAD 598ac9a4fc6ce14cf512785fb1c4160fafb4eb9e; integrado por squash 1f401af8d76794981bbcfdf9a3aa1831cf2621f5 (2026-10-21T21:10:14Z). Este registro sustituye las menciones históricas a revisión pendiente o prohibición de esa fusión. No autoriza lote 3 ni implementación; el producto sigue sin verificar.
+
 > Aprobación posterior: el propietario declaró «APRUEBO LOTE 1» el 2026-10-21 para el contenido revisado en HEAD e38cc84950858e072c1a3f06ffbf854cf7e544f5. PR #1 integrado por squash en main: 329b7c1059e8a74f191c256870734e8ae8259966. Este registro prevalece sobre menciones históricas de revisión pendiente; no acredita producto probado. Los permisos actuales se consultan en AGENTS y PLANS.
 
-ID: PROMPTS · Versión: 0.2 · Fecha: 2026-10-21 · Estado documental: APROBADO · Owner: C.
+ID: PROMPTS · Versión: 0.3 · Fecha: 2026-10-21 · Estado documental: APROBADO · Owner: C.
 
 ## Uso y precedencia
 
 Estos prompts son plantillas de conversación, no automatizaciones ni autorizaciones. Completarlos no habilita otras rutas o lotes. Leer [AGENTS](AGENTS.md), [PLANS](PLANS.md), [REG](docs/decision-register.md), [CONF](docs/conflicts.md), [11.01](docs/specs/11-orchestration/11.01-document-standard-and-change-control.md) y [11.02](docs/specs/11-orchestration/11.02-ownership-delegation-and-context.md).
 
-Gate 0 recibido: «APRUEBO INVENTARIO DOCUMENTAL». Alcance adicional explícito: «Genera únicamente el lote 1 y detente al finalizar para mi revisión y aprobación». El contenido de lote 1 no está aprobado por haberse autorizado su escritura. Ningún prompt aquí inicia implementación.
+Gate 0 recibido: «APRUEBO INVENTARIO DOCUMENTAL». Alcance adicional explícito: «Genera únicamente el lote 1 y detente al finalizar para mi revisión y aprobación». La aprobación posterior de lotes 1 y 2 está registrada expresamente; no deriva de haber autorizado su escritura. PR #2 integrado y cierre documental aprobado. Ningún prompt aquí inicia lote 3 o implementación sin nuevas instrucciones.
 
 ## P-01 — Coordinador de lote autorizado
 

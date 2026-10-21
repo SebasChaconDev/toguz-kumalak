@@ -1,17 +1,19 @@
 # PLANS — Lotes documentales, gates y estado
 
+> Aprobación posterior del lote 2: el propietario declaró «APRUEBO LOTE 2» y autorizó fusionar PR #2 en main. Contenido aprobado: HEAD 598ac9a4fc6ce14cf512785fb1c4160fafb4eb9e; integrado por squash 1f401af8d76794981bbcfdf9a3aa1831cf2621f5 (2026-10-21T21:10:14Z). Este registro sustituye las menciones históricas a revisión pendiente o prohibición de esa fusión. No autoriza lote 3 ni implementación; el producto sigue sin verificar.
+
 > Aprobación posterior: el propietario declaró «APRUEBO LOTE 1» el 2026-10-21 para el contenido revisado en HEAD e38cc84950858e072c1a3f06ffbf854cf7e544f5. PR #1 integrado por squash en main: 329b7c1059e8a74f191c256870734e8ae8259966. Este registro prevalece sobre menciones históricas de revisión pendiente; no acredita producto probado. Los permisos actuales se consultan en AGENTS y PLANS.
 
-ID: PLANS · Versión: 0.5 · Fecha: 2026-10-21 · Estado documental: EN_REVISIÓN · Owner: C.
+ID: PLANS · Versión: 0.6 · Fecha: 2026-10-21 · Estado documental: APROBADO · Owner: C.
 
 ## Autorización y estado actual
 
 - Gate 0: recibido del propietario el 2026-10-21: «APRUEBO INVENTARIO DOCUMENTAL».
 - Historial: la restricción inicial de lote 1 fue satisfecha; la instrucción posterior «APRUEBO LOTE 1» autoriza su integración condicionada y la generación/publicación documental del lote 2.
 - Inventario autorizado: [81 Markdown](docs/index.md#inventario),40 specs y 41 documentos de soporte.
-- Permiso actual posterior: adoptar TK-N1-1.0.0 según resolución íntegra del propietario; actualizar03.01–03.04 y adendas REG/CONF/TRZ/PLANS en misma rama/PR. Ocho rutas existentes, sin producto, lote3 o merge.
-- Estado de ejecución documental: `LOTE_2_TK_N1_ADOPTADO_EN_REVISIÓN`. Perfil APROBADO; aceptación documental del lote2 pendiente.
-- Lote 1 APROBADO por el propietario; diez specs nuevas y cuatro registros de integración del lote 2 quedan EN_REVISIÓN.
+- Permiso posterior ejecutado: «APRUEBO LOTE 2. Fusiona el Pull Request #2 en main, verifica la integración y actualiza los estados documentales correspondientes». PR #2 integrado; cierre limitado a metadatos/registros existentes y verificación documental. Sin lote 3 ni producto.
+- Estado de ejecución documental: `LOTE_2_APROBADO_E_INTEGRADO`. TK-N1-1.0.0 y aceptación documental del lote 2 APROBADOS por el propietario.
+- Lotes 1 y 2 APROBADOS e integrados. Diez specs del lote 2 y registros de integración APROBADOS; 59 decisiones con spec aprobada y 187 con spec futura. No se inicia el lote 3.
 - Estado del producto: implementación no iniciada, proveedores no conectados, pruebas de producto no ejecutadas, despliegues no realizados.
 
 La aprobación de inventario no aprueba anticipadamente el contenido. Un reporte emitido por el agente no sustituye aceptación humana. La instrucción más reciente del propietario prevalece si restringe una continuación.
@@ -390,3 +392,21 @@ Revisión real posterior a entrega estable, limitada al archivo adoptado y al re
 ### Estado final y parada
 
 Publicar commit y actualizar el PR#2 existente, preservando título/base/rama y sin fusionar. Informar ocho archivos, ocho reglas/catorceACC y resultados documentales. **El perfil está completo y sin bloqueos normativos; el lote2 espera aceptación documental.** No considerar «APRUEBO LOTE 2» recibido por adoptar reglas. Detenerse al actualizar el PR; sin código, proveedores, pruebas de producto, instalación, lote3 o despliegue.
+
+<a id="cierre-lote-2"></a>
+
+## Cierre vigente — lote 2 aprobado e integrado, 2026-10-21
+
+Instrucción expresa del propietario: «APRUEBO LOTE 2. Fusiona el Pull Request #2 en main, verifica la integración y actualiza los estados documentales correspondientes. Detente al terminar. No inicies el lote 3 ni implementes código hasta recibir nuevas instrucciones».
+
+Se comprobó PR #2 OPEN/MERGEABLE/CLEAN en HEAD `598ac9a4fc6ce14cf512785fb1c4160fafb4eb9e`, cuenta personal SebasChaconDev, árbol limpio y auditoría documental sin errores. Se fusionó por squash con coincidencia obligatoria de ese HEAD, sin eludir protecciones. Resultado: [PR #2](https://github.com/SebasChaconDev/toguz-kumalak/pull/2) MERGED, commit `1f401af8d76794981bbcfdf9a3aa1831cf2621f5`, fecha `2026-10-21T21:10:14Z`. GitHub no tenía comprobaciones CI configuradas; no se atribuyen pruebas de producto.
+
+La actualización local de main fue fast-forward. La comparación completa entre el árbol integrado y el HEAD aprobado devolvió cero diferencias antes de registrar esta aprobación. La aprobación se refiere al contenido de ese HEAD; las ediciones posteriores son exclusivamente estados, evidencia de integración y permisos de continuidad.
+
+Alcance de cierre: 19 Markdown existentes, cero altas/bajas: las diez specs de lote 2, AGENTS, GOALS, PROMPTS, README, PLANS, IDX, REG, CONF y TRZ. Las specs pasan a APROBADO con revisión menor de metadatos, sin cambiar su cuerpo aprobado; las menciones a EN_REVISIÓN o gates pendientes dentro del texto conservado describen fases anteriores y quedan sustituidas por el recibo superior. Los registros actualizan versiones/estado y evidencia. Las 246 decisiones originales, las ocho reglas adoptadas, los catorce ACC, el corpus y PRE-09 permanecen intactos.
+
+Cobertura actual: 59 decisiones con spec APROBADA, cero con spec EN_REVISIÓN y 187 con spec futura; las 246 conservan destino canónico. Inventario de 81 entradas/40 specs, 41 Markdown físicos y .gitignore, sin rutas de lote 3. Las verificaciones documentales y la comprobación remota del cierre se realizan antes de declarar terminado; no son pruebas de implementación.
+
+Controles de cierre ejecutados: 42 archivos físicos sin altas/bajas; 246 textos fuente/REG literales y ordenados; 246 destinos canónicos sin cambios; cobertura 59/0/187; 2423 enlaces locales sin errores de rutas/anclas, tablas, IDs o fences; 17 secciones en cada spec. Comparación de los diez cuerpos aprobados sin diferencias salvo recibo, versión y estado; transcripción íntegra de la resolución intacta. DAG de 40 specs sin ciclos ni dependencias modificadas. Fuente maestra, preliminares, ADR y gobierno 11.* sin cambios; SHA256 de SRC conservado. Escaneo de patrones sensibles sin hallazgos y diff documental sin errores. La publicación del recibo se verifica después contra main remoto, conservando PR #2 en estado MERGED.
+
+Este cierre prevalece sobre informes históricos de espera o prohibición de fusionar PR #2. TK-N1-1.0.0 sigue completo sin bloqueos normativos pendientes. Los riesgos técnicos y las pruebas futuras permanecen POR_VERIFICAR. **Trabajo detenido: ninguna autorización de lote 3, código, instalaciones, pruebas de producto o despliegues.**

@@ -1,8 +1,10 @@
 # REG — Registro canónico de decisiones
 
+> Aprobación posterior del lote 2: el propietario declaró «APRUEBO LOTE 2» y autorizó fusionar PR #2 en main. Contenido aprobado: HEAD 598ac9a4fc6ce14cf512785fb1c4160fafb4eb9e; integrado por squash 1f401af8d76794981bbcfdf9a3aa1831cf2621f5 (2026-10-21T21:10:14Z). Este registro sustituye las menciones históricas a revisión pendiente o prohibición de esa fusión. No autoriza lote 3 ni implementación; el producto sigue sin verificar.
+
 > Aprobación posterior: el propietario declaró «APRUEBO LOTE 1» el 2026-10-21 para el contenido revisado en HEAD e38cc84950858e072c1a3f06ffbf854cf7e544f5. PR #1 integrado por squash en main: 329b7c1059e8a74f191c256870734e8ae8259966. Este registro prevalece sobre menciones históricas de revisión pendiente; no acredita producto probado. Los permisos actuales se consultan en AGENTS y PLANS.
 
-ID: REG · Versión: 0.3 · Fecha: 2026-10-21 · Estado documental: EN_REVISIÓN · Owner: C.
+ID: REG · Versión: 0.4 · Fecha: 2026-10-21 · Estado documental: APROBADO · Owner: C.
 
 ## Procedencia y autoridad
 
@@ -1693,3 +1695,7 @@ Los casos sintéticos para ejercitar cada condición deben conservar 162 piedras
 ### Efecto y trazabilidad de la adenda
 
 R-01–R-08 y ACC-N1-01–ACC-N1-14 se integran en [03.01](specs/03-game-engine/03.01-normative-rules-and-corpus.md) y [03.04](specs/03-game-engine/03.04-outcomes-repetition-and-replay.md), con propagación de contratos a03.02/03.03. [CONF](conflicts.md#adenda-tk-n1-100) registra NORM-01/02/03 como RESUELTO_POR_DECISIÓN_DE_PRODUCTO; [TRZ](traceability.md#adenda-tk-n1-100) relaciona fuente/ACC/consumidores; [PLANS](../PLANS.md#adopcion-tk-n1-100) registra ejecución y verificación. Cualquier cambio reglamentario posterior exige otro perfil y autorización expresa: no se añade como tarea de los siguientes lotes.
+
+## Adenda de estado — aprobación e integración del lote 2
+
+El propietario declaró «APRUEBO LOTE 2» y autorizó fusionar PR #2, verificar main y actualizar estados. Contenido aprobado: HEAD `598ac9a4fc6ce14cf512785fb1c4160fafb4eb9e`; squash integrado `1f401af8d76794981bbcfdf9a3aa1831cf2621f5`, `2026-10-21T21:10:14Z`. Se aprueba la integración documental de AD-NORM-001 y las diez specs; las 246 decisiones originales y la transcripción íntegra de la resolución permanecen intactas. Los estados EN_REVISIÓN anteriores quedan como historial. No se autoriza lote 3 ni implementación; PRE-09 continúa pendiente de ejecución futura autorizada.

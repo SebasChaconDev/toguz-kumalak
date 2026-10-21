@@ -1,12 +1,14 @@
 # GOALS — Objetivos y alcance comprometido
 
+> Aprobación posterior del lote 2: el propietario declaró «APRUEBO LOTE 2» y autorizó fusionar PR #2 en main. Contenido aprobado: HEAD 598ac9a4fc6ce14cf512785fb1c4160fafb4eb9e; integrado por squash 1f401af8d76794981bbcfdf9a3aa1831cf2621f5 (2026-10-21T21:10:14Z). Este registro sustituye las menciones históricas a revisión pendiente o prohibición de esa fusión. No autoriza lote 3 ni implementación; el producto sigue sin verificar.
+
 > Aprobación posterior: el propietario declaró «APRUEBO LOTE 1» el 2026-10-21 para el contenido revisado en HEAD e38cc84950858e072c1a3f06ffbf854cf7e544f5. PR #1 integrado por squash en main: 329b7c1059e8a74f191c256870734e8ae8259966. Este registro prevalece sobre menciones históricas de revisión pendiente; no acredita producto probado. Los permisos actuales se consultan en AGENTS y PLANS.
 
-ID: GOALS · Versión: 0.2 · Fecha: 2026-10-21 · Estado documental: APROBADO · Owner: C.
+ID: GOALS · Versión: 0.3 · Fecha: 2026-10-21 · Estado documental: APROBADO · Owner: C.
 
 ## Objetivo de la misión actual
 
-Transformar las 246 decisiones de PRE-01 a PRE-11 en especificaciones Markdown trazables y revisables por lotes. El propietario aprobó el inventario de 81 archivos y el lote 1 de 31 Markdown, ya integrado. Autorizó diez specs del lote 2 y su PR sin fusionar; las nuevas specs quedan EN_REVISIÓN y el producto no se implementa.
+Transformar las 246 decisiones de PRE-01 a PRE-11 en especificaciones Markdown trazables y revisables por lotes. El propietario aprobó el inventario de 81 archivos y el lote 1 de 31 Markdown, ya integrado. Aprobó las diez specs del lote 2 y autorizó integrar el PR #2; el lote está APROBADO e integrado. El producto no se implementa y no se inicia el lote 3 sin nuevas instrucciones.
 
 Fuentes: [maestro íntegro](docs/sources/TOGUZ_PROMPT_MAESTRO_CODEX.md), [REG](docs/decision-register.md), [inventario aprobado](docs/index.md#inventario), [PLANS](PLANS.md).
 
