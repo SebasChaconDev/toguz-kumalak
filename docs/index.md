@@ -2,21 +2,21 @@
 
 > Aprobación posterior: el propietario declaró «APRUEBO LOTE 1» el 2026-10-21 para el contenido revisado en HEAD e38cc84950858e072c1a3f06ffbf854cf7e544f5. PR #1 integrado por squash en main: 329b7c1059e8a74f191c256870734e8ae8259966. Este registro prevalece sobre menciones históricas de revisión pendiente; no acredita producto probado. Los permisos actuales se consultan en AGENTS y PLANS.
 
-ID: IDX · Versión: 0.2 · Fecha: 2026-10-21 · Estado documental: APROBADO · Owner: C.
+ID: IDX · Versión: 0.3 · Fecha: 2026-10-21 · Estado documental: EN_REVISIÓN · Owner: C.
 
 ## Estado de la entrega
 
-El propietario aprobó el inventario de **81 archivos Markdown: 40 especificaciones y 41 documentos de soporte**. Autorizó únicamente el lote 1 (31 archivos). Los 31 documentos de esta entrega están EN_REVISIÓN; los 50 restantes no se crean ahora. La copia SRC conserva literalmente su estado histórico. Las decisiones fuente están APROBADO; la aprobación del inventario no aprueba el contenido generado ni la implementación.
+El inventario aprobado conserva **81 archivos Markdown: 40 especificaciones y 41 documentos de soporte**. El lote 1 (31 Markdown) está APROBADO e integrado en main por PR #1. La entrega del lote 2 añade exactamente diez specs EN_REVISIÓN y actualiza únicamente PLANS, IDX, TRZ y CONF; sus nuevas versiones de integración también están EN_REVISIÓN, sin revocar la aprobación histórica. Quedan 40 rutas futuras de lotes 3–6. La copia SRC conserva literalmente su estado histórico; las 246 decisiones fuente permanecen APROBADO. Esta cobertura documental no acredita implementación.
 
 Inicio recomendado: [README](../README.md), [objetivos](../GOALS.md), [plan y reporte](../PLANS.md), [registro](decision-register.md), [trazabilidad](traceability.md), [conflictos](conflicts.md), [norma 11.01](specs/11-orchestration/11.01-document-standard-and-change-control.md) y [orquestación 11.02](specs/11-orchestration/11.02-ownership-delegation-and-context.md).
 
 ## Convenciones
 
-Distribución para publicación autorizada: `main` conserva los 29 Markdown de base y `.gitignore`; 11.01 y 11.02 se incorporan en `docs/specs-lote-01` para revisión por PR. El inventario documental sigue siendo de 81 rutas y el lote 1 de 31 Markdown. `.gitignore` es una excepción operativa de publicación expresamente autorizada, ajena al conteo documental. Un enlace a la rama de revisión no significa que el archivo esté fusionado en `main`.
+Distribución vigente: `main` contiene los 31 Markdown aprobados de lote 1 y `.gitignore`; `docs/specs-lote-02` añade diez specs y cuatro registros actualizados mediante PR sin fusionar. `.gitignore` es la excepción operativa autorizada, ajena al inventario Markdown. La autorización y el informe actual están en [PLANS](../PLANS.md#informe-lote-2).
 
 B/M/A: complejidad relativa baja/media/alta, sin fechas prometidas. Owners funcionales C coordinación/producto; A arquitectura/operación; M motor; S servicios/identidad/multiplayer; V UX/3D; I IA/aprendizaje; Q calidad. El autor efectivo y las revisiones de esta entrega constan en PLANS.
 
-Los vínculos de lote 1 apuntan a archivos entregados. Las rutas futuras se muestran como texto y se enlazan mediante el anchor de esta entrada, nunca mediante un vínculo que aparente un archivo existente. Estado futuro `PENDIENTE_LOTE_N` no equivale a deferimiento aprobado de la funcionalidad.
+Los vínculos de lotes 1 y 2 apuntan a archivos entregados. Las rutas futuras se muestran como texto y se enlazan mediante el anchor de esta entrada, nunca mediante un vínculo que aparente un archivo existente. Estado futuro `PENDIENTE_LOTE_N` no equivale a deferimiento aprobado de la funcionalidad.
 
 <a id="inventario"></a>
 
@@ -28,14 +28,14 @@ Los vínculos de lote 1 apuntan a archivos entregados. Las rutas futuras se mues
 |---|---|---|---|---|---|
 | <a id="agents"></a>AGENTS | [AGENTS.md](../AGENTS.md) | Instrucciones operativas y límites | C | M | APROBADO |
 | <a id="goals"></a>GOALS | [GOALS.md](../GOALS.md) | Objetivos y alcance comprometido | C | M | APROBADO |
-| <a id="plans"></a>PLANS | [PLANS.md](../PLANS.md) | Gates, lotes y roadmap documental | C | M | APROBADO |
+| <a id="plans"></a>PLANS | [PLANS.md](../PLANS.md) | Gates, lotes y roadmap documental | C | M | EN_REVISIÓN |
 | <a id="prompts"></a>PROMPTS | [PROMPTS.md](../PROMPTS.md) | Briefs y prompts de trabajo autorizable | C | M | APROBADO |
 | <a id="readme"></a>README | [README.md](../README.md) | Presentación y estado profesional | C | M | APROBADO |
 | <a id="src"></a>SRC | [docs/sources/TOGUZ_PROMPT_MAESTRO_CODEX.md](sources/TOGUZ_PROMPT_MAESTRO_CODEX.md) | Copia íntegra y sin cambios del maestro | C | B | APROBADO |
 | <a id="reg"></a>REG | [docs/decision-register.md](decision-register.md) | 246 decisiones literales y destinos canónicos | C | M | APROBADO |
-| <a id="conf"></a>CONF | [docs/conflicts.md](conflicts.md) | Riesgos, discrepancias y validaciones pendientes | C | M | APROBADO |
-| <a id="idx"></a>IDX | [docs/index.md](index.md) | Inventario y dependencias | C | B | APROBADO |
-| <a id="trz"></a>TRZ | [docs/traceability.md](traceability.md) | Decisión→spec→fase→componente→verificación→evidencia | C | M | APROBADO |
+| <a id="conf"></a>CONF | [docs/conflicts.md](conflicts.md) | Riesgos, discrepancias y validaciones pendientes | C | M | EN_REVISIÓN |
+| <a id="idx"></a>IDX | [docs/index.md](index.md) | Inventario y dependencias | C | B | EN_REVISIÓN |
+| <a id="trz"></a>TRZ | [docs/traceability.md](traceability.md) | Decisión→spec→fase→componente→verificación→evidencia | C | M | EN_REVISIÓN |
 | <a id="pre-01"></a>PRE-01 | [docs/preliminares/PRE-01.md](preliminares/PRE-01.md) | Contexto de 17 decisiones de REG; sin reconstruir cuestionarios. | A | M | APROBADO |
 | <a id="pre-02"></a>PRE-02 | [docs/preliminares/PRE-02.md](preliminares/PRE-02.md) | Contexto de 18 decisiones de REG; sin reconstruir cuestionarios. | C | M | APROBADO |
 | <a id="pre-03"></a>PRE-03 | [docs/preliminares/PRE-03.md](preliminares/PRE-03.md) | Contexto de 22 decisiones de REG; sin reconstruir cuestionarios. | M | M | APROBADO |
@@ -62,16 +62,16 @@ Los vínculos de lote 1 apuntan a archivos entregados. Las rutas futuras se mues
 
 | ID | Archivo o ruta prevista | Propósito / entradas y dependencias | Owner | Complejidad | Estado |
 |---|---|---|---|---|---|
-| <a id="spec-01-01"></a>01.01 | `specs/01-infrastructure/01.01-stack-monorepo.md` | Stack, monorepo y desarrollo local; entradas PRE-01.A1, PRE-01.A2, PRE-01.A3, PRE-01.A4, PRE-01.C3. Dependencias: REG y maestro. | A | A | PENDIENTE_LOTE_2 |
-| <a id="spec-01-02"></a>01.02 | `specs/01-infrastructure/01.02-platform-feasibility.md` | Factibilidad de plataforma y entornos; entradas PRE-01.B2, PRE-01.C1, PRE-01.C4, PRE-05.F4. Dependencias: [01.01](#spec-01-01). | A | A | PENDIENTE_LOTE_2 |
-| <a id="spec-01-03"></a>01.03 | `specs/01-infrastructure/01.03-cost-capacity-evolution.md` | Coste, capacidad y evolución; entradas PRE-01.C2, PRE-01.D3. Dependencias: [01.02](#spec-01-02). | A | A | PENDIENTE_LOTE_2 |
-| <a id="spec-02-01"></a>02.01 | `specs/02-product/02.01-scope-and-modes.md` | Alcance, modos y MVP; entradas PRE-02.A1, PRE-02.A2, PRE-02.A3, PRE-02.A4, PRE-02.E3. Dependencias: REG y maestro. | C | M | PENDIENTE_LOTE_2 |
-| <a id="spec-02-02"></a>02.02 | `specs/02-product/02.02-local-flows-and-i18n.md` | Flujos locales e internacionalización; entradas PRE-02.B3, PRE-02.D3, PRE-05.C4. Dependencias: [02.01](#spec-02-01). | C | M | PENDIENTE_LOTE_2 |
-| <a id="spec-02-03"></a>02.03 | `specs/02-product/02.03-accounts-history-and-licensing.md` | Cuentas, historial y licencia; entradas PRE-01.D4, PRE-02.B1, PRE-02.B2, PRE-02.D2. Dependencias: [02.01](#spec-02-01). | C | M | PENDIENTE_LOTE_2 |
-| <a id="spec-03-01"></a>03.01 | `specs/03-game-engine/03.01-normative-rules-and-corpus.md` | Reglamento normativo y corpus; entradas PRE-03.A3, PRE-03.C1, PRE-03.E1. Dependencias: [02.01](#spec-02-01). | M | A | PENDIENTE_LOTE_2 |
-| <a id="spec-03-02"></a>03.02 | `specs/03-game-engine/03.02-state-indices-and-invariants.md` | Estado, índices e invariantes; entradas PRE-03.A4, PRE-03.B1, PRE-03.B4, PRE-03.E2. Dependencias: [01.01](#spec-01-01), [03.01](#spec-03-01). | M | A | PENDIENTE_LOTE_2 |
-| <a id="spec-03-03"></a>03.03 | `specs/03-game-engine/03.03-moves-and-semantic-events.md` | Movimientos y eventos semánticos; entradas PRE-02.C1, PRE-03.B2, PRE-03.B3, PRE-03.B5, PRE-03.C2, PRE-03.C3. Dependencias: [03.02](#spec-03-02). | M | A | PENDIENTE_LOTE_2 |
-| <a id="spec-03-04"></a>03.04 | `specs/03-game-engine/03.04-outcomes-repetition-and-replay.md` | Resultados, repetición y reproducción; entradas PRE-02.C4, PRE-02.D1, PRE-03.A1, PRE-03.A2, PRE-03.C4, PRE-03.E3. Dependencias: [03.03](#spec-03-03). | M | A | PENDIENTE_LOTE_2 |
+| <a id="spec-01-01"></a>01.01 | [docs/specs/01-infrastructure/01.01-stack-monorepo.md](specs/01-infrastructure/01.01-stack-monorepo.md) | Stack, monorepo y desarrollo local; entradas PRE-01.A1, PRE-01.A2, PRE-01.A3, PRE-01.A4, PRE-01.C3. Dependencias: REG y maestro. | A | A | EN_REVISIÓN |
+| <a id="spec-01-02"></a>01.02 | [docs/specs/01-infrastructure/01.02-platform-feasibility.md](specs/01-infrastructure/01.02-platform-feasibility.md) | Factibilidad de plataforma y entornos; entradas PRE-01.B2, PRE-01.C1, PRE-01.C4, PRE-05.F4. Dependencias: [01.01](#spec-01-01). | A | A | EN_REVISIÓN |
+| <a id="spec-01-03"></a>01.03 | [docs/specs/01-infrastructure/01.03-cost-capacity-evolution.md](specs/01-infrastructure/01.03-cost-capacity-evolution.md) | Coste, capacidad y evolución; entradas PRE-01.C2, PRE-01.D3. Dependencias: [01.02](#spec-01-02). | A | A | EN_REVISIÓN |
+| <a id="spec-02-01"></a>02.01 | [docs/specs/02-product/02.01-scope-and-modes.md](specs/02-product/02.01-scope-and-modes.md) | Alcance, modos y MVP; entradas PRE-02.A1, PRE-02.A2, PRE-02.A3, PRE-02.A4, PRE-02.E3. Dependencias: REG y maestro. | C | M | EN_REVISIÓN |
+| <a id="spec-02-02"></a>02.02 | [docs/specs/02-product/02.02-local-flows-and-i18n.md](specs/02-product/02.02-local-flows-and-i18n.md) | Flujos locales e internacionalización; entradas PRE-02.B3, PRE-02.D3, PRE-05.C4. Dependencias: [02.01](#spec-02-01). | C | M | EN_REVISIÓN |
+| <a id="spec-02-03"></a>02.03 | [docs/specs/02-product/02.03-accounts-history-and-licensing.md](specs/02-product/02.03-accounts-history-and-licensing.md) | Cuentas, historial y licencia; entradas PRE-01.D4, PRE-02.B1, PRE-02.B2, PRE-02.D2. Dependencias: [02.01](#spec-02-01). | C | M | EN_REVISIÓN |
+| <a id="spec-03-01"></a>03.01 | [docs/specs/03-game-engine/03.01-normative-rules-and-corpus.md](specs/03-game-engine/03.01-normative-rules-and-corpus.md) | Reglamento normativo y corpus; entradas PRE-03.A3, PRE-03.C1, PRE-03.E1. Dependencias: [02.01](#spec-02-01). | M | A | EN_REVISIÓN |
+| <a id="spec-03-02"></a>03.02 | [docs/specs/03-game-engine/03.02-state-indices-and-invariants.md](specs/03-game-engine/03.02-state-indices-and-invariants.md) | Estado, índices e invariantes; entradas PRE-03.A4, PRE-03.B1, PRE-03.B4, PRE-03.E2. Dependencias: [01.01](#spec-01-01), [03.01](#spec-03-01). | M | A | EN_REVISIÓN |
+| <a id="spec-03-03"></a>03.03 | [docs/specs/03-game-engine/03.03-moves-and-semantic-events.md](specs/03-game-engine/03.03-moves-and-semantic-events.md) | Movimientos y eventos semánticos; entradas PRE-02.C1, PRE-03.B2, PRE-03.B3, PRE-03.B5, PRE-03.C2, PRE-03.C3. Dependencias: [03.02](#spec-03-02). | M | A | EN_REVISIÓN |
+| <a id="spec-03-04"></a>03.04 | [docs/specs/03-game-engine/03.04-outcomes-repetition-and-replay.md](specs/03-game-engine/03.04-outcomes-repetition-and-replay.md) | Resultados, repetición y reproducción; entradas PRE-02.C4, PRE-02.D1, PRE-03.A1, PRE-03.A2, PRE-03.C4, PRE-03.E3. Dependencias: [03.03](#spec-03-03). | M | A | EN_REVISIÓN |
 
 ### Lote 3 — 11 archivos
 
@@ -188,8 +188,13 @@ SRC → REG → inventario/trazabilidad inicial → 11.01 → AGENTS y 11.02 →
 - Lote 5: Q y A trabajan en paralelo; 11.03, fases y harness se integran tras consolidar calidad y operación.
 - Lote 6: auditoría independiente; los cambios semánticos vuelven al propietario.
 
-No hay autorización de redacción para estas secuencias posteriores en la sesión actual. [PLANS](../PLANS.md) conserva el gate vigente.
+El lote 2 está autorizado y entregado para revisión. No hay autorización de redacción para lotes 3–6. [PLANS](../PLANS.md) conserva el gate vigente.
 
 ## Estado posterior a aprobación del lote 1
 
 Lote 1 APROBADO por el propietario e integrado en main mediante squash 329b7c1059e8a74f191c256870734e8ae8259966. La autorización actual comprende diez specs del lote 2 y registros necesarios, sin ejecución de producto. Las referencias anteriores a distribución 29+2 describen la publicación previa al merge; main contiene ahora los 31 Markdown. Lotes 3–6 siguen pendientes.
+
+
+## Integración de lote 2 en revisión
+
+Diez specs nuevas, 17 apartados cada una; 42 decisiones canónicas con spec EN_REVISIÓN. La distribución total es 17 decisiones con spec APROBADA, 42 con spec EN_REVISIÓN y 187 con spec futura. Se conservan los 40 nodos y las dependencias del inventario original, sin ciclos. El informe, las contribuciones, los controles y los bloqueos se documentan en [PLANS](../PLANS.md#informe-lote-2); el detalle normativo abierto permanece en [RISK-01](conflicts.md#risk-01). El gate «APRUEBO LOTE 2» está pendiente.
