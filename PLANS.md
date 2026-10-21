@@ -2,15 +2,15 @@
 
 > Aprobación posterior: el propietario declaró «APRUEBO LOTE 1» el 2026-10-21 para el contenido revisado en HEAD e38cc84950858e072c1a3f06ffbf854cf7e544f5. PR #1 integrado por squash en main: 329b7c1059e8a74f191c256870734e8ae8259966. Este registro prevalece sobre menciones históricas de revisión pendiente; no acredita producto probado. Los permisos actuales se consultan en AGENTS y PLANS.
 
-ID: PLANS · Versión: 0.4 · Fecha: 2026-10-21 · Estado documental: EN_REVISIÓN · Owner: C.
+ID: PLANS · Versión: 0.5 · Fecha: 2026-10-21 · Estado documental: EN_REVISIÓN · Owner: C.
 
 ## Autorización y estado actual
 
 - Gate 0: recibido del propietario el 2026-10-21: «APRUEBO INVENTARIO DOCUMENTAL».
 - Historial: la restricción inicial de lote 1 fue satisfecha; la instrucción posterior «APRUEBO LOTE 1» autoriza su integración condicionada y la generación/publicación documental del lote 2.
 - Inventario autorizado: [81 Markdown](docs/index.md#inventario),40 specs y 41 documentos de soporte.
-- Permiso actual posterior a auditoría externa: corregir las cuatro specs03.01–03.04 y únicamente CONF, TRZ y PLANS cuando corresponda, en docs/specs-lote-02 y PR#2 existente. No nuevas rutas, lote3, producto, despliegue ni merge.
-- Estado de ejecución documental: `LOTE_2_CORRECCION_NORMATIVA_EN_REVISIÓN`; el propietario no ha aprobado lote 2.
+- Permiso actual posterior: adoptar TK-N1-1.0.0 según resolución íntegra del propietario; actualizar03.01–03.04 y adendas REG/CONF/TRZ/PLANS en misma rama/PR. Ocho rutas existentes, sin producto, lote3 o merge.
+- Estado de ejecución documental: `LOTE_2_TK_N1_ADOPTADO_EN_REVISIÓN`. Perfil APROBADO; aceptación documental del lote2 pendiente.
 - Lote 1 APROBADO por el propietario; diez specs nuevas y cuatro registros de integración del lote 2 quedan EN_REVISIÓN.
 - Estado del producto: implementación no iniciada, proveedores no conectados, pruebas de producto no ejecutadas, despliegues no realizados.
 
@@ -327,7 +327,7 @@ Controles documentales realizados en memoria, sin motor ni pruebas de producto:
 - CopiaSRC conserva SHA256 original28C24C498829FCFAD410F07AAA6BD036D5A33382294401E11E86D486E4ECBBEF. Índice y246 asignaciones no cambian; grafo40 nodos sin ciclos.
 - Detección de patrones de credenciales/archivos sensibles sin hallazgos; git diff --check sin errores. No se crearon herramientas ejecutables, fixtures de producto, dependencias ni recursos externos.
 
-### Revisión y parada
+### Revisión y parada de la corrección previa, anterior a AD-NORM-001
 
 Revisión independiente real, posterior a entrega estable:
 - normativa_edicion contrastó03.01§§3/5/11/16 y03.04§§7/8/16: sin falsas resoluciones o autoridad inflada. Señaló localizador textual dependiente de lengua enN5; coordinación lo cambió por tercer párrafo narrativo. Reconfirmó AUX-CONT punto9 como didáctico.
@@ -335,3 +335,58 @@ Revisión independiente real, posterior a entrega estable:
 - Coordinación integró las revisiones, corrigió orden/continuidad de tablasAC y comprobó contratos, trazabilidad, estados y fuente. Ambas revisiones son documentales; ninguna acredita adopción normativa o ejecución.
 
 Actualizar el mismo PR#2 con commit descriptivo y comprobación remota de HEAD/archivos; conservar título, base main y estado abierto sin fusionar. Entregar reglas referenciadas, límites, casos y preguntas. El propietario no ha emitido «APRUEBO LOTE 2» y esta investigación no lo sustituye. No continuar a implementación o lote 3.
+
+
+<a id="adopcion-tk-n1-100"></a>
+
+## Adenda vigente — adopción definitiva TK-N1-1.0.0, 2026-10-21
+
+La instrucción expresa del propietario adopta íntegramente `TOGUZ_RESOLUCION_NORMATIVA_V1.md`:103 líneas,12.274 bytes, SHA256 `9330B3116357225429BC85466BA48E9937C7D434AFE117AA633CA2A04A61DDE5`. Se leyó completa. [REG/AD-NORM-001](docs/decision-register.md#ad-norm-001) conserva transcripción íntegra y autoridad. El aviso anterior de adjunto ausente quedó superado al proporcionarse su ruta; no se había editado nada durante esa espera.
+
+**Reglas completas y aprobadas:** TK-N1-1.0.0 define atsyrau, triple repetición, reclamación y finalización sin bloqueos normativos pendientes. N1 es fuente contractual única; las convenciones digitales de la resolución se atribuyen al propietario. No se comprobó ni se afirma vigencia federativa/certificación de torneo. Quedan sustituidas las solicitudes previas de edición/adaptación y comparaciones para decidir comportamiento.
+
+### Alcance y ejecución
+
+Base de la actualización: `62fe22328c5c9c4d00dfb294b3bc3efc15708f06` en docs/specs-lote-02, PR#2 abierto. Coordinación escribe exclusivamente ocho Markdown existentes: cuatro specs03.*,REG,CONF,TRZ y PLANS. No nuevas rutas, cambios de arquitectura/funcionalidades ni reescritura de246 decisiones. Las cuatro specs pasan a v0.3 EN_REVISIÓN; la adenda/reglas están APROBADAS y la verificación de producto sigue PENDIENTE.
+
+NORM-01/02/03: **RESUELTO_POR_DECISIÓN_DE_PRODUCTO** para este perfil. NORM-04 de fuentes excluidas: NO_APLICA_AL_PERFIL; no se importan límites1/2 ni ventana de reloj. La historia de investigación se conserva identificada como anterior/sustituida en CONF y Git. No hay nuevas elecciones normativas para TK-N1-1.0.0. Un perfil futuro requiere otra autorización expresa y no se agrega a los lotes siguientes.
+
+No se consultaron reglamentos/motores externos en esta actualización ni se reabrió la decisión. PRE-09 conserva pruebas automatizadas de integridad/corrección: unitarias, propiedades, fuzzing, simulaciones, historia/replay, integración y E2E pertinentes; no ejecutadas por esta misión documental. Los fallos de pruebas futuras se corrigen contra este perfil, sin cambiarlo silenciosamente.
+
+### Decisiones y casos integrados
+
+| Grupo | Aplicación |
+|---|---|
+| R-01–R-04 | Inicio/ciclo, piedra única/N−1, captura par rival, tuz automático permitido y depósitos al propietario |
+| R-05 | Completar efectos; target≥82 → equal81–81 → turno rival → atsyrau → aparición activa; terminal prevalece sobre repetición |
+| R-06 | Siguiente sin piedras, resultado por su kazán, sin adicional/barrido/transferencia de remanentes; terminal conserva162 |
+| R-07 | Clave exacta reglas/board/kazanes/tuz/turno; inicial cuenta1; confirmados completos activos;≥3 habilita a ambos participantes hasta siguiente movimiento/cierre, revisión atómica sin penalización por rechazo |
+| R-08 |162, pureza, Game autoridad, Go único, versiones y replay con perfil original |
+
+Los14ACC están copiados literalmente en [03.01§14](docs/specs/03-game-engine/03.01-normative-rules-and-corpus.md#14-criterios-de-aceptación) y relacionados con consumidores en [TRZ](docs/traceability.md#adenda-tk-n1-100). Estados completos: siete pares DER existentes más ACC04-SECOND (tuz previo), ACC06 (siguiente con60 pierde), ACC07 (siguiente con81 empata/K80–81), ACC08 (actor vacío no pierde prematuramente), ACC09 (82 precede) y REP-P/variaciones para contrato. Se revisa162 y clasificación, no se afirma que sintéticos sean partidas alcanzables.
+
+ACC14 se ejercita como contrato del orden/ramas con detector controlado: tras terminal no se consulta/concede repetición. No se fabrica ledger que presente como activo un estado ya terminal. Las secuencias legales/historia de integración y resultados observados son obligaciones futuras de calidad, no pendientes reglamentarias.
+
+### Verificación de adopción y revisión
+
+Comprobaciones documentales en memoria:
+
+- 42 archivos físicos (41 Markdown y .gitignore existente), ocho modificaciones y cero altas/bajas respecto a62fe223; inventario81 rutas/40specs conservado.
+- Diez specs de lote2 con17 secciones1–17; cuatro motor v0.3, seis infraestructura/producto v0.1, todas EN_REVISIÓN. REG v0.3 y CONF/TRZ/PLANS v0.5 integran adendas, sin autoaprobar el lote.
+- 246 decisiones fuente/REG únicas, literales y ordenadas;246 destinos canónicos sin cambios, cobertura17/42/187 y42VP→AC.
+- Ocho reglas R-01–08 y14 filas ACC copiadas literalmente del archivo completo. Transcripción íntegra de la resolución en REG comprobada como texto, distinguiendo normalización de saltos de su SHA256 original.
+- 2423 vínculos locales, sin enlaces/anclas ausentes, IDs explícitos duplicados, fences abiertos o columnas incoherentes. Tres bloques JSON completos analizados como datos; inicial con count1.
+- 25 estados numéricos completos con dimensiones9/9/2, cantidades no negativas y total162; revisión manual de transiciones/propietarios, sin ejecutar motor ni declarar alcanzabilidad de sintéticos.
+- Copia SRC mantiene SHA256 original28C24C498829FCFAD410F07AAA6BD036D5A33382294401E11E86D486E4ECBBEF. Resolución original mantiene9330B3116357225429BC85466BA48E9937C7D434AFE117AA633CA2A04A61DDE5.
+- Grafo de40 specs sin ciclos, sin cambiar dependencias. Búsqueda de bloqueos normativos activos en03.* sin remanentes; NORMATIVE_RULE_UNRESOLVED queda solo para perfil desconocido/corrupto.
+- Escaneo de patrones sensibles sin hallazgos y git diff --check sin errores. No código, archivos ejecutables, instalación, pruebas de producto, conexiones de proveedores ni despliegue.
+
+Revisión real posterior a entrega estable, limitada al archivo adoptado y al repositorio, sin web ni fuentes/motores externos:
+- review_tk_n1 contrastó cuatro specs,8R/14ACC y semántica completa; no encontró elecciones normativas activas ni certificación falsa.
+- review_tk_acc contrastó14ACC,25estados/tuzyks, JSON inicial y las transiciones especiales; confirmó distinción sintético/alcanzable, confirmación oficial y rollback.
+- Ambos señalaron falta de separador Markdown en tablaACC y «depósito en origen» en ejemplo de9piedras. Coordinación añadió separador, corrigió a «una piedra conservada en origen» y explicitó que StoneSown solo llega al origen si el recorrido retorna. Los controles afectados se repitieron.
+- Los revisores no escribieron ni ejecutaron producto. Coordinación conserva autoría única de las ocho rutas; decisión APROBADA y documentación EN_REVISIÓN se mantienen separadas.
+
+### Estado final y parada
+
+Publicar commit y actualizar el PR#2 existente, preservando título/base/rama y sin fusionar. Informar ocho archivos, ocho reglas/catorceACC y resultados documentales. **El perfil está completo y sin bloqueos normativos; el lote2 espera aceptación documental.** No considerar «APRUEBO LOTE 2» recibido por adoptar reglas. Detenerse al actualizar el PR; sin código, proveedores, pruebas de producto, instalación, lote3 o despliegue.
