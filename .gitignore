@@ -1,0 +1,73 @@
+# Credentials and local environment
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+*.keystore
+*.kdbx
+id_rsa*
+id_ed25519*
+credentials*.json
+client_secret*.json
+service-account*.json
+
+# Go build/test artifacts and local dependency cache
+/bin/
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.a
+*.test
+*.out
+*.prof
+*.coverprofile
+/vendor/
+
+# Node.js, pnpm and Next.js output
+node_modules/
+.pnpm-store/
+.npm/
+.next/
+.turbo/
+/out/
+/dist/
+/build/
+coverage/
+*.tsbuildinfo
+next-env.d.ts
+
+# Database dumps and backups; migration .sql files remain eligible
+/backups/
+/dumps/
+*.dump
+*.backup
+*.sql.gz
+dump*.sql
+
+# Duplicate archives and temporary files
+*.zip
+*.7z
+*.tar
+*.tar.gz
+*.tmp
+*.temp
+*.log
+/tmp/
+/temp/
+.cache/
+
+# Editors, OS metadata and local session data
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+Desktop.ini
+.codex/sessions/
+.codex/log/
