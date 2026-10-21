@@ -2,7 +2,7 @@
 
 > Aprobación posterior: el propietario declaró «APRUEBO LOTE 1» el 2026-10-21 para el contenido revisado en HEAD e38cc84950858e072c1a3f06ffbf854cf7e544f5. PR #1 integrado por squash en main: 329b7c1059e8a74f191c256870734e8ae8259966. Este registro prevalece sobre menciones históricas de revisión pendiente; no acredita producto probado. Los permisos actuales se consultan en AGENTS y PLANS.
 
-ID: CONF · Versión: 0.3 · Fecha: 2026-10-21 · Estado documental: EN_REVISIÓN · Owner: C; responsables técnicos por caso.
+ID: CONF · Versión: 0.4 · Fecha: 2026-10-21 · Estado documental: EN_REVISIÓN · Owner: C; responsables técnicos por caso.
 
 ## Estado y reglas de uso
 
@@ -62,6 +62,24 @@ N1 §1.5.5 describe repetición reclamada y §1.4 la declaración obligatoria de
 | NORM-03 — repetición reclamada | Resolver equivalencia de posición, actor/ventana de reclamación y rechazo inválido. PositionKey propuesto no constituye regla oficial. |
 
 Owner M + propietario. Estado de los tres: **BLOQUEADO_PARA_APROBACIÓN_NORMATIVA**; la entrega Markdown EN_REVISIÓN es revisable, no acepta los algoritmos afectados. [03.01](specs/03-game-engine/03.01-normative-rules-and-corpus.md) registra cláusulas y corpus directo/derivado/pendiente; [03.04](specs/03-game-engine/03.04-outcomes-repetition-and-replay.md) conserva los bloqueos terminales. Se exige fuente→cláusula→lectura→posición→oráculo aprobado y resolución humana identificable. Un estado sintético que suma 162 no demuestra alcanzabilidad. El contraste con implementación independiente identificada/versionada de PRE-03.E1 sigue PENDIENTE. No adoptar variantes por similitud de nombre ni declarar victoria por una limpieza de sala.
+
+<a id="revision-normativa-lote-2"></a>
+
+#### Corrección normativa del PR #2 — 2026-10-21
+
+El propietario **NO APRUEBA TODAVÍA LOTE 2** y autoriza corregir únicamente03.01–03.04 y registros necesarios, en la misma rama/PR, sin producto, lote3 ni merge. La [matriz NM-01–10](specs/03-game-engine/03.01-normative-rules-and-corpus.md#matriz-normativa) relaciona cláusula, interpretación, algoritmo candidato y caso; [03.04](specs/03-game-engine/03.04-outcomes-repetition-and-replay.md#atsyrau-y-prioridad) distingue detección/adicional/repoblación/liquidación/adjudicación.
+
+| Bloqueo | Avance demostrado / lo que sigue sin demostrarse |
+|---|---|
+| NORM-01 — edición | N1 íntegro sigue sin acto/fecha/vigencia; N2/AUX-509 con acceso parcial no son una misma edición: ofertas1 vs2 en§2.6.9/§2.6.8. Reglamento federativo de torneo Almaty2023§VII y noticia gubernamental del torneo2023-11-13 remiten a reglas aprobadas, sin identificar edición. No se consiguió una edición completa verificable para adoptar. |
+| NORM-02 — atsyrau | N1§1.5.3 compara kazán afectado; N2/AUX-509§1.5.1–2 mencionan adicional/recogida. Artículo didáctico KazAST2023 p.20 punto9 contempla continuidad si se devuelven jugadas, sin autoridad para adoptarla. ATS-DRAIN/DRAW/REFEED concretan impactos; salida aceptada bloqueada. |
+| NORM-03 — repetición | N1§1.5.5 respalda ≥3 y declaración por un participante; no exclusividad de turno ni ventana/igualdad detalladas. REP-* son ledgers sintéticos sin ciclo legal comprobado. Contador/hashes no acreditan historia. Actor participante aclarado; habilitación por turno/ventana y definición formal continúan bloqueadas. |
+
+Los tres permanecen **BLOQUEADO_PARA_APROBACIÓN_NORMATIVA**. La divergencia de límites de ofertas abre detalle NORM-04: confirmar texto aplicable o adaptación expresa; no imponer límite1/2 ni trasladar reloj físico al MVP. No se declara contradicción de resultados en atsyrau donde solo hay diferencias de formulación.
+
+[REF-01](specs/03-game-engine/03.01-normative-rules-and-corpus.md#referencia-independiente) queda identificada y fijada a commit: selección documental completada; contraste de resultados **PENDIENTE**. Desactiva repetición y no muestra fase adicional explícita, de modo que no cierra ninguno de los tres bloqueos. Su marca de tuz1 se adapta a cero piedras lógicas. El corpus incorpora una ruta publicada de seis jugadas con revisión manual completa; no se ejecutó motor, replay ni prueba.
+
+**Decisión humana solicitada, todavía sin respuesta:** (A) aportar/identificar edición completa con aprobación y aclaraciones verificables; o (B) autorizar expresamente una adaptación del producto, versionada y diferenciada de norma federativa, resolviendo frontera/adicional/continuidad/recogida/prioridad de atsyrau, igualdad/historia/reclamante/ventana y política de ofertas. B no se considera autorizada por pedir esta investigación. Fuente y PRE permanecen intactos. Aprobación documental general no se presume resolución de cada punto: exigir decisión identificable por alcance.
 
 <a id="risk-02"></a>
 

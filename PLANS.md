@@ -2,15 +2,15 @@
 
 > Aprobación posterior: el propietario declaró «APRUEBO LOTE 1» el 2026-10-21 para el contenido revisado en HEAD e38cc84950858e072c1a3f06ffbf854cf7e544f5. PR #1 integrado por squash en main: 329b7c1059e8a74f191c256870734e8ae8259966. Este registro prevalece sobre menciones históricas de revisión pendiente; no acredita producto probado. Los permisos actuales se consultan en AGENTS y PLANS.
 
-ID: PLANS · Versión: 0.3 · Fecha: 2026-10-21 · Estado documental: EN_REVISIÓN · Owner: C.
+ID: PLANS · Versión: 0.4 · Fecha: 2026-10-21 · Estado documental: EN_REVISIÓN · Owner: C.
 
 ## Autorización y estado actual
 
 - Gate 0: recibido del propietario el 2026-10-21: «APRUEBO INVENTARIO DOCUMENTAL».
 - Historial: la restricción inicial de lote 1 fue satisfecha; la instrucción posterior «APRUEBO LOTE 1» autoriza su integración condicionada y la generación/publicación documental del lote 2.
 - Inventario autorizado: [81 Markdown](docs/index.md#inventario),40 specs y 41 documentos de soporte.
-- Permiso actual: exactamente diez nuevas specs del lote 2 más actualización necesaria de registros; lotes 3–6 sin autorización.
-- Estado de ejecución documental: `LOTE_1_APROBADO_LOTE_2_EN_REVISIÓN`.
+- Permiso actual posterior a auditoría externa: corregir las cuatro specs03.01–03.04 y únicamente CONF, TRZ y PLANS cuando corresponda, en docs/specs-lote-02 y PR#2 existente. No nuevas rutas, lote3, producto, despliegue ni merge.
+- Estado de ejecución documental: `LOTE_2_CORRECCION_NORMATIVA_EN_REVISIÓN`; el propietario no ha aprobado lote 2.
 - Lote 1 APROBADO por el propietario; diez specs nuevas y cuatro registros de integración del lote 2 quedan EN_REVISIÓN.
 - Estado del producto: implementación no iniciada, proveedores no conectados, pruebas de producto no ejecutadas, despliegues no realizados.
 
@@ -235,7 +235,7 @@ La falta de una interpretación normativa no se resuelve mediante el orden de re
 
 ### Estado de auditoría y gate
 
-### Comprobaciones documentales observadas
+### Comprobaciones documentales observadas en entrega inicial 9d06677
 
 | Control | Resultado |
 |---|---|
@@ -276,3 +276,62 @@ Revisar primero los tres bloqueos normativos y el convenio de índices/contexto/
 
 
 La entrega se publica mediante PR hacia main con título `docs: lote 2 — architecture, product and Go game engine specifications`, sin fusionarlo. Se solicitará «APRUEBO LOTE 2» y se detendrá el trabajo; ese gate sigue PENDIENTE de respuesta humana explícita.
+
+
+<a id="correccion-normativa-lote-2"></a>
+
+## Corrección normativa posterior a auditoría externa — 2026-10-21
+
+El propietario declara **NO APRUEBO TODAVÍA EL LOTE 2**. Autoriza investigar/corregir documentos existentes y actualizar PR#2, conservando PRE-01–PRE-11, rama y gate. Base de esta corrección: `9d06677409df185559edcd028b367edca41652c4`; PR abierto, sin revisiones/comentarios públicos en GitHub al inspeccionarlo (la auditoría fue comunicada por el propietario). No se presume que ausencia de comentario público invalide su revisión externa.
+
+### Trabajo y propiedad
+
+Coordinación fue único escritor de siete rutas:03.01,03.02,03.03,03.04,CONF,TRZ y PLANS. `normativa_edicion` investigó fuentes primarias y revisó interpretación en modo de solo lectura; `referencia_independiente` investigó y examinó software/test publicados y después revisó su documentación, sin instalar, clonar, ejecutar motores/pruebas o modificar archivos. Los cuatro contratos se entregaron estables antes de las revisiones. No se crearon documentos nuevos, ni cambió inventario/REG/SRC ni las seis specs01/02.
+
+### Resultado normativo y alternativas sometidas al propietario
+
+**No se consiguió una edición de juego completa con aprobación/fecha/vigencia verificables.** N1 se conserva como referencia documental íntegra identificada, no edición federativa adoptada; N2 y AUX-509 como textos distintos con acceso parcial. [03.01§3](docs/specs/03-game-engine/03.01-normative-rules-and-corpus.md#3-decisiones-fuente-y-autoridad) registra fuentes, fechas, autoridades observadas y límites, distinguiendo Toguz Kumalak de Toguz Korgool/Bestemshe.
+
+Se examinó el [reglamento federativo del torneo escolar Almaty2023](https://mankala.cz/download/togyzqumalaqjun2023.pdf), fecha impresa2023-07-01,§VII pp.3/8; remite a reglas de Federación Mundial sin identificar edición de juego. La [noticia gubernamental del torneo2023-11-13](https://www.gov.kz/memleket/entities/vko-bilim/press/news/details/652688) declara uso de reglas aprobadas por Comité, sin acto ni texto. Ni fecha de torneo ni membrete prueban vigencia de N1/N2.
+
+La [matriz NM-01–10](docs/specs/03-game-engine/03.01-normative-rules-and-corpus.md#matriz-normativa) relaciona fuente/cláusula/interpretación/algoritmo previsto/caso y estado. Avances: reclamante es un participante según N1; dos textos de ofertas difieren1/2; adicional y remanentes aparecen en N2/AUX-509; artículo didáctico KazAST2023 contempla continuidad al repoblar rival, sin valor de norma adoptada. Siguen abiertos:
+- NORM-01: edición/adopción y vigencia.
+- NORM-02: frontera de agotamiento, adicional/origen, repoblación/continuidad, recogida y prioridad terminal.
+- NORM-03: campos de igualdad, historia contada, inicial/consecutividad, habilitación por turno y ventana de reclamación.
+- NORM-04: texto/política de número y momento de ofertas, sin incorporar límite nuevo al MVP.
+
+**Solicitud de decisión humana concreta:** A) identificar/aportar edición completa y aclaraciones vinculantes; o B) aprobar una adaptación del producto explícita/versionada que resuelva cada punto, diferenciada de norma federativa. La opciónB no se autoriza por pedir correcciones. No se escoge una interpretación por resultados de un motor ni por mayoría de páginas. Los PRE no se alteran; gate APRUEBO LOTE 2 continúa pendiente.
+
+### Corpus y referencia independiente
+
+[REF-01](docs/specs/03-game-engine/03.01-normative-rules-and-corpus.md#referencia-independiente): Mind-Sports-Games/strategygames, commit`16e9e824624c54e3963053c13f2901d809f12d2a`, fecha2026-10-06T13:28:24Z, versión declarada`10.2.1-s3-ps15`, MIT. Selección/inspección textual realizadas; comparación ejecutada PENDIENTE. Variante9×2/162 y tuz, desactiva repetición; reparto anticipado al agotarse rival no valida movimiento adicional ni cierre normativo. No se incorporó código externo.
+
+[Corpus corregido](docs/specs/03-game-engine/03.01-normative-rules-and-corpus.md#corpus-corregido):
+- Inicial publicadoN1 y dos casos anteriores de una jugada reclasificados con ruta manual.
+- PATH-REF-01: secuencia publicada de seis jugadas, siete estados completos0–6 derivados manualmente, puntuaciones y tuz contrastados con expectativas textuales del test; alcanzabilidad documental condicionada a reglas comunes, sin replay observado.
+- PUB-TEACH-A7: acción/captura publicada en artículo didáctico, salida completa derivada; no se afirmó transcripción de un diagrama no inspeccionado.
+- ATS-DRAIN/DRAW/REFEED: material completo y alternativas de siembra/recogida, sin salida reglamentaria aceptada.
+- SYN-END-82/81 y SYN-AGREEMENT: evaluación y consentimiento; REP-2/3/TURN/REV/UNAUTH y OFFER-POLICY: ledgers sintéticos/negativos de contrato, sin ciclo legal inventado.
+- Queda pendiente una secuencia legal verificada de triple repetición y oráculos de atsyrau adoptados. No se declara corpus exhaustivo.
+
+03.02–03.04 preservan invariantes y separan perfil de reglas, ledger/ocurrencias/caché, candidato de atsyrau, error de regla no resuelta y ausencia de transición oficial parcial. No se restringe reclamante al jugador de turno por intuición. REF-01 marca tuz1; adaptador conceptual la convierte a cero lógico. Aprobación de contratos propuestos aún pendiente.
+
+### Verificación de esta corrección
+
+Controles documentales realizados en memoria, sin motor ni pruebas de producto:
+- Siete rutas modificadas respecto a9d06677; cero altas/bajas. Árbol conserva42 archivos (41Markdown y .gitignore existente); inventario81/40 y diez specs de lote2 sin cambio.
+- Diez specs con17 apartados1–17 cada una; cuatro03.* v0.2 y seis01/02 v0.1, todas EN_REVISIÓN. Las dos specs de gobierno conservan aprobación.
+- 246 textos fuente/REG idénticos y en orden;246 filas únicas y destinos canónicos originales. Cobertura17/42/187 inalterada;42VP enlazan AC existentes.
+- 2448 vínculos locales sin destinos/anclas ausentes; tablas/fences/IDs explícitos sin errores. Tres ejemplos JSON completos analizados como datos.
+-31 estados numéricos completos de corpus suman162:14 anteriores y17 añadidos. Esto comprueba aritmética, no prueba todos alcanzables; rutaPATH se revisó paso a paso por separado.
+- CopiaSRC conserva SHA256 original28C24C498829FCFAD410F07AAA6BD036D5A33382294401E11E86D486E4ECBBEF. Índice y246 asignaciones no cambian; grafo40 nodos sin ciclos.
+- Detección de patrones de credenciales/archivos sensibles sin hallazgos; git diff --check sin errores. No se crearon herramientas ejecutables, fixtures de producto, dependencias ni recursos externos.
+
+### Revisión y parada
+
+Revisión independiente real, posterior a entrega estable:
+- normativa_edicion contrastó03.01§§3/5/11/16 y03.04§§7/8/16: sin falsas resoluciones o autoridad inflada. Señaló localizador textual dependiente de lengua enN5; coordinación lo cambió por tercer párrafo narrativo. Reconfirmó AUX-CONT punto9 como didáctico.
+- referencia_independiente revisó commit/versión/licencia/código y las seis transicionesPATH, sumas y adaptación de tuz; sin hallazgos bloqueantes. No examinó de nuevo procedencia académica, cubierta por revisión normativa.
+- Coordinación integró las revisiones, corrigió orden/continuidad de tablasAC y comprobó contratos, trazabilidad, estados y fuente. Ambas revisiones son documentales; ninguna acredita adopción normativa o ejecución.
+
+Actualizar el mismo PR#2 con commit descriptivo y comprobación remota de HEAD/archivos; conservar título, base main y estado abierto sin fusionar. Entregar reglas referenciadas, límites, casos y preguntas. El propietario no ha emitido «APRUEBO LOTE 2» y esta investigación no lo sustituye. No continuar a implementación o lote 3.
