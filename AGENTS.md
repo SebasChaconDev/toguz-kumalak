@@ -1,10 +1,12 @@
 # AGENTS — Toguz Kumalak
 
-ID: AGENTS · Versión: 0.1 · Fecha: 2026-10-21 · Estado documental: EN_REVISIÓN · Owner: coordinación.
+> Aprobación posterior: el propietario declaró «APRUEBO LOTE 1» el 2026-10-21 para el contenido revisado en HEAD e38cc84950858e072c1a3f06ffbf854cf7e544f5. PR #1 integrado por squash en main: 329b7c1059e8a74f191c256870734e8ae8259966. Este registro prevalece sobre menciones históricas de revisión pendiente; no acredita producto probado. Los permisos actuales se consultan en AGENTS y PLANS.
+
+ID: AGENTS · Versión: 0.2 · Fecha: 2026-10-21 · Estado documental: APROBADO · Owner: coordinación.
 
 ## Alcance autorizado
 
-El propietario aprobó el inventario con «APRUEBO INVENTARIO DOCUMENTAL» y ordenó generar únicamente el lote 1 y detenerse. Esta autorización permite los 31 Markdown del lote 1 del [inventario](docs/index.md#inventario). No autoriza los lotes 2–6, implementación, pruebas de producto ni infraestructura.
+El propietario aprobó el inventario y después declaró «APRUEBO LOTE 1», autorizando integrar PR #1 únicamente si su HEAD coincidía con e38cc84950858e072c1a3f06ffbf854cf7e544f5. La comprobación se cumplió y el squash en main es 329b7c1059e8a74f191c256870734e8ae8259966. También autorizó el lote 2: exactamente diez specs de los dominios 01, 02 y 03 del [inventario](docs/index.md#inventario), y las actualizaciones necesarias de índice, trazabilidad, riesgos y planes. Se permite rama docs/specs-lote-02, commits, push y PR hacia main. No fusionar el PR del lote 2, generar lote 3, implementar, instalar ni desplegar.
 
 Lee primero el [estado y los gates](PLANS.md), el [registro](docs/decision-register.md), los [conflictos](docs/conflicts.md) y las decisiones pertinentes. El [maestro archivado](docs/sources/TOGUZ_PROMPT_MAESTRO_CODEX.md) conserva la fuente íntegra.
 
@@ -27,7 +29,7 @@ La aprobación de un inventario no aprueba el contenido todavía no revisado. Di
 - Crear o modificar únicamente rutas `.md` expresamente autorizadas. Los ejemplos permanecen dentro de bloques Markdown.
 - No crear código, manifiestos, configuraciones, assets, secretos ni verificadores ejecutables en disco. Los análisis de texto pueden ejecutarse en memoria sin instalar herramientas.
 - No instalar, iniciar servicios, ejecutar pruebas de producto, migrar, emitir tokens, conectar proveedores, provisionar ni desplegar.
-- No crear ramas, commits, pushes o PR; no modificar GitHub ni el índice/configuración Git. Usar consultas Git de solo lectura sin locks opcionales.
+- Git y GitHub se limitan a la autorización posterior vigente: cierre del PR #1 con HEAD condicionado, registros de aprobación y publicación del lote 2 mediante PR sin fusionarlo. No force push, no eludir protecciones ni operaciones ajenas al alcance.
 - No añadir un cuarto microservicio, motor TypeScript, infraestructura obligatoria Redis/Socket.IO ni costes sin nueva aprobación.
 - Mantener MVP base y ampliado en el lanzamiento comprometido. Local no implica offline.
 - No declarar FPS, fuerza de IA, latencia, costes, restauración o despliegue como medidos sin evidencia observada.
@@ -44,4 +46,4 @@ La aprobación de un inventario no aprueba el contenido todavía no revisado. Di
 
 ## Parada obligatoria
 
-Al terminar el lote 1, informar archivos creados, decisiones cubiertas, verificaciones realizadas, dependencias, riesgos y pendientes. Dejar documentos `EN_REVISIÓN` y solicitar «APRUEBO LOTE 1». Detenerse hasta nueva instrucción; no comenzar automáticamente el lote 2.
+Al terminar el lote 2, informar los diez archivos, matriz de decisiones, dependencias, fuentes normativas, conflictos, verificaciones y pendientes. Los nuevos documentos permanecen `EN_REVISIÓN`. Publicar PR sin fusionar, solicitar «APRUEBO LOTE 2» y detenerse. El gate solo se satisface con autorización humana explícita.

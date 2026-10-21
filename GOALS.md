@@ -1,10 +1,12 @@
 # GOALS — Objetivos y alcance comprometido
 
-ID: GOALS · Versión: 0.1 · Fecha: 2026-10-21 · Estado documental: EN_REVISIÓN · Owner: C.
+> Aprobación posterior: el propietario declaró «APRUEBO LOTE 1» el 2026-10-21 para el contenido revisado en HEAD e38cc84950858e072c1a3f06ffbf854cf7e544f5. PR #1 integrado por squash en main: 329b7c1059e8a74f191c256870734e8ae8259966. Este registro prevalece sobre menciones históricas de revisión pendiente; no acredita producto probado. Los permisos actuales se consultan en AGENTS y PLANS.
+
+ID: GOALS · Versión: 0.2 · Fecha: 2026-10-21 · Estado documental: APROBADO · Owner: C.
 
 ## Objetivo de la misión actual
 
-Transformar las 246 decisiones de PRE-01 a PRE-11 en especificaciones Markdown trazables y revisables por lotes. El propietario aprobó el inventario de 81 archivos y la generación exclusiva de 31 archivos del lote 1. El resultado de esta sesión es documentación EN_REVISIÓN; el producto no se implementa.
+Transformar las 246 decisiones de PRE-01 a PRE-11 en especificaciones Markdown trazables y revisables por lotes. El propietario aprobó el inventario de 81 archivos y el lote 1 de 31 Markdown, ya integrado. Autorizó diez specs del lote 2 y su PR sin fusionar; las nuevas specs quedan EN_REVISIÓN y el producto no se implementa.
 
 Fuentes: [maestro íntegro](docs/sources/TOGUZ_PROMPT_MAESTRO_CODEX.md), [REG](docs/decision-register.md), [inventario aprobado](docs/index.md#inventario), [PLANS](PLANS.md).
 

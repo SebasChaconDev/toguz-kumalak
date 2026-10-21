@@ -1,6 +1,8 @@
 # IDX — Índice e inventario documental
 
-ID: IDX · Versión: 0.1 · Fecha: 2026-10-21 · Estado documental: EN_REVISIÓN · Owner: C.
+> Aprobación posterior: el propietario declaró «APRUEBO LOTE 1» el 2026-10-21 para el contenido revisado en HEAD e38cc84950858e072c1a3f06ffbf854cf7e544f5. PR #1 integrado por squash en main: 329b7c1059e8a74f191c256870734e8ae8259966. Este registro prevalece sobre menciones históricas de revisión pendiente; no acredita producto probado. Los permisos actuales se consultan en AGENTS y PLANS.
+
+ID: IDX · Versión: 0.2 · Fecha: 2026-10-21 · Estado documental: APROBADO · Owner: C.
 
 ## Estado de la entrega
 
@@ -24,37 +26,37 @@ Los vínculos de lote 1 apuntan a archivos entregados. Las rutas futuras se mues
 
 | ID | Archivo o ruta prevista | Propósito / entradas y dependencias | Owner | Complejidad | Estado |
 |---|---|---|---|---|---|
-| <a id="agents"></a>AGENTS | [AGENTS.md](../AGENTS.md) | Instrucciones operativas y límites | C | M | EN_REVISIÓN |
-| <a id="goals"></a>GOALS | [GOALS.md](../GOALS.md) | Objetivos y alcance comprometido | C | M | EN_REVISIÓN |
-| <a id="plans"></a>PLANS | [PLANS.md](../PLANS.md) | Gates, lotes y roadmap documental | C | M | EN_REVISIÓN |
-| <a id="prompts"></a>PROMPTS | [PROMPTS.md](../PROMPTS.md) | Briefs y prompts de trabajo autorizable | C | M | EN_REVISIÓN |
-| <a id="readme"></a>README | [README.md](../README.md) | Presentación y estado profesional | C | M | EN_REVISIÓN |
-| <a id="src"></a>SRC | [docs/sources/TOGUZ_PROMPT_MAESTRO_CODEX.md](sources/TOGUZ_PROMPT_MAESTRO_CODEX.md) | Copia íntegra y sin cambios del maestro | C | B | EN_REVISIÓN |
-| <a id="reg"></a>REG | [docs/decision-register.md](decision-register.md) | 246 decisiones literales y destinos canónicos | C | M | EN_REVISIÓN |
-| <a id="conf"></a>CONF | [docs/conflicts.md](conflicts.md) | Riesgos, discrepancias y validaciones pendientes | C | M | EN_REVISIÓN |
-| <a id="idx"></a>IDX | [docs/index.md](index.md) | Inventario y dependencias | C | B | EN_REVISIÓN |
-| <a id="trz"></a>TRZ | [docs/traceability.md](traceability.md) | Decisión→spec→fase→componente→verificación→evidencia | C | M | EN_REVISIÓN |
-| <a id="pre-01"></a>PRE-01 | [docs/preliminares/PRE-01.md](preliminares/PRE-01.md) | Contexto de 17 decisiones de REG; sin reconstruir cuestionarios. | A | M | EN_REVISIÓN |
-| <a id="pre-02"></a>PRE-02 | [docs/preliminares/PRE-02.md](preliminares/PRE-02.md) | Contexto de 18 decisiones de REG; sin reconstruir cuestionarios. | C | M | EN_REVISIÓN |
-| <a id="pre-03"></a>PRE-03 | [docs/preliminares/PRE-03.md](preliminares/PRE-03.md) | Contexto de 22 decisiones de REG; sin reconstruir cuestionarios. | M | M | EN_REVISIÓN |
-| <a id="pre-04"></a>PRE-04 | [docs/preliminares/PRE-04.md](preliminares/PRE-04.md) | Contexto de 25 decisiones de REG; sin reconstruir cuestionarios. | V | M | EN_REVISIÓN |
-| <a id="pre-05"></a>PRE-05 | [docs/preliminares/PRE-05.md](preliminares/PRE-05.md) | Contexto de 24 decisiones de REG; sin reconstruir cuestionarios. | S | M | EN_REVISIÓN |
-| <a id="pre-06"></a>PRE-06 | [docs/preliminares/PRE-06.md](preliminares/PRE-06.md) | Contexto de 20 decisiones de REG; sin reconstruir cuestionarios. | S | M | EN_REVISIÓN |
-| <a id="pre-07"></a>PRE-07 | [docs/preliminares/PRE-07.md](preliminares/PRE-07.md) | Contexto de 24 decisiones de REG; sin reconstruir cuestionarios. | S | M | EN_REVISIÓN |
-| <a id="pre-08"></a>PRE-08 | [docs/preliminares/PRE-08.md](preliminares/PRE-08.md) | Contexto de 24 decisiones de REG; sin reconstruir cuestionarios. | I | M | EN_REVISIÓN |
-| <a id="pre-09"></a>PRE-09 | [docs/preliminares/PRE-09.md](preliminares/PRE-09.md) | Contexto de 24 decisiones de REG; sin reconstruir cuestionarios. | Q | M | EN_REVISIÓN |
-| <a id="pre-10"></a>PRE-10 | [docs/preliminares/PRE-10.md](preliminares/PRE-10.md) | Contexto de 24 decisiones de REG; sin reconstruir cuestionarios. | A | M | EN_REVISIÓN |
-| <a id="pre-11"></a>PRE-11 | [docs/preliminares/PRE-11.md](preliminares/PRE-11.md) | Contexto de 24 decisiones de REG; sin reconstruir cuestionarios. | C | M | EN_REVISIÓN |
-| <a id="adr-0001"></a>ADR-0001 | [docs/adr/ADR-0001-three-go-services-and-data-ownership.md](adr/ADR-0001-three-go-services-and-data-ownership.md) | Decisión arquitectónica existente; REG y PRE pertinentes; alternativas y validación futura. | A | M | EN_REVISIÓN |
-| <a id="adr-0002"></a>ADR-0002 | [docs/adr/ADR-0002-single-versioned-go-engine.md](adr/ADR-0002-single-versioned-go-engine.md) | Decisión arquitectónica existente; REG y PRE pertinentes; alternativas y validación futura. | M | M | EN_REVISIÓN |
-| <a id="adr-0003"></a>ADR-0003 | [docs/adr/ADR-0003-rest-contracts-and-versioned-events.md](adr/ADR-0003-rest-contracts-and-versioned-events.md) | Decisión arquitectónica existente; REG y PRE pertinentes; alternativas y validación futura. | S | M | EN_REVISIÓN |
-| <a id="adr-0004"></a>ADR-0004 | [docs/adr/ADR-0004-postgres-authority-and-postcommit-ably.md](adr/ADR-0004-postgres-authority-and-postcommit-ably.md) | Decisión arquitectónica existente; REG y PRE pertinentes; alternativas y validación futura. | S | M | EN_REVISIÓN |
-| <a id="adr-0005"></a>ADR-0005 | [docs/adr/ADR-0005-session-and-service-trust-boundaries.md](adr/ADR-0005-session-and-service-trust-boundaries.md) | Decisión arquitectónica existente; REG y PRE pertinentes; alternativas y validación futura. | S | M | EN_REVISIÓN |
-| <a id="adr-0006"></a>ADR-0006 | [docs/adr/ADR-0006-vercel-hobby-and-zero-cost-guardrails.md](adr/ADR-0006-vercel-hobby-and-zero-cost-guardrails.md) | Decisión arquitectónica existente; REG y PRE pertinentes; alternativas y validación futura. | A | M | EN_REVISIÓN |
-| <a id="adr-0007"></a>ADR-0007 | [docs/adr/ADR-0007-3d-and-accessible-html-view.md](adr/ADR-0007-3d-and-accessible-html-view.md) | Decisión arquitectónica existente; REG y PRE pertinentes; alternativas y validación futura. | V | M | EN_REVISIÓN |
-| <a id="adr-0008"></a>ADR-0008 | [docs/adr/ADR-0008-ranked-results-and-elo-ownership.md](adr/ADR-0008-ranked-results-and-elo-ownership.md) | Decisión arquitectónica existente; REG y PRE pertinentes; alternativas y validación futura. | S | M | EN_REVISIÓN |
-| <a id="spec-11-01"></a>11.01 | [docs/specs/11-orchestration/11.01-document-standard-and-change-control.md](specs/11-orchestration/11.01-document-standard-and-change-control.md) | Norma documental y control de cambios; entradas PRE-11.A1, PRE-11.A2, PRE-11.A3, PRE-11.A4, PRE-11.B1, PRE-11.B2, PRE-11.B3, PRE-11.B4, PRE-11.D4, PRE-11.E1, PRE-11.E4, PRE-11.F1, PRE-11.F3. Dependencias: REG y maestro. | C | A | EN_REVISIÓN |
-| <a id="spec-11-02"></a>11.02 | [docs/specs/11-orchestration/11.02-ownership-delegation-and-context.md](specs/11-orchestration/11.02-ownership-delegation-and-context.md) | Propiedad, delegación y contexto; entradas PRE-11.C1, PRE-11.C2, PRE-11.C3, PRE-11.C4. Dependencias: [11.01](#spec-11-01). | C | M | EN_REVISIÓN |
+| <a id="agents"></a>AGENTS | [AGENTS.md](../AGENTS.md) | Instrucciones operativas y límites | C | M | APROBADO |
+| <a id="goals"></a>GOALS | [GOALS.md](../GOALS.md) | Objetivos y alcance comprometido | C | M | APROBADO |
+| <a id="plans"></a>PLANS | [PLANS.md](../PLANS.md) | Gates, lotes y roadmap documental | C | M | APROBADO |
+| <a id="prompts"></a>PROMPTS | [PROMPTS.md](../PROMPTS.md) | Briefs y prompts de trabajo autorizable | C | M | APROBADO |
+| <a id="readme"></a>README | [README.md](../README.md) | Presentación y estado profesional | C | M | APROBADO |
+| <a id="src"></a>SRC | [docs/sources/TOGUZ_PROMPT_MAESTRO_CODEX.md](sources/TOGUZ_PROMPT_MAESTRO_CODEX.md) | Copia íntegra y sin cambios del maestro | C | B | APROBADO |
+| <a id="reg"></a>REG | [docs/decision-register.md](decision-register.md) | 246 decisiones literales y destinos canónicos | C | M | APROBADO |
+| <a id="conf"></a>CONF | [docs/conflicts.md](conflicts.md) | Riesgos, discrepancias y validaciones pendientes | C | M | APROBADO |
+| <a id="idx"></a>IDX | [docs/index.md](index.md) | Inventario y dependencias | C | B | APROBADO |
+| <a id="trz"></a>TRZ | [docs/traceability.md](traceability.md) | Decisión→spec→fase→componente→verificación→evidencia | C | M | APROBADO |
+| <a id="pre-01"></a>PRE-01 | [docs/preliminares/PRE-01.md](preliminares/PRE-01.md) | Contexto de 17 decisiones de REG; sin reconstruir cuestionarios. | A | M | APROBADO |
+| <a id="pre-02"></a>PRE-02 | [docs/preliminares/PRE-02.md](preliminares/PRE-02.md) | Contexto de 18 decisiones de REG; sin reconstruir cuestionarios. | C | M | APROBADO |
+| <a id="pre-03"></a>PRE-03 | [docs/preliminares/PRE-03.md](preliminares/PRE-03.md) | Contexto de 22 decisiones de REG; sin reconstruir cuestionarios. | M | M | APROBADO |
+| <a id="pre-04"></a>PRE-04 | [docs/preliminares/PRE-04.md](preliminares/PRE-04.md) | Contexto de 25 decisiones de REG; sin reconstruir cuestionarios. | V | M | APROBADO |
+| <a id="pre-05"></a>PRE-05 | [docs/preliminares/PRE-05.md](preliminares/PRE-05.md) | Contexto de 24 decisiones de REG; sin reconstruir cuestionarios. | S | M | APROBADO |
+| <a id="pre-06"></a>PRE-06 | [docs/preliminares/PRE-06.md](preliminares/PRE-06.md) | Contexto de 20 decisiones de REG; sin reconstruir cuestionarios. | S | M | APROBADO |
+| <a id="pre-07"></a>PRE-07 | [docs/preliminares/PRE-07.md](preliminares/PRE-07.md) | Contexto de 24 decisiones de REG; sin reconstruir cuestionarios. | S | M | APROBADO |
+| <a id="pre-08"></a>PRE-08 | [docs/preliminares/PRE-08.md](preliminares/PRE-08.md) | Contexto de 24 decisiones de REG; sin reconstruir cuestionarios. | I | M | APROBADO |
+| <a id="pre-09"></a>PRE-09 | [docs/preliminares/PRE-09.md](preliminares/PRE-09.md) | Contexto de 24 decisiones de REG; sin reconstruir cuestionarios. | Q | M | APROBADO |
+| <a id="pre-10"></a>PRE-10 | [docs/preliminares/PRE-10.md](preliminares/PRE-10.md) | Contexto de 24 decisiones de REG; sin reconstruir cuestionarios. | A | M | APROBADO |
+| <a id="pre-11"></a>PRE-11 | [docs/preliminares/PRE-11.md](preliminares/PRE-11.md) | Contexto de 24 decisiones de REG; sin reconstruir cuestionarios. | C | M | APROBADO |
+| <a id="adr-0001"></a>ADR-0001 | [docs/adr/ADR-0001-three-go-services-and-data-ownership.md](adr/ADR-0001-three-go-services-and-data-ownership.md) | Decisión arquitectónica existente; REG y PRE pertinentes; alternativas y validación futura. | A | M | APROBADO |
+| <a id="adr-0002"></a>ADR-0002 | [docs/adr/ADR-0002-single-versioned-go-engine.md](adr/ADR-0002-single-versioned-go-engine.md) | Decisión arquitectónica existente; REG y PRE pertinentes; alternativas y validación futura. | M | M | APROBADO |
+| <a id="adr-0003"></a>ADR-0003 | [docs/adr/ADR-0003-rest-contracts-and-versioned-events.md](adr/ADR-0003-rest-contracts-and-versioned-events.md) | Decisión arquitectónica existente; REG y PRE pertinentes; alternativas y validación futura. | S | M | APROBADO |
+| <a id="adr-0004"></a>ADR-0004 | [docs/adr/ADR-0004-postgres-authority-and-postcommit-ably.md](adr/ADR-0004-postgres-authority-and-postcommit-ably.md) | Decisión arquitectónica existente; REG y PRE pertinentes; alternativas y validación futura. | S | M | APROBADO |
+| <a id="adr-0005"></a>ADR-0005 | [docs/adr/ADR-0005-session-and-service-trust-boundaries.md](adr/ADR-0005-session-and-service-trust-boundaries.md) | Decisión arquitectónica existente; REG y PRE pertinentes; alternativas y validación futura. | S | M | APROBADO |
+| <a id="adr-0006"></a>ADR-0006 | [docs/adr/ADR-0006-vercel-hobby-and-zero-cost-guardrails.md](adr/ADR-0006-vercel-hobby-and-zero-cost-guardrails.md) | Decisión arquitectónica existente; REG y PRE pertinentes; alternativas y validación futura. | A | M | APROBADO |
+| <a id="adr-0007"></a>ADR-0007 | [docs/adr/ADR-0007-3d-and-accessible-html-view.md](adr/ADR-0007-3d-and-accessible-html-view.md) | Decisión arquitectónica existente; REG y PRE pertinentes; alternativas y validación futura. | V | M | APROBADO |
+| <a id="adr-0008"></a>ADR-0008 | [docs/adr/ADR-0008-ranked-results-and-elo-ownership.md](adr/ADR-0008-ranked-results-and-elo-ownership.md) | Decisión arquitectónica existente; REG y PRE pertinentes; alternativas y validación futura. | S | M | APROBADO |
+| <a id="spec-11-01"></a>11.01 | [docs/specs/11-orchestration/11.01-document-standard-and-change-control.md](specs/11-orchestration/11.01-document-standard-and-change-control.md) | Norma documental y control de cambios; entradas PRE-11.A1, PRE-11.A2, PRE-11.A3, PRE-11.A4, PRE-11.B1, PRE-11.B2, PRE-11.B3, PRE-11.B4, PRE-11.D4, PRE-11.E1, PRE-11.E4, PRE-11.F1, PRE-11.F3. Dependencias: REG y maestro. | C | A | APROBADO |
+| <a id="spec-11-02"></a>11.02 | [docs/specs/11-orchestration/11.02-ownership-delegation-and-context.md](specs/11-orchestration/11.02-ownership-delegation-and-context.md) | Propiedad, delegación y contexto; entradas PRE-11.C1, PRE-11.C2, PRE-11.C3, PRE-11.C4. Dependencias: [11.01](#spec-11-01). | C | M | APROBADO |
 
 ### Lote 2 — 10 archivos
 
@@ -187,3 +189,7 @@ SRC → REG → inventario/trazabilidad inicial → 11.01 → AGENTS y 11.02 →
 - Lote 6: auditoría independiente; los cambios semánticos vuelven al propietario.
 
 No hay autorización de redacción para estas secuencias posteriores en la sesión actual. [PLANS](../PLANS.md) conserva el gate vigente.
+
+## Estado posterior a aprobación del lote 1
+
+Lote 1 APROBADO por el propietario e integrado en main mediante squash 329b7c1059e8a74f191c256870734e8ae8259966. La autorización actual comprende diez specs del lote 2 y registros necesarios, sin ejecución de producto. Las referencias anteriores a distribución 29+2 describen la publicación previa al merge; main contiene ahora los 31 Markdown. Lotes 3–6 siguen pendientes.

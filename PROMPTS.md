@@ -1,6 +1,8 @@
 # PROMPTS — Contratos de trabajo documental
 
-ID: PROMPTS · Versión: 0.1 · Fecha: 2026-10-21 · Estado documental: EN_REVISIÓN · Owner: C.
+> Aprobación posterior: el propietario declaró «APRUEBO LOTE 1» el 2026-10-21 para el contenido revisado en HEAD e38cc84950858e072c1a3f06ffbf854cf7e544f5. PR #1 integrado por squash en main: 329b7c1059e8a74f191c256870734e8ae8259966. Este registro prevalece sobre menciones históricas de revisión pendiente; no acredita producto probado. Los permisos actuales se consultan en AGENTS y PLANS.
+
+ID: PROMPTS · Versión: 0.2 · Fecha: 2026-10-21 · Estado documental: APROBADO · Owner: C.
 
 ## Uso y precedencia
 
@@ -119,3 +121,7 @@ Aceptación: cada hallazgo cita fuente y no declara integración probada.
 ```
 
 Es un ejemplo de contrato de tarea, no una orden de ejecutarla. La trazabilidad de trabajo real se conserva en el reporte del lote; los planes de harness quedan para lote 5.
+
+## Permiso vigente posterior
+
+El propietario aprobó lote 1 e integración condicionada del PR #1 (HEAD verificado e38cc84950858e072c1a3f06ffbf854cf7e544f5, squash 329b7c1059e8a74f191c256870734e8ae8259966) y autorizó únicamente lote 2 documental, diez specs, registros necesarios y PR desde docs/specs-lote-02 sin fusionar. El siguiente gate es «APRUEBO LOTE 2». Las menciones anteriores a lote 1 en ejemplos son históricas, no el permiso vigente.

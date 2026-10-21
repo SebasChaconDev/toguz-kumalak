@@ -1,10 +1,12 @@
 # Toguz Kumalak
 
-ID: README · Versión: 0.1 · Fecha: 2026-10-21 · Estado documental: EN_REVISIÓN · Owner: C.
+> Aprobación posterior: el propietario declaró «APRUEBO LOTE 1» el 2026-10-21 para el contenido revisado en HEAD e38cc84950858e072c1a3f06ffbf854cf7e544f5. PR #1 integrado por squash en main: 329b7c1059e8a74f191c256870734e8ae8259966. Este registro prevalece sobre menciones históricas de revisión pendiente; no acredita producto probado. Los permisos actuales se consultan en AGENTS y PLANS.
 
-**Estado actual: arquitectura documental en curso. Implementación no iniciada.** El lote 1 contiene bases, decisiones, ADR y normas de trabajo pendientes de revisión humana. No hay aplicación jugable, demo desplegada, pruebas de producto o proveedores conectados acreditados.
+ID: README · Versión: 0.2 · Fecha: 2026-10-21 · Estado documental: APROBADO · Owner: C.
 
-Publicación documental autorizada: repositorio público de portafolio `SebasChaconDev/toguz-kumalak`. La base `main` contiene 29 Markdown y `.gitignore`; las dos especificaciones existentes, 11.01 y 11.02, se presentan en `docs/specs-lote-01` mediante un PR sin fusionar. Los enlaces a esas specs desde la base apuntan a la rama de revisión; en la rama del PR se conservan relativos. Publicar no equivale a aprobar el lote ni a implementar el producto.
+**Estado actual: lote 1 aprobado e integrado; lote 2 documental autorizado. Implementación no iniciada.** No hay aplicación jugable, demo desplegada, pruebas de producto o proveedores conectados acreditados.
+
+Repositorio público de portafolio `SebasChaconDev/toguz-kumalak`: `main` contiene los 31 Markdown del lote 1 y `.gitignore`. El [PR #1](https://github.com/SebasChaconDev/toguz-kumalak/pull/1) fue integrado por squash 329b7c1059e8a74f191c256870734e8ae8259966 tras aprobación humana y verificación del HEAD autorizado. Las diez specs del lote 2 se redactarán en `docs/specs-lote-02`, permanecerán EN_REVISIÓN y se presentarán por PR sin fusionarlo. La aprobación documental no acredita implementación.
 
 ## Producto previsto
 

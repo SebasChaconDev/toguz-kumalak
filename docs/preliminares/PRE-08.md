@@ -1,6 +1,8 @@
 # PRE-08 — IA, práctica y tutorial
 
-ID: PRE-08 · Versión: 0.1 · Fecha: 2026-10-21 · Estado documental: EN_REVISIÓN · Owner: I — IA.
+> Aprobación posterior: el propietario declaró «APRUEBO LOTE 1» el 2026-10-21 para el contenido revisado en HEAD e38cc84950858e072c1a3f06ffbf854cf7e544f5. PR #1 integrado por squash en main: 329b7c1059e8a74f191c256870734e8ae8259966. Este registro prevalece sobre menciones históricas de revisión pendiente; no acredita producto probado. Los permisos actuales se consultan en AGENTS y PLANS.
+
+ID: PRE-08 · Versión: 0.2 · Fecha: 2026-10-21 · Estado documental: APROBADO · Owner: I — IA.
 
 ## Objetivo y contexto
 
