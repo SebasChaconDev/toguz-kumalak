@@ -2,7 +2,7 @@
 
 ID: ADR-0008 · Versión: 0.1 · Fecha: 2026-10-21 · Estado documental: EN_REVISIÓN · Owner funcional: S (servicios y seguridad).
 
-Dominio: 06/07, resultados y clasificación · Lote: 1. Formato y cambios: [11.01](https://github.com/SebasChaconDev/toguz-kumalak/blob/docs/specs-lote-01/docs/specs/11-orchestration/11.01-document-standard-and-change-control.md); propiedad de escritura: [11.02](https://github.com/SebasChaconDev/toguz-kumalak/blob/docs/specs-lote-01/docs/specs/11-orchestration/11.02-ownership-delegation-and-context.md).
+Dominio: 06/07, resultados y clasificación · Lote: 1. Formato y cambios: [11.01](../specs/11-orchestration/11.01-document-standard-and-change-control.md); propiedad de escritura: [11.02](../specs/11-orchestration/11.02-ownership-delegation-and-context.md).
 
 Decisión base: APROBADO EN FUENTE. Validación técnica: POR_VERIFICAR. La fórmula detallada, concurrencia y controles de abuso aún necesitan especificación y pruebas; esta ADR no afirma un ranking operativo.
 

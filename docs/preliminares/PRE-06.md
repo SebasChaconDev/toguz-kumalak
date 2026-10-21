@@ -45,7 +45,7 @@ Ably sustituye Socket.IO como notificación privada, sin socket propio persisten
 
 ## Dependencias y fuentes canónicas
 
-El [dominio 06 del índice](../index.md#spec-06-01) es `PENDIENTE_LOTE_3`. Consume transacciones/eventos de [PRE-05](PRE-05.md), sesiones y Elo de [PRE-07](PRE-07.md), resultado/causa de [PRE-03](PRE-03.md) y UX de [PRE-04](PRE-04.md). Seguir [11.01](https://github.com/SebasChaconDev/toguz-kumalak/blob/docs/specs-lote-01/docs/specs/11-orchestration/11.01-document-standard-and-change-control.md), [11.02](https://github.com/SebasChaconDev/toguz-kumalak/blob/docs/specs-lote-01/docs/specs/11-orchestration/11.02-ownership-delegation-and-context.md) y [trazabilidad](../traceability.md).
+El [dominio 06 del índice](../index.md#spec-06-01) es `PENDIENTE_LOTE_3`. Consume transacciones/eventos de [PRE-05](PRE-05.md), sesiones y Elo de [PRE-07](PRE-07.md), resultado/causa de [PRE-03](PRE-03.md) y UX de [PRE-04](PRE-04.md). Seguir [11.01](../specs/11-orchestration/11.01-document-standard-and-change-control.md), [11.02](../specs/11-orchestration/11.02-ownership-delegation-and-context.md) y [trazabilidad](../traceability.md).
 
 ## Límites, riesgos y cuestiones pendientes
 

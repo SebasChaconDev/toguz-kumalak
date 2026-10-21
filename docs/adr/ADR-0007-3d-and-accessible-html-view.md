@@ -2,7 +2,7 @@
 
 ID: ADR-0007 · Versión: 0.1 · Fecha: 2026-10-21 · Estado documental: EN_REVISIÓN · Owner funcional: V (visual y UX).
 
-Dominio: 04/08, experiencia visual y accesible · Lote: 1. Formato y cambios: [11.01](https://github.com/SebasChaconDev/toguz-kumalak/blob/docs/specs-lote-01/docs/specs/11-orchestration/11.01-document-standard-and-change-control.md); propiedad de escritura: [11.02](https://github.com/SebasChaconDev/toguz-kumalak/blob/docs/specs-lote-01/docs/specs/11-orchestration/11.02-ownership-delegation-and-context.md).
+Dominio: 04/08, experiencia visual y accesible · Lote: 1. Formato y cambios: [11.01](../specs/11-orchestration/11.01-document-standard-and-change-control.md); propiedad de escritura: [11.02](../specs/11-orchestration/11.02-ownership-delegation-and-context.md).
 
 Decisión base: APROBADO EN FUENTE. Validación técnica: POR_VERIFICAR. No existen evidencias de escenas, assets, accesibilidad, FPS o dispositivos probados por esta ADR.
 

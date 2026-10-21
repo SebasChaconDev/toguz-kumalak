@@ -1559,6 +1559,6 @@ Los IDs son los originales `PRE-NN.Xn`; no se reconstruyen opciones de cuestiona
 
 ## Actualización y revisión
 
-Toda modificación semántica exige propuesta de cambio, impacto sobre consumidores, ADR cuando corresponda y aprobación humana. No reemplazar el texto histórico: añadir resolución aprobada y su relación de sustitución. [11.01](https://github.com/SebasChaconDev/toguz-kumalak/blob/docs/specs-lote-01/docs/specs/11-orchestration/11.01-document-standard-and-change-control.md) define el procedimiento.
+Toda modificación semántica exige propuesta de cambio, impacto sobre consumidores, ADR cuando corresponda y aprobación humana. No reemplazar el texto histórico: añadir resolución aprobada y su relación de sustitución. [11.01](specs/11-orchestration/11.01-document-standard-and-change-control.md) define el procedimiento.
 
 Aceptación de este registro: 246 IDs únicos; conteos PRE iguales a la fuente; 246 textos iguales al anexo; un destino canónico válido por ID; sustituciones conservadas; ninguna afirmación de implementación. Las comprobaciones y pendientes del lote se registran en [PLANS](../PLANS.md#informe-lote-1).

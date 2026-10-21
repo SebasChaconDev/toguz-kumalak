@@ -47,7 +47,7 @@ Las tablas acordadas y la reclamación por repetición amplían [PRE-02.C4](../d
 
 ## Dependencias y fuentes canónicas
 
-El [dominio 03 del índice](../index.md#spec-03-01), `PENDIENTE_LOTE_2`, debe resolver primero fuente normativa, convención y corpus. [PRE-05](PRE-05.md) delimita transacción, [PRE-04](PRE-04.md) consume eventos, [PRE-08](PRE-08.md) detalla IA/práctica y [PRE-09](PRE-09.md) define evidencia. Seguir [11.01](https://github.com/SebasChaconDev/toguz-kumalak/blob/docs/specs-lote-01/docs/specs/11-orchestration/11.01-document-standard-and-change-control.md), [11.02](https://github.com/SebasChaconDev/toguz-kumalak/blob/docs/specs-lote-01/docs/specs/11-orchestration/11.02-ownership-delegation-and-context.md) y [trazabilidad](../traceability.md).
+El [dominio 03 del índice](../index.md#spec-03-01), `PENDIENTE_LOTE_2`, debe resolver primero fuente normativa, convención y corpus. [PRE-05](PRE-05.md) delimita transacción, [PRE-04](PRE-04.md) consume eventos, [PRE-08](PRE-08.md) detalla IA/práctica y [PRE-09](PRE-09.md) define evidencia. Seguir [11.01](../specs/11-orchestration/11.01-document-standard-and-change-control.md), [11.02](../specs/11-orchestration/11.02-ownership-delegation-and-context.md) y [trazabilidad](../traceability.md).
 
 ## Límites, riesgos y cuestiones pendientes
 

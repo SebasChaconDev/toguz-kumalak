@@ -49,7 +49,7 @@ No se simulan cuestionarios originales ni respuestas no conservadas: estos PRE s
 
 ## Dependencias y fuentes canónicas
 
-Las normas actuales son [11.01 — estándar y cambios](https://github.com/SebasChaconDev/toguz-kumalak/blob/docs/specs-lote-01/docs/specs/11-orchestration/11.01-document-standard-and-change-control.md) y [11.02 — ownership y contexto](https://github.com/SebasChaconDev/toguz-kumalak/blob/docs/specs-lote-01/docs/specs/11-orchestration/11.02-ownership-delegation-and-context.md). Consultar [AGENTS](../../AGENTS.md), [PLANS](../../PLANS.md), [índice](../index.md), [conflictos](../conflicts.md) y [trazabilidad](../traceability.md). Los restantes documentos del [dominio 11](../index.md#spec-11-01) y las fases conservan su lote según el inventario; no se crean para completar enlaces. Todos los PRE anteriores aportan requisitos a esta disciplina transversal.
+Las normas actuales son [11.01 — estándar y cambios](../specs/11-orchestration/11.01-document-standard-and-change-control.md) y [11.02 — ownership y contexto](../specs/11-orchestration/11.02-ownership-delegation-and-context.md). Consultar [AGENTS](../../AGENTS.md), [PLANS](../../PLANS.md), [índice](../index.md), [conflictos](../conflicts.md) y [trazabilidad](../traceability.md). Los restantes documentos del [dominio 11](../index.md#spec-11-01) y las fases conservan su lote según el inventario; no se crean para completar enlaces. Todos los PRE anteriores aportan requisitos a esta disciplina transversal.
 
 ## Límites, riesgos y cuestiones pendientes
 

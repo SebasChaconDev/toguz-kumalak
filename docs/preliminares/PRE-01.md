@@ -42,7 +42,7 @@ El stack vigente reemplaza Node/Fastify por Go/Gin, Railway por Vercel, Socket.I
 
 ## Dependencias y fuentes canónicas
 
-Consumir [PRE-05](PRE-05.md) para límites de servicios y datos, [PRE-07](PRE-07.md) para identidad, [PRE-10](PRE-10.md) para operación y [PRE-11](PRE-11.md) para control documental. La definición detallada de infraestructura se mantiene en el [dominio 01 del índice](../index.md#spec-01-01), `PENDIENTE_LOTE_2`. Las reglas de elaboración son [11.01](https://github.com/SebasChaconDev/toguz-kumalak/blob/docs/specs-lote-01/docs/specs/11-orchestration/11.01-document-standard-and-change-control.md) y [11.02](https://github.com/SebasChaconDev/toguz-kumalak/blob/docs/specs-lote-01/docs/specs/11-orchestration/11.02-ownership-delegation-and-context.md); la cobertura se integra en [trazabilidad](../traceability.md).
+Consumir [PRE-05](PRE-05.md) para límites de servicios y datos, [PRE-07](PRE-07.md) para identidad, [PRE-10](PRE-10.md) para operación y [PRE-11](PRE-11.md) para control documental. La definición detallada de infraestructura se mantiene en el [dominio 01 del índice](../index.md#spec-01-01), `PENDIENTE_LOTE_2`. Las reglas de elaboración son [11.01](../specs/11-orchestration/11.01-document-standard-and-change-control.md) y [11.02](../specs/11-orchestration/11.02-ownership-delegation-and-context.md); la cobertura se integra en [trazabilidad](../traceability.md).
 
 ## Límites, riesgos y cuestiones pendientes
 

@@ -34,7 +34,7 @@ La aprobación de un inventario no aprueba el contenido todavía no revisado. Di
 
 ## Trabajo documental
 
-- Sigue [11.01](https://github.com/SebasChaconDev/toguz-kumalak/blob/docs/specs-lote-01/docs/specs/11-orchestration/11.01-document-standard-and-change-control.md) y [11.02](https://github.com/SebasChaconDev/toguz-kumalak/blob/docs/specs-lote-01/docs/specs/11-orchestration/11.02-ownership-delegation-and-context.md).
+- Sigue [11.01](docs/specs/11-orchestration/11.01-document-standard-and-change-control.md) y [11.02](docs/specs/11-orchestration/11.02-ownership-delegation-and-context.md).
 - Cita identificadores exactos `PRE-NN.Xn`; conserva el texto canónico del registro y la copia del maestro.
 - Un autor por archivo; los revisores no escriben en archivos ajenos mientras su autor trabaja. El coordinador integra índices y trazabilidad.
 - No crear archivos vacíos de lotes futuros para resolver enlaces. Enlazar su entrada existente en el índice y marcar `PENDIENTE_LOTE_N`.

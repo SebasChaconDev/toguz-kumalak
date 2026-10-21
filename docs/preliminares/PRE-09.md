@@ -49,7 +49,7 @@ Ramas, PR y Actions son decisiones de trabajo futuro; no autorizan mutaciones Gi
 
 ## Dependencias y fuentes canónicas
 
-El [dominio 09 del índice](../index.md#spec-09-01) es `PENDIENTE_LOTE_5`. Consume riesgos/contratos de [PRE-03](PRE-03.md), [PRE-05](PRE-05.md), [PRE-06](PRE-06.md), [PRE-07](PRE-07.md) y [PRE-08](PRE-08.md), con visuales de [PRE-04](PRE-04.md) y releases de [PRE-10](PRE-10.md). Aplican [11.01](https://github.com/SebasChaconDev/toguz-kumalak/blob/docs/specs-lote-01/docs/specs/11-orchestration/11.01-document-standard-and-change-control.md), [11.02](https://github.com/SebasChaconDev/toguz-kumalak/blob/docs/specs-lote-01/docs/specs/11-orchestration/11.02-ownership-delegation-and-context.md) y [trazabilidad](../traceability.md).
+El [dominio 09 del índice](../index.md#spec-09-01) es `PENDIENTE_LOTE_5`. Consume riesgos/contratos de [PRE-03](PRE-03.md), [PRE-05](PRE-05.md), [PRE-06](PRE-06.md), [PRE-07](PRE-07.md) y [PRE-08](PRE-08.md), con visuales de [PRE-04](PRE-04.md) y releases de [PRE-10](PRE-10.md). Aplican [11.01](../specs/11-orchestration/11.01-document-standard-and-change-control.md), [11.02](../specs/11-orchestration/11.02-ownership-delegation-and-context.md) y [trazabilidad](../traceability.md).
 
 ## Límites, riesgos y cuestiones pendientes
 

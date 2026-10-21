@@ -2,7 +2,7 @@
 
 ID: ADR-0004 · Versión: 0.1 · Fecha: 2026-10-21 · Estado documental: EN_REVISIÓN · Owner funcional: S (servicios y seguridad).
 
-Dominio: 05/06, consistencia y notificaciones · Lote: 1. Formato y cambios: [11.01](https://github.com/SebasChaconDev/toguz-kumalak/blob/docs/specs-lote-01/docs/specs/11-orchestration/11.01-document-standard-and-change-control.md); propiedad de escritura: [11.02](https://github.com/SebasChaconDev/toguz-kumalak/blob/docs/specs-lote-01/docs/specs/11-orchestration/11.02-ownership-delegation-and-context.md).
+Dominio: 05/06, consistencia y notificaciones · Lote: 1. Formato y cambios: [11.01](../specs/11-orchestration/11.01-document-standard-and-change-control.md); propiedad de escritura: [11.02](../specs/11-orchestration/11.02-ownership-delegation-and-context.md).
 
 Decisión base: APROBADO EN FUENTE. Validación técnica: POR_VERIFICAR. La ADR no afirma que exista transacción, conexión a Ably ni garantía de entrega observada.
 
