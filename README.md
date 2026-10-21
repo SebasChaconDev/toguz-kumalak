@@ -66,4 +66,3 @@ No hay instrucciones ejecutables de arranque: todavía no existen código ni dep
 La demo de portafolio está prevista, sin URL ni fecha acreditada. La licencia no ha sido elegida; el objetivo de repositorio público no sustituye esa decisión. Los recursos visuales y sonoros serán originales o autorizados, con procedencia documentada. RDomino es una referencia de experiencia, sin permiso de copia.
 
 **Gate vigente: revisión del lote 1.** Su generación no autoriza lote 2 ni implementación.
-

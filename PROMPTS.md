@@ -119,4 +119,3 @@ Aceptación: cada hallazgo cita fuente y no declara integración probada.
 ```
 
 Es un ejemplo de contrato de tarea, no una orden de ejecutarla. La trazabilidad de trabajo real se conserva en el reporte del lote; los planes de harness quedan para lote 5.
-

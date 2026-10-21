@@ -55,4 +55,3 @@ Permanecen incluidos perfiles, historial/reproducción, Elo, clasificación, est
 ## Riesgos y éxito futuro del producto
 
 Los 14 casos de [CONF](docs/conflicts.md) impiden convertir aspiraciones en garantías. La aceptación de implementación requerirá reglas contrastadas, resultados de pruebas observadas, ausencia de bloqueantes, revisión humana y evidencia conforme a la futura DoD. No hay fechas, FPS, SLO, fuerzaIA, RPO/RTO o coste real garantizados en esta entrega.
-

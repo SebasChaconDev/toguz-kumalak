@@ -177,4 +177,3 @@ El §6 del maestro ejemplifica `PRE-xx.Cy`; los identificadores reales son `PRE-
 - AC-CONF-02: una preferencia técnica no sustituye una decisión; se exige aprobación y trazabilidad antes de alterar registro o consumidores.
 - AC-CONF-03: una validación documental satisfactoria no cambia factibilidad a probada.
 - AC-CONF-04: cerrar lote 1 no cierra automáticamente ninguno de los 14 riesgos técnicos ni aprueba las tres interpretaciones documentales.
-

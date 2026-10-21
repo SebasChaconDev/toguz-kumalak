@@ -187,4 +187,3 @@ SRC → REG → inventario/trazabilidad inicial → 11.01 → AGENTS y 11.02 →
 - Lote 6: auditoría independiente; los cambios semánticos vuelven al propietario.
 
 No hay autorización de redacción para estas secuencias posteriores en la sesión actual. [PLANS](../PLANS.md) conserva el gate vigente.
-

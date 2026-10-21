@@ -313,4 +313,3 @@ Antes de cada reporte: comparar los conjuntos de IDs fuente/REG/matriz; exigir c
 El detalle de pruebas, AC y evidencia se enriquece al redactar cada spec. La cobertura de encaminamiento actual es 246/246; la cobertura de specs canónicas redactadas es 17/246 en EN_REVISIÓN. Ninguna de esas métricas representa porcentaje de software completado.
 
 Consulta [conflictos y riesgos](conflicts.md) y [reporte verificable del lote](../PLANS.md#informe-lote-1).
-
