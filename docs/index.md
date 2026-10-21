@@ -6,7 +6,7 @@ ID: IDX · Versión: 0.1 · Fecha: 2026-10-21 · Estado documental: EN_REVISIÓN
 
 El propietario aprobó el inventario de **81 archivos Markdown: 40 especificaciones y 41 documentos de soporte**. Autorizó únicamente el lote 1 (31 archivos). Los 31 documentos de esta entrega están EN_REVISIÓN; los 50 restantes no se crean ahora. La copia SRC conserva literalmente su estado histórico. Las decisiones fuente están APROBADO; la aprobación del inventario no aprueba el contenido generado ni la implementación.
 
-Inicio recomendado: [README](../README.md), [objetivos](../GOALS.md), [plan y reporte](../PLANS.md), [registro](decision-register.md), [trazabilidad](traceability.md), [conflictos](conflicts.md), [norma 11.01](https://github.com/SebasChaconDev/toguz-kumalak/blob/docs/specs-lote-01/docs/specs/11-orchestration/11.01-document-standard-and-change-control.md) y [orquestación 11.02](https://github.com/SebasChaconDev/toguz-kumalak/blob/docs/specs-lote-01/docs/specs/11-orchestration/11.02-ownership-delegation-and-context.md).
+Inicio recomendado: [README](../README.md), [objetivos](../GOALS.md), [plan y reporte](../PLANS.md), [registro](decision-register.md), [trazabilidad](traceability.md), [conflictos](conflicts.md), [norma 11.01](specs/11-orchestration/11.01-document-standard-and-change-control.md) y [orquestación 11.02](specs/11-orchestration/11.02-ownership-delegation-and-context.md).
 
 ## Convenciones
 
@@ -53,8 +53,8 @@ Los vínculos de lote 1 apuntan a archivos entregados. Las rutas futuras se mues
 | <a id="adr-0006"></a>ADR-0006 | [docs/adr/ADR-0006-vercel-hobby-and-zero-cost-guardrails.md](adr/ADR-0006-vercel-hobby-and-zero-cost-guardrails.md) | Decisión arquitectónica existente; REG y PRE pertinentes; alternativas y validación futura. | A | M | EN_REVISIÓN |
 | <a id="adr-0007"></a>ADR-0007 | [docs/adr/ADR-0007-3d-and-accessible-html-view.md](adr/ADR-0007-3d-and-accessible-html-view.md) | Decisión arquitectónica existente; REG y PRE pertinentes; alternativas y validación futura. | V | M | EN_REVISIÓN |
 | <a id="adr-0008"></a>ADR-0008 | [docs/adr/ADR-0008-ranked-results-and-elo-ownership.md](adr/ADR-0008-ranked-results-and-elo-ownership.md) | Decisión arquitectónica existente; REG y PRE pertinentes; alternativas y validación futura. | S | M | EN_REVISIÓN |
-| <a id="spec-11-01"></a>11.01 | [docs/specs/11-orchestration/11.01-document-standard-and-change-control.md](https://github.com/SebasChaconDev/toguz-kumalak/blob/docs/specs-lote-01/docs/specs/11-orchestration/11.01-document-standard-and-change-control.md) | Norma documental y control de cambios; entradas PRE-11.A1, PRE-11.A2, PRE-11.A3, PRE-11.A4, PRE-11.B1, PRE-11.B2, PRE-11.B3, PRE-11.B4, PRE-11.D4, PRE-11.E1, PRE-11.E4, PRE-11.F1, PRE-11.F3. Dependencias: REG y maestro. | C | A | EN_REVISIÓN |
-| <a id="spec-11-02"></a>11.02 | [docs/specs/11-orchestration/11.02-ownership-delegation-and-context.md](https://github.com/SebasChaconDev/toguz-kumalak/blob/docs/specs-lote-01/docs/specs/11-orchestration/11.02-ownership-delegation-and-context.md) | Propiedad, delegación y contexto; entradas PRE-11.C1, PRE-11.C2, PRE-11.C3, PRE-11.C4. Dependencias: [11.01](#spec-11-01). | C | M | EN_REVISIÓN |
+| <a id="spec-11-01"></a>11.01 | [docs/specs/11-orchestration/11.01-document-standard-and-change-control.md](specs/11-orchestration/11.01-document-standard-and-change-control.md) | Norma documental y control de cambios; entradas PRE-11.A1, PRE-11.A2, PRE-11.A3, PRE-11.A4, PRE-11.B1, PRE-11.B2, PRE-11.B3, PRE-11.B4, PRE-11.D4, PRE-11.E1, PRE-11.E4, PRE-11.F1, PRE-11.F3. Dependencias: REG y maestro. | C | A | EN_REVISIÓN |
+| <a id="spec-11-02"></a>11.02 | [docs/specs/11-orchestration/11.02-ownership-delegation-and-context.md](specs/11-orchestration/11.02-ownership-delegation-and-context.md) | Propiedad, delegación y contexto; entradas PRE-11.C1, PRE-11.C2, PRE-11.C3, PRE-11.C4. Dependencias: [11.01](#spec-11-01). | C | M | EN_REVISIÓN |
 
 ### Lote 2 — 10 archivos
 

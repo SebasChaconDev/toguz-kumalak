@@ -49,7 +49,7 @@ A1 reemplaza expresamente el monolito. [PRE-01](PRE-01.md) recoge los reemplazos
 
 ## Dependencias y fuentes canónicas
 
-El [dominio 05 del índice](../index.md#spec-05-01) es `PENDIENTE_LOTE_3`, tras [PRE-03](PRE-03.md) y [PRE-01](PRE-01.md). Los límites de identidad, salas y operación se consumen de [PRE-07](PRE-07.md), [PRE-06](PRE-06.md) y [PRE-10](PRE-10.md). Regir redacción por [11.01](https://github.com/SebasChaconDev/toguz-kumalak/blob/docs/specs-lote-01/docs/specs/11-orchestration/11.01-document-standard-and-change-control.md), [11.02](https://github.com/SebasChaconDev/toguz-kumalak/blob/docs/specs-lote-01/docs/specs/11-orchestration/11.02-ownership-delegation-and-context.md) y [trazabilidad](../traceability.md).
+El [dominio 05 del índice](../index.md#spec-05-01) es `PENDIENTE_LOTE_3`, tras [PRE-03](PRE-03.md) y [PRE-01](PRE-01.md). Los límites de identidad, salas y operación se consumen de [PRE-07](PRE-07.md), [PRE-06](PRE-06.md) y [PRE-10](PRE-10.md). Regir redacción por [11.01](../specs/11-orchestration/11.01-document-standard-and-change-control.md), [11.02](../specs/11-orchestration/11.02-ownership-delegation-and-context.md) y [trazabilidad](../traceability.md).
 
 ## Límites, riesgos y cuestiones pendientes
 

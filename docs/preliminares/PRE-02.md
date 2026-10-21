@@ -43,7 +43,7 @@ PRE-02.C2 amplía el alcance con práctica reversible y mantiene la prohibición
 
 ## Dependencias y fuentes canónicas
 
-El [dominio 02 del índice](../index.md#spec-02-01) es `PENDIENTE_LOTE_2`. [PRE-03](PRE-03.md) es canónico para reglas/estados; [PRE-06](PRE-06.md), para recuperación y elegibilidad ranked; [PRE-07](PRE-07.md), para perfiles/estadísticas; [PRE-08](PRE-08.md), para enseñanza y práctica. Usar [11.01](https://github.com/SebasChaconDev/toguz-kumalak/blob/docs/specs-lote-01/docs/specs/11-orchestration/11.01-document-standard-and-change-control.md), [11.02](https://github.com/SebasChaconDev/toguz-kumalak/blob/docs/specs-lote-01/docs/specs/11-orchestration/11.02-ownership-delegation-and-context.md) y [trazabilidad](../traceability.md) al distribuir requisitos.
+El [dominio 02 del índice](../index.md#spec-02-01) es `PENDIENTE_LOTE_2`. [PRE-03](PRE-03.md) es canónico para reglas/estados; [PRE-06](PRE-06.md), para recuperación y elegibilidad ranked; [PRE-07](PRE-07.md), para perfiles/estadísticas; [PRE-08](PRE-08.md), para enseñanza y práctica. Usar [11.01](../specs/11-orchestration/11.01-document-standard-and-change-control.md), [11.02](../specs/11-orchestration/11.02-ownership-delegation-and-context.md) y [trazabilidad](../traceability.md) al distribuir requisitos.
 
 ## Límites, riesgos y cuestiones pendientes
 

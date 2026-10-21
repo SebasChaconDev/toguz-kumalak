@@ -50,7 +50,7 @@ La fuente íntegra es el [maestro archivado](../sources/TOGUZ_PROMPT_MAESTRO_COD
 
 ## Dependencias y fuentes canónicas
 
-El [dominio 04 del índice](../index.md#spec-04-01) es `PENDIENTE_LOTE_4`. Consume estados/eventos de [PRE-03](PRE-03.md), confirmación de [PRE-06](PRE-06.md), flujos de [PRE-02](PRE-02.md) y aprendizaje de [PRE-08](PRE-08.md). [PRE-09](PRE-09.md) fija verificación visual/accesible. Aplican [11.01](https://github.com/SebasChaconDev/toguz-kumalak/blob/docs/specs-lote-01/docs/specs/11-orchestration/11.01-document-standard-and-change-control.md), [11.02](https://github.com/SebasChaconDev/toguz-kumalak/blob/docs/specs-lote-01/docs/specs/11-orchestration/11.02-ownership-delegation-and-context.md) y [trazabilidad](../traceability.md).
+El [dominio 04 del índice](../index.md#spec-04-01) es `PENDIENTE_LOTE_4`. Consume estados/eventos de [PRE-03](PRE-03.md), confirmación de [PRE-06](PRE-06.md), flujos de [PRE-02](PRE-02.md) y aprendizaje de [PRE-08](PRE-08.md). [PRE-09](PRE-09.md) fija verificación visual/accesible. Aplican [11.01](../specs/11-orchestration/11.01-document-standard-and-change-control.md), [11.02](../specs/11-orchestration/11.02-ownership-delegation-and-context.md) y [trazabilidad](../traceability.md).
 
 ## Límites, riesgos y cuestiones pendientes
 

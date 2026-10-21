@@ -4,7 +4,7 @@ ID: PROMPTS · Versión: 0.1 · Fecha: 2026-10-21 · Estado documental: EN_REVIS
 
 ## Uso y precedencia
 
-Estos prompts son plantillas de conversación, no automatizaciones ni autorizaciones. Completarlos no habilita otras rutas o lotes. Leer [AGENTS](AGENTS.md), [PLANS](PLANS.md), [REG](docs/decision-register.md), [CONF](docs/conflicts.md), [11.01](https://github.com/SebasChaconDev/toguz-kumalak/blob/docs/specs-lote-01/docs/specs/11-orchestration/11.01-document-standard-and-change-control.md) y [11.02](https://github.com/SebasChaconDev/toguz-kumalak/blob/docs/specs-lote-01/docs/specs/11-orchestration/11.02-ownership-delegation-and-context.md).
+Estos prompts son plantillas de conversación, no automatizaciones ni autorizaciones. Completarlos no habilita otras rutas o lotes. Leer [AGENTS](AGENTS.md), [PLANS](PLANS.md), [REG](docs/decision-register.md), [CONF](docs/conflicts.md), [11.01](docs/specs/11-orchestration/11.01-document-standard-and-change-control.md) y [11.02](docs/specs/11-orchestration/11.02-ownership-delegation-and-context.md).
 
 Gate 0 recibido: «APRUEBO INVENTARIO DOCUMENTAL». Alcance adicional explícito: «Genera únicamente el lote 1 y detente al finalizar para mi revisión y aprobación». El contenido de lote 1 no está aprobado por haberse autorizado su escritura. Ningún prompt aquí inicia implementación.
 

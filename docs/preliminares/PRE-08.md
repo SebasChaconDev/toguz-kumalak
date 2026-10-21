@@ -49,7 +49,7 @@ Negamax concreta la familia Negamax/Minimax aprobada en [PRE-03.D3](../decision-
 
 ## Dependencias y fuentes canónicas
 
-El [dominio 08 del índice](../index.md#spec-08-01) es `PENDIENTE_LOTE_4`. Depende del reglamento/versionado de [PRE-03](PRE-03.md), contratos de [PRE-05](PRE-05.md), UI/accesibilidad de [PRE-04](PRE-04.md), pruebas de [PRE-09](PRE-09.md) y límites de [PRE-10](PRE-10.md). Aplicar [11.01](https://github.com/SebasChaconDev/toguz-kumalak/blob/docs/specs-lote-01/docs/specs/11-orchestration/11.01-document-standard-and-change-control.md), [11.02](https://github.com/SebasChaconDev/toguz-kumalak/blob/docs/specs-lote-01/docs/specs/11-orchestration/11.02-ownership-delegation-and-context.md) y [trazabilidad](../traceability.md).
+El [dominio 08 del índice](../index.md#spec-08-01) es `PENDIENTE_LOTE_4`. Depende del reglamento/versionado de [PRE-03](PRE-03.md), contratos de [PRE-05](PRE-05.md), UI/accesibilidad de [PRE-04](PRE-04.md), pruebas de [PRE-09](PRE-09.md) y límites de [PRE-10](PRE-10.md). Aplicar [11.01](../specs/11-orchestration/11.01-document-standard-and-change-control.md), [11.02](../specs/11-orchestration/11.02-ownership-delegation-and-context.md) y [trazabilidad](../traceability.md).
 
 ## Límites, riesgos y cuestiones pendientes
 

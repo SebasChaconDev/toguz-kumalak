@@ -49,7 +49,7 @@ No se introducen contraseñas propias, uploads de avatar o autenticación por al
 
 ## Dependencias y fuentes canónicas
 
-El [dominio 07 del índice](../index.md#spec-07-01) es `PENDIENTE_LOTE_3`. [PRE-05](PRE-05.md) gobierna contratos/propiedad, [PRE-06](PRE-06.md) elegibilidad/recuperación y [PRE-10](PRE-10.md) secretos/backups/entornos. La revisión se rige por [11.01](https://github.com/SebasChaconDev/toguz-kumalak/blob/docs/specs-lote-01/docs/specs/11-orchestration/11.01-document-standard-and-change-control.md), [11.02](https://github.com/SebasChaconDev/toguz-kumalak/blob/docs/specs-lote-01/docs/specs/11-orchestration/11.02-ownership-delegation-and-context.md) y [trazabilidad](../traceability.md).
+El [dominio 07 del índice](../index.md#spec-07-01) es `PENDIENTE_LOTE_3`. [PRE-05](PRE-05.md) gobierna contratos/propiedad, [PRE-06](PRE-06.md) elegibilidad/recuperación y [PRE-10](PRE-10.md) secretos/backups/entornos. La revisión se rige por [11.01](../specs/11-orchestration/11.01-document-standard-and-change-control.md), [11.02](../specs/11-orchestration/11.02-ownership-delegation-and-context.md) y [trazabilidad](../traceability.md).
 
 ## Límites, riesgos y cuestiones pendientes
 
