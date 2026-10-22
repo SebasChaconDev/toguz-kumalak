@@ -1,0 +1,413 @@
+{
+  "generatedUtc": "2026-10-22T18:28:45.0312926Z",
+  "command": "go test -tags=integration -json -count=1 -timeout=45s -run . ./...",
+  "exitCode": 0,
+  "postgresql": "real local spike",
+  "broker": "controlled test-only HTTP double; Ably real NOT_RUN",
+  "cases": [
+    {
+      "ablyRealValidated": false,
+      "caseId": "CAP-01-exact-subscribe",
+      "httpStatus": 200,
+      "status": "PASS",
+      "syntheticCapability": true
+    },
+    {
+      "ablyRealValidated": false,
+      "caseId": "CAP-02-client-official-publish-denied",
+      "httpStatus": 403,
+      "status": "PASS",
+      "syntheticCapability": true
+    },
+    {
+      "ablyRealValidated": false,
+      "caseId": "CAP-03-other-resource-denied",
+      "httpStatus": 403,
+      "status": "PASS",
+      "syntheticCapability": true
+    },
+    {
+      "ablyRealValidated": false,
+      "caseId": "CAP-04-expired-denied",
+      "httpStatus": 401,
+      "status": "PASS",
+      "syntheticCapability": true
+    },
+    {
+      "ablyRealValidated": false,
+      "caseId": "CAP-05-invalid-signature-denied",
+      "httpStatus": 401,
+      "status": "PASS",
+      "syntheticCapability": true
+    },
+    {
+      "ablyRealValidated": false,
+      "caseId": "CAP-06-publisher-publish",
+      "httpStatus": 202,
+      "status": "PASS",
+      "syntheticCapability": true
+    },
+    {
+      "ablyRealValidated": false,
+      "caseId": "CAP-07-publisher-subscribe-denied",
+      "httpStatus": 403,
+      "status": "PASS",
+      "syntheticCapability": true
+    },
+    {
+      "ablyRealValidated": false,
+      "caseId": "CAP-08-missing-denied",
+      "httpStatus": 401,
+      "status": "PASS",
+      "syntheticCapability": true
+    },
+    {
+      "ablyRealValidated": false,
+      "after": {
+        "revision": 1,
+        "effects": 1,
+        "receipts": 1
+      },
+      "before": {
+        "revision": 0,
+        "effects": 0,
+        "receipts": 0
+      },
+      "broker": "local controlled HTTP double",
+      "caseId": "NOT-01-delivery-commit-before-publication",
+      "database": "real PostgreSQL",
+      "delivered": [
+        {
+          "gameId": "notification-run-1792693723227251100-1",
+          "revision": 1
+        }
+      ],
+      "game": "real app.New + Store",
+      "notifyFailures": 0,
+      "publicationAudits": [
+        {
+          "notice": {
+            "gameId": "notification-run-1792693723227251100-1",
+            "revision": 1
+          },
+          "committedAtPublish": {
+            "revision": 1,
+            "effects": 1,
+            "receipts": 1
+          }
+        }
+      ],
+      "rest": {
+        "revision": 1,
+        "effects": 1
+      },
+      "restAfterUntrustedNotice": {
+        "revision": 1,
+        "effects": 1
+      },
+      "status": "PASS",
+      "untrustedFutureNoticeRevision": 999
+    },
+    {
+      "ablyRealValidated": false,
+      "after": {
+        "revision": 1,
+        "effects": 1,
+        "receipts": 1
+      },
+      "before": {
+        "revision": 0,
+        "effects": 0,
+        "receipts": 0
+      },
+      "broker": "local controlled HTTP double",
+      "caseId": "NOT-02-lost-notice",
+      "database": "real PostgreSQL",
+      "delivered": [],
+      "game": "real app.New + Store",
+      "notifyFailures": 0,
+      "publicationAudits": [
+        {
+          "notice": {
+            "gameId": "notification-run-1792693723366083500-2",
+            "revision": 1
+          },
+          "committedAtPublish": {
+            "revision": 1,
+            "effects": 1,
+            "receipts": 1
+          }
+        }
+      ],
+      "rest": {
+        "revision": 1,
+        "effects": 1
+      },
+      "status": "PASS"
+    },
+    {
+      "ablyRealValidated": false,
+      "after": {
+        "revision": 1,
+        "effects": 1,
+        "receipts": 1
+      },
+      "before": {
+        "revision": 0,
+        "effects": 0,
+        "receipts": 0
+      },
+      "broker": "local controlled HTTP double",
+      "caseId": "NOT-03-duplicate-notice",
+      "database": "real PostgreSQL",
+      "delivered": [
+        {
+          "gameId": "notification-run-1792693723420379900-3",
+          "revision": 1
+        },
+        {
+          "gameId": "notification-run-1792693723420379900-3",
+          "revision": 1
+        }
+      ],
+      "game": "real app.New + Store",
+      "notifyFailures": 0,
+      "publicationAudits": [
+        {
+          "notice": {
+            "gameId": "notification-run-1792693723420379900-3",
+            "revision": 1
+          },
+          "committedAtPublish": {
+            "revision": 1,
+            "effects": 1,
+            "receipts": 1
+          }
+        }
+      ],
+      "restAfterEach": [
+        {
+          "revision": 1,
+          "effects": 1
+        },
+        {
+          "revision": 1,
+          "effects": 1
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "ablyRealValidated": false,
+      "after": {
+        "revision": 2,
+        "effects": 2,
+        "receipts": 2
+      },
+      "before": {
+        "revision": 0,
+        "effects": 0,
+        "receipts": 0
+      },
+      "broker": "local controlled HTTP double",
+      "caseId": "NOT-04-out-of-order-notices",
+      "database": "real PostgreSQL",
+      "delivered": [
+        {
+          "gameId": "notification-run-1792693723464267200-4",
+          "revision": 2
+        },
+        {
+          "gameId": "notification-run-1792693723464267200-4",
+          "revision": 1
+        }
+      ],
+      "game": "real app.New + Store",
+      "notifyFailures": 0,
+      "publicationAudits": [
+        {
+          "notice": {
+            "gameId": "notification-run-1792693723464267200-4",
+            "revision": 1
+          },
+          "committedAtPublish": {
+            "revision": 1,
+            "effects": 1,
+            "receipts": 1
+          }
+        },
+        {
+          "notice": {
+            "gameId": "notification-run-1792693723464267200-4",
+            "revision": 2
+          },
+          "committedAtPublish": {
+            "revision": 2,
+            "effects": 2,
+            "receipts": 2
+          }
+        }
+      ],
+      "restAfterEach": [
+        {
+          "revision": 2,
+          "effects": 2
+        },
+        {
+          "revision": 2,
+          "effects": 2
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "ablyRealValidated": false,
+      "after": {
+        "revision": 1,
+        "effects": 1,
+        "receipts": 1
+      },
+      "afterResponseLoss": {
+        "revision": 1,
+        "effects": 1,
+        "receipts": 1
+      },
+      "before": {
+        "revision": 0,
+        "effects": 0,
+        "receipts": 0
+      },
+      "broker": "local controlled HTTP double",
+      "caseId": "NOT-05-lost-http-response-after-commit",
+      "clientResponseLost": true,
+      "database": "real PostgreSQL",
+      "game": "real app.New + Store",
+      "notifyFailures": 0,
+      "publicationAudits": [
+        {
+          "notice": {
+            "gameId": "notification-run-1792693723517752400-5",
+            "revision": 1
+          },
+          "committedAtPublish": {
+            "revision": 1,
+            "effects": 1,
+            "receipts": 1
+          }
+        }
+      ],
+      "rest": {
+        "revision": 1,
+        "effects": 1
+      },
+      "retry": {
+        "revision": 1,
+        "effects": 1
+      },
+      "retryStatus": 200,
+      "serverCommitStatus": 200,
+      "status": "PASS"
+    },
+    {
+      "ablyRealValidated": false,
+      "after": {
+        "revision": 3,
+        "effects": 3,
+        "receipts": 3
+      },
+      "before": {
+        "revision": 0,
+        "effects": 0,
+        "receipts": 0
+      },
+      "broker": "local controlled HTTP double",
+      "caseId": "NOT-06-broker-restart",
+      "database": "real PostgreSQL",
+      "deliveredAfterRestart": [
+        {
+          "gameId": "notification-run-1792693723588142800-6",
+          "revision": 3
+        }
+      ],
+      "game": "real app.New + Store",
+      "notifyFailures": 1,
+      "publicationAudits": [
+        {
+          "notice": {
+            "gameId": "notification-run-1792693723588142800-6",
+            "revision": 1
+          },
+          "committedAtPublish": {
+            "revision": 1,
+            "effects": 1,
+            "receipts": 1
+          }
+        },
+        {
+          "notice": {
+            "gameId": "notification-run-1792693723588142800-6",
+            "revision": 3
+          },
+          "committedAtPublish": {
+            "revision": 3,
+            "effects": 3,
+            "receipts": 3
+          }
+        }
+      ],
+      "rest": {
+        "revision": 3,
+        "effects": 3
+      },
+      "restWhileBrokerStopped": {
+        "revision": 2,
+        "effects": 2
+      },
+      "status": "PASS",
+      "whileBrokerStopped": {
+        "revision": 2,
+        "effects": 2,
+        "receipts": 2
+      }
+    },
+    {
+      "ablyRealValidated": false,
+      "after": {
+        "revision": 1,
+        "effects": 1,
+        "receipts": 1
+      },
+      "before": {
+        "revision": 0,
+        "effects": 0,
+        "receipts": 0
+      },
+      "broker": "local controlled HTTP double",
+      "caseId": "NOT-07-unresponsive-broker-context",
+      "database": "real PostgreSQL",
+      "game": "real app.New + Store",
+      "notifyContextCancelled": true,
+      "notifyFailures": 1,
+      "operationElapsedMs": 174.127,
+      "publicationAudits": [
+        {
+          "notice": {
+            "gameId": "notification-run-1792693723683685500-7",
+            "revision": 1
+          },
+          "committedAtPublish": {
+            "revision": 1,
+            "effects": 1,
+            "receipts": 1
+          }
+        }
+      ],
+      "rest": {
+        "revision": 1,
+        "effects": 1
+      },
+      "status": "PASS"
+    }
+  ],
+  "failures": []
+}

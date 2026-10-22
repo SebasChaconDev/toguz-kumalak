@@ -1,0 +1,9 @@
+{
+  "generatedUtc": "2026-10-22T18:30:25.8628547Z",
+  "vetCommand": "GOWORK=off go vet -tags=integration ./...",
+  "vetExitCode": 0,
+  "capabilityCommand": "GOWORK=off go test -json -count=1 ./...",
+  "capabilityExitCode": 0,
+  "nativeRace": "BLOCKED: -race requires cgo; no gcc or clang on PATH",
+  "goVersion": "go version go1.26.2 windows/amd64"
+}

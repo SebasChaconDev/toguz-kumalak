@@ -1,0 +1,370 @@
+[
+  {
+    "label": "git-head",
+    "command": "git rev-parse HEAD",
+    "directory": "<SPIKE_ROOT>",
+    "exit": 0,
+    "seconds": 0.036,
+    "log": "git-head.txt"
+  },
+  {
+    "label": "go-version",
+    "command": "go version",
+    "directory": "<SPIKE_ROOT>",
+    "exit": 0,
+    "seconds": 0.037,
+    "log": "go-version.txt"
+  },
+  {
+    "label": "node-version",
+    "command": "node --version",
+    "directory": "<SPIKE_ROOT>",
+    "exit": 0,
+    "seconds": 0.024,
+    "log": "node-version.txt"
+  },
+  {
+    "label": "npm-version",
+    "command": "npm.cmd --version",
+    "directory": "<SPIKE_ROOT>",
+    "exit": 0,
+    "seconds": 0.245,
+    "log": "npm-version.txt"
+  },
+  {
+    "label": "windows-native-race",
+    "reason": "No gcc executable resolved in Windows PATH; race detector executed separately in Linux with CGO_ENABLED=1",
+    "status": "NOT_RUN"
+  },
+  {
+    "label": "modules-engine-env",
+    "command": "go env GOVERSION GOOS GOARCH GOWORK GOMOD GOCACHE GOMODCACHE CGO_ENABLED",
+    "directory": "<SPIKE_ROOT>\\modules\\engine",
+    "exit": 0,
+    "seconds": 0.032,
+    "log": "modules-engine-env.txt"
+  },
+  {
+    "label": "modules-engine-test",
+    "command": "go test -mod=readonly -count=1 ./...",
+    "directory": "<SPIKE_ROOT>\\modules\\engine",
+    "exit": 0,
+    "seconds": 6.441,
+    "log": "modules-engine-test.txt"
+  },
+  {
+    "label": "modules-engine-vet",
+    "command": "go vet -mod=readonly ./...",
+    "directory": "<SPIKE_ROOT>\\modules\\engine",
+    "exit": 0,
+    "seconds": 1.307,
+    "log": "modules-engine-vet.txt"
+  },
+  {
+    "label": "modules-engine-build",
+    "command": "go build -mod=readonly ./...",
+    "directory": "<SPIKE_ROOT>\\modules\\engine",
+    "exit": 0,
+    "seconds": 0.223,
+    "log": "modules-engine-build.txt"
+  },
+  {
+    "label": "modules-probe-env",
+    "command": "go env GOVERSION GOOS GOARCH GOWORK GOMOD GOCACHE GOMODCACHE CGO_ENABLED",
+    "directory": "<SPIKE_ROOT>\\modules\\probe",
+    "exit": 0,
+    "seconds": 0.032,
+    "log": "modules-probe-env.txt"
+  },
+  {
+    "label": "modules-probe-test",
+    "command": "go test -mod=readonly -count=1 ./...",
+    "directory": "<SPIKE_ROOT>\\modules\\probe",
+    "exit": 0,
+    "seconds": 27.87,
+    "log": "modules-probe-test.txt"
+  },
+  {
+    "label": "modules-probe-vet",
+    "command": "go vet -mod=readonly ./...",
+    "directory": "<SPIKE_ROOT>\\modules\\probe",
+    "exit": 0,
+    "seconds": 5.088,
+    "log": "modules-probe-vet.txt"
+  },
+  {
+    "label": "modules-probe-build",
+    "command": "go build -mod=readonly ./...",
+    "directory": "<SPIKE_ROOT>\\modules\\probe",
+    "exit": 0,
+    "seconds": 0.469,
+    "log": "modules-probe-build.txt"
+  },
+  {
+    "label": "services-identity-env",
+    "command": "go env GOVERSION GOOS GOARCH GOWORK GOMOD GOCACHE GOMODCACHE CGO_ENABLED",
+    "directory": "<SPIKE_ROOT>\\services\\identity",
+    "exit": 0,
+    "seconds": 0.068,
+    "log": "services-identity-env.txt"
+  },
+  {
+    "label": "services-identity-test",
+    "command": "go test -mod=readonly -count=1 ./...",
+    "directory": "<SPIKE_ROOT>\\services\\identity",
+    "exit": 0,
+    "seconds": 4.046,
+    "log": "services-identity-test.txt"
+  },
+  {
+    "label": "services-identity-vet",
+    "command": "go vet -mod=readonly ./...",
+    "directory": "<SPIKE_ROOT>\\services\\identity",
+    "exit": 0,
+    "seconds": 0.581,
+    "log": "services-identity-vet.txt"
+  },
+  {
+    "label": "services-identity-build",
+    "command": "go build -mod=readonly ./...",
+    "directory": "<SPIKE_ROOT>\\services\\identity",
+    "exit": 0,
+    "seconds": 2.256,
+    "log": "services-identity-build.txt"
+  },
+  {
+    "label": "services-game-env",
+    "command": "go env GOVERSION GOOS GOARCH GOWORK GOMOD GOCACHE GOMODCACHE CGO_ENABLED",
+    "directory": "<SPIKE_ROOT>\\services\\game",
+    "exit": 0,
+    "seconds": 0.033,
+    "log": "services-game-env.txt"
+  },
+  {
+    "label": "services-game-test",
+    "command": "go test -mod=readonly -count=1 ./...",
+    "directory": "<SPIKE_ROOT>\\services\\game",
+    "exit": 0,
+    "seconds": 3.781,
+    "log": "services-game-test.txt"
+  },
+  {
+    "label": "services-game-vet",
+    "command": "go vet -mod=readonly ./...",
+    "directory": "<SPIKE_ROOT>\\services\\game",
+    "exit": 0,
+    "seconds": 0.612,
+    "log": "services-game-vet.txt"
+  },
+  {
+    "label": "services-game-build",
+    "command": "go build -mod=readonly ./...",
+    "directory": "<SPIKE_ROOT>\\services\\game",
+    "exit": 0,
+    "seconds": 2.389,
+    "log": "services-game-build.txt"
+  },
+  {
+    "label": "services-ai-env",
+    "command": "go env GOVERSION GOOS GOARCH GOWORK GOMOD GOCACHE GOMODCACHE CGO_ENABLED",
+    "directory": "<SPIKE_ROOT>\\services\\ai",
+    "exit": 0,
+    "seconds": 0.033,
+    "log": "services-ai-env.txt"
+  },
+  {
+    "label": "services-ai-test",
+    "command": "go test -mod=readonly -count=1 ./...",
+    "directory": "<SPIKE_ROOT>\\services\\ai",
+    "exit": 0,
+    "seconds": 4.478,
+    "log": "services-ai-test.txt"
+  },
+  {
+    "label": "services-ai-vet",
+    "command": "go vet -mod=readonly ./...",
+    "directory": "<SPIKE_ROOT>\\services\\ai",
+    "exit": 0,
+    "seconds": 0.558,
+    "log": "services-ai-vet.txt"
+  },
+  {
+    "label": "services-ai-build",
+    "command": "go build -mod=readonly ./...",
+    "directory": "<SPIKE_ROOT>\\services\\ai",
+    "exit": 0,
+    "seconds": 2.855,
+    "log": "services-ai-build.txt"
+  },
+  {
+    "label": "identity-isolated-env",
+    "command": "go env GOWORK GOMOD GOCACHE GOMODCACHE",
+    "directory": "<SPIKE_ROOT>\\.local\\integral-builds\\20261022T182541Z-83d3e9ea66aa4fc5bdd97b83b3f2032c\\isolated-identity/services/identity",
+    "exit": 0,
+    "seconds": 0.037,
+    "log": "identity-isolated-env.txt"
+  },
+  {
+    "label": "identity-isolated-build",
+    "command": "go build -mod=readonly -trimpath -o <SPIKE_ROOT>\\.local\\integral-builds\\20261022T182541Z-83d3e9ea66aa4fc5bdd97b83b3f2032c\\isolated-identity/identity.exe ./cmd/server",
+    "directory": "<SPIKE_ROOT>\\.local\\integral-builds\\20261022T182541Z-83d3e9ea66aa4fc5bdd97b83b3f2032c\\isolated-identity/services/identity",
+    "exit": 0,
+    "seconds": 30.712,
+    "log": "identity-isolated-build.txt"
+  },
+  {
+    "label": "identity-isolated-api",
+    "command": "go build -mod=readonly ./api",
+    "directory": "<SPIKE_ROOT>\\.local\\integral-builds\\20261022T182541Z-83d3e9ea66aa4fc5bdd97b83b3f2032c\\isolated-identity/services/identity",
+    "exit": 0,
+    "seconds": 17.197,
+    "log": "identity-isolated-api.txt"
+  },
+  {
+    "label": "identity-isolated-modules",
+    "command": "go list -m -json all",
+    "directory": "<SPIKE_ROOT>\\.local\\integral-builds\\20261022T182541Z-83d3e9ea66aa4fc5bdd97b83b3f2032c\\isolated-identity/services/identity",
+    "exit": 0,
+    "seconds": 0.894,
+    "log": "identity-isolated-modules.txt"
+  },
+  {
+    "label": "identity-binary-modules",
+    "command": "go version -m <SPIKE_ROOT>\\.local\\integral-builds\\20261022T182541Z-83d3e9ea66aa4fc5bdd97b83b3f2032c\\isolated-identity/identity.exe",
+    "directory": "<SPIKE_ROOT>\\.local\\integral-builds\\20261022T182541Z-83d3e9ea66aa4fc5bdd97b83b3f2032c\\isolated-identity/services/identity",
+    "exit": 0,
+    "seconds": 0.083,
+    "log": "identity-binary-modules.txt"
+  },
+  {
+    "label": "identity-dependencies",
+    "command": "go list -deps ./...",
+    "directory": "<SPIKE_ROOT>\\.local\\integral-builds\\20261022T182541Z-83d3e9ea66aa4fc5bdd97b83b3f2032c\\isolated-identity/services/identity",
+    "exit": 0,
+    "seconds": 3.574,
+    "log": "identity-dependencies.txt"
+  },
+  {
+    "includesEngine": false,
+    "label": "identity-isolation",
+    "initialCaches": "Absent before build",
+    "gowork": "off",
+    "engineModuleVersion": "none",
+    "context": "Only service, probe and engine when required; no repository root",
+    "engineSha256": null
+  },
+  {
+    "label": "game-isolated-env",
+    "command": "go env GOWORK GOMOD GOCACHE GOMODCACHE",
+    "directory": "<SPIKE_ROOT>\\.local\\integral-builds\\20261022T182541Z-83d3e9ea66aa4fc5bdd97b83b3f2032c\\isolated-game/services/game",
+    "exit": 0,
+    "seconds": 0.03,
+    "log": "game-isolated-env.txt"
+  },
+  {
+    "label": "game-isolated-build",
+    "command": "go build -mod=readonly -trimpath -o <SPIKE_ROOT>\\.local\\integral-builds\\20261022T182541Z-83d3e9ea66aa4fc5bdd97b83b3f2032c\\isolated-game/game.exe ./cmd/server",
+    "directory": "<SPIKE_ROOT>\\.local\\integral-builds\\20261022T182541Z-83d3e9ea66aa4fc5bdd97b83b3f2032c\\isolated-game/services/game",
+    "exit": 0,
+    "seconds": 31.087,
+    "log": "game-isolated-build.txt"
+  },
+  {
+    "label": "game-isolated-api",
+    "command": "go build -mod=readonly ./api",
+    "directory": "<SPIKE_ROOT>\\.local\\integral-builds\\20261022T182541Z-83d3e9ea66aa4fc5bdd97b83b3f2032c\\isolated-game/services/game",
+    "exit": 0,
+    "seconds": 16.456,
+    "log": "game-isolated-api.txt"
+  },
+  {
+    "label": "game-isolated-modules",
+    "command": "go list -m -json all",
+    "directory": "<SPIKE_ROOT>\\.local\\integral-builds\\20261022T182541Z-83d3e9ea66aa4fc5bdd97b83b3f2032c\\isolated-game/services/game",
+    "exit": 0,
+    "seconds": 0.773,
+    "log": "game-isolated-modules.txt"
+  },
+  {
+    "label": "game-binary-modules",
+    "command": "go version -m <SPIKE_ROOT>\\.local\\integral-builds\\20261022T182541Z-83d3e9ea66aa4fc5bdd97b83b3f2032c\\isolated-game/game.exe",
+    "directory": "<SPIKE_ROOT>\\.local\\integral-builds\\20261022T182541Z-83d3e9ea66aa4fc5bdd97b83b3f2032c\\isolated-game/services/game",
+    "exit": 0,
+    "seconds": 0.102,
+    "log": "game-binary-modules.txt"
+  },
+  {
+    "label": "game-dependencies",
+    "command": "go list -deps ./...",
+    "directory": "<SPIKE_ROOT>\\.local\\integral-builds\\20261022T182541Z-83d3e9ea66aa4fc5bdd97b83b3f2032c\\isolated-game/services/game",
+    "exit": 0,
+    "seconds": 0.4,
+    "log": "game-dependencies.txt"
+  },
+  {
+    "includesEngine": true,
+    "label": "game-isolation",
+    "initialCaches": "Absent before build",
+    "gowork": "off",
+    "engineModuleVersion": "v0.1.0 local replacement",
+    "context": "Only service, probe and engine when required; no repository root",
+    "engineSha256": "BD0D2F40296E32B6C832DEA9B22C0CB1B957E428D2DC01E20456C303AB14C973"
+  },
+  {
+    "label": "ai-isolated-env",
+    "command": "go env GOWORK GOMOD GOCACHE GOMODCACHE",
+    "directory": "<SPIKE_ROOT>\\.local\\integral-builds\\20261022T182541Z-83d3e9ea66aa4fc5bdd97b83b3f2032c\\isolated-ai/services/ai",
+    "exit": 0,
+    "seconds": 0.033,
+    "log": "ai-isolated-env.txt"
+  },
+  {
+    "label": "ai-isolated-build",
+    "command": "go build -mod=readonly -trimpath -o <SPIKE_ROOT>\\.local\\integral-builds\\20261022T182541Z-83d3e9ea66aa4fc5bdd97b83b3f2032c\\isolated-ai/ai.exe ./cmd/server",
+    "directory": "<SPIKE_ROOT>\\.local\\integral-builds\\20261022T182541Z-83d3e9ea66aa4fc5bdd97b83b3f2032c\\isolated-ai/services/ai",
+    "exit": 0,
+    "seconds": 31.416,
+    "log": "ai-isolated-build.txt"
+  },
+  {
+    "label": "ai-isolated-api",
+    "command": "go build -mod=readonly ./api",
+    "directory": "<SPIKE_ROOT>\\.local\\integral-builds\\20261022T182541Z-83d3e9ea66aa4fc5bdd97b83b3f2032c\\isolated-ai/services/ai",
+    "exit": 0,
+    "seconds": 16.191,
+    "log": "ai-isolated-api.txt"
+  },
+  {
+    "label": "ai-isolated-modules",
+    "command": "go list -m -json all",
+    "directory": "<SPIKE_ROOT>\\.local\\integral-builds\\20261022T182541Z-83d3e9ea66aa4fc5bdd97b83b3f2032c\\isolated-ai/services/ai",
+    "exit": 0,
+    "seconds": 1.142,
+    "log": "ai-isolated-modules.txt"
+  },
+  {
+    "label": "ai-binary-modules",
+    "command": "go version -m <SPIKE_ROOT>\\.local\\integral-builds\\20261022T182541Z-83d3e9ea66aa4fc5bdd97b83b3f2032c\\isolated-ai/ai.exe",
+    "directory": "<SPIKE_ROOT>\\.local\\integral-builds\\20261022T182541Z-83d3e9ea66aa4fc5bdd97b83b3f2032c\\isolated-ai/services/ai",
+    "exit": 0,
+    "seconds": 0.094,
+    "log": "ai-binary-modules.txt"
+  },
+  {
+    "label": "ai-dependencies",
+    "command": "go list -deps ./...",
+    "directory": "<SPIKE_ROOT>\\.local\\integral-builds\\20261022T182541Z-83d3e9ea66aa4fc5bdd97b83b3f2032c\\isolated-ai/services/ai",
+    "exit": 0,
+    "seconds": 0.453,
+    "log": "ai-dependencies.txt"
+  },
+  {
+    "includesEngine": true,
+    "label": "ai-isolation",
+    "initialCaches": "Absent before build",
+    "gowork": "off",
+    "engineModuleVersion": "v0.1.0 local replacement",
+    "context": "Only service, probe and engine when required; no repository root",
+    "engineSha256": "BD0D2F40296E32B6C832DEA9B22C0CB1B957E428D2DC01E20456C303AB14C973"
+  }
+]

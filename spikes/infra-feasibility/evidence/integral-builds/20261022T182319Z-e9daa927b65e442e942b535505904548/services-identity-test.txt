@@ -1,0 +1,3 @@
+ok  	github.com/SebasChaconDev/toguz-kumalak/spikes/infra-feasibility/services/identity/api	1.613s
+ok  	github.com/SebasChaconDev/toguz-kumalak/spikes/infra-feasibility/services/identity/app	1.647s
+?   	github.com/SebasChaconDev/toguz-kumalak/spikes/infra-feasibility/services/identity/cmd/server	[no test files]

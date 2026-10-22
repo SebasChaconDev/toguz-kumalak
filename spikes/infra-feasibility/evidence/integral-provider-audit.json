@@ -1,0 +1,237 @@
+{
+  "scope": "Gate 3.5 Phase 10 read-only account/publication audit",
+  "observed_started_utc": "2026-10-22T18:38:36.4179273+00:00",
+  "observed_completed_utc": "2026-10-22T18:38:43.8257374+00:00",
+  "consulted_date_america_caracas": "2026-10-22",
+  "base_revision": "cf5d3973adc977f0ec09c738cbe6cfc078883593",
+  "branch": "spike/infra-feasibility-01",
+  "providers": {
+    "ably": {
+      "available_quota": null,
+      "plan": null,
+      "cli_found": false,
+      "provider_environment_variable_names": [],
+      "status": "BLOCKED_NO_CONNECTED_SESSION_FOUND",
+      "applications": null
+    },
+    "neon": {
+      "existing_access_token_present": true,
+      "http_status": 401,
+      "cached_expires_at_utc": "2026-05-04T22:00:44.6340000+00:00",
+      "available_quota": null,
+      "endpoint": "https://console.neon.tech/api/v2/users/me",
+      "regions": null,
+      "projects": null,
+      "method": "GET",
+      "status": "BLOCKED_EXISTING_CREDENTIAL_REJECTED",
+      "plan": null
+    },
+    "vercel": {
+      "projects": null,
+      "regions": null,
+      "cache_bytes": 3,
+      "available_quota": null,
+      "existing_token_available": false,
+      "api_request_executed": false,
+      "cache_present": true,
+      "plan": null,
+      "status": "BLOCKED_NO_USABLE_EXISTING_CREDENTIAL",
+      "cache_key_count": 0,
+      "git_integrations": null
+    }
+  },
+  "github": [
+    {
+      "endpoint": "/user",
+      "method": "GET",
+      "http_status": 200,
+      "observation": {
+        "login": "SebasChaconDev",
+        "plan": null
+      },
+      "exit_code": 0
+    },
+    {
+      "endpoint": "/repos/SebasChaconDev/toguz-kumalak",
+      "method": "GET",
+      "http_status": 200,
+      "observation": {
+        "full_name": "SebasChaconDev/toguz-kumalak",
+        "admin": true,
+        "default_branch": "main",
+        "private": false,
+        "visibility": "public"
+      },
+      "exit_code": 0
+    },
+    {
+      "endpoint": "/repos/SebasChaconDev/toguz-kumalak/actions/workflows",
+      "method": "GET",
+      "http_status": 200,
+      "observation": {
+        "total_count": 0,
+        "workflows": []
+      },
+      "exit_code": 0
+    },
+    {
+      "endpoint": "/repos/SebasChaconDev/toguz-kumalak/actions/runs",
+      "method": "GET",
+      "http_status": 200,
+      "observation": {
+        "total_count": 0
+      },
+      "exit_code": 0
+    },
+    {
+      "endpoint": "/repos/SebasChaconDev/toguz-kumalak/actions/artifacts",
+      "method": "GET",
+      "http_status": 200,
+      "observation": {
+        "total_count": 0
+      },
+      "exit_code": 0
+    },
+    {
+      "endpoint": "/repos/SebasChaconDev/toguz-kumalak/hooks",
+      "method": "GET",
+      "http_status": 200,
+      "observation": {
+        "count": 0
+      },
+      "exit_code": 0
+    },
+    {
+      "endpoint": "/repos/SebasChaconDev/toguz-kumalak/deployments",
+      "method": "GET",
+      "http_status": 200,
+      "observation": {
+        "count": 0
+      },
+      "exit_code": 0
+    },
+    {
+      "endpoint": "/repos/SebasChaconDev/toguz-kumalak/environments",
+      "method": "GET",
+      "http_status": 200,
+      "observation": {
+        "names": [],
+        "total_count": 0
+      },
+      "exit_code": 0
+    },
+    {
+      "endpoint": "/repos/SebasChaconDev/toguz-kumalak/branches",
+      "method": "GET",
+      "http_status": 200,
+      "observation": {
+        "branches": [
+          {
+            "protected": false,
+            "name": "docs/specs-lote-01"
+          },
+          {
+            "protected": false,
+            "name": "docs/specs-lote-02"
+          },
+          {
+            "protected": false,
+            "name": "docs/specs-lote-03"
+          },
+          {
+            "protected": false,
+            "name": "main"
+          }
+        ]
+      },
+      "exit_code": 0
+    },
+    {
+      "endpoint": "/repos/SebasChaconDev/toguz-kumalak/rulesets",
+      "method": "GET",
+      "http_status": 200,
+      "observation": {
+        "count": 0
+      },
+      "exit_code": 0
+    },
+    {
+      "endpoint": "/repos/SebasChaconDev/toguz-kumalak/branches/main/protection",
+      "method": "GET",
+      "http_status": 404,
+      "observation": {
+        "message": "Branch not protected"
+      },
+      "exit_code": 1
+    },
+    {
+      "endpoint": "/repos/SebasChaconDev/toguz-kumalak/actions/permissions",
+      "method": "GET",
+      "http_status": 200,
+      "observation": {
+        "allowed_actions": "all",
+        "enabled": true
+      },
+      "exit_code": 0
+    },
+    {
+      "endpoint": "/repos/SebasChaconDev/toguz-kumalak/actions/permissions/workflow",
+      "method": "GET",
+      "http_status": 200,
+      "observation": {
+        "can_approve_pull_request_reviews": false,
+        "default_workflow_permissions": "read"
+      },
+      "exit_code": 0
+    },
+    {
+      "endpoint": "/user/installations",
+      "method": "GET",
+      "http_status": 403,
+      "observation": {
+        "message": "You must authenticate with an access token authorized to a GitHub App in order to list installations"
+      },
+      "exit_code": 1
+    },
+    {
+      "endpoint": "/repos/SebasChaconDev/toguz-kumalak/installation",
+      "method": "GET",
+      "http_status": 401,
+      "observation": {
+        "message": "A JSON web token could not be decoded"
+      },
+      "exit_code": 1
+    }
+  ],
+  "local_vercel_guards": [
+    {
+      "git_deploymentEnabled": false,
+      "root": "spikes/infra-feasibility/apps/web"
+    },
+    {
+      "git_deploymentEnabled": false,
+      "root": "spikes/infra-feasibility/services/identity"
+    },
+    {
+      "git_deploymentEnabled": false,
+      "root": "spikes/infra-feasibility/services/game"
+    },
+    {
+      "git_deploymentEnabled": false,
+      "root": "spikes/infra-feasibility/services/ai"
+    }
+  ],
+  "safe_push": "BLOCKED_AUTO_DEPLOY_STATUS_UNKNOWN",
+  "reason": "No workflows/hooks/deployments/environments observed, but GitHub App installations unreadable and Vercel integrations unknown; known per-root git guards cannot exclude another connected root/project.",
+  "provider_writes": 0,
+  "authentication_refresh_attempted": false,
+  "login_attempted": false,
+  "secrets_recorded": false,
+  "commands": [
+    "gh api --include <GET endpoint listed in github[]>",
+    "Get-Content credential cache parsed only in memory; metadata retained",
+    "Invoke-WebRequest -Method Get https://console.neon.tech/api/v2/users/me using existing cached bearer token; no refresh",
+    "Get-Command ably; provider environment variable names only",
+    "git rev-parse HEAD; git branch --show-current; read four vercel.json guards"
+  ]
+}

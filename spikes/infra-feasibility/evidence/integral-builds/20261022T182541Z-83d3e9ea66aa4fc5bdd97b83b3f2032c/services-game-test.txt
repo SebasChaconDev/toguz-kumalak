@@ -1,0 +1,3 @@
+ok  	github.com/SebasChaconDev/toguz-kumalak/spikes/infra-feasibility/services/game/api	1.734s
+ok  	github.com/SebasChaconDev/toguz-kumalak/spikes/infra-feasibility/services/game/app	1.623s
+?   	github.com/SebasChaconDev/toguz-kumalak/spikes/infra-feasibility/services/game/cmd/server	[no test files]

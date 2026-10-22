@@ -1,8 +1,8 @@
 {
-  "findings": [],
-  "limits": "Known synthetic values and selected patterns only; no universal vulnerability assurance; web ephemeral fixtures checked by smoke",
-  "generatedValuesCompared": 7,
+  "generatedValuesCompared": 10,
+  "limits": "Known synthetic values including three derived audience keys and selected patterns only; original/integral runtime/isolated Windows executables; no universal vulnerability assurance; web ephemeral fixtures checked by smoke",
   "result": "PASS",
-  "builtExecutables": 3,
-  "publicFiles": 96
+  "builtExecutables": 22,
+  "publicFiles": 256,
+  "findings": []
 }

@@ -1,0 +1,4 @@
+off
+<SPIKE_ROOT>\.local\integral-builds\20261022T182541Z-83d3e9ea66aa4fc5bdd97b83b3f2032c\isolated-identity\services\identity\go.mod
+<SPIKE_ROOT>\.local\integral-builds\20261022T182541Z-83d3e9ea66aa4fc5bdd97b83b3f2032c\isolated-identity\cache
+<SPIKE_ROOT>\.local\integral-builds\20261022T182541Z-83d3e9ea66aa4fc5bdd97b83b3f2032c\isolated-identity\modcache

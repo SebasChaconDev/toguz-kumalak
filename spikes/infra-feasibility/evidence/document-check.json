@@ -1,11 +1,11 @@
 {
-  "markdown": 4,
-  "relativeLinks": 46,
-  "result": "PASS",
-  "problems": [],
   "limits": "Relative file targets/fences/JSON/POC row IDs and tracked outside-scope diff; does not validate provider behavior",
-  "files": 96,
+  "result": "PASS",
+  "markdown": 9,
   "approvedFilesUnmodified": true,
+  "files": 256,
+  "relativeLinks": 93,
   "pocRows": 11,
-  "json": 18
+  "problems": [],
+  "json": 67
 }

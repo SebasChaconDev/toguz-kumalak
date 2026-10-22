@@ -1,0 +1,7 @@
+ok  	github.com/SebasChaconDev/toguz-kumalak/spikes/infra-feasibility/services/game/api	1.726s
+--- FAIL: TestInternalProbe (0.00s)
+    internal_probe_test.go:18: valid upstream rejected
+FAIL
+FAIL	github.com/SebasChaconDev/toguz-kumalak/spikes/infra-feasibility/services/game/app	1.756s
+?   	github.com/SebasChaconDev/toguz-kumalak/spikes/infra-feasibility/services/game/cmd/server	[no test files]
+FAIL

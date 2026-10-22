@@ -1,0 +1,58 @@
+[
+  {
+    "label": "git-head",
+    "command": "git rev-parse HEAD",
+    "directory": "<SPIKE_ROOT>",
+    "exit": 0,
+    "seconds": 0.08,
+    "log": "git-head.txt"
+  },
+  {
+    "label": "go-version",
+    "command": "go version",
+    "directory": "<SPIKE_ROOT>",
+    "exit": 0,
+    "seconds": 0.183,
+    "log": "go-version.txt"
+  },
+  {
+    "label": "node-version",
+    "command": "node --version",
+    "directory": "<SPIKE_ROOT>",
+    "exit": 0,
+    "seconds": 0.148,
+    "log": "node-version.txt"
+  },
+  {
+    "label": "npm-version",
+    "command": "npm.cmd --version",
+    "directory": "<SPIKE_ROOT>",
+    "exit": 0,
+    "seconds": 0.709,
+    "log": "npm-version.txt"
+  },
+  {
+    "label": "docker-go-pull",
+    "command": "docker pull golang:1.26.2-bookworm",
+    "directory": "<SPIKE_ROOT>",
+    "exit": 0,
+    "seconds": 1.39,
+    "log": "docker-go-pull.txt"
+  },
+  {
+    "label": "docker-go-image",
+    "command": "docker image inspect golang:1.26.2-bookworm --format {{json .RepoDigests}} {{.Id}}",
+    "directory": "<SPIKE_ROOT>",
+    "exit": 0,
+    "seconds": 0.215,
+    "log": "docker-go-image.txt"
+  },
+  {
+    "label": "linux-race",
+    "command": "docker run --rm --name toguz-integral-race-20261022T182400Z-a2166bbbc0ae48d08a844295cba0eb2c --cpus 2 --memory 4g --network bridge --mount type=bind,source=<SPIKE_ROOT>,target=/spike,readonly --env GOWORK=off --env GOENV=off --env GOTOOLCHAIN=local --env CGO_ENABLED=1 --env GOCACHE=/tmp/go-cache --env GOMODCACHE=/tmp/go-modcache golang:1.26.2-bookworm bash -c set -eu; go version; gcc --version | head -n 1; for unit in modules/engine modules/probe services/identity services/game services/ai; do echo \"BEGIN:$unit\"; cd \"/spike/$unit\"; go test -mod=readonly -race -count=1 ./...; echo \"PASS:$unit\"; done",
+    "directory": "<SPIKE_ROOT>",
+    "exit": 1,
+    "seconds": 58.923,
+    "log": "linux-race.txt"
+  }
+]

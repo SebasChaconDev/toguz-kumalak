@@ -1,0 +1,12 @@
+{
+  "generatedUtc": "2026-10-22T18:28:03.4930809Z",
+  "command": "go test -tags=integration -json -count=1 -timeout=45s -run ^TestNotificationDeliveryCommitAndREST$ ./...",
+  "exitCode": 1,
+  "postgresql": "real local spike",
+  "broker": "controlled test-only HTTP double; Ably real NOT_RUN",
+  "cases": [],
+  "failures": [
+    "TestNotificationDeliveryCommitAndREST",
+    null
+  ]
+}

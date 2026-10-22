@@ -1,0 +1,120 @@
+{
+  "databaseRestart": {
+    "result": "PASS",
+    "after": {
+      "revision": 3,
+      "effects": 3,
+      "receipts": 3
+    },
+    "before": {
+      "revision": 3,
+      "effects": 3,
+      "receipts": 3
+    },
+    "volumePreserved": true
+  },
+  "logScan": [
+    {
+      "secretScan": "PASS",
+      "service": "game",
+      "pid": 24004,
+      "bytes": 0
+    },
+    {
+      "secretScan": "PASS",
+      "service": "ai",
+      "pid": 18196,
+      "bytes": 0
+    },
+    {
+      "secretScan": "PASS",
+      "service": "ai",
+      "pid": 23708,
+      "bytes": 0
+    },
+    {
+      "secretScan": "PASS",
+      "service": "game",
+      "pid": 7992,
+      "bytes": 0
+    },
+    {
+      "secretScan": "PASS",
+      "service": "identity",
+      "pid": 19468,
+      "bytes": 0
+    }
+  ],
+  "run": "integral-7d08fb85f2ed4c62b505c985d76e8d5b",
+  "gameRestart": {
+    "result": "PASS",
+    "afterPID": 7992,
+    "beforePID": 24004
+  },
+  "aiEnvironment": {
+    "userKeyScopedToAudience": true,
+    "environmentAllowlist": true,
+    "authenticatedConnectivity": "PASS",
+    "databaseCredentialsPassed": false
+  },
+  "result": "PASS",
+  "startedUTC": "2026-10-22T18:33:05.6130698Z",
+  "environment": "Windows local processes and Docker PostgreSQL",
+  "cases": [
+    {
+      "result": "PASS",
+      "exit": 0,
+      "mode": "prepare",
+      "seconds": 0.5135756
+    },
+    {
+      "result": "PASS",
+      "exit": 0,
+      "mode": "transactions",
+      "seconds": 0.0809988
+    },
+    {
+      "result": "PASS",
+      "exit": 0,
+      "mode": "security",
+      "seconds": 0.0961494
+    },
+    {
+      "result": "PASS",
+      "exit": 0,
+      "mode": "retry",
+      "seconds": 0.0416239
+    },
+    {
+      "result": "PASS",
+      "exit": 0,
+      "mode": "internal-down",
+      "seconds": 0.0240731
+    },
+    {
+      "result": "PASS",
+      "exit": 0,
+      "mode": "internal-up",
+      "seconds": 0.0219121
+    },
+    {
+      "result": "PASS",
+      "exit": 0,
+      "mode": "snapshot",
+      "seconds": 0.0306596
+    },
+    {
+      "result": "PASS",
+      "exit": 0,
+      "mode": "snapshot",
+      "seconds": 0.0242333
+    },
+    {
+      "result": "PASS",
+      "exit": 0,
+      "mode": "retry",
+      "seconds": 0.0343027
+    }
+  ],
+  "finishedUTC": "2026-10-22T18:33:23.6203351Z"
+}

@@ -1,0 +1,7 @@
+{
+  "raceNative": "NOT_RUN",
+  "alternative": "Linux official Go 1.26.2 container with CGO_ENABLED=1",
+  "platform": "Windows amd64",
+  "goCC": "gcc",
+  "gccOnPath": false
+}

@@ -1,0 +1,8 @@
+go1.26.2
+windows
+amd64
+off
+<SPIKE_ROOT>\services\game\go.mod
+<SPIKE_ROOT>\.local\integral-builds\20261022T182541Z-83d3e9ea66aa4fc5bdd97b83b3f2032c\go-cache
+<SPIKE_ROOT>\.local\integral-builds\20261022T182541Z-83d3e9ea66aa4fc5bdd97b83b3f2032c\go-modcache
+0

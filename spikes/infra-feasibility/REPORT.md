@@ -1,6 +1,8 @@
 # Gate 3.5 — informe de viabilidad previo a recursos externos
 
-**Recomendación: BLOCKED para la fase remota.** Actualización del 2026-10-22: Docker fue reparado y actualizado; PostgreSQL local y los cinco casos de integración SQL pasaron. Los cuatro builds locales funcionan y comparten una única fuente del sustituto Go. Falta la validación alojada; no se recomienda GO ni NO-GO global con esta evidencia. Presupuesto autorizado: **0 USD adicionales**. No se creó, modificó ni desplegó ningún recurso externo. La sección 9 sustituye el bloqueo local histórico de la entrega inicial.
+**Estado vigente: GO_LOCAL**, verificación integral del **2026-10-22**. La [adenda §10](#integral-20261022) y el [informe integral](INTEGRAL_REPORT.md) sustituyen los bloqueos locales y limitaciones de cobertura históricos de este informe. POC-01–11 pasan en el alcance local solicitado; todos siguen BLOCKED para proveedor remoto. Publicación retenida por automatización externa no descartada. Presupuesto: **0 USD adicionales**; ningún recurso externo creado o desplegado. El siguiente gate es **APRUEBO SPIKE REMOTO**.
+
+**Entrega anterior, conservada como historia:** Docker fue reparado y actualizado; PostgreSQL local y los cinco casos de integración SQL pasaron. Los cuatro builds locales funcionan y comparten una única fuente del sustituto Go. La sección 9 sustituyó el bloqueo Docker inicial. Sus resultados anteriores no se contabilizan como ejecuciones de la verificación integral nueva.
 
 ## 1. Base, alcance y autoridad
 
@@ -134,3 +136,19 @@ Se comprobaron ambos accesos SQL cruzados denegados (42501), up/down de migracio
 No se ejecutó factory reset, prune, borrado de datos, unregister/shutdown general de WSL ni desactivación de seguridad. No se tocaron imágenes/volúmenes de otros proyectos; los directorios de cuarentena se conservaron. No se instaló un workaround automático de arranque ni se cambiaron manualmente ajustes globales de Docker. Se actualizó únicamente la aplicación con su mecanismo oficial. Un reinicio normal observado no garantiza ausencia de cualquier fallo futuro de Windows/Docker.
 
 El contenedor/red/volumen **locales** del spike quedan disponibles para continuar la revisión; sus credenciales siguen ignoradas. No se crearon recursos en proveedores externos ni se hizo push, PR o merge. POC-03/04/05 pasan en su alcance local; el GO global y la fase remota siguen **BLOCKED** hasta el gate y las evidencias de proveedor requeridas. No se inicia desarrollo del juego ni un lote documental nuevo.
+
+<a id="integral-20261022"></a>
+
+## 10. Adenda de verificación integral — 2026-10-22
+
+Conclusión única del gate local: **GO_LOCAL**. El [informe integral](INTEGRAL_REPORT.md) documenta entorno, comandos, correcciones, DB-01–08, TX-01–07, seguridad y límites; la [matriz vigente](TEST_MATRIX.md) separa los once PASS locales de los once BLOCKED remotos. La [evidencia del gate](evidence/integral-local-gate.json) se registró antes de preparar el plan remoto.
+
+Se repitieron los builds de la misma web y cinco módulos Go; test/vet/build Windows, seis builds Go aislados con cachés nuevas, test/build/smoke Next y race Linux terminaron satisfactoriamente. Race Windows nativo no se ejecutó por falta de compilador; lint no está definido. [Logs y hashes](evidence/integral-builds-summary.md) conservan también los fallos iniciales y su repetición corregida.
+
+La prueba nueva reinició el ejecutable Game (PID 24004→7992) y después PostgreSQL conservando el volumen esperado: revisión/efectos/recibos permanecieron en `3/3/3`, incluidos reintentos de la intención original. La sonda saliente Game→Identity/AI funcionó entre procesos reales; detener AI produjo error controlado y restaurarlo recuperó la operación. El runner separa claves de usuario por audiencia, limita el entorno de cada hijo y comprueba decisiones HTTP, filas y recibos. Sustituye la carencia de S2S saliente y las pruebas de reinicio limitadas a objetos descritas anteriormente.
+
+Quince escenarios de notificación/capacidad pasaron contra Game/PostgreSQL reales con un doble HTTP y cliente Go de prueba. No validan Ably ni la reconciliación de Next. Cierre/reapertura del listener no demuestra reinicio de RAM del broker. HMAC/S2S siguen siendo provisionales; no hay certificación de seguridad de producción, OIDC o navegador. El rol local de app coincide con el propietario sintético; la separación DDL/DML remota es una condición futura explícita.
+
+La [auditoría nueva de cuentas y fuentes oficiales](REMOTE_AUDIT.md) reemplaza §5/§8 para el estado vigente: Vercel no tenía token utilizable y no recibió petición HTTP; Neon respondió 401; Ably no estaba conectado. Las cuotas disponibles y regiones de cuenta siguen sin comprobar. GitHub no mostró workflows/hooks/deployments, pero las instalaciones de Apps y conexiones Vercel no se pudieron descartar. Por esa condición expresa de publicación, los cambios se conservan **solo localmente**, sin push ni Draft PR. Título reservado: `spike: local infrastructure verification and remote feasibility plan`.
+
+El [plan remoto concreto](REMOTE_PLAN.md) propone cuatro proyectos Vercel, dos propiedades PostgreSQL aisladas en un proyecto Neon y una app Ably, nombres dedicados, secretos, criterios POC, presupuesto y retirada. No se ejecutó. Se requiere **APRUEBO SPIKE REMOTO**, más cuentas/planes/cuotas y protección verificables, antes de cualquier escritura externa. No se fusionó PR #3 ni se inició lote 4 o motor completo.

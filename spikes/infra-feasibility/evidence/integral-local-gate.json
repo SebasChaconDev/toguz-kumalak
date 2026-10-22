@@ -1,0 +1,19 @@
+{
+  "environment": "integral-environment.json",
+  "notifications": "integral-notifications-cases.json",
+  "base": "cf5d3973adc977f0ec09c738cbe6cfc078883593",
+  "runtime": "integral-runtime/integral-7d08fb85f2ed4c62b505c985d76e8d5b/summary.json",
+  "mandatoryLocalCases": "PASS",
+  "builds": "integral-builds-summary.md",
+  "conclusion": "GO_LOCAL",
+  "remote": "BLOCKED - explicit gate/account quotas/runtime evidence pending",
+  "observedUTC": "2026-10-22T18:34:12.5495616Z",
+  "scope": "Local throwaway spike; no global infrastructure GO",
+  "limits": [
+    "Ably/capabilities simulated",
+    "OIDC and browser cookie enforcement not validated",
+    "Windows race not run; Linux race passed",
+    "No Vercel/Neon/Ably resources deployed",
+    "HMAC credentials experimental; no production security certification"
+  ]
+}

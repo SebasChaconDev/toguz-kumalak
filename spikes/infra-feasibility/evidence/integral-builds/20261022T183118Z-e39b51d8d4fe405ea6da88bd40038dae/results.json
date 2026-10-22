@@ -1,0 +1,50 @@
+[
+  {
+    "label": "git-head",
+    "command": "git rev-parse HEAD",
+    "directory": "<SPIKE_ROOT>",
+    "exit": 0,
+    "seconds": 0.037,
+    "log": "git-head.txt"
+  },
+  {
+    "label": "go-version",
+    "command": "go version",
+    "directory": "<SPIKE_ROOT>",
+    "exit": 0,
+    "seconds": 0.048,
+    "log": "go-version.txt"
+  },
+  {
+    "label": "node-version",
+    "command": "node --version",
+    "directory": "<SPIKE_ROOT>",
+    "exit": 0,
+    "seconds": 0.026,
+    "log": "node-version.txt"
+  },
+  {
+    "label": "npm-version",
+    "command": "npm.cmd --version",
+    "directory": "<SPIKE_ROOT>",
+    "exit": 0,
+    "seconds": 0.239,
+    "log": "npm-version.txt"
+  },
+  {
+    "label": "docker-go-image",
+    "command": "docker image inspect golang:1.26.2-bookworm --format {{json .RepoDigests}} {{.Id}}",
+    "directory": "<SPIKE_ROOT>",
+    "exit": 0,
+    "seconds": 0.182,
+    "log": "docker-go-image.txt"
+  },
+  {
+    "label": "notification-linux-race",
+    "command": "docker run --rm --name toguz-integral-notify-20261022T183118Z-e39b51d8d4fe405ea6da88bd40038dae --cpus 2 --memory 4g --network toguz-infra-spike_default --mount type=bind,source=<SPIKE_ROOT>/modules,target=/spike/modules,readonly --mount type=bind,source=<SPIKE_ROOT>/services,target=/spike/services,readonly --mount type=bind,source=<SPIKE_ROOT>/tests/notificationprobe,target=/spike/tests/notificationprobe,readonly --env-file <SPIKE_ROOT>\\.local\\integral-builds\\20261022T183118Z-e39b51d8d4fe405ea6da88bd40038dae\\notification-container.env --env GOWORK=off --env GOENV=off --env GOTOOLCHAIN=local --env CGO_ENABLED=1 --env GOCACHE=/tmp/go-cache --env GOMODCACHE=/tmp/go-modcache golang:1.26.2-bookworm bash -c set -eu; go version; gcc --version | head -n 1; cd /spike/tests/notificationprobe; go test -mod=readonly -tags=integration -race -count=1 -json ./...",
+    "directory": "<SPIKE_ROOT>",
+    "exit": 0,
+    "seconds": 46.416,
+    "log": "notification-linux-race.txt"
+  }
+]

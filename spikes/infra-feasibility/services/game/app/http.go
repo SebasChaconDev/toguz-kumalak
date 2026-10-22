@@ -15,6 +15,19 @@ import (
 
 func New(a probe.Auth, s *Store) http.Handler {
 	r := probe.Router("game", engine.Version, a)
+	r.POST("/internal/check/:service", a.Require("game", "service", "game"), func(c *gin.Context) {
+		targets := map[string]string{"identity": "http://127.0.0.1:18101", "ai": "http://127.0.0.1:18103"}
+		target, ok := targets[c.Param("service")]
+		if !ok {
+			c.AbortWithStatus(400)
+			return
+		}
+		if checkInternal(c.Request.Context(), target, c.Param("service"), a) != nil {
+			c.AbortWithStatus(503)
+			return
+		}
+		c.Status(204)
+	})
 	errorStatus := func(c *gin.Context, e error) {
 		switch {
 		case errors.Is(e, ErrForbidden):

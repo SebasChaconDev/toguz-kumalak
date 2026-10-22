@@ -1,0 +1,77 @@
+[
+  {
+    "label": "git-head",
+    "command": "git rev-parse HEAD",
+    "directory": "<SPIKE_ROOT>",
+    "exit": 0,
+    "seconds": 0.036,
+    "log": "git-head.txt"
+  },
+  {
+    "label": "go-version",
+    "command": "go version",
+    "directory": "<SPIKE_ROOT>",
+    "exit": 0,
+    "seconds": 0.038,
+    "log": "go-version.txt"
+  },
+  {
+    "label": "node-version",
+    "command": "node --version",
+    "directory": "<SPIKE_ROOT>",
+    "exit": 0,
+    "seconds": 0.07,
+    "log": "node-version.txt"
+  },
+  {
+    "label": "npm-version",
+    "command": "npm.cmd --version",
+    "directory": "<SPIKE_ROOT>",
+    "exit": 0,
+    "seconds": 0.418,
+    "log": "npm-version.txt"
+  },
+  {
+    "label": "web-ci",
+    "command": "npm.cmd ci --no-audit --no-fund",
+    "directory": "<SPIKE_ROOT>\\.local\\integral-builds\\20261022T182305Z-31b332eb56cf4ddfbab35a1d970a9b7b\\web",
+    "exit": 0,
+    "seconds": 57.974,
+    "log": "web-ci.txt"
+  },
+  {
+    "label": "web-tests",
+    "command": "npm.cmd test",
+    "directory": "<SPIKE_ROOT>\\.local\\integral-builds\\20261022T182305Z-31b332eb56cf4ddfbab35a1d970a9b7b\\web",
+    "exit": 0,
+    "seconds": 0.7,
+    "log": "web-tests.txt"
+  },
+  {
+    "label": "web-lint",
+    "status": "NOT_DEFINED",
+    "reason": "No lint script in original package.json"
+  },
+  {
+    "label": "web-build",
+    "command": "npm.cmd run build",
+    "directory": "<SPIKE_ROOT>\\.local\\integral-builds\\20261022T182305Z-31b332eb56cf4ddfbab35a1d970a9b7b\\web",
+    "exit": 0,
+    "seconds": 8.851,
+    "log": "web-build.txt"
+  },
+  {
+    "label": "web-smoke",
+    "command": "npm.cmd run smoke",
+    "directory": "<SPIKE_ROOT>\\.local\\integral-builds\\20261022T182305Z-31b332eb56cf4ddfbab35a1d970a9b7b\\web",
+    "exit": 0,
+    "seconds": 5.653,
+    "log": "web-smoke.txt"
+  },
+  {
+    "label": "web-lockfile",
+    "context": "Fresh source copy, fresh node_modules and npm cache",
+    "sha256": "54C056FB7252D33D29CA382DCB1D038C953D64BD61F07162CC302FA2CAD7263F",
+    "unchanged": true
+  }
+]

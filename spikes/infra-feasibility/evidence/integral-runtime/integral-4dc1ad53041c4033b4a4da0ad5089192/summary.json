@@ -1,0 +1,118 @@
+{
+  "databaseRestart": {
+    "volumePreserved": true,
+    "result": "PASS",
+    "after": {
+      "revision": 3,
+      "effects": 3,
+      "receipts": 3
+    },
+    "before": {
+      "revision": 3,
+      "effects": 3,
+      "receipts": 3
+    }
+  },
+  "run": "integral-4dc1ad53041c4033b4a4da0ad5089192",
+  "gameRestart": {
+    "beforePID": 26880,
+    "afterPID": 25376,
+    "result": "PASS"
+  },
+  "logScan": [
+    {
+      "secretScan": "PASS",
+      "service": "game",
+      "pid": 26880,
+      "bytes": 0
+    },
+    {
+      "secretScan": "PASS",
+      "service": "ai",
+      "pid": 14272,
+      "bytes": 0
+    },
+    {
+      "secretScan": "PASS",
+      "service": "identity",
+      "pid": 1888,
+      "bytes": 0
+    },
+    {
+      "secretScan": "PASS",
+      "service": "game",
+      "pid": 25376,
+      "bytes": 0
+    },
+    {
+      "secretScan": "PASS",
+      "service": "ai",
+      "pid": 23700,
+      "bytes": 0
+    }
+  ],
+  "aiEnvironment": {
+    "authenticatedConnectivity": "PASS",
+    "databaseCredentialsPassed": false
+  },
+  "cases": [
+    {
+      "seconds": 0.5559206,
+      "result": "PASS",
+      "exit": 0,
+      "mode": "prepare"
+    },
+    {
+      "seconds": 0.0777228,
+      "result": "PASS",
+      "exit": 0,
+      "mode": "transactions"
+    },
+    {
+      "seconds": 0.0918872,
+      "result": "PASS",
+      "exit": 0,
+      "mode": "security"
+    },
+    {
+      "seconds": 0.0333778,
+      "result": "PASS",
+      "exit": 0,
+      "mode": "retry"
+    },
+    {
+      "seconds": 0.0154721,
+      "result": "PASS",
+      "exit": 0,
+      "mode": "internal-down"
+    },
+    {
+      "seconds": 0.017145,
+      "result": "PASS",
+      "exit": 0,
+      "mode": "internal-up"
+    },
+    {
+      "seconds": 0.0236153,
+      "result": "PASS",
+      "exit": 0,
+      "mode": "snapshot"
+    },
+    {
+      "seconds": 0.0252714,
+      "result": "PASS",
+      "exit": 0,
+      "mode": "snapshot"
+    },
+    {
+      "seconds": 0.0310824,
+      "result": "PASS",
+      "exit": 0,
+      "mode": "retry"
+    }
+  ],
+  "environment": "Windows local processes and Docker PostgreSQL",
+  "result": "PASS",
+  "startedUTC": "2026-10-22T18:29:33.6369093Z",
+  "finishedUTC": "2026-10-22T18:29:53.2542200Z"
+}

@@ -1,0 +1,1 @@
+{"cases":[{"id":"DB-07","action":"persistent snapshot","status":"read","after":{"revision":3,"effects":3,"receipts":3},"result":"PASS","milliseconds":0}],"mode":"snapshot","result":"PASS"}

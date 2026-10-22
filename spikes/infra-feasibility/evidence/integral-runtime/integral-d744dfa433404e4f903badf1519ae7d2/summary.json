@@ -1,0 +1,89 @@
+{
+  "finishedUTC": "2026-10-22T18:32:36.0205573Z",
+  "cases": [
+    {
+      "seconds": 0.5489942,
+      "result": "PASS",
+      "mode": "prepare",
+      "exit": 0
+    },
+    {
+      "seconds": 0.0764304,
+      "result": "PASS",
+      "mode": "transactions",
+      "exit": 0
+    },
+    {
+      "seconds": 0.0939998,
+      "result": "PASS",
+      "mode": "security",
+      "exit": 0
+    },
+    {
+      "seconds": 0.0356458,
+      "result": "PASS",
+      "mode": "retry",
+      "exit": 0
+    },
+    {
+      "seconds": 0.0158369,
+      "result": "PASS",
+      "mode": "internal-down",
+      "exit": 0
+    },
+    {
+      "seconds": 0.0187725,
+      "result": "PASS",
+      "mode": "internal-up",
+      "exit": 0
+    }
+  ],
+  "databaseRestart": "NOT_RUN",
+  "startedUTC": "2026-10-22T18:32:22.2401190Z",
+  "gameRestart": {
+    "afterPID": 4080,
+    "result": "PASS",
+    "beforePID": 6172
+  },
+  "aiEnvironment": {
+    "databaseCredentialsPassed": false,
+    "authenticatedConnectivity": "PASS",
+    "userKeyScopedToAudience": true,
+    "environmentAllowlist": true
+  },
+  "logScan": [
+    {
+      "bytes": 0,
+      "pid": 6172,
+      "secretScan": "PASS",
+      "service": "game"
+    },
+    {
+      "bytes": 0,
+      "pid": 396,
+      "secretScan": "PASS",
+      "service": "ai"
+    },
+    {
+      "bytes": 0,
+      "pid": 4080,
+      "secretScan": "PASS",
+      "service": "game"
+    },
+    {
+      "bytes": 0,
+      "pid": 17556,
+      "secretScan": "PASS",
+      "service": "identity"
+    },
+    {
+      "bytes": 0,
+      "pid": 24800,
+      "secretScan": "PASS",
+      "service": "ai"
+    }
+  ],
+  "run": "integral-d744dfa433404e4f903badf1519ae7d2",
+  "environment": "Windows local processes and Docker PostgreSQL",
+  "result": "PASS"
+}

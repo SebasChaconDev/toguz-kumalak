@@ -1,0 +1,3 @@
+ok  	github.com/SebasChaconDev/toguz-kumalak/spikes/infra-feasibility/services/ai/api	2.203s
+ok  	github.com/SebasChaconDev/toguz-kumalak/spikes/infra-feasibility/services/ai/app	2.278s
+?   	github.com/SebasChaconDev/toguz-kumalak/spikes/infra-feasibility/services/ai/cmd/server	[no test files]

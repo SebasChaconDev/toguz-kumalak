@@ -1,0 +1,1 @@
+{"cases":[{"id":"DB-08","action":"apply missing migrations as dedicated synthetic database owners; no startup migration","status":"owner roles","after":{"revision":0,"effects":0,"receipts":0},"result":"PASS","milliseconds":0}],"mode":"prepare","result":"PASS"}

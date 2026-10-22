@@ -1,5 +1,7 @@
 # Gate 3.5 — experimento desechable de infraestructura
 
+**Estado vigente, 2026-10-22: GO_LOCAL.** [Informe integral](INTEGRAL_REPORT.md), [matriz POC](TEST_MATRIX.md), [auditoría vigente](REMOTE_AUDIT.md) y [plan remoto pendiente](REMOTE_PLAN.md). PostgreSQL real, reinicio de procesos/contenedor, builds aislados y race Linux se verificaron de nuevo. Vercel/Neon/Ably reales siguen pendientes; push y Draft PR están retenidos por automatización externa no descartada. Se requiere **APRUEBO SPIKE REMOTO** antes de escribir en proveedores.
+
 Autorización: solicitud del propietario «GATE 3.5: SPIKE DE VIABILIDAD DE INFRAESTRUCTURA», 2026-10-21 (Caracas). Permite código mínimo, dependencias gratuitas, servicios y pruebas **locales**; proveedores externos requieren **APRUEBO SPIKE REMOTO**. Este árbol no implementa el MVP ni las reglas TK-N1-1.0.0 y no constituye código listo para producción.
 
 Actualización autorizada el **2026-10-22**: el propietario solicitó reparar Docker y ejecutar correctamente las pruebas locales. Docker Desktop fue actualizado de 4.65.0 a 4.96.3; los cinco casos de integración PostgreSQL pasaron. El fallo y la salida anteriores se conservan como historia. [Resolución y evidencia](REPORT.md#docker-repair-20261022).
@@ -59,6 +61,27 @@ Los comandos `cmd/server` escuchan únicamente `127.0.0.1`, puertos Identity 181
 Las credenciales de la sonda son un sobre JSON firmado con HMAC-SHA256, claves distintas para usuario y servicio, `kind`, `sub`, `aud`, `scope=probe`, caducidad máxima de cinco minutos. **No son JWT/OIDC ni una implementación de Identity**. No existe ruta HTTP de emisión ni bypass anónimo. Las claves aleatorias locales se reciben solo por entorno; ausencia, igualdad o longitud insuficiente falla de forma cerrada. Todos los endpoints diagnósticos Go también requieren credencial. La operación interna admite únicamente principal de servicio `game` y audiencia del destino; eso no habilita a AI para escribir Game.
 
 `testkit` firma fixtures únicamente desde tests; los ejecutables no importan ese paquete. La web no recibe claves de servicio/DB y su smoke utiliza dobles controlados con credenciales efímeras en memoria. Secure/HttpOnly/SameSite se verifican como cabeceras transportadas, sin afirmar enforcement del navegador o sesión real. No publicar estos endpoints como producto.
+
+El runner integral deriva claves de usuario distintas por audiencia y entrega a cada proceso solo su clave. AI no recibe la clave de usuario Game ni DSN/PG*. La clave S2S continúa compartida en este experimento y no acredita aislamiento frente al compromiso de un servicio. `/internal/check/:service` exige principal Game, usa destinos loopback cerrados y timeout; permitió probar el trayecto saliente y una caída real de AI.
+
+## Repetición de la verificación integral
+
+Después del fixture SQL anterior, ejecutar secuencialmente, sin otro harness que reinicie la DB o reconstruya sus tablas:
+
+```powershell
+./spikes/infra-feasibility/tests/Verify-IntegralBuilds.ps1 -Phase Web
+./spikes/infra-feasibility/tests/Verify-IntegralBuilds.ps1 -Phase Go
+./spikes/infra-feasibility/tests/Verify-IntegralBuilds.ps1 -Phase LinuxRace
+./spikes/infra-feasibility/tests/notificationprobe/Run.ps1
+./spikes/infra-feasibility/tests/Verify-IntegralBuilds.ps1 -Phase NotificationRace
+./spikes/infra-feasibility/tests/Verify-IntegralRuntime.ps1
+./spikes/infra-feasibility/tests/Verify-Documents.ps1
+./spikes/infra-feasibility/tests/Verify-Exposure.ps1
+```
+
+Cada build/runtime crea un directorio de ejecución nuevo. El runner runtime compila procesos, inserta IDs sintéticos nuevos, mata/reinicia solo su Game y AI, y reinicia solo PostgreSQL del proyecto/volumen esperado. `-SkipDatabaseRestart` es diagnóstico parcial y no sirve para aceptar DB-07. Al terminar cierra sus procesos y restaura el entorno; deja PostgreSQL y su volumen disponibles. No ejecutar junto con usuarios de 18100–18103 o fixtures destructivos.
+
+Las fases race usan una imagen Go/GCC identificada y contenedores efímeros, sin instalar compilador global. Windows race nativo permanece no ejecutado. [Índice de builds](evidence/integral-builds-summary.md), [notificaciones simuladas](tests/notificationprobe/README.md) e [informe integral](INTEGRAL_REPORT.md) detallan comandos, evidencia final y fallos históricos conservados. Los controles documentales/de exposición no validan comportamiento del proveedor ni ausencia universal de vulnerabilidades.
 
 ## PostgreSQL y notificaciones
 

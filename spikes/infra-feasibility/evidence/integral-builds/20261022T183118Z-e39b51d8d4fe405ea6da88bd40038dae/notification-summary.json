@@ -1,0 +1,9 @@
+{
+  "result": "PASS",
+  "subtests": 8,
+  "raceReported": false,
+  "topLevelTests": 8,
+  "database": "real PostgreSQL in dedicated Docker project",
+  "explicitScenarios": 15,
+  "broker": "controlled local HTTP double; Ably real not validated"
+}

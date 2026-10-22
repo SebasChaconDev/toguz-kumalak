@@ -1,0 +1,22 @@
+[
+  {
+    "path": "tests/notificationprobe/capability_test.go",
+    "sha256": "59D6ABD1AA5249CCE312BCC3C9840262C2D8EC9CCF743B5EB429E69C53511B3B"
+  },
+  {
+    "path": "tests/notificationprobe/double_test.go",
+    "sha256": "E24E0CDBE3EF09E001E3AD137EBC8B19386591B3C8FED3E7282A9906B370E600"
+  },
+  {
+    "path": "tests/notificationprobe/go.mod",
+    "sha256": "480EB530D40CF3048CC07D81524594AD807CBF6E071919FB2BCD8CC2DE751BDC"
+  },
+  {
+    "path": "tests/notificationprobe/go.sum",
+    "sha256": "26E48C915042FC2A165B77E1DFB645A5B1E9F8DB497E6A9E826679F2ED030774"
+  },
+  {
+    "path": "tests/notificationprobe/integration_test.go",
+    "sha256": "0010DB9DCE4286C37E58E7FB9A8591D2F3AAFE920B8548151D2A21D579EA8C0D"
+  }
+]

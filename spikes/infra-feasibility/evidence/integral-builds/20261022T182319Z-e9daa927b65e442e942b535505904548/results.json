@@ -1,0 +1,146 @@
+[
+  {
+    "label": "git-head",
+    "command": "git rev-parse HEAD",
+    "directory": "<SPIKE_ROOT>",
+    "exit": 0,
+    "seconds": 0.075,
+    "log": "git-head.txt"
+  },
+  {
+    "label": "go-version",
+    "command": "go version",
+    "directory": "<SPIKE_ROOT>",
+    "exit": 0,
+    "seconds": 0.075,
+    "log": "go-version.txt"
+  },
+  {
+    "label": "node-version",
+    "command": "node --version",
+    "directory": "<SPIKE_ROOT>",
+    "exit": 0,
+    "seconds": 0.055,
+    "log": "node-version.txt"
+  },
+  {
+    "label": "npm-version",
+    "command": "npm.cmd --version",
+    "directory": "<SPIKE_ROOT>",
+    "exit": 0,
+    "seconds": 0.489,
+    "log": "npm-version.txt"
+  },
+  {
+    "label": "modules-engine-env",
+    "command": "go env GOVERSION GOOS GOARCH GOWORK GOMOD GOCACHE GOMODCACHE CGO_ENABLED",
+    "directory": "<SPIKE_ROOT>\\modules\\engine",
+    "exit": 0,
+    "seconds": 0.069,
+    "log": "modules-engine-env.txt"
+  },
+  {
+    "label": "modules-engine-test",
+    "command": "go test -mod=readonly -count=1 ./...",
+    "directory": "<SPIKE_ROOT>\\modules\\engine",
+    "exit": 0,
+    "seconds": 14.999,
+    "log": "modules-engine-test.txt"
+  },
+  {
+    "label": "modules-engine-vet",
+    "command": "go vet -mod=readonly ./...",
+    "directory": "<SPIKE_ROOT>\\modules\\engine",
+    "exit": 0,
+    "seconds": 2.738,
+    "log": "modules-engine-vet.txt"
+  },
+  {
+    "label": "modules-engine-build",
+    "command": "go build -mod=readonly ./...",
+    "directory": "<SPIKE_ROOT>\\modules\\engine",
+    "exit": 0,
+    "seconds": 0.511,
+    "log": "modules-engine-build.txt"
+  },
+  {
+    "label": "modules-probe-env",
+    "command": "go env GOVERSION GOOS GOARCH GOWORK GOMOD GOCACHE GOMODCACHE CGO_ENABLED",
+    "directory": "<SPIKE_ROOT>\\modules\\probe",
+    "exit": 0,
+    "seconds": 0.078,
+    "log": "modules-probe-env.txt"
+  },
+  {
+    "label": "modules-probe-test",
+    "command": "go test -mod=readonly -count=1 ./...",
+    "directory": "<SPIKE_ROOT>\\modules\\probe",
+    "exit": 0,
+    "seconds": 34.135,
+    "log": "modules-probe-test.txt"
+  },
+  {
+    "label": "modules-probe-vet",
+    "command": "go vet -mod=readonly ./...",
+    "directory": "<SPIKE_ROOT>\\modules\\probe",
+    "exit": 0,
+    "seconds": 5.123,
+    "log": "modules-probe-vet.txt"
+  },
+  {
+    "label": "modules-probe-build",
+    "command": "go build -mod=readonly ./...",
+    "directory": "<SPIKE_ROOT>\\modules\\probe",
+    "exit": 0,
+    "seconds": 0.369,
+    "log": "modules-probe-build.txt"
+  },
+  {
+    "label": "services-identity-env",
+    "command": "go env GOVERSION GOOS GOARCH GOWORK GOMOD GOCACHE GOMODCACHE CGO_ENABLED",
+    "directory": "<SPIKE_ROOT>\\services\\identity",
+    "exit": 0,
+    "seconds": 0.036,
+    "log": "services-identity-env.txt"
+  },
+  {
+    "label": "services-identity-test",
+    "command": "go test -mod=readonly -count=1 ./...",
+    "directory": "<SPIKE_ROOT>\\services\\identity",
+    "exit": 0,
+    "seconds": 3.687,
+    "log": "services-identity-test.txt"
+  },
+  {
+    "label": "services-identity-vet",
+    "command": "go vet -mod=readonly ./...",
+    "directory": "<SPIKE_ROOT>\\services\\identity",
+    "exit": 0,
+    "seconds": 0.566,
+    "log": "services-identity-vet.txt"
+  },
+  {
+    "label": "services-identity-build",
+    "command": "go build -mod=readonly ./...",
+    "directory": "<SPIKE_ROOT>\\services\\identity",
+    "exit": 0,
+    "seconds": 2.737,
+    "log": "services-identity-build.txt"
+  },
+  {
+    "label": "services-game-env",
+    "command": "go env GOVERSION GOOS GOARCH GOWORK GOMOD GOCACHE GOMODCACHE CGO_ENABLED",
+    "directory": "<SPIKE_ROOT>\\services\\game",
+    "exit": 0,
+    "seconds": 0.034,
+    "log": "services-game-env.txt"
+  },
+  {
+    "label": "services-game-test",
+    "command": "go test -mod=readonly -count=1 ./...",
+    "directory": "<SPIKE_ROOT>\\services\\game",
+    "exit": 1,
+    "seconds": 3.764,
+    "log": "services-game-test.txt"
+  }
+]
