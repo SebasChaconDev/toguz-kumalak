@@ -1,19 +1,21 @@
 # PLANS — Lotes documentales, gates y estado
 
+> Autorización posterior vigente: el propietario autoriza generar y publicar exclusivamente el lote 3 documental en docs/specs-lote-03: once specs EN_REVISIÓN, registros necesarios y PR contra main sin fusionar. Esta instrucción sustituye las paradas históricas de lotes anteriores; no autoriza producto, lote 4, infraestructura o pagos.
+
 > Aprobación posterior del lote 2: el propietario declaró «APRUEBO LOTE 2» y autorizó fusionar PR #2 en main. Contenido aprobado: HEAD 598ac9a4fc6ce14cf512785fb1c4160fafb4eb9e; integrado por squash 1f401af8d76794981bbcfdf9a3aa1831cf2621f5 (2026-10-21T21:10:14Z). Este registro sustituye las menciones históricas a revisión pendiente o prohibición de esa fusión. No autoriza lote 3 ni implementación; el producto sigue sin verificar.
 
 > Aprobación posterior: el propietario declaró «APRUEBO LOTE 1» el 2026-10-21 para el contenido revisado en HEAD e38cc84950858e072c1a3f06ffbf854cf7e544f5. PR #1 integrado por squash en main: 329b7c1059e8a74f191c256870734e8ae8259966. Este registro prevalece sobre menciones históricas de revisión pendiente; no acredita producto probado. Los permisos actuales se consultan en AGENTS y PLANS.
 
-ID: PLANS · Versión: 0.6 · Fecha: 2026-10-21 · Estado documental: APROBADO · Owner: C.
+ID: PLANS · Versión: 0.7 · Fecha: 2026-10-21 · Estado documental: EN_REVISIÓN · Owner: C.
 
 ## Autorización y estado actual
 
 - Gate 0: recibido del propietario el 2026-10-21: «APRUEBO INVENTARIO DOCUMENTAL».
 - Historial: la restricción inicial de lote 1 fue satisfecha; la instrucción posterior «APRUEBO LOTE 1» autoriza su integración condicionada y la generación/publicación documental del lote 2.
 - Inventario autorizado: [81 Markdown](docs/index.md#inventario),40 specs y 41 documentos de soporte.
-- Permiso posterior ejecutado: «APRUEBO LOTE 2. Fusiona el Pull Request #2 en main, verifica la integración y actualiza los estados documentales correspondientes». PR #2 integrado; cierre limitado a metadatos/registros existentes y verificación documental. Sin lote 3 ni producto.
-- Estado de ejecución documental: `LOTE_2_APROBADO_E_INTEGRADO`. TK-N1-1.0.0 y aceptación documental del lote 2 APROBADOS por el propietario.
-- Lotes 1 y 2 APROBADOS e integrados. Diez specs del lote 2 y registros de integración APROBADOS; 59 decisiones con spec aprobada y 187 con spec futura. No se inicia el lote 3.
+- Permiso actual posterior: «AUTORIZO LA GENERACIÓN Y PUBLICACIÓN DOCUMENTAL DEL LOTE 3». Once specs inventariadas, cinco registros necesarios y PR desde docs/specs-lote-03 contra main sin fusionar; sin producto ni lote 4. La aprobación e integración de PR #2 permanecen como base verificada.
+- Estado de ejecución documental: `LOTE_3_EN_REVISIÓN`. Lotes 1 y 2 y TK-N1-1.0.0 APROBADOS; once specs del lote 3 redactadas para PR sin fusionar y gate humano pendiente.
+- Lotes 1 y 2 APROBADOS e integrados; 59 decisiones con spec aprobada. Lote 3 cubre 66 decisiones adicionales EN_REVISIÓN; 121 conservan spec futura. Generar/publicar no aprueba el contenido.
 - Estado del producto: implementación no iniciada, proveedores no conectados, pruebas de producto no ejecutadas, despliegues no realizados.
 
 La aprobación de inventario no aprueba anticipadamente el contenido. Un reporte emitido por el agente no sustituye aceptación humana. La instrucción más reciente del propietario prevalece si restringe una continuación.
@@ -410,3 +412,119 @@ Cobertura actual: 59 decisiones con spec APROBADA, cero con spec EN_REVISIÓN y 
 Controles de cierre ejecutados: 42 archivos físicos sin altas/bajas; 246 textos fuente/REG literales y ordenados; 246 destinos canónicos sin cambios; cobertura 59/0/187; 2423 enlaces locales sin errores de rutas/anclas, tablas, IDs o fences; 17 secciones en cada spec. Comparación de los diez cuerpos aprobados sin diferencias salvo recibo, versión y estado; transcripción íntegra de la resolución intacta. DAG de 40 specs sin ciclos ni dependencias modificadas. Fuente maestra, preliminares, ADR y gobierno 11.* sin cambios; SHA256 de SRC conservado. Escaneo de patrones sensibles sin hallazgos y diff documental sin errores. La publicación del recibo se verifica después contra main remoto, conservando PR #2 en estado MERGED.
 
 Este cierre prevalece sobre informes históricos de espera o prohibición de fusionar PR #2. TK-N1-1.0.0 sigue completo sin bloqueos normativos pendientes. Los riesgos técnicos y las pruebas futuras permanecen POR_VERIFICAR. **Trabajo detenido: ninguna autorización de lote 3, código, instalaciones, pruebas de producto o despliegues.**
+
+<a id="lote-3"></a>
+
+## Lote 3 — plan de ejecución documental autorizado, 2026-10-21
+
+Fuente de autorización: solicitud íntegra adjunta «TOGUZ KUMALAK — EJECUCIÓN DOCUMENTAL DEL LOTE 3». El propietario autoriza once specs y cinco registros existentes (AGENTS mínimo, PLANS, IDX, TRZ, CONF), rama `docs/specs-lote-03`, commits/push/PR sin fusión. Base verificada `main=aaeeace21860305091c0351bedb0aca0df386816`; PR #2 MERGED por squash `1f401af8d76794981bbcfdf9a3aa1831cf2621f5`, HEAD aprobado `598ac9a4fc6ce14cf512785fb1c4160fafb4eb9e`. Remoto correcto SebasChaconDev/toguz-kumalak, fetch y fast-forward sin cambios, árbol limpio, rama de lote 3 inexistente antes de crearla. No se sobrescribió trabajo ajeno.
+
+Este plan es exclusivamente documental. Se adapta el flujo de planificación a PLANS, ruta expresamente autorizada; no se generan planes auxiliares, archivos de producto o pruebas ejecutables.
+
+- [x] Inspección inicial, PR #2, origen/base, permiso y once rutas exactas.
+- [x] Consolidar fuentes y contratos en orden topológico: 05.01 → 07.01 → 07.02 → 05.02 → 05.03 → 05.04 → 07.03/07.04 → 06.01 → 06.02 → 06.03, respetando dependencias adicionales del índice.
+- [x] Redactar once specs v0.1 EN_REVISIÓN, diecisiete secciones y 66 decisiones canónicas: 05.01=5, 05.02=4, 05.03=8, 05.04=4, 07.01=8, 07.02=6, 07.03=7, 07.04=6, 06.01=6, 06.02=6, 06.03=6.
+- [x] Integrar índice, trazabilidad y riesgos/propuestas sin cambiar REG, ADR o specs aprobadas.
+- [x] Auditar estructura, fuentes, contratos y casos negativos con revisión independiente de autores; corregir por dueño de cada archivo.
+- [x] Verificar diff, fuentes/246 decisiones, 14 ACC, enlaces, DAG, alcance y secretos; publicar rama y PR con título prescrito.
+- [x] Confirmar HEAD/archivos remotos, entregar informe EN_REVISIÓN, solicitar «APRUEBO LOTE 3» y detenerse.
+
+Propiedad: coordinación es autora única de los cinco registros; los especialistas redactan specs en rutas exclusivas. Tras cada entrega y cese explícito, coordinación puede integrar correcciones en la spec estable y consolidar contratos compartidos, sin escritores simultáneos. No se redacta una spec dependiente hasta recibir su entrada consolidada. Revisión independiente solo lectura. Las asignaciones y entregas reales se registran en el informe final; el plan no acredita participación ejecutada.
+
+Invariantes: tres servicios Go; Identity y Game con SQL separado; AI sin DB inicial y sin autoridad; motor puro TK-N1-1.0.0 y sus 14 ACC intactos; OpenAPI3.1/REST como contrato; PostgreSQL commit antes de Ably; sin exactly-once, outbox/Redis/colas obligatorios ni cambios reglamentarios. PRE-09 se conserva. Producto/pruebas/factibilidad de infraestructura permanecen POR_VERIFICAR.
+
+Las decisiones de detalle no fijadas por el propietario se rotulan PROPUESTA con un contrato concreto para revisión, impactos y casos de validación. Una contradicción real se registra con alternativas y autorización requerida; no se resuelve cambiando una fuente aprobada.
+
+
+<a id="informe-lote-3"></a>
+
+## Informe de lote 3 — entrega para revisión documental
+
+### Inventario, cobertura y dependencias
+
+Base main verificada: aaeeace21860305091c0351bedb0aca0df386816. Lotes1/2 aprobados e integrados; PR2 MERGED y perfil TK-N1-1.0.0/AD-NORM-001 preservados. Nueva rama docs/specs-lote-03, sin sobrescribir trabajo previo. Se crean exactamente estas once rutas Markdown v0.1 EN_REVISIÓN:
+
+| ID | Documento | Decisiones canónicas |
+|---|---|---|
+| 05.01 | [docs/specs/05-backend/05.01-service-boundaries-and-hexagonal-design.md](docs/specs/05-backend/05.01-service-boundaries-and-hexagonal-design.md) | 5 |
+| 05.02 | [docs/specs/05-backend/05.02-http-openapi-and-errors.md](docs/specs/05-backend/05.02-http-openapi-and-errors.md) | 4 |
+| 05.03 | [docs/specs/05-backend/05.03-transactions-data-and-migrations.md](docs/specs/05-backend/05.03-transactions-data-and-migrations.md) | 8 |
+| 05.04 | [docs/specs/05-backend/05.04-event-schemas-and-postcommit-publication.md](docs/specs/05-backend/05.04-event-schemas-and-postcommit-publication.md) | 4 |
+| 06.01 | [docs/specs/06-multiplayer/06.01-rooms-invitations-and-ranked-lifecycle.md](docs/specs/06-multiplayer/06.01-rooms-invitations-and-ranked-lifecycle.md) | 6 |
+| 06.02 | [docs/specs/06-multiplayer/06.02-ably-notifications-and-reconciliation.md](docs/specs/06-multiplayer/06.02-ably-notifications-and-reconciliation.md) | 6 |
+| 06.03 | [docs/specs/06-multiplayer/06.03-recovery-multitab-and-partial-failures.md](docs/specs/06-multiplayer/06.03-recovery-multitab-and-partial-failures.md) | 6 |
+| 07.01 | [docs/specs/07-identity-data/07.01-oidc-guests-and-session-lifecycle.md](docs/specs/07-identity-data/07.01-oidc-guests-and-session-lifecycle.md) | 8 |
+| 07.02 | [docs/specs/07-identity-data/07.02-tokens-authorization-and-service-identity.md](docs/specs/07-identity-data/07.02-tokens-authorization-and-service-identity.md) | 6 |
+| 07.03 | [docs/specs/07-identity-data/07.03-profiles-history-and-data-rights.md](docs/specs/07-identity-data/07.03-profiles-history-and-data-rights.md) | 7 |
+| 07.04 | [docs/specs/07-identity-data/07.04-elo-leaderboard-and-statistics.md](docs/specs/07-identity-data/07.04-elo-leaderboard-and-statistics.md) | 6 |
+
+Únicos existentes modificados: AGENTS.md (permiso operativo mínimo), PLANS.md (plan/informe), docs/index.md (once entregas/estados), docs/traceability.md (66 filas/consumidores/casos) y docs/conflicts.md (riesgos/propuestas). No cambios en README/GOALS/PROMPTS/REG/SRC/ADR/specs aprobadas/.gitignore. Total PR: once altas y cinco modificaciones, cero bajas, solo Markdown.
+
+Cobertura: 66 PRE únicos en lote3 (PRE01=4, PRE02=1, PRE05=20, PRE06=18, PRE07=23), con VP→AC exactos en sus specs y evidencia de producto PENDIENTE. Repositorio:59 decisiones SPEC_APROBADO,66 SPEC_EN_REVISIÓN,121 futuras;246 con dueño único sin reasignación. [Matriz completa](docs/traceability.md#lote-3-cobertura), [18 casos críticos](docs/traceability.md#lote-3-casos-criticos), [14 ACC consumidores](docs/traceability.md#lote-3-acc-consumidores).
+
+Grafo de40 specs sin ciclos y sin cambiar ninguna dependencia inventariada. Orden aplicado:
+
+```mermaid
+flowchart LR
+  A["05.01"] --> B["07.01"] --> C["07.02"] --> D["05.02"]
+  D --> E["05.03"] --> F["05.04"]
+  C --> F
+  F --> G["07.03"]
+  C --> G
+  E --> H["07.04"]
+  C --> H
+  F --> I["06.01"]
+  H --> I
+  I --> J["06.02"]
+  F --> J
+  J --> K["06.03"]
+  B --> K
+  C --> K
+```
+
+El diagrama muestra el subgrafo del lote; entradas aprobadas01.02/02.03/03.04 y las demás aristas se conservan en [IDX](docs/index.md#dependencias-de-redacción). 07.03/07.04 se redactaron tras consolidar sus entradas, antes del dominio06; no se inventó un ciclo por una referencia de consulta.
+
+### Contratos y decisiones técnicas para revisión
+
+- Solo Identity/Game/AI Go/Gin, SQL exclusivo por dueño, AI sin persistencia inicial. Mismo motor Go puro/versión resuelta en Game y AI; frontend/Ably nunca adjudican resultados.
+- REST/OpenAPI3.1.1 propuesto:61 operaciones v1, RFC9457, revisiones uint64 como strings, límites por operación, domain-json/1/JCS y binding S2S de operación/método/body/path/query. Generadores/validadores y releases compatibles siguen POR_VERIFICAR.
+- PostgreSQL/pgx5/sqlc/Goose/Neon previstos: guardas humanas UUIDASC→roomsASC→gamesASC→ratingsASC→derivados, relojes frescos tras locks, recibos durables antes de stale/turno en retries y final/ambos Elo/agregados atómicos. Commit incierto se resuelve con la misma intención; ningún HTTP durante SQL/locks ni garantía distribuida Identity/Game.
+- Eventos semánticos versionados frente a Notice mínimo privado. Commit conocido precede publicación acotada; fallo/crash puede perder aviso. Sin exactly-once, Redis/colas/outbox obligatorios; reconciliación REST y replay persistido oficial. Canales/capacidades Ably message-subscribe exactos, sin permisos publish/presence/history del navegador.
+- OIDC Google Code+PKCE y credenciales propias ES256/JWKS; usuario/S2S/Ably separados. Access900s, guest sliding48h/horizonte firmado, refresh prepare/commit con proof/CSRF persistentes y recibo cifrado; revocación/rotación y ventanas residuales explícitas. Vínculo G→U existente solo historial terminado congelado, sin activas/recibos G/Elo retroactivo.
+- API pública batch por playerIds O aliases registrados exactos, correlación por consulta y sin SQL cruzado/barrido del ranking. Perfil mínimo, alias/avatar propuestos, grants de replay terminado para guest/user y exportaciones propias per_owner sin snapshot entre bases.
+- Borrado prepare/confirm instala ticket y nonce antes de revocar. Primera confirmación exige sesión vigente/10min; seguimiento30d sirve solo a la misma raíz/fase. Barrier ACK_REVOKED separado de cleanup con política aprobada/ACK_CLEANUP_COMPLETE; rival/finales/Elo íntegros y sin forfeit por borrar. Política jurídica/retención RISK10 pendiente, sin certificación de cumplimiento.
+- Elo1200/K32/diez provisionales intactos; fórmula binary64/redondeo único orientado UUID, enteros auditables y ambas variaciones en una tx. Admisión3 inicios por par/24h es PROPUESTA previa a Start, nunca veto retroactivo. Métricas de captura/tuz por owner sin doble conteo, ranking vivo y rebuild de una sola política.
+- Salas privadas de dos, pending30min inactividad frente a recuperación activa24h por participante; colores aleatorios una vez y rankedEligible inmutable. Custodia cifrada separada de receipts, entrada por código sin resolver público y revancha nueva sin reabrir terminal. ReadyConsent guarda evidencia verificada de ambos sin JWT; fase explícita en GameView. Fábrica pura r0 se adapta solo en metadata al Start oficial, con count1. Rematch mantiene oldGameRevision y usa RematchView/TTL10min con polling15s máximo40 lecturas/10min visible. Detalles de sincronización/actividad/multipestaña se concretan en06.02–06.03.
+
+Ningún detalle técnico nuevo se atribuye a las246 decisiones aprobadas. Los parámetros/formatos nuevos se distinguen como PROPUESTA y su comportamiento como POR_VERIFICAR. PRE09 conserva pruebas automatizadas de integridad/corrección previstas. TK-N1-1.0.0 y sus14ACC siguen completos, sin bloqueos normativos pendientes.
+
+### Revisión independiente y correcciones integradas
+
+Asignación real: l3_backend redactó05.*, l3_identity07.01–07.03, l3_data07.04 y l3_multiplayer06.*; coordinación leyó íntegramente las entregas y consolidó contratos tras cada cese. l3_review_arch revisó independientemente las seis primeras specs y07.03; l3_backend revisó07.04 completa y sus cálculos/contratos. Revisión06 y auditoría final: l3_review_arch leyó íntegramente06.01–06.03 y comprobó cada integración focal posterior. l3_backend contrastó IDX/TRZ reales contra las fuentes:81 entradas,40 specs,80 aristas,246 propietarios,18 casos críticos y14ACC consumidores. Un autor por archivo, revisores solo lectura; ningún informe de autor se aceptó como prueba suficiente.
+
+Hallazgos corregidos en nuevas specs, sin cambios semánticos a fuentes aprobadas: retención de cookies refresh/CSRF antes de perder respuesta; cursor ranking vivo sin snapshot inventado; pasos cleanup separados para no fijar policy=null; política LogoutAll explícita sin step-up indefinido; admisión por código sin roomId previo; custodia de invitación fuera de receipt y reseal al cambiar expiry; seat estable separado de color aleatorio; expiry24h solo activa y tiempo después de locks; history_entries padre común y eventos asociados una sola vez; parser uint64 antes de coerción numeric; alias exacto por API; proof delete antes de revocación. Revisión focal posterior confirmó coherencia. Las inconsistencias de borradores se corrigieron antes de publicar; no se alteró un requisito aprobado ni se solicitó cambiar el perfil normativo. Precisiones finales corregidas: RoomView con fase/adjunto separado, ReadyConsent y revisión inicial oficial; cap de todos los GET/POST sololectura de pantalla, activityVersion obligatoria por UUID; ActivityDecision histórica frente a proyección actual, estados recoverable/expiry_pending/ended, allowedActions vacío mientras expiry_pending, cuotas de actividad y detección de regresión contra ambos participantes. En TRZ se corrigió competencia sobre la misma expectedRevision y se añadió F-SAL-03/11 para30min. Revisiones focales posteriores sin remanentes.
+
+### Auditoría observada y límites
+
+Controles documentales finales observados sobre el árbol integrado:
+
+- 53 archivos físicos:52 Markdown y .gitignore existente; once altas y cinco modificaciones autorizadas, sin archivos vacíos/ajenos ni rutas físicas de lotes4–6. Once specs nuevas EN_REVISIÓN con secciones1–17;23 specs físicas conservan17 secciones.
+- 246 decisiones SRC/REG literales y ordenadas;246 propietarios únicos iguales al mapa inicial. Cobertura59/66/121 y66 VP→99 AC en las nuevas specs, con175 casos futuros previstos; no tests de producto ejecutados. Inventario81 entradas/40 specs,80 aristas idénticas y DAG sin ciclos.
+- Matrices de18 casos críticos y14ACC consumidores revisadas. R-01–R-08,14ACC, AD-NORM-001, PRE09, fuentes/ADR/preliminares/specs aprobadas sin cambios frente a base.
+- 3.172 enlaces locales comprobados: cero rutas/anclas ausentes, IDs explícitos duplicados, tablas incoherentes o fences abiertos. Cero restos PENDIENTE_LOTE_3 en nuevas specs; futuros lotes4/5 conservan sus marcas.
+- 13 bloques JSON de las once specs analizados sin errores. Dos schemas Markdown05.04: tres ejemplos positivos aceptados (incluido aviso06.02) y dos mutaciones negativas rechazadas con PowerShell7.6.5 Test-Json en memoria. No ejecutados generadores/runtime Go/TS ni demostradas todas las restricciones semánticas por ese chequeo.
+- Seis ejemplos aritméticos W/D/L y ambos órdenes de finales concurrentes1199/1201 revisados; ejemplo temporal06.03 conserva86.400s por fila y mínimo. Cálculo documental no prueba una implementación o alcanzabilidad de trayectorias.
+- SRC conserva SHA25628C24C498829FCFAD410F07AAA6BD036D5A33382294401E11E86D486E4ECBBEF igual al original. Resolución original conserva9330B3116357225429BC85466BA48E9937C7D434AFE117AA633CA2A04A61DDE5; REG íntegro sin cambios. Comprobación Git de rutas protegidas sin diferencias.
+- Escaneo de53 archivos sin coincidencias de patrones sensibles/archivos de secretos; diff --check sin errores. No equivale a auditoría de seguridad del producto. Sin hooks activos o CI local de producto ejecutada. l3_backend reprodujo independientemente estos conteos, enlaces, esquemas y escaneo final desde los archivos reales; no encontró nuevos hallazgos.
+
+Las únicas verificaciones acreditadas son documentales: lectura humana asistida, análisis de texto/JSON/esquemas y aritmética en memoria. No se generaron archivos Go/TS/SQL ni se compiló o ejecutó producto, pruebas unitarias/integración/E2E, migraciones o servicios; los ejemplos permanecen dentro de bloques Markdown. No se instalaron dependencias, realizaron conexiones operativas a Google/Neon/Ably/Vercel/Stripe, activaron pagos o desplegaron recursos. Git/GitHub se utilizan únicamente para publicación documental autorizada.
+
+### Riesgos, aprobación y publicación
+
+Persisten RISK02/03/04/05/06/07/08/09/10/11/12/13/14 en los alcances técnicos ya registrados; redactar contratos no demuestra runtime Go/Vercel, empaquetado, cuotas/capacidad, Neon/pools, SDK, cookies/proveedores, seguridad, rendimiento, fuerza IA, restauración o licencias. RISK10 exige jurisdicción/política/versiones/alcance de retención y mínimos deportivos antes de completar limpieza; no inventar anonimización. Las propuestas numéricas, alias, plazos, cadencias y admisión requieren revisión del lote. [CONF](docs/conflicts.md#lote-3-riesgos) conserva dueños/impacto/evidencia pendiente. No hay elección reglamentaria nueva para TK-N1-1.0.0.
+
+Publicación verificada: [PR #3](https://github.com/SebasChaconDev/toguz-kumalak/pull/3), título exacto prescrito, base main y head docs/specs-lote-03, OPEN y mergedAt=null. Commit inicial de las especificaciones: `69c1b31b92f14f47454f2d24761a05f6dc3b50a3`, igual a HEAD remoto comprobado al crear el PR. GitHub confirmó16 rutas exactas: once altas y cinco modificaciones Markdown; ningún código o lote4. Cuenta personal CLI SebasChaconDev; conector inspeccionado ligado a otra cuenta, sin cambiar sus autenticaciones. Árbol local limpio tras el primer push. Main permanece aaeeace21860305091c0351bedb0aca0df386816 y PR2 conserva su integración.
+
+El PR no reporta comprobaciones CI; no se atribuyen pruebas de producto. Este recibo y checklist se publican en un segundo commit exclusivamente de PLANS, sin cambiar specs o cobertura. El SHA anterior identifica la entrega de contenido; el HEAD vigente tras el recibo se verifica en GitHub y en la entrega final. No fusión, force push, implementación, proveedores operativos, pagos, despliegues o lote4.
+
+Estado final: LOTE_3_EN_REVISIÓN, pendiente del gate humano **«APRUEBO LOTE 3»**. Publicación no equivale a aprobación. No fusionar, generar lote4, implementar, probar producto o modificar infraestructura. Trabajo detenido para revisión del propietario.
