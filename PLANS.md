@@ -426,8 +426,8 @@ Este plan es exclusivamente documental. Se adapta el flujo de planificación a P
 - [x] Redactar once specs v0.1 EN_REVISIÓN, diecisiete secciones y 66 decisiones canónicas: 05.01=5, 05.02=4, 05.03=8, 05.04=4, 07.01=8, 07.02=6, 07.03=7, 07.04=6, 06.01=6, 06.02=6, 06.03=6.
 - [x] Integrar índice, trazabilidad y riesgos/propuestas sin cambiar REG, ADR o specs aprobadas.
 - [x] Auditar estructura, fuentes, contratos y casos negativos con revisión independiente de autores; corregir por dueño de cada archivo.
-- [ ] Verificar diff, fuentes/246 decisiones, 14 ACC, enlaces, DAG, alcance y secretos; publicar rama y PR con título prescrito.
-- [ ] Confirmar HEAD/archivos remotos, entregar informe EN_REVISIÓN, solicitar «APRUEBO LOTE 3» y detenerse.
+- [x] Verificar diff, fuentes/246 decisiones, 14 ACC, enlaces, DAG, alcance y secretos; publicar rama y PR con título prescrito.
+- [x] Confirmar HEAD/archivos remotos, entregar informe EN_REVISIÓN, solicitar «APRUEBO LOTE 3» y detenerse.
 
 Propiedad: coordinación es autora única de los cinco registros; los especialistas redactan specs en rutas exclusivas. Tras cada entrega y cese explícito, coordinación puede integrar correcciones en la spec estable y consolidar contratos compartidos, sin escritores simultáneos. No se redacta una spec dependiente hasta recibir su entrada consolidada. Revisión independiente solo lectura. Las asignaciones y entregas reales se registran en el informe final; el plan no acredita participación ejecutada.
 
@@ -523,6 +523,8 @@ Las únicas verificaciones acreditadas son documentales: lectura humana asistida
 
 Persisten RISK02/03/04/05/06/07/08/09/10/11/12/13/14 en los alcances técnicos ya registrados; redactar contratos no demuestra runtime Go/Vercel, empaquetado, cuotas/capacidad, Neon/pools, SDK, cookies/proveedores, seguridad, rendimiento, fuerza IA, restauración o licencias. RISK10 exige jurisdicción/política/versiones/alcance de retención y mínimos deportivos antes de completar limpieza; no inventar anonimización. Las propuestas numéricas, alias, plazos, cadencias y admisión requieren revisión del lote. [CONF](docs/conflicts.md#lote-3-riesgos) conserva dueños/impacto/evidencia pendiente. No hay elección reglamentaria nueva para TK-N1-1.0.0.
 
-Publicación autorizada pendiente de ejecutar tras controles finales. Cuenta personal CLI SebasChaconDev verificada; el conector GitHub está ligado a otra cuenta, por lo que se usa CLI sin modificar autenticaciones ajenas. No hay PR previo de docs/specs-lote-03. Se registrarán URL/commit y comprobación remota después de crearlo.
+Publicación verificada: [PR #3](https://github.com/SebasChaconDev/toguz-kumalak/pull/3), título exacto prescrito, base main y head docs/specs-lote-03, OPEN y mergedAt=null. Commit inicial de las especificaciones: `69c1b31b92f14f47454f2d24761a05f6dc3b50a3`, igual a HEAD remoto comprobado al crear el PR. GitHub confirmó16 rutas exactas: once altas y cinco modificaciones Markdown; ningún código o lote4. Cuenta personal CLI SebasChaconDev; conector inspeccionado ligado a otra cuenta, sin cambiar sus autenticaciones. Árbol local limpio tras el primer push. Main permanece aaeeace21860305091c0351bedb0aca0df386816 y PR2 conserva su integración.
+
+El PR no reporta comprobaciones CI; no se atribuyen pruebas de producto. Este recibo y checklist se publican en un segundo commit exclusivamente de PLANS, sin cambiar specs o cobertura. El SHA anterior identifica la entrega de contenido; el HEAD vigente tras el recibo se verifica en GitHub y en la entrega final. No fusión, force push, implementación, proveedores operativos, pagos, despliegues o lote4.
 
 Estado final: LOTE_3_EN_REVISIÓN, pendiente del gate humano **«APRUEBO LOTE 3»**. Publicación no equivale a aprobación. No fusionar, generar lote4, implementar, probar producto o modificar infraestructura. Trabajo detenido para revisión del propietario.
