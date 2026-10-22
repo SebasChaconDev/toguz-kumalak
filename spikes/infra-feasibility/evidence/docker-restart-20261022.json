@@ -1,0 +1,12 @@
+{
+  "manualSocketCleanupDuringCycle": false,
+  "stopSeconds": 13.6560009,
+  "desktop": "4.96.3.244472",
+  "stopExit": 0,
+  "syntheticContainerPreserved": true,
+  "startExit": 0,
+  "startSeconds": 7.3329239,
+  "result": "PASS",
+  "engine": "29.9.2",
+  "dateUTC": "2026-10-22T17:50:52.7059427Z"
+}

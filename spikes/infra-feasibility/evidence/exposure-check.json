@@ -1,8 +1,8 @@
 {
-  "generatedValuesCompared": 7,
-  "publicFiles": 93,
   "findings": [],
-  "builtExecutables": 3,
+  "limits": "Known synthetic values and selected patterns only; no universal vulnerability assurance; web ephemeral fixtures checked by smoke",
+  "generatedValuesCompared": 7,
   "result": "PASS",
-  "limits": "Known synthetic values and selected patterns only; no universal vulnerability assurance; web ephemeral fixtures checked by smoke"
+  "builtExecutables": 3,
+  "publicFiles": 96
 }

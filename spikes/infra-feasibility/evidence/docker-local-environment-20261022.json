@@ -1,0 +1,18 @@
+{
+  "compose": "5.6.1",
+  "externalResourcesCreated": 0,
+  "memoryLimitBytes": 536870912,
+  "wslReset": false,
+  "boundAddress": "127.0.0.1:15435",
+  "databaseStatePreservedAfterUpdateAndContainerRecreate": "revision=1,effects=1 observed before final suite",
+  "prune": false,
+  "postgres": "postgres (PostgreSQL) 18.6 (Debian 18.6-1.pgdg13+2)",
+  "cpuLimit": 1,
+  "health": "healthy",
+  "signatureStatus": "Valid",
+  "engine": "29.9.2",
+  "desktop": "4.96.3.244472",
+  "factoryReset": false,
+  "dateUTC": "2026-10-22T17:52:36.1102302Z",
+  "imageDigest": "postgres@sha256:edb0c08dc33befd0262ab3b5cf1c4f3f8cfd8b09e88c05b45adee29d6761ddb6"
+}

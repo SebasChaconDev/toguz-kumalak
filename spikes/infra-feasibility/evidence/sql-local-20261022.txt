@@ -1,0 +1,16 @@
+=== RUN   TestHTTPTrust
+--- PASS: TestHTTPTrust (0.00s)
+=== RUN   TestStaleAI
+--- PASS: TestStaleAI (0.00s)
+=== RUN   TestSQLIsolationMigrationAndPool
+--- PASS: TestSQLIsolationMigrationAndPool (0.08s)
+=== RUN   TestIdempotencyRollbackAndRestart
+--- PASS: TestIdempotencyRollbackAndRestart (0.03s)
+=== RUN   TestConcurrentRevision
+--- PASS: TestConcurrentRevision (0.02s)
+=== RUN   TestNoticeFailureDuplicateOutOfOrderAndREST
+--- PASS: TestNoticeFailureDuplicateOutOfOrderAndREST (0.03s)
+=== RUN   TestLostHTTPResponseAndResourceAuthorization
+--- PASS: TestLostHTTPResponseAndResourceAuthorization (0.03s)
+PASS
+ok  	github.com/SebasChaconDev/toguz-kumalak/spikes/infra-feasibility/services/game/app	1.548s

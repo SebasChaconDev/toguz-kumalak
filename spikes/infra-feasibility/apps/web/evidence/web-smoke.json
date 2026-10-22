@@ -1,52 +1,52 @@
 {
-  "timestampUtc": "2026-10-22T02:25:49.575Z",
+  "timestampUtc": "2026-10-22T17:49:17.552Z",
   "node": "v24.13.0",
   "environment": "Windows local loopback, production Next server, controlled Node HTTP doubles",
   "result": "PASS",
   "measuredRequests": 8,
-  "readinessAttempts": 4,
-  "totalHttpAttempts": 12,
+  "readinessAttempts": 69,
+  "totalHttpAttempts": 77,
   "clientJavaScriptFilesChecked": 9,
   "samples": [
     {
       "path": "/",
       "status": 200,
-      "elapsedMs": 5.43
+      "elapsedMs": 5.61
     },
     {
       "path": "/probe/identity/health",
       "status": 401,
-      "elapsedMs": 14.93
+      "elapsedMs": 50.64
     },
     {
       "path": "/probe/game/health",
       "status": 401,
-      "elapsedMs": 4.21
+      "elapsedMs": 3.77
     },
     {
       "path": "/probe/identity/health",
       "status": 200,
-      "elapsedMs": 2.79
+      "elapsedMs": 2.14
     },
     {
       "path": "/probe/game/health",
       "status": 200,
-      "elapsedMs": 2.2
+      "elapsedMs": 1.99
     },
     {
       "path": "/probe/identity/cookie",
       "status": 401,
-      "elapsedMs": 2.26
+      "elapsedMs": 2.11
     },
     {
       "path": "/probe/identity/cookie",
       "status": 200,
-      "elapsedMs": 1.44
+      "elapsedMs": 1.4
     },
     {
       "path": "/probe/game/health",
       "status": 200,
-      "elapsedMs": 1.54
+      "elapsedMs": 1.32
     }
   ],
   "observations": [

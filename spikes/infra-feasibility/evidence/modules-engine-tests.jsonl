@@ -1,8 +1,8 @@
-{"Time":"2026-10-21T22:36:40.4936475-04:00","Action":"start","Package":"github.com/SebasChaconDev/toguz-kumalak/spikes/infra-feasibility/modules/engine"}
-{"Time":"2026-10-21T22:36:40.9290171-04:00","Action":"run","Package":"github.com/SebasChaconDev/toguz-kumalak/spikes/infra-feasibility/modules/engine","Test":"TestDigest"}
-{"Time":"2026-10-21T22:36:40.9290171-04:00","Action":"output","Package":"github.com/SebasChaconDev/toguz-kumalak/spikes/infra-feasibility/modules/engine","Test":"TestDigest","Output":"=== RUN   TestDigest\n"}
-{"Time":"2026-10-21T22:36:40.9290171-04:00","Action":"output","Package":"github.com/SebasChaconDev/toguz-kumalak/spikes/infra-feasibility/modules/engine","Test":"TestDigest","Output":"--- PASS: TestDigest (0.00s)\n"}
-{"Time":"2026-10-21T22:36:40.9290171-04:00","Action":"pass","Package":"github.com/SebasChaconDev/toguz-kumalak/spikes/infra-feasibility/modules/engine","Test":"TestDigest","Elapsed":0}
-{"Time":"2026-10-21T22:36:40.9290171-04:00","Action":"output","Package":"github.com/SebasChaconDev/toguz-kumalak/spikes/infra-feasibility/modules/engine","Output":"PASS\n"}
-{"Time":"2026-10-21T22:36:40.9305775-04:00","Action":"output","Package":"github.com/SebasChaconDev/toguz-kumalak/spikes/infra-feasibility/modules/engine","Output":"ok  \tgithub.com/SebasChaconDev/toguz-kumalak/spikes/infra-feasibility/modules/engine\t0.436s\n"}
-{"Time":"2026-10-21T22:36:40.9305775-04:00","Action":"pass","Package":"github.com/SebasChaconDev/toguz-kumalak/spikes/infra-feasibility/modules/engine","Elapsed":0.437}
+{"Time":"2026-10-22T13:49:03.3106289-04:00","Action":"start","Package":"github.com/SebasChaconDev/toguz-kumalak/spikes/infra-feasibility/modules/engine"}
+{"Time":"2026-10-22T13:49:04.0512958-04:00","Action":"run","Package":"github.com/SebasChaconDev/toguz-kumalak/spikes/infra-feasibility/modules/engine","Test":"TestDigest"}
+{"Time":"2026-10-22T13:49:04.0512958-04:00","Action":"output","Package":"github.com/SebasChaconDev/toguz-kumalak/spikes/infra-feasibility/modules/engine","Test":"TestDigest","Output":"=== RUN   TestDigest\n"}
+{"Time":"2026-10-22T13:49:04.0512958-04:00","Action":"output","Package":"github.com/SebasChaconDev/toguz-kumalak/spikes/infra-feasibility/modules/engine","Test":"TestDigest","Output":"--- PASS: TestDigest (0.00s)\n"}
+{"Time":"2026-10-22T13:49:04.0512958-04:00","Action":"pass","Package":"github.com/SebasChaconDev/toguz-kumalak/spikes/infra-feasibility/modules/engine","Test":"TestDigest","Elapsed":0}
+{"Time":"2026-10-22T13:49:04.0512958-04:00","Action":"output","Package":"github.com/SebasChaconDev/toguz-kumalak/spikes/infra-feasibility/modules/engine","Output":"PASS\n"}
+{"Time":"2026-10-22T13:49:04.053599-04:00","Action":"output","Package":"github.com/SebasChaconDev/toguz-kumalak/spikes/infra-feasibility/modules/engine","Output":"ok  \tgithub.com/SebasChaconDev/toguz-kumalak/spikes/infra-feasibility/modules/engine\t0.743s\n"}
+{"Time":"2026-10-22T13:49:04.053599-04:00","Action":"pass","Package":"github.com/SebasChaconDev/toguz-kumalak/spikes/infra-feasibility/modules/engine","Elapsed":0.743}

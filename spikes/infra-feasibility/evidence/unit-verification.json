@@ -1,32 +1,32 @@
 [
   {
+    "exit": 0,
+    "seconds": 1.5375237,
     "action": "unit-tests",
-    "unit": "modules/engine",
-    "seconds": 1.1109177,
-    "exit": 0
+    "unit": "modules/engine"
   },
   {
+    "exit": 0,
+    "seconds": 4.1748264,
     "action": "unit-tests",
-    "unit": "modules/probe",
-    "seconds": 4.5017965,
-    "exit": 0
+    "unit": "modules/probe"
   },
   {
+    "exit": 0,
+    "seconds": 4.7007817,
     "action": "unit-tests",
-    "unit": "services/identity",
-    "seconds": 6.6206118,
-    "exit": 0
+    "unit": "services/identity"
   },
   {
+    "exit": 0,
+    "seconds": 4.4185105,
     "action": "unit-tests",
-    "unit": "services/game",
-    "seconds": 6.6526938,
-    "exit": 0
+    "unit": "services/game"
   },
   {
+    "exit": 0,
+    "seconds": 5.6783298,
     "action": "unit-tests",
-    "unit": "services/ai",
-    "seconds": 5.9316617,
-    "exit": 0
+    "unit": "services/ai"
   }
 ]
