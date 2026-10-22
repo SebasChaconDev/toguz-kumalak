@@ -1,0 +1,27 @@
+=== RUN   TestHTTPTrust
+--- PASS: TestHTTPTrust (0.00s)
+=== RUN   TestStaleAI
+--- PASS: TestStaleAI (0.00s)
+=== RUN   TestSQLIsolationMigrationAndPool
+    store_integration_test.go:47: BLOCKED: Game database unreachable
+--- FAIL: TestSQLIsolationMigrationAndPool (0.00s)
+=== RUN   TestIdempotencyRollbackAndRestart
+    store_integration_test.go:96: BLOCKED: Game database unreachable
+--- FAIL: TestIdempotencyRollbackAndRestart (0.00s)
+=== RUN   TestConcurrentRevision
+    store_integration_test.go:128: BLOCKED: Game database unreachable
+--- FAIL: TestConcurrentRevision (0.00s)
+=== RUN   TestNoticeFailureDuplicateOutOfOrderAndREST
+    store_integration_test.go:160: BLOCKED: Game database unreachable
+--- FAIL: TestNoticeFailureDuplicateOutOfOrderAndREST (0.00s)
+=== RUN   TestLostHTTPResponseAndResourceAuthorization
+    store_integration_test.go:193: BLOCKED: Game database unreachable
+--- FAIL: TestLostHTTPResponseAndResourceAuthorization (0.00s)
+FAIL
+FAIL	github.com/SebasChaconDev/toguz-kumalak/spikes/infra-feasibility/services/game/app	1.395s
+FAIL
+Exception: <REPO>\spikes\infra-feasibility\tests\Run-Integration.ps1:11
+Line |
+  11 |  … f($LASTEXITCODE -ne 0){throw 'Integration tests did not pass'}}finall …
+     |                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | Integration tests did not pass

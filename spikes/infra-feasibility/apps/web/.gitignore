@@ -1,0 +1,8 @@
+node_modules/
+.next/
+.env*
+!.env.example
+*.tsbuildinfo
+evidence/*-raw.log
+!evidence/build.log
+!next-env.d.ts

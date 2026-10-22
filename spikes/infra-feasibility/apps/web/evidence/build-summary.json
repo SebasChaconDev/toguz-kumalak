@@ -1,0 +1,11 @@
+{
+  "timestampUtc": "2026-10-22T02:23:00.7673775Z",
+  "command": "npm run build",
+  "workingDirectory": "spikes/infra-feasibility/apps/web",
+  "node": "v24.13.0",
+  "npm": "11.6.2",
+  "exitCode": 0,
+  "elapsedSeconds": 11.0896239,
+  "cleanNextCache": true,
+  "telemetryDisabled": true
+}

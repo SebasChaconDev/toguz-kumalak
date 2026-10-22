@@ -1,0 +1,12 @@
+{
+  "command": "npm test",
+  "node": "v24.13.0",
+  "exitCode": 0,
+  "tests": 1,
+  "passed": 1,
+  "failed": 0,
+  "durationMs": 61.9249,
+  "behavior": "Loopback-only rewrite origin defaults, normalization and negative validation",
+  "redObservedBeforeImplementation": true,
+  "redReason": "Expected default loopback origin, placeholder returned undefined"
+}

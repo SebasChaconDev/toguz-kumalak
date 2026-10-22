@@ -1,0 +1,77 @@
+[
+  {
+    "unit": "modules/engine",
+    "exit": 0,
+    "seconds": 0.8718158,
+    "action": "unit-tests"
+  },
+  {
+    "unit": "modules/probe",
+    "exit": 0,
+    "seconds": 2.2460679,
+    "action": "unit-tests"
+  },
+  {
+    "unit": "services/identity",
+    "exit": 0,
+    "seconds": 2.9292205,
+    "action": "unit-tests"
+  },
+  {
+    "unit": "services/game",
+    "exit": 0,
+    "seconds": 2.8233962,
+    "action": "unit-tests"
+  },
+  {
+    "unit": "services/ai",
+    "exit": 0,
+    "seconds": 3.9387757,
+    "action": "unit-tests"
+  },
+  {
+    "action": "cold-build",
+    "moduleCache": "fresh-per-project",
+    "cache": "fresh-per-project",
+    "exit": 0,
+    "work": "off",
+    "unit": "services/identity",
+    "seconds": 27.5497983
+  },
+  {
+    "unit": "services/identity",
+    "engineVersion": "none",
+    "sha256": "none",
+    "action": "shared-engine-source"
+  },
+  {
+    "action": "cold-build",
+    "moduleCache": "fresh-per-project",
+    "cache": "fresh-per-project",
+    "exit": 0,
+    "work": "off",
+    "unit": "services/game",
+    "seconds": 27.3216918
+  },
+  {
+    "unit": "services/game",
+    "engineVersion": "v0.1.0 (local replace; no release tag)",
+    "sha256": "BD0D2F40296E32B6C832DEA9B22C0CB1B957E428D2DC01E20456C303AB14C973",
+    "action": "shared-engine-source"
+  },
+  {
+    "action": "cold-build",
+    "moduleCache": "fresh-per-project",
+    "cache": "fresh-per-project",
+    "exit": 0,
+    "work": "off",
+    "unit": "services/ai",
+    "seconds": 26.6428156
+  },
+  {
+    "unit": "services/ai",
+    "engineVersion": "v0.1.0 (local replace; no release tag)",
+    "sha256": "BD0D2F40296E32B6C832DEA9B22C0CB1B957E428D2DC01E20456C303AB14C973",
+    "action": "shared-engine-source"
+  }
+]

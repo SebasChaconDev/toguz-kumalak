@@ -1,0 +1,5 @@
+.local/
+evidence/raw/
+*.exe
+!apps/web/evidence/build.log
+!apps/web/next-env.d.ts

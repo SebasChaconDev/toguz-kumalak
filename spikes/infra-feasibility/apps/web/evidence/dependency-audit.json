@@ -1,0 +1,7 @@
+{
+  "command": "npm audit --omit=dev --json",
+  "result": "BLOCKED",
+  "exitCode": 1,
+  "reason": "Public npm security advisories endpoint request failed: socket hang up",
+  "claim": "No vulnerability-free result is established"
+}

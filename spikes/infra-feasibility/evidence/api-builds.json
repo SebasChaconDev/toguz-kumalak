@@ -1,0 +1,26 @@
+[
+  {
+    "service": "identity",
+    "exit": 0,
+    "work": "off",
+    "seconds": 15.9183113,
+    "context": "isolated per-project; same clean-build context",
+    "target": "./api"
+  },
+  {
+    "service": "game",
+    "exit": 0,
+    "work": "off",
+    "seconds": 16.8056945,
+    "context": "isolated per-project; same clean-build context",
+    "target": "./api"
+  },
+  {
+    "service": "ai",
+    "exit": 0,
+    "work": "off",
+    "seconds": 15.1482302,
+    "context": "isolated per-project; same clean-build context",
+    "target": "./api"
+  }
+]

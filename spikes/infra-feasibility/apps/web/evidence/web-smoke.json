@@ -1,0 +1,68 @@
+{
+  "timestampUtc": "2026-10-22T02:25:49.575Z",
+  "node": "v24.13.0",
+  "environment": "Windows local loopback, production Next server, controlled Node HTTP doubles",
+  "result": "PASS",
+  "measuredRequests": 8,
+  "readinessAttempts": 4,
+  "totalHttpAttempts": 12,
+  "clientJavaScriptFilesChecked": 9,
+  "samples": [
+    {
+      "path": "/",
+      "status": 200,
+      "elapsedMs": 5.43
+    },
+    {
+      "path": "/probe/identity/health",
+      "status": 401,
+      "elapsedMs": 14.93
+    },
+    {
+      "path": "/probe/game/health",
+      "status": 401,
+      "elapsedMs": 4.21
+    },
+    {
+      "path": "/probe/identity/health",
+      "status": 200,
+      "elapsedMs": 2.79
+    },
+    {
+      "path": "/probe/game/health",
+      "status": 200,
+      "elapsedMs": 2.2
+    },
+    {
+      "path": "/probe/identity/cookie",
+      "status": 401,
+      "elapsedMs": 2.26
+    },
+    {
+      "path": "/probe/identity/cookie",
+      "status": 200,
+      "elapsedMs": 1.44
+    },
+    {
+      "path": "/probe/game/health",
+      "status": 200,
+      "elapsedMs": 1.54
+    }
+  ],
+  "observations": [
+    "Root HTML 200 with EXPERIMENTAL marker and without generated fixture credentials",
+    "Two fixed upstream rewrites preserve paths, query and Authorization; upstream 401 is preserved",
+    "Unauthenticated cookie fixture request returns 401 and no Set-Cookie",
+    "Authorized controlled fixture Set-Cookie attributes survive rewrite",
+    "Explicit manually supplied cookie header reaches second same-origin rewrite",
+    "Generated fixture credentials/marker absent from captured Next logs",
+    "Generated fixture credentials/marker absent from emitted client JavaScript files"
+  ],
+  "notVerified": [
+    "Browser enforcement of HttpOnly/Secure/SameSite",
+    "Real Identity session and OIDC",
+    "Actual Go-service cookie flow",
+    "TLS and Vercel preview protection",
+    "Remote origins, environment isolation and remote build"
+  ]
+}
