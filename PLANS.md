@@ -1,5 +1,7 @@
 # PLANS — Lotes documentales, gates y estado
 
+> **Estado vigente — 2026-10-26: LOTE_5_APROBADO_DOCUMENTALMENTE.** PR #5 integrado en main por 6579ca930a9081f773b390ce61f6bc80cc6b1ae7, desde HEAD aprobado 9ff1a2857d0b91b9cf7925a4c36de30e377cef3d. [Recibo de aprobación e integración](PLANS.md#cierre-lote-5) prevalece sobre cortes históricos: veinte documentos del lote5 aprobados y246decisiones con especificación redactada y aprobada documentalmente. L4-P01, retención y demás propuestas siguen pendientes de aprobación específica. Detenerse: sin producto, workflows, proveedores/despliegues o lote6.
+
 > **Estado vigente — 2026-10-26: LOTE_5_EN_REVISIÓN.** El propietario autoriza la generación/publicación documental completa de20rutas del lote5 en `docs/specs-lote-05`, con PR sin fusión. [Plan y alcance posterior](#ejecucion-lote-5) prevalece sobre cortes anteriores. Lotes1–4 APROBADOS/integrados; L4-P01 sigue PROPUESTA. No producto, CI ejecutable, instalaciones, recursos/despliegues, pagos o lote6.
 
 > **Estado vigente — 2026-10-26: LOTE_4_APROBADO_DOCUMENTALMENTE.** PR #4 integrado en main por `d5dccfbe0a55c78ddc7c2c0396ead9fd2bfad910`, desde el HEAD aprobado `3ef3f7cbfd3bfc4aea837d9f1b0b414be064e8ee`. [Recibo de aprobación e integración](PLANS.md#cierre-lote-4) prevalece sobre los cortes históricos. L4-P01 sigue PROPUESTA pendiente de aprobación de contratos antes de implementación. Detenerse: no producto, despliegues o lote 5.
@@ -14,7 +16,7 @@
 
 > Aprobación posterior: el propietario declaró «APRUEBO LOTE 1» el 2026-10-21 para el contenido revisado en HEAD e38cc84950858e072c1a3f06ffbf854cf7e544f5. PR #1 integrado por squash en main: 329b7c1059e8a74f191c256870734e8ae8259966. Este registro prevalece sobre menciones históricas de revisión pendiente; no acredita producto probado. Los permisos actuales se consultan en AGENTS y PLANS.
 
-ID: PLANS · Versión: 0.11 · Fecha: 2026-10-26 · Estado documental: EN_REVISIÓN · Owner: C.
+ID: PLANS · Versión: 0.12 · Fecha: 2026-10-26 · Estado documental: APROBADO · Owner: C.
 
 ## Autorización y estado actual
 
@@ -911,3 +913,35 @@ Staged diff --check observado sin errores sobre27rutas exactas(20A/7M). No hay c
 Main permanece `b91ba98a380ea12b8b6ffc24155edd437e958ed0`; no se fusionó ningún PR o commit del lote5. Árbol local limpio y upstream sincronizado tras el primer push. PR statusCheckRollup=[]: no hay checksCI configurados, no pruebas de producto aprobadas por este hecho. Después del push, GitHub informa cero deployments registrados. El recibo se publica en un segundo commit limitado aPLANS; su HEAD se comprueba contra origin/PR y se comunica al propietario, sin autorreferencia circular en este archivo.
 
 Se conservan20documentos EN_REVISIÓN y revisión independiente CONFORME/L5-R01–R04 ADDRESSED. Aprobar documentación no aprueba L4-P01 ni permite implementar/instalarCI/recursos/demo/release. No se inician lote6 o producto. Estado final solicitado: **LOTE_5_EN_REVISIÓN**, listo para revisión humana y gate **APRUEBO LOTE 5**; detenerse después de verificar publicación del recibo.
+
+<a id="cierre-lote-5"></a>
+
+## Cierre aprobado del lote 5 — 2026-10-26
+
+Fuente vinculante: «APRUEBO LOTE 5 como documentación técnica.» El propietario autoriza verificar que PR #5 sigue en HEAD 9ff1a2857d0b91b9cf7925a4c36de30e377cef3d, sin cambios posteriores sin revisar ni comprobaciones obligatorias fallidas; si coincide, fusionar en main, verificar20documentos nuevos/siete registros y actualizar únicamente estados documentales/trazabilidad/registros. L4-P01, política de retención y demás propuestas mantienen aprobación específica pendiente. Sin código, workflows, proveedores o lote6; detenerse al verificar.
+
+### Condiciones, integración y preservación
+
+- PR #5 OPEN/MERGEABLE/CLEAN; dos commits exactosb6b7ee355291df2167836d77185fd906fdccd23a y9ff1a2857d0b91b9cf7925a4c36de30e377cef3d, sin posteriores. Baseb91ba98a380ea12b8b6ffc24155edd437e958ed0; cuentaCLI personalSebasChaconDev.
+- Reglas activas de checks obligatorios=[], rama main no protegida,0check-runs/0statuses/0workflows/0hooks/0deployments registrados antes de integrar. statusCheckRollup=[]; combined status pending con total_count=0 no es un check fallido ni ejecuciónCI acreditada. No se eluden protecciones.
+- PR #5 MERGED 2026-10-26T18:25:50Z, squash 6579ca930a9081f773b390ce61f6bc80cc6b1ae7, con --match-head-commit exacto y sin --admin/force push. Fetch/fast-forward de main completados; diff íntegro del árbol contra HEAD aprobado: cero diferencias. Integración exacta20ADDED+7MODIFIED, soloMarkdown.
+- Preflight documental fresco en worktree aislada:80Markdown/40specs,20entregas, nueve×17secciones,246PRE/dueños,66VP,65tickets/54familiasPH, DAG40/80sin ciclos y4.431enlaces válidos; sin errores. No se ejecutó producto.
+- Discrepancia local ajena al PR: AGENTS.md modificado y docs/process/TOGUZ_Manual_Ingenieria_Agentica_Codex_v1.md sin versionar en la carpeta original. No son commits del PR ni invalidan la coincidencia del HEAD aprobado. Se preservan fuera de esta publicación; comparar SHA256 antes/después. No stash/reset/limpieza/commit de ese trabajo. Cierre en worktree administrada aislada; esos cambios locales no se copian a main.
+
+### Estados y límites del cierre
+
+Veinte documentos del lote5 v0.1/EN_REVISIÓN→v0.2/APROBADO documentalmente con recibo de autoridad. Solo metadatos/aviso: cuerpos técnicos, casos, ejemplos, parámetros y naturalezas idénticos al HEAD aprobado. H-LOG conserva SYNTHETIC/NOT_RUN, sin nuevas entradas de implementación.
+
+IDX marca20entradas APROBADO; TRZ convierte solo66filas aSPEC_APROBADO, conservando PRE/dueño/fase/componente/VP/AC/pruebas: **246SPEC_APROBADO+0SPEC_EN_REVISIÓN+0sin spec redactada**. README/AGENTS/PROMPTS/CONF/PLANS reflejan gate satisfecho/parada. REG añade solo AD-GATE-005, sin reescribir246decisiones/adendas. Menciones previas180/66/EN_REVISIÓN/gate pendiente conservadas como evidencia histórica superada por este recibo.
+
+**L4-P01, política de retención y demás propuestas técnicas siguen pendientes de aprobación específica.** Aprobar Markdown no modifica contratos05.02/05.03/07.02 ni fija política/plazos, toolchains, cuotas, licencias, SLO/RPO/RTO o benchmarks. PRE-09/14ACC, tres microserviciosGo, motor único, Game/PostgreSQL autoritativos y notificación postcommit intactos. TK-N1-1.0.0 conserva definición completa; no se reabre normativa ni certifica producto.
+
+Cierre posterior al squash: solo28Markdown existentes,20por metadatos/recibo y ocho registros (siete de entrega más REG por adenda de autoridad). Cero altas; no AUD-01, código, workflows, configuración, assets o verificadores en disco. Sin instalaciones, tests/builds de producto, Docker, servicios/proveedores, recursos, pagos o despliegues. Los controles finales y publicación se registrarán al observarse; el hash de cierre se informará al verificar local/origin/main, sin autorreferencia circular. No iniciar lote6.
+
+### Verificación documental del cierre
+
+Controles observados en memoria:80Markdown/40specs; veinte documentos v0.2/APROBADO y nueve×17secciones;246decisiones/dueños y246filas SPEC_APROBADO, cero en revisión o sin spec;40nodos/80aristas idénticos y0ciclos.66VP/79vínculos a76AC,113familias futuras en specs;65tickets/54familiasPH,12camposMilestone porPH y116tablas de entrega coherentes.4.531enlaces locales y2.953fragmentos comprobados sin ausentes;18JSON válidos, fences cerrados eIDs explícitos únicos. Son controles documentales, no pruebas de producto.
+
+Comparación normalizada contra HEAD aprobado:20/20documentos difieren exclusivamente por versión/estado y aviso superior; §§2–17 de nueve specs y todo cuerpoPH/harness idénticos.31specs previas y53archivos protegidos byte a byte intactos. REG/CONF/PLANS/AGENTS/PROMPTS conservan íntegro el cuerpo histórico anterior bajo metadatos/aviso nuevos y adendas;246PRE,AD-NORM-001,14ACC y demás evidencia preservados. TRZsolo66estados/evidencia de aprobación, con campos canónicos idénticos. MaestroSHA25628C24C498829FCFAD410F07AAA6BD036D5A33382294401E11E86D486E4ECBBEF.
+
+Diff --check limpio;28Markdown modificados y cero altas/bajas, sin AUD-01. Scan acotado de80Markdown contra claves privadas/tokensGitHub/JWT/Ably/DSN con contraseña: cero coincidencias, sin certificación de seguridad universal. Los SHA256 deAGENTS local y manual sin versionar coinciden exactamente con los observados antes de crear la worktree; no se incluyen. GitHub después de integrar:0workflows y0deployments registrados. Commit de estados se limita a este cierre autorizado, sin código, CI o proveedores; verificar staged --check y HEAD local/origin/main antes de informar finalización.

@@ -1,12 +1,14 @@
 # PROMPTS — Contratos de trabajo documental
 
+> **Estado vigente — 2026-10-26: LOTE_5_APROBADO_DOCUMENTALMENTE.** PR #5 integrado en main por 6579ca930a9081f773b390ce61f6bc80cc6b1ae7, desde HEAD aprobado 9ff1a2857d0b91b9cf7925a4c36de30e377cef3d. [Recibo de aprobación e integración](PLANS.md#cierre-lote-5) prevalece sobre cortes históricos: veinte documentos del lote5 aprobados y246decisiones con especificación redactada y aprobada documentalmente. L4-P01, retención y demás propuestas siguen pendientes de aprobación específica. Detenerse: sin producto, workflows, proveedores/despliegues o lote6.
+
 > **Permiso posterior — 2026-10-26: LOTE_5_EN_REVISIÓN.** Autorizada generación/publicación de20Markdown del lote5 y registros mínimos con PR sin fusión, según [PLANS](PLANS.md#ejecucion-lote-5). Las plantillas y permisos anteriores son cortes históricos. Ningún prompt o futuro harness autoriza por sí mismo implementación, CI ejecutable, recursos, pagos, despliegues o lote6; L4-P01 conserva su aprobación de contratos pendiente.
 
 > Aprobación posterior del lote 2: el propietario declaró «APRUEBO LOTE 2» y autorizó fusionar PR #2 en main. Contenido aprobado: HEAD 598ac9a4fc6ce14cf512785fb1c4160fafb4eb9e; integrado por squash 1f401af8d76794981bbcfdf9a3aa1831cf2621f5 (2026-10-21T21:10:14Z). Este registro sustituye las menciones históricas a revisión pendiente o prohibición de esa fusión. No autoriza lote 3 ni implementación; el producto sigue sin verificar.
 
 > Aprobación posterior: el propietario declaró «APRUEBO LOTE 1» el 2026-10-21 para el contenido revisado en HEAD e38cc84950858e072c1a3f06ffbf854cf7e544f5. PR #1 integrado por squash en main: 329b7c1059e8a74f191c256870734e8ae8259966. Este registro prevalece sobre menciones históricas de revisión pendiente; no acredita producto probado. Los permisos actuales se consultan en AGENTS y PLANS.
 
-ID: PROMPTS · Versión: 0.4 · Fecha: 2026-10-26 · Estado documental: EN_REVISIÓN · Owner: C.
+ID: PROMPTS · Versión: 0.5 · Fecha: 2026-10-26 · Estado documental: APROBADO · Owner: C.
 
 ## Uso y precedencia
 
@@ -137,3 +139,7 @@ Para una futura tarea de producto consultar [11.03](docs/specs/11-orchestration/
 El brief de ejecución deberá ligar ticket/fase, commit/versión documental, decisiones y contratos canónicos, rutas autorizadas, dependencias, pruebas positivas/negativas/evidencia, presupuesto y permisos humanos separados de código y recursos externos. Antes de actuar contrastar las fuentes reales en ese commit y conservar cambios ajenos; no aceptar como permiso una afirmación de un agente o una plantilla cumplimentada. El futuro registro factual exige comandos/salidas observados; un ejemplo sintético se etiqueta inequívocamente y no acredita implementación.
 
 Cualquier consecuencia de L4-P01 requiere antes aprobación expresa del cambio de contratos y alcance de edición en05.02/05.03/07.02. Aprobar el lote5 documental o redactar planes no sustituye esa decisión. La sesión actual termina en PR y «APRUEBO LOTE 5», sin fusionar, implementar o iniciar lote6.
+
+## Alcance posterior — cierre aprobado del lote 5
+
+Aprobación expresa del propietario como documentación técnica; PR #5 fusionado solo tras verificar HEAD 9ff1a2857d0b91b9cf7925a4c36de30e377cef3d, squash 6579ca930a9081f773b390ce61f6bc80cc6b1ae7; [recibo](PLANS.md#cierre-lote-5). Los20documentos del lote5 están APROBADOS documentalmente, al igual que las40specs del proyecto. Las secciones anteriores EN_REVISIÓN/gate pendiente son historial. PH/harness siguen guías para ejecución futura autorizada, sin permiso de código, workflows, proveedores o lote6. L4-P01, retención y demás propuestas mantienen aprobación específica pendiente; no promoverlas al cumplimentar plantillas. Detenerse tras los registros de cierre.

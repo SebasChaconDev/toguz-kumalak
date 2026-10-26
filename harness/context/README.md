@@ -1,6 +1,8 @@
 # H-CTX — Paquetes mínimos de contexto verificable
 
-ID: H-CTX · Versión: 0.1 · Fecha: 2026-10-26 · Estado documental: EN_REVISIÓN · Owner: C — Coordinación · Lote: 5.
+> **Aprobación posterior — 2026-10-26: APROBADO documentalmente.** El propietario declaró «APRUEBO LOTE 5 como documentación técnica.» sobre HEAD 9ff1a2857d0b91b9cf7925a4c36de30e377cef3d; PR #5 integrado por squash 6579ca930a9081f773b390ce61f6bc80cc6b1ae7. El [recibo de aprobación](../../PLANS.md#cierre-lote-5) prevalece sobre los estados de revisión históricos. L4-P01, la política de retención y demás propuestas mantienen su aprobación específica pendiente; sin permiso de implementación, workflows, proveedores o lote6.
+
+ID: H-CTX · Versión: 0.2 · Fecha: 2026-10-26 · Estado documental: APROBADO · Owner: C — Coordinación · Lote: 5.
 
 Diseño documental PROPUESTA de contexto para trabajo futuro; fuentes APROBADO y comportamiento POR_VERIFICAR. No genera paquetes/archivos auxiliares, no duplica repositorios y no autoriza implementación. Un brief/resumen orienta lectura, pero no sustituye una fuente ni transmite permisos.
 

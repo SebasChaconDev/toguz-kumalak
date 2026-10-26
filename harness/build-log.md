@@ -1,6 +1,8 @@
 # H-LOG — Registro factual para trabajo futuro
 
-ID: H-LOG · Versión: 0.1 · Fecha: 2026-10-26 · Estado documental: EN_REVISIÓN · Owner: C — Coordinación · Lote: 5.
+> **Aprobación posterior — 2026-10-26: APROBADO documentalmente.** El propietario declaró «APRUEBO LOTE 5 como documentación técnica.» sobre HEAD 9ff1a2857d0b91b9cf7925a4c36de30e377cef3d; PR #5 integrado por squash 6579ca930a9081f773b390ce61f6bc80cc6b1ae7. El [recibo de aprobación](../PLANS.md#cierre-lote-5) prevalece sobre los estados de revisión históricos. L4-P01, la política de retención y demás propuestas mantienen su aprobación específica pendiente; sin permiso de implementación, workflows, proveedores o lote6.
+
+ID: H-LOG · Versión: 0.2 · Fecha: 2026-10-26 · Estado documental: APROBADO · Owner: C — Coordinación · Lote: 5.
 
 Estructura documental PROPUESTA; no contiene entradas de implementación real. No se ha ejecutado código, test, CI, restore o despliegue por crear este archivo. El ejemplo final es SYNTHETIC/NOT_RUN y no representa un trabajo efectuado, un permiso o una aceptación.
 

@@ -1,5 +1,7 @@
 # REG — Registro canónico de decisiones
 
+> **Estado vigente — 2026-10-26: LOTE_5_APROBADO_DOCUMENTALMENTE.** PR #5 integrado en main por 6579ca930a9081f773b390ce61f6bc80cc6b1ae7, desde HEAD aprobado 9ff1a2857d0b91b9cf7925a4c36de30e377cef3d. [Recibo de aprobación e integración](../PLANS.md#cierre-lote-5) prevalece sobre cortes históricos: veinte documentos del lote5 aprobados y246decisiones con especificación redactada y aprobada documentalmente. L4-P01, retención y demás propuestas siguen pendientes de aprobación específica. Detenerse: sin producto, workflows, proveedores/despliegues o lote6.
+
 > **Estado vigente — 2026-10-26: LOTE_4_APROBADO_DOCUMENTALMENTE.** PR #4 integrado en main por `d5dccfbe0a55c78ddc7c2c0396ead9fd2bfad910`, desde el HEAD aprobado `3ef3f7cbfd3bfc4aea837d9f1b0b414be064e8ee`. [Recibo de aprobación e integración](../PLANS.md#cierre-lote-4) prevalece sobre los cortes históricos. L4-P01 sigue PROPUESTA pendiente de aprobación de contratos antes de implementación. Detenerse: no producto, despliegues o lote 5.
 
 > **Estado vigente — 2026-10-25: READY_FOR_LOTE_4_DOCUMENTATION.** PR #3 integrado en main mediante c50ba9f; GO_REMOTE experimental cerrado y recursos remotos propios retirados. [Recibo verificado](../PLANS.md#lote-3-integrado-verificado) prevalece sobre los cortes históricos siguientes. El lote 4 aún no se ha generado; el producto no está implementado.
@@ -8,7 +10,7 @@
 
 > Aprobación posterior: el propietario declaró «APRUEBO LOTE 1» el 2026-10-21 para el contenido revisado en HEAD e38cc84950858e072c1a3f06ffbf854cf7e544f5. PR #1 integrado por squash en main: 329b7c1059e8a74f191c256870734e8ae8259966. Este registro prevalece sobre menciones históricas de revisión pendiente; no acredita producto probado. Los permisos actuales se consultan en AGENTS y PLANS.
 
-ID: REG · Versión: 0.6 · Fecha: 2026-10-26 · Estado documental: APROBADO · Owner: C.
+ID: REG · Versión: 0.7 · Fecha: 2026-10-26 · Estado documental: APROBADO · Owner: C.
 
 ## Procedencia y autoridad
 
@@ -1724,3 +1726,13 @@ Fuente expresa del propietario: «APRUEBO LOTE 4 como documentación técnica.»
 Condición verificada: HEAD local/remoto/PR idéntico, dos commits revisados, árbol limpio, cero reglas de checks obligatorios, check-runs, statuses o workflows configurados. La respuesta agregada de statuses indicaba pending con total_count=0, sin trabajo CI pendiente/fallido identificable; no se declara CI aprobada. PR #4 MERGED `2026-10-26T16:48:00Z`, squash `d5dccfbe0a55c78ddc7c2c0396ead9fd2bfad910`, con coincidencia de HEAD exigida y sin bypass. Árbol del squash idéntico al HEAD revisado antes de actualizar estados.
 
 Alcance de aprobación: ocho specs04.01–04.04/08.01–08.04 como documentación técnica y sus registros. **L4-P01 permanece PROPUESTA técnica pendiente de aprobación de contratos antes de implementarla**; no se aprueban silenciosamente deltas en05.02/05.03/07.02. Las246 decisiones originales, propietarios, AD-NORM-001, TK-N1-1.0.0,14ACC, PRE-09 y cuerpos técnicos aprobados se conservan. [Cierre, evidencia y parada](../PLANS.md#cierre-lote-4). Esta adenda registra autoridad y estado; no añade funcionalidad ni autorización del lote5.
+
+<a id="ad-gate-005"></a>
+
+## AD-GATE-005 — Aprobación documental e integración del lote 5, 2026-10-26
+
+Fuente expresa: «APRUEBO LOTE 5 como documentación técnica.» El propietario autoriza verificar HEAD 9ff1a2857d0b91b9cf7925a4c36de30e377cef3d, ausencia de cambios posteriores sin revisar y comprobaciones obligatorias fallidas; si coincide, fusionar PR #5 en main, verificar20documentos nuevos/siete registros y actualizar solo estados/trazabilidad/registros. No autoriza producto, workflows, despliegues o lote6.
+
+Condición verificada: HEAD local/remoto/PR idéntico, dos commits revisados, PR OPEN/MERGEABLE/CLEAN; cero reglas activas de checks obligatorios/check-runs/statuses/workflows. El agregado statuses devolvía pending con total_count=0, sin ejecuciónCI pendiente/fallida identificable; no es CI superada. Fusión squash con coincidencia de HEAD exigida y sin bypass: 6579ca930a9081f773b390ce61f6bc80cc6b1ae7, 2026-10-26T18:25:50Z. Árbol completo idéntico al aprobado,20ADDED+7MODIFIED. [Cierre y evidencia](../PLANS.md#cierre-lote-5).
+
+Alcance:20documentos aprobados como documentación técnica;40specs cubren246decisiones originales aprobadas documentalmente. Esta adenda no reescribe PRE, dueño o adenda anterior, AD-NORM-001/TK-N1-1.0.0/14ACC/PRE-09. **L4-P01, política de retención y demás propuestas técnicas conservan aprobación específica pendiente**; no se aprueban por inferencia contratos05.02/05.03/07.02, plazos o política de datos. Evidencia histórica/experimental y producto POR_VERIFICAR diferenciados. Tras publicar/verificar estados, detenerse sin iniciar lote6.

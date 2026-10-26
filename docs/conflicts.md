@@ -1,5 +1,7 @@
 # CONF — Conflictos, riesgos y validaciones pendientes
 
+> **Estado vigente — 2026-10-26: LOTE_5_APROBADO_DOCUMENTALMENTE.** PR #5 integrado en main por 6579ca930a9081f773b390ce61f6bc80cc6b1ae7, desde HEAD aprobado 9ff1a2857d0b91b9cf7925a4c36de30e377cef3d. [Recibo de aprobación e integración](../PLANS.md#cierre-lote-5) prevalece sobre cortes históricos: veinte documentos del lote5 aprobados y246decisiones con especificación redactada y aprobada documentalmente. L4-P01, retención y demás propuestas siguen pendientes de aprobación específica. Detenerse: sin producto, workflows, proveedores/despliegues o lote6.
+
 > **Estado vigente — 2026-10-26: LOTE_5_EN_REVISIÓN.** Veinte documentos del lote5 autorizados para redacción/revisión y PR sin fusión; [alcance vigente](../PLANS.md#ejecucion-lote-5) prevalece sobre cortes históricos. Lotes1–4 APROBADOS/integrados;180decisiones con spec aprobada y66 con spec EN_REVISIÓN. L4-P01 sigue PROPUESTA pendiente de aprobación de contratos; sin implementación, recursos/despliegues o lote6.
 
 > **Estado vigente — 2026-10-26: LOTE_4_APROBADO_DOCUMENTALMENTE.** PR #4 integrado en main por `d5dccfbe0a55c78ddc7c2c0396ead9fd2bfad910`, desde el HEAD aprobado `3ef3f7cbfd3bfc4aea837d9f1b0b414be064e8ee`. [Recibo de aprobación e integración](../PLANS.md#cierre-lote-4) prevalece sobre los cortes históricos. L4-P01 sigue PROPUESTA pendiente de aprobación de contratos antes de implementación. Detenerse: no producto, despliegues o lote 5.
@@ -12,7 +14,7 @@
 
 > Aprobación posterior: el propietario declaró «APRUEBO LOTE 1» el 2026-10-21 para el contenido revisado en HEAD e38cc84950858e072c1a3f06ffbf854cf7e544f5. PR #1 integrado por squash en main: 329b7c1059e8a74f191c256870734e8ae8259966. Este registro prevalece sobre menciones históricas de revisión pendiente; no acredita producto probado. Los permisos actuales se consultan en AGENTS y PLANS.
 
-ID: CONF · Versión: 0.11 · Fecha: 2026-10-26 · Estado documental: EN_REVISIÓN · Owner: C; responsables técnicos por caso.
+ID: CONF · Versión: 0.12 · Fecha: 2026-10-26 · Estado documental: APROBADO · Owner: C; responsables técnicos por caso.
 
 ## Estado y reglas de uso
 
@@ -355,3 +357,9 @@ El spike504caa5 permanece antecedente experimental: runtime/builds/SQL/Ably/cook
 Hallazgos documentales corregidos antes de integrar: L5-R01/P2,09.01 separa apariciones de repetición del lifecycle/history_ordinal de un cierre; L5-R02/P3,09.04 diferencia A/coordinación operativa de C/gobierno y Q/verificación. Revalidación independiente ADDRESSED; sin alterar las fuentes aprobadas03.01/03.04/05.03 ni otras anteriores. El borrador10.04 conserva su misma asignación operativa. Las pruebas y escenarios nuevos son futuros, no ejecución observada.
 
 Revalidación final dePH/harness: L5-R03/P2 yL5-R04/P2 ADDRESSED. PH05-T06 consumeT04 además deT03/T05; PH06-T07/C07 separa revocación/barrier sinpolicyVersion yACK_REVOKED durable de cleanup con política aprobada/no-null/inmutable. Sin política, raíz/barrier BLOCKED_PENDING_DATA_POLICY; ACK_REVOKED no es COMPLETE. H-BUILD/H-CTX propagan esos contratos aprobados sin cambiarlos. Revisor independiente:20documentos CONFORMES documentalmente, sin hallazgos restantes; gatehumanoL5 y propuestas L5-P01–09 siguen pendientes, sin pruebas de producto.
+
+## Adenda de aprobación documental del lote 5 — 2026-10-26
+
+El propietario aprobó HEAD 9ff1a2857d0b91b9cf7925a4c36de30e377cef3d; PR #5 integrado por squash 6579ca930a9081f773b390ce61f6bc80cc6b1ae7. [Recibo](../PLANS.md#cierre-lote-5). L5-R01–R04 siguen ADDRESSED y gate documentalL5 satisfecho; las menciones anteriores de gate pendiente son cortes históricos.
+
+**L4-P01, política de retención y demás propuestas L5-P01–L5-P09 permanecen pendientes de aprobación específica.** No se cierra RISK-10 ni se fija policyVersion/plazo/backup/RPO/RTO/SLO/cuota/licencia por aprobar Markdown. Las condiciones aprobadas de barrera/revocación sin política y cleanup con política aprobada permanecen intactas. APROBADO documental no promueve afirmaciones PROPUESTA/POR_VERIFICAR. No se añaden elecciones reglamentarias aTK-N1-1.0.0, pruebas de producto o permisos de implementación/CI/proveedores/lote6.

@@ -1,5 +1,7 @@
 # AGENTS — Toguz Kumalak
 
+> **Estado vigente — 2026-10-26: LOTE_5_APROBADO_DOCUMENTALMENTE.** PR #5 integrado en main por 6579ca930a9081f773b390ce61f6bc80cc6b1ae7, desde HEAD aprobado 9ff1a2857d0b91b9cf7925a4c36de30e377cef3d. [Recibo de aprobación e integración](PLANS.md#cierre-lote-5) prevalece sobre cortes históricos: veinte documentos del lote5 aprobados y246decisiones con especificación redactada y aprobada documentalmente. L4-P01, retención y demás propuestas siguen pendientes de aprobación específica. Detenerse: sin producto, workflows, proveedores/despliegues o lote6.
+
 > **Autorización posterior vigente — 2026-10-26: LOTE_5_EN_REVISIÓN.** El propietario autoriza los20Markdown inventariados del lote5, siete registros mínimos y publicación desde `docs/specs-lote-05` con PR sin fusionar. [Alcance y ledger](PLANS.md#ejecucion-lote-5) prevalece sobre paradas anteriores. No producto, workflows ejecutables, instalaciones, tests de producto, proveedores/despliegues, pagos o lote6. L4-P01 sigue PROPUESTA pendiente de aprobación de contratos.
 
 > **Estado vigente — 2026-10-26: LOTE_4_APROBADO_DOCUMENTALMENTE.** PR #4 integrado en main por `d5dccfbe0a55c78ddc7c2c0396ead9fd2bfad910`, desde el HEAD aprobado `3ef3f7cbfd3bfc4aea837d9f1b0b414be064e8ee`. [Recibo de aprobación e integración](PLANS.md#cierre-lote-4) prevalece sobre los cortes históricos. L4-P01 sigue PROPUESTA pendiente de aprobación de contratos antes de implementación. Detenerse: no producto, despliegues o lote 5.
@@ -12,7 +14,7 @@
 
 > Aprobación posterior: el propietario declaró «APRUEBO LOTE 1» el 2026-10-21 para el contenido revisado en HEAD e38cc84950858e072c1a3f06ffbf854cf7e544f5. PR #1 integrado por squash en main: 329b7c1059e8a74f191c256870734e8ae8259966. Este registro prevalece sobre menciones históricas de revisión pendiente; no acredita producto probado. Los permisos actuales se consultan en AGENTS y PLANS.
 
-ID: AGENTS · Versión: 0.7 · Fecha: 2026-10-26 · Estado documental: EN_REVISIÓN · Owner: coordinación.
+ID: AGENTS · Versión: 0.8 · Fecha: 2026-10-26 · Estado documental: APROBADO · Owner: coordinación.
 
 ## Alcance autorizado
 
@@ -74,3 +76,9 @@ Al trabajar posteriormente, usar los permisos más recientes y preservar246 PRE,
 El propietario declaró «APRUEBO LOTE 4 como documentación técnica.» y autorizó integrar PR #4 únicamente tras comprobar su HEAD `3ef3f7cbfd3bfc4aea837d9f1b0b414be064e8ee`. Condición cumplida; squash `d5dccfbe0a55c78ddc7c2c0396ead9fd2bfad910` integrado y árbol idéntico al revisado. Las ocho specs están APROBADAS documentalmente. Se permiten solo estados, trazabilidad y registros de este cierre; al verificarlos/publicarlos, detenerse.
 
 L4-P01 sigue PROPUESTA, pendiente de aprobación de contratos antes de implementarla; la aprobación documental no modifica05.02/05.03/07.02 ni otras decisiones. No implementar producto, desplegar, iniciar lote5 o reabrir reglas. [Recibo y autoridad posterior](PLANS.md#cierre-lote-4) prevalece sobre las paradas históricas anteriores.
+
+## Alcance posterior — cierre aprobado del lote 5, 2026-10-26
+
+El propietario declaró «APRUEBO LOTE 5 como documentación técnica.» y autorizó verificar HEAD 9ff1a2857d0b91b9cf7925a4c36de30e377cef3d, ausencia de cambios posteriores sin revisar y comprobaciones obligatorias fallidas; si coincide, fusionar PR #5 en main y actualizar únicamente estados, trazabilidad y registros necesarios. Condición cumplida: squash 6579ca930a9081f773b390ce61f6bc80cc6b1ae7, 2026-10-26T18:25:50Z, árbol integrado idéntico al revisado y27rutas exactas(20altas/7registros). [Recibo](PLANS.md#cierre-lote-5) prevalece sobre todas las paradas históricas.
+
+Los20documentos del lote5 pasan a v0.2/APROBADO documentalmente sin cambios a cuerpos técnicos; las40specs cubren246decisiones aprobadas, cero en revisión o sin redactar. REG añade solo AD-GATE-005;246PRE y adendas anteriores intactas. L4-P01, política de retención y demás propuestas técnicas mantienen aprobación específica pendiente. No implementar, instalar workflows, desplegar proveedores o iniciar lote6. Trabajo local ajeno se preserva en la carpeta original y no se publica con este cierre. Tras verificar main/estados y publicar el cierre, detenerse.
