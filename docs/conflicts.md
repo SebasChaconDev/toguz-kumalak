@@ -1,10 +1,12 @@
 # CONF — Conflictos, riesgos y validaciones pendientes
 
+> **Autorización posterior vigente — 2026-10-25.** El propietario autoriza completar los pasos necesarios para preparar lote4; se cierra documentalmente lote3 para integración y el spike acredita GO_REMOTE acotado, con recursos propios retirados. [Registro fiel y límites](../PLANS.md#preparacion-lote-4) sustituye las paradas históricas siguientes. No se genera lote4 ni se implementa producto en este cierre.
+
 > Aprobación posterior del lote 2: el propietario declaró «APRUEBO LOTE 2» y autorizó fusionar PR #2 en main. Contenido aprobado: HEAD 598ac9a4fc6ce14cf512785fb1c4160fafb4eb9e; integrado por squash 1f401af8d76794981bbcfdf9a3aa1831cf2621f5 (2026-10-21T21:10:14Z). Este registro sustituye las menciones históricas a revisión pendiente o prohibición de esa fusión. No autoriza lote 3 ni implementación; el producto sigue sin verificar.
 
 > Aprobación posterior: el propietario declaró «APRUEBO LOTE 1» el 2026-10-21 para el contenido revisado en HEAD e38cc84950858e072c1a3f06ffbf854cf7e544f5. PR #1 integrado por squash en main: 329b7c1059e8a74f191c256870734e8ae8259966. Este registro prevalece sobre menciones históricas de revisión pendiente; no acredita producto probado. Los permisos actuales se consultan en AGENTS y PLANS.
 
-ID: CONF · Versión: 0.7 · Fecha: 2026-10-21 · Estado documental: EN_REVISIÓN · Owner: C; responsables técnicos por caso.
+ID: CONF · Versión: 0.8 · Fecha: 2026-10-25 · Estado documental: APROBADO · Owner: C; responsables técnicos por caso.
 
 ## Estado y reglas de uso
 
@@ -279,3 +281,14 @@ TK-N1-1.0.0 y sus 14 ACC son entrada vinculante: no se consultan otros reglament
 RISK-10 requiere decisión humana sobre contexto/política antes de completar una implementación de derechos de datos: el UUID/tombstone puede seguir siendo pseudónimo. No se afirma cumplimiento legal ni se inventa un plazo jurídico. Las propuestas técnicas pueden ser revisadas con este lote; publicar documentación no autoriza aplicarlas a datos reales.
 
 Las frases históricas «no fijar en este lote» describen su alcance original. La solicitud actual permite concretar propuestas técnicas para revisión, sin convertirlas en decisiones aprobadas ni cambiar fuentes. La auditoría final registrará contradicciones reales si aparecen; una sugerencia preliminar descartada antes de integrarse no se presenta como cambio de requisito autorizado.
+<a id="conf-gate-35-close"></a>
+
+## Adenda Gate3.5 y continuidad documental — 2026-10-25
+
+[GO_REMOTE y límites publicados](https://github.com/SebasChaconDev/toguz-kumalak/blob/504caa5d8d4f538e131e1beffc8843cb8938772a/spikes/infra-feasibility/REMOTE_AUDIT.md#remote-close-20261025) mitigan parcialmente RISK-02/03/04/06/07/09: runtime/paquetización, cuotas gratuitas observadas, capacidades Ably, origen/cookie/OIDC, transacciones/reconciliación y aislamiento SQL. No se cierran globalmente: faltan producto, SDK/generadores, seguridad completa, métricas/SLO, restauración y demás pruebas de cada requisito.
+
+RISK-05 sesiones, RISK-08 Elo y RISK-10 política/privacidad conservan pendientes propios. No se aprobó una política jurídica mediante el spike ni se equipara una sonda HMAC a JWT/JWKS productivo. Tampoco se atribuyen mediciones de colas PgBouncer, reactivación Neon, caída física S2S o pérdida TCP real.
+
+Desviación de ejecución explícita: SQL80 técnico previsto superado;117 operaciones conservadoras declaradas, sin traza wire exacta. Recursos propios retirados,0USD contratado y cero modificaciones a recursos previos. Esta desviación no se oculta como cumplimiento presupuestario ni altera requisitos de producto.
+
+La revisión independiente del lote3 encontró únicamente dos Minor05.02, corregidas. No quedan conflictos normativos TK-N1 ni hallazgos técnicos Critical/Important que impidan redactar04/08; los riesgos de implementación anteriores permanecen POR_VERIFICAR.

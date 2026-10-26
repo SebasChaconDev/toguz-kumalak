@@ -1,12 +1,14 @@
 # PLANS — Lotes documentales, gates y estado
 
+> **Autorización posterior vigente — 2026-10-25.** El propietario autoriza completar los pasos necesarios para preparar lote4; se cierra documentalmente lote3 para integración y el spike acredita GO_REMOTE acotado, con recursos propios retirados. [Registro fiel y límites](PLANS.md#preparacion-lote-4) sustituye las paradas históricas siguientes. No se genera lote4 ni se implementa producto en este cierre.
+
 > Autorización posterior vigente: el propietario autoriza generar y publicar exclusivamente el lote 3 documental en docs/specs-lote-03: once specs EN_REVISIÓN, registros necesarios y PR contra main sin fusionar. Esta instrucción sustituye las paradas históricas de lotes anteriores; no autoriza producto, lote 4, infraestructura o pagos.
 
 > Aprobación posterior del lote 2: el propietario declaró «APRUEBO LOTE 2» y autorizó fusionar PR #2 en main. Contenido aprobado: HEAD 598ac9a4fc6ce14cf512785fb1c4160fafb4eb9e; integrado por squash 1f401af8d76794981bbcfdf9a3aa1831cf2621f5 (2026-10-21T21:10:14Z). Este registro sustituye las menciones históricas a revisión pendiente o prohibición de esa fusión. No autoriza lote 3 ni implementación; el producto sigue sin verificar.
 
 > Aprobación posterior: el propietario declaró «APRUEBO LOTE 1» el 2026-10-21 para el contenido revisado en HEAD e38cc84950858e072c1a3f06ffbf854cf7e544f5. PR #1 integrado por squash en main: 329b7c1059e8a74f191c256870734e8ae8259966. Este registro prevalece sobre menciones históricas de revisión pendiente; no acredita producto probado. Los permisos actuales se consultan en AGENTS y PLANS.
 
-ID: PLANS · Versión: 0.7 · Fecha: 2026-10-21 · Estado documental: EN_REVISIÓN · Owner: C.
+ID: PLANS · Versión: 0.8 · Fecha: 2026-10-25 · Estado documental: APROBADO · Owner: C.
 
 ## Autorización y estado actual
 
@@ -528,3 +530,31 @@ Publicación verificada: [PR #3](https://github.com/SebasChaconDev/toguz-kumalak
 El PR no reporta comprobaciones CI; no se atribuyen pruebas de producto. Este recibo y checklist se publican en un segundo commit exclusivamente de PLANS, sin cambiar specs o cobertura. El SHA anterior identifica la entrega de contenido; el HEAD vigente tras el recibo se verifica en GitHub y en la entrega final. No fusión, force push, implementación, proveedores operativos, pagos, despliegues o lote4.
 
 Estado final: LOTE_3_EN_REVISIÓN, pendiente del gate humano **«APRUEBO LOTE 3»**. Publicación no equivale a aprobación. No fusionar, generar lote4, implementar, probar producto o modificar infraestructura. Trabajo detenido para revisión del propietario.
+<a id="preparacion-lote-4"></a>
+
+## Cierre autorizado de lote3 y preparación de lote4 — 2026-10-25
+
+Instrucción posterior literal del propietario: «Autorizo los pasos y requerimientos que sean necesarios para poder empezar a desarrollar lote 4. Aplica lo necesario y cuando todo esté listo para lote 4 avisa».
+
+Autoridad: esta instrucción responde a los requisitos expuestos para continuar, incluidos cerrar el spike y el lote3. Coordinación la aplica como autorización para completar su revisión/corrección documental e integración. **No se atribuye la frase literal «APRUEBO LOTE 3»**, que el propietario no escribió. La autorización posterior sustituye la parada anterior de no fusionar exclusivamente para este cierre. Las propuestas técnicas conservan su naturaleza PROPUESTA; aprobar la documentación no reescribe246 PRE ni acredita implementación.
+
+Estado de esta entrega previa a integración: **LOTE_3_APROBADO_DOCUMENTALMENTE / READY_PENDING_PR3_MERGE**. Contenido revisado9db0f3e9d4bf1fb642697103d9232bcfaef42205; dos precisiones menores05.02 corregidas: JoinRoomByCode usa K01-000000000000 conforme a06.01 y cierre funcional exige F-HTTP-01–16. Once specs v0.2 APROBADO; cuerpos restantes conservados. Revisión independiente lot3_readiness_review leyó las once completas: sin Critical/Important y solo esas dos Minor.
+
+Spike: [commit publicado504caa5](https://github.com/SebasChaconDev/toguz-kumalak/commit/504caa5d8d4f538e131e1beffc8843cb8938772a), [auditoría y límites](https://github.com/SebasChaconDev/toguz-kumalak/blob/504caa5d8d4f538e131e1beffc8843cb8938772a/spikes/infra-feasibility/REMOTE_AUDIT.md#remote-close-20261025). GO_LOCAL original intacto y GO_REMOTE experimental con revisión independiente, C6 medido y retirada final. Ocho builds acumulados,0USD adicional contratado, sin upgrades. SQL80 técnico previsto superado:117 operaciones reconstruidas/instrumentadas declaradas, sin fingir contador wire exacto. Cookie/roles/OIDC/transacciones/Ably reales no equivalen a sesiones, motor completo o IA del producto. El código experimental permanece en su rama; **no se integra en main**.
+
+Se reconfirmó GitHub personal SebasChaconDev, PR3 abierto/mergeable en su HEAD esperado, cero workflows y hooks; Vercel quedó sin proyectos/deployments. Publicar la rama del spike no activó un proyecto Vercel vinculado identificado. No se hicieron escrituras sobre Neon9 Stones ni las dos apps Ably preexistentes.
+
+Trazabilidad al cerrar:125 decisiones con SPEC_APROBADO,0 SPEC_EN_REVISIÓN y121 futuras;246 propietarios canónicos intactos. Lote3 conserva66 VP→99 AC y175 pruebas futuras. PRE-09, TK-N1-1.0.0,14ACC, fuente y ADR aprobados sin cambios.
+
+### Siguiente trabajo preparado, todavía no iniciado
+
+Inventario exacto de lote4: ocho specs y55 decisiones, con rutas conservadas en [IDX](docs/index.md#inventario):
+
+- 04.01 navegación/accesibilidad;04.02 tablero/assets/cámara/materiales;04.03 interacción/animación/audio;04.04 rendimiento/alternativa HTML.
+- 08.01 búsqueda/heurística/límites;08.02 orquestación/respaldo/métricas;08.03 práctica reversible/escenarios;08.04 tutorial/ayudas/replay educativo.
+
+Orden del DAG:04.01→04.02/04.03→04.04;08.01→08.02 y08.03→08.04, conservando todas las entradas cruzadas inventariadas. No se crean archivos vacíos. Redacción deberá concretar presupuestos IA todavía propuestos, contexto de repetición en transposiciones, respaldo legal y práctica reversible sin autorizar escenarios del cliente como estado oficial.
+
+Política jurídica/retención, generadores/SDK, restauración, seguridad completa, p95/rendimiento/fuerza IA y pruebas PRE-09 siguen pendientes antes de implementar lo afectado; no bloquean redactar04/08. El cierre prepara exclusivamente la **siguiente etapa documental**. No se empieza lote4 ni código del producto en este turno. Después de verificar merge/main y publicar el recibo final, informar y detenerse.
+
+Comprobaciones de este cierre antes de publicar: 18 modificaciones Markdown y cero altas/código; 246 PRE literales y propietarios intactos;125/0/121;11 specs APROBADO con17 secciones y13 ejemplos JSON válidos. Revisor independiente reprodujo40 nodos/80 aristas sin ciclos,66 VP→99 AC/175 casos futuros y3.195 enlaces sin destinos/anclas ausentes. Fuente conserva28C24C498829FCFAD410F07AAA6BD036D5A33382294401E11E86D486E4ECBBEF; AD-NORM-001 intacta; diff --check limpio. Son comprobaciones documentales, no pruebas del producto.

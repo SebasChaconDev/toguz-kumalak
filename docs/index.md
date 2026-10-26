@@ -1,12 +1,14 @@
 # IDX — Índice e inventario documental
 
+> **Autorización posterior vigente — 2026-10-25.** El propietario autoriza completar los pasos necesarios para preparar lote4; se cierra documentalmente lote3 para integración y el spike acredita GO_REMOTE acotado, con recursos propios retirados. [Registro fiel y límites](../PLANS.md#preparacion-lote-4) sustituye las paradas históricas siguientes. No se genera lote4 ni se implementa producto en este cierre.
+
 > Autorización posterior vigente: lote 3 documental autorizado en docs/specs-lote-03, once specs EN_REVISIÓN y cinco registros; PR contra main sin fusión. Sustituye las paradas históricas solo en ese alcance; aprobación, producto y lote 4 siguen sin autorizar.
 
 > Aprobación posterior del lote 2: el propietario declaró «APRUEBO LOTE 2» y autorizó fusionar PR #2 en main. Contenido aprobado: HEAD 598ac9a4fc6ce14cf512785fb1c4160fafb4eb9e; integrado por squash 1f401af8d76794981bbcfdf9a3aa1831cf2621f5 (2026-10-21T21:10:14Z). Este registro sustituye las menciones históricas a revisión pendiente o prohibición de esa fusión. No autoriza lote 3 ni implementación; el producto sigue sin verificar.
 
 > Aprobación posterior: el propietario declaró «APRUEBO LOTE 1» el 2026-10-21 para el contenido revisado en HEAD e38cc84950858e072c1a3f06ffbf854cf7e544f5. PR #1 integrado por squash en main: 329b7c1059e8a74f191c256870734e8ae8259966. Este registro prevalece sobre menciones históricas de revisión pendiente; no acredita producto probado. Los permisos actuales se consultan en AGENTS y PLANS.
 
-ID: IDX · Versión: 0.5 · Fecha: 2026-10-21 · Estado documental: EN_REVISIÓN · Owner: C.
+ID: IDX · Versión: 0.6 · Fecha: 2026-10-25 · Estado documental: APROBADO · Owner: C.
 
 ## Estado de la entrega
 
@@ -30,16 +32,16 @@ Los vínculos de lotes 1, 2 y 3 apuntan a archivos entregados. Las rutas futuras
 
 | ID | Archivo o ruta prevista | Propósito / entradas y dependencias | Owner | Complejidad | Estado |
 |---|---|---|---|---|---|
-| <a id="agents"></a>AGENTS | [AGENTS.md](../AGENTS.md) | Instrucciones operativas y límites | C | M | EN_REVISIÓN |
+| <a id="agents"></a>AGENTS | [AGENTS.md](../AGENTS.md) | Instrucciones operativas y límites | C | M | APROBADO |
 | <a id="goals"></a>GOALS | [GOALS.md](../GOALS.md) | Objetivos y alcance comprometido | C | M | APROBADO |
-| <a id="plans"></a>PLANS | [PLANS.md](../PLANS.md) | Gates, lotes y roadmap documental | C | M | EN_REVISIÓN |
+| <a id="plans"></a>PLANS | [PLANS.md](../PLANS.md) | Gates, lotes y roadmap documental | C | M | APROBADO |
 | <a id="prompts"></a>PROMPTS | [PROMPTS.md](../PROMPTS.md) | Briefs y prompts de trabajo autorizable | C | M | APROBADO |
 | <a id="readme"></a>README | [README.md](../README.md) | Presentación y estado profesional | C | M | APROBADO |
 | <a id="src"></a>SRC | [docs/sources/TOGUZ_PROMPT_MAESTRO_CODEX.md](sources/TOGUZ_PROMPT_MAESTRO_CODEX.md) | Copia íntegra y sin cambios del maestro | C | B | APROBADO |
 | <a id="reg"></a>REG | [docs/decision-register.md](decision-register.md) | 246 decisiones literales y destinos canónicos | C | M | APROBADO |
-| <a id="conf"></a>CONF | [docs/conflicts.md](conflicts.md) | Riesgos, discrepancias y validaciones pendientes | C | M | EN_REVISIÓN |
-| <a id="idx"></a>IDX | [docs/index.md](index.md) | Inventario y dependencias | C | B | EN_REVISIÓN |
-| <a id="trz"></a>TRZ | [docs/traceability.md](traceability.md) | Decisión→spec→fase→componente→verificación→evidencia | C | M | EN_REVISIÓN |
+| <a id="conf"></a>CONF | [docs/conflicts.md](conflicts.md) | Riesgos, discrepancias y validaciones pendientes | C | M | APROBADO |
+| <a id="idx"></a>IDX | [docs/index.md](index.md) | Inventario y dependencias | C | B | APROBADO |
+| <a id="trz"></a>TRZ | [docs/traceability.md](traceability.md) | Decisión→spec→fase→componente→verificación→evidencia | C | M | APROBADO |
 | <a id="pre-01"></a>PRE-01 | [docs/preliminares/PRE-01.md](preliminares/PRE-01.md) | Contexto de 17 decisiones de REG; sin reconstruir cuestionarios. | A | M | APROBADO |
 | <a id="pre-02"></a>PRE-02 | [docs/preliminares/PRE-02.md](preliminares/PRE-02.md) | Contexto de 18 decisiones de REG; sin reconstruir cuestionarios. | C | M | APROBADO |
 | <a id="pre-03"></a>PRE-03 | [docs/preliminares/PRE-03.md](preliminares/PRE-03.md) | Contexto de 22 decisiones de REG; sin reconstruir cuestionarios. | M | M | APROBADO |
@@ -81,17 +83,17 @@ Los vínculos de lotes 1, 2 y 3 apuntan a archivos entregados. Las rutas futuras
 
 | ID | Archivo o ruta prevista | Propósito / entradas y dependencias | Owner | Complejidad | Estado |
 |---|---|---|---|---|---|
-| <a id="spec-05-01"></a>05.01 | [docs/specs/05-backend/05.01-service-boundaries-and-hexagonal-design.md](specs/05-backend/05.01-service-boundaries-and-hexagonal-design.md) | Límites de servicios y diseño hexagonal; entradas PRE-05.A1, PRE-05.A2, PRE-05.A3, PRE-05.A4, PRE-05.D1. Dependencias: [01.02](#spec-01-02), [03.04](#spec-03-04). | S | A | EN_REVISIÓN |
-| <a id="spec-05-02"></a>05.02 | [docs/specs/05-backend/05.02-http-openapi-and-errors.md](specs/05-backend/05.02-http-openapi-and-errors.md) | HTTP, OpenAPI y errores; entradas PRE-05.B1, PRE-05.B2, PRE-05.B3, PRE-05.B4. Dependencias: [05.01](#spec-05-01), [07.01](#spec-07-01), [07.02](#spec-07-02). | S | A | EN_REVISIÓN |
-| <a id="spec-05-03"></a>05.03 | [docs/specs/05-backend/05.03-transactions-data-and-migrations.md](specs/05-backend/05.03-transactions-data-and-migrations.md) | Transacciones, datos y migraciones; entradas PRE-01.B3, PRE-01.B4, PRE-05.C1, PRE-05.C2, PRE-05.C3, PRE-05.D2, PRE-05.D3, PRE-05.D4. Dependencias: [05.02](#spec-05-02), [03.04](#spec-03-04). | S | A | EN_REVISIÓN |
-| <a id="spec-05-04"></a>05.04 | [docs/specs/05-backend/05.04-event-schemas-and-postcommit-publication.md](specs/05-backend/05.04-event-schemas-and-postcommit-publication.md) | Eventos y publicación posterior al commit; entradas PRE-05.E1, PRE-05.E2, PRE-05.E3, PRE-05.E4. Dependencias: [05.03](#spec-05-03), [07.02](#spec-07-02). | S | A | EN_REVISIÓN |
-| <a id="spec-06-01"></a>06.01 | [docs/specs/06-multiplayer/06.01-rooms-invitations-and-ranked-lifecycle.md](specs/06-multiplayer/06.01-rooms-invitations-and-ranked-lifecycle.md) | Salas, invitaciones y ciclo ranked; entradas PRE-06.A1, PRE-06.A2, PRE-06.A3, PRE-06.A4, PRE-06.D1, PRE-06.D4. Dependencias: [05.04](#spec-05-04), [07.04](#spec-07-04). | S | A | EN_REVISIÓN |
-| <a id="spec-06-02"></a>06.02 | [docs/specs/06-multiplayer/06.02-ably-notifications-and-reconciliation.md](specs/06-multiplayer/06.02-ably-notifications-and-reconciliation.md) | Ably y reconciliación; entradas PRE-01.B1, PRE-06.B1, PRE-06.B2, PRE-06.B3, PRE-06.B4, PRE-06.E1. Dependencias: [06.01](#spec-06-01), [05.04](#spec-05-04). | S | A | EN_REVISIÓN |
-| <a id="spec-06-03"></a>06.03 | [docs/specs/06-multiplayer/06.03-recovery-multitab-and-partial-failures.md](specs/06-multiplayer/06.03-recovery-multitab-and-partial-failures.md) | Recuperación, pestañas y fallos parciales; entradas PRE-02.C3, PRE-06.C1, PRE-06.C2, PRE-06.C3, PRE-06.C4, PRE-06.E2. Dependencias: [06.02](#spec-06-02), [07.01](#spec-07-01), [07.02](#spec-07-02). | S | A | EN_REVISIÓN |
-| <a id="spec-07-01"></a>07.01 | [docs/specs/07-identity-data/07.01-oidc-guests-and-session-lifecycle.md](specs/07-identity-data/07.01-oidc-guests-and-session-lifecycle.md) | OIDC, invitados y ciclo de sesión; entradas PRE-01.B5, PRE-07.A1, PRE-07.A2, PRE-07.A3, PRE-07.A4, PRE-07.B2, PRE-07.B3, PRE-07.F1. Dependencias: [05.01](#spec-05-01), [02.03](#spec-02-03). | S | A | EN_REVISIÓN |
-| <a id="spec-07-02"></a>07.02 | [docs/specs/07-identity-data/07.02-tokens-authorization-and-service-identity.md](specs/07-identity-data/07.02-tokens-authorization-and-service-identity.md) | Tokens, autorización e identidad de servicio; entradas PRE-05.F3, PRE-07.B1, PRE-07.B4, PRE-07.C1, PRE-07.C2, PRE-07.C3. Dependencias: [07.01](#spec-07-01). | S | A | EN_REVISIÓN |
-| <a id="spec-07-03"></a>07.03 | [docs/specs/07-identity-data/07.03-profiles-history-and-data-rights.md](specs/07-identity-data/07.03-profiles-history-and-data-rights.md) | Perfiles, historial y derechos de datos; entradas PRE-07.C4, PRE-07.D1, PRE-07.D2, PRE-07.D3, PRE-07.D4, PRE-07.F2, PRE-07.F3. Dependencias: [05.04](#spec-05-04), [07.02](#spec-07-02). | S | A | EN_REVISIÓN |
-| <a id="spec-07-04"></a>07.04 | [docs/specs/07-identity-data/07.04-elo-leaderboard-and-statistics.md](specs/07-identity-data/07.04-elo-leaderboard-and-statistics.md) | Elo, clasificación y estadísticas; entradas PRE-06.D2, PRE-06.D3, PRE-07.E1, PRE-07.E2, PRE-07.E3, PRE-07.E4. Dependencias: [05.03](#spec-05-03), [03.04](#spec-03-04), [07.02](#spec-07-02). | S | A | EN_REVISIÓN |
+| <a id="spec-05-01"></a>05.01 | [docs/specs/05-backend/05.01-service-boundaries-and-hexagonal-design.md](specs/05-backend/05.01-service-boundaries-and-hexagonal-design.md) | Límites de servicios y diseño hexagonal; entradas PRE-05.A1, PRE-05.A2, PRE-05.A3, PRE-05.A4, PRE-05.D1. Dependencias: [01.02](#spec-01-02), [03.04](#spec-03-04). | S | A | APROBADO |
+| <a id="spec-05-02"></a>05.02 | [docs/specs/05-backend/05.02-http-openapi-and-errors.md](specs/05-backend/05.02-http-openapi-and-errors.md) | HTTP, OpenAPI y errores; entradas PRE-05.B1, PRE-05.B2, PRE-05.B3, PRE-05.B4. Dependencias: [05.01](#spec-05-01), [07.01](#spec-07-01), [07.02](#spec-07-02). | S | A | APROBADO |
+| <a id="spec-05-03"></a>05.03 | [docs/specs/05-backend/05.03-transactions-data-and-migrations.md](specs/05-backend/05.03-transactions-data-and-migrations.md) | Transacciones, datos y migraciones; entradas PRE-01.B3, PRE-01.B4, PRE-05.C1, PRE-05.C2, PRE-05.C3, PRE-05.D2, PRE-05.D3, PRE-05.D4. Dependencias: [05.02](#spec-05-02), [03.04](#spec-03-04). | S | A | APROBADO |
+| <a id="spec-05-04"></a>05.04 | [docs/specs/05-backend/05.04-event-schemas-and-postcommit-publication.md](specs/05-backend/05.04-event-schemas-and-postcommit-publication.md) | Eventos y publicación posterior al commit; entradas PRE-05.E1, PRE-05.E2, PRE-05.E3, PRE-05.E4. Dependencias: [05.03](#spec-05-03), [07.02](#spec-07-02). | S | A | APROBADO |
+| <a id="spec-06-01"></a>06.01 | [docs/specs/06-multiplayer/06.01-rooms-invitations-and-ranked-lifecycle.md](specs/06-multiplayer/06.01-rooms-invitations-and-ranked-lifecycle.md) | Salas, invitaciones y ciclo ranked; entradas PRE-06.A1, PRE-06.A2, PRE-06.A3, PRE-06.A4, PRE-06.D1, PRE-06.D4. Dependencias: [05.04](#spec-05-04), [07.04](#spec-07-04). | S | A | APROBADO |
+| <a id="spec-06-02"></a>06.02 | [docs/specs/06-multiplayer/06.02-ably-notifications-and-reconciliation.md](specs/06-multiplayer/06.02-ably-notifications-and-reconciliation.md) | Ably y reconciliación; entradas PRE-01.B1, PRE-06.B1, PRE-06.B2, PRE-06.B3, PRE-06.B4, PRE-06.E1. Dependencias: [06.01](#spec-06-01), [05.04](#spec-05-04). | S | A | APROBADO |
+| <a id="spec-06-03"></a>06.03 | [docs/specs/06-multiplayer/06.03-recovery-multitab-and-partial-failures.md](specs/06-multiplayer/06.03-recovery-multitab-and-partial-failures.md) | Recuperación, pestañas y fallos parciales; entradas PRE-02.C3, PRE-06.C1, PRE-06.C2, PRE-06.C3, PRE-06.C4, PRE-06.E2. Dependencias: [06.02](#spec-06-02), [07.01](#spec-07-01), [07.02](#spec-07-02). | S | A | APROBADO |
+| <a id="spec-07-01"></a>07.01 | [docs/specs/07-identity-data/07.01-oidc-guests-and-session-lifecycle.md](specs/07-identity-data/07.01-oidc-guests-and-session-lifecycle.md) | OIDC, invitados y ciclo de sesión; entradas PRE-01.B5, PRE-07.A1, PRE-07.A2, PRE-07.A3, PRE-07.A4, PRE-07.B2, PRE-07.B3, PRE-07.F1. Dependencias: [05.01](#spec-05-01), [02.03](#spec-02-03). | S | A | APROBADO |
+| <a id="spec-07-02"></a>07.02 | [docs/specs/07-identity-data/07.02-tokens-authorization-and-service-identity.md](specs/07-identity-data/07.02-tokens-authorization-and-service-identity.md) | Tokens, autorización e identidad de servicio; entradas PRE-05.F3, PRE-07.B1, PRE-07.B4, PRE-07.C1, PRE-07.C2, PRE-07.C3. Dependencias: [07.01](#spec-07-01). | S | A | APROBADO |
+| <a id="spec-07-03"></a>07.03 | [docs/specs/07-identity-data/07.03-profiles-history-and-data-rights.md](specs/07-identity-data/07.03-profiles-history-and-data-rights.md) | Perfiles, historial y derechos de datos; entradas PRE-07.C4, PRE-07.D1, PRE-07.D2, PRE-07.D3, PRE-07.D4, PRE-07.F2, PRE-07.F3. Dependencias: [05.04](#spec-05-04), [07.02](#spec-07-02). | S | A | APROBADO |
+| <a id="spec-07-04"></a>07.04 | [docs/specs/07-identity-data/07.04-elo-leaderboard-and-statistics.md](specs/07-identity-data/07.04-elo-leaderboard-and-statistics.md) | Elo, clasificación y estadísticas; entradas PRE-06.D2, PRE-06.D3, PRE-07.E1, PRE-07.E2, PRE-07.E3, PRE-07.E4. Dependencias: [05.03](#spec-05-03), [03.04](#spec-03-04), [07.02](#spec-07-02). | S | A | APROBADO |
 
 ### Lote 4 — 8 archivos
 
@@ -202,3 +204,10 @@ Lote 1 APROBADO por el propietario e integrado en main mediante squash 329b7c105
 ## Integración de lote 2 aprobada
 
 Diez specs del lote 2 APROBADAS, con 17 apartados cada una. Cobertura: 59 decisiones con spec APROBADA, cero con spec EN_REVISIÓN y 187 con spec futura. Se conservan los 40 nodos y las dependencias del inventario original, sin ciclos. El [cierre vigente](../PLANS.md#cierre-lote-2) registra aprobación e integración. TK-N1-1.0.0 está completo sin bloqueos normativos pendientes; [RISK-01](conflicts.md#risk-01) conserva su resolución e historia. Gate «APRUEBO LOTE 2» satisfecho; continuidad detenida.
+<a id="idx-ready-lote-4"></a>
+
+## Adenda de continuidad — 2026-10-25
+
+Lote3 cierra once especificaciones APROBADAS documentalmente según [autorización posterior](../PLANS.md#preparacion-lote-4). Continúan81 entradas/40 specs,23 specs físicas/52 Markdown; ocho rutas de lote4 y55 decisiones están preparadas y siguen PENDIENTE_LOTE_4 porque no se han generado. No se cambia el DAG de40 specs/80 aristas.
+
+La evidencia del spike vive en su commit publicado, fuera del árbol documental que se integra en main. Este índice distingue factibilidad experimental y pruebas de producto pendientes.
