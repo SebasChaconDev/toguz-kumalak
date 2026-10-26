@@ -757,7 +757,7 @@ Foco de integración: QA/CI debe ejercer pruebas09.01/02; severidad/DoD09.04 y r
 - [x] L5-C2:ochoPH y tresharness entregados EN_REVISIÓN,65tickets/54casos y12campos porPH; correcciones R03/R04 aplicadas, revalidación independiente conforme tras R03/R04.
 - [x] L5-R:20documentos y deltas de siete registros CONFORMES; L5-R01–R04 ADDRESSED.
 - [x] Cierre documental:20altas, nueve×17secciones,66VP,180/66/0,246fuentes/dueños y DAG40/80 sin cambios; enlaces/tablas/fences/JSON y secretos.
-- [ ] Publicación: automatizaciones revalidadas, commit/push/PR con título exacto; sin merge. Pedir «APRUEBO LOTE 5» y detenerse.
+- [x] Publicación: automatizaciones revalidadas, commit/push/PR #5 con título exacto; OPEN/sin merge. Gate «APRUEBO LOTE 5» pendiente; detenerse tras verificar recibo.
 
 <a id="lote-5-integracion"></a>
 
@@ -901,3 +901,13 @@ Revalidación GitHub26oct:main=b91ba98a380ea12b8b6ffc24155edd437e958ed0,0workflo
 Cierre previo a commit observado:4.431enlaces locales/2.853fragmentos sin destino o ancla ausente,18JSON válidos, fences cerrados eIDs explícitos únicos. Scan acotado de80Markdown contra cinco clases de secretos (claves privadas, tokensGitHub/JWT/Ably yDSN con contraseña): cero coincidencias, sin garantía sobre toda clase de secreto o historia ajena. Diff --check limpio. Se normalizaron exclusivamente11altasPH/harness deCRLF→LF; lectura Unicode antes/después idéntica11/11, sin cambios semánticos o fuentes aprobadas. El primer control de finales de línea falló y se repitió tras esa corrección: ceroCR en20altas. La revisión independiente de los últimos registros es CONFORME; staged --check y recibo Git se verificarán antes de declarar publicación.
 
 Staged diff --check observado sin errores sobre27rutas exactas(20A/7M). No hay core.hooksPath configurado ni hooks locales activos; no se han desactivado controles. Solo se publicará docs/specs-lote-05 y un PR contra main, sin fusionarlo. La revisión humana «APRUEBO LOTE 5» permanece pendiente.
+
+<a id="lote-5-publicacion"></a>
+
+### Recibo de publicación documental — 2026-10-26
+
+[PR #5](https://github.com/SebasChaconDev/toguz-kumalak/pull/5) creado y adjunto al chat. Título exacto: «docs: lote 5 — quality, operations, milestones and implementation plans». Base main, rama docs/specs-lote-05, estado OPEN y mergedAt=null. Commit de contenido `b6b7ee355291df2167836d77185fd906fdccd23a`, fecha2026-10-26T18:03:35Z; HEAD local/remoto/PR coincidían al verificar la creación. GitHub confirma27rutas exactas:20ADDED y7MODIFIED, soloMarkdown y ningún cambio protegido. Descripción con inventario/cobertura/grafo/QA/DevSecOps/operaciones/PH/harness/responsables/auditoría/propuestas/gate.
+
+Main permanece `b91ba98a380ea12b8b6ffc24155edd437e958ed0`; no se fusionó ningún PR o commit del lote5. Árbol local limpio y upstream sincronizado tras el primer push. PR statusCheckRollup=[]: no hay checksCI configurados, no pruebas de producto aprobadas por este hecho. Después del push, GitHub informa cero deployments registrados. El recibo se publica en un segundo commit limitado aPLANS; su HEAD se comprueba contra origin/PR y se comunica al propietario, sin autorreferencia circular en este archivo.
+
+Se conservan20documentos EN_REVISIÓN y revisión independiente CONFORME/L5-R01–R04 ADDRESSED. Aprobar documentación no aprueba L4-P01 ni permite implementar/instalarCI/recursos/demo/release. No se inician lote6 o producto. Estado final solicitado: **LOTE_5_EN_REVISIÓN**, listo para revisión humana y gate **APRUEBO LOTE 5**; detenerse después de verificar publicación del recibo.
