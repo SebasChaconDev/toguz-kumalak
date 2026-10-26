@@ -1,5 +1,7 @@
 # PLANS — Lotes documentales, gates y estado
 
+> **Estado vigente — 2026-10-26: LOTE_4_EN_REVISIÓN.** El propietario declaró «AUTORIZO LA GENERACIÓN Y PUBLICACIÓN DOCUMENTAL DEL LOTE 4». Esta autorización posterior permite exactamente ocho specs, los cuatro registros de soporte y PR desde `docs/specs-lote-04` contra main, sin fusión. [Plan vigente](#ejecucion-lote-4) prevalece sobre los cortes históricos; producto, infraestructura y lote 5 siguen fuera de alcance.
+
 > **Estado vigente — 2026-10-25: READY_FOR_LOTE_4_DOCUMENTATION.** PR #3 integrado en main mediante c50ba9f; GO_REMOTE experimental cerrado y recursos remotos propios retirados. [Recibo verificado](PLANS.md#lote-3-integrado-verificado) prevalece sobre los cortes históricos siguientes. El lote 4 aún no se ha generado; el producto no está implementado.
 
 > Autorización posterior vigente: el propietario autoriza generar y publicar exclusivamente el lote 3 documental en docs/specs-lote-03: once specs EN_REVISIÓN, registros necesarios y PR contra main sin fusionar. Esta instrucción sustituye las paradas históricas de lotes anteriores; no autoriza producto, lote 4, infraestructura o pagos.
@@ -8,7 +10,7 @@
 
 > Aprobación posterior: el propietario declaró «APRUEBO LOTE 1» el 2026-10-21 para el contenido revisado en HEAD e38cc84950858e072c1a3f06ffbf854cf7e544f5. PR #1 integrado por squash en main: 329b7c1059e8a74f191c256870734e8ae8259966. Este registro prevalece sobre menciones históricas de revisión pendiente; no acredita producto probado. Los permisos actuales se consultan en AGENTS y PLANS.
 
-ID: PLANS · Versión: 0.8 · Fecha: 2026-10-25 · Estado documental: APROBADO · Owner: C.
+ID: PLANS · Versión: 0.9 · Fecha: 2026-10-26 · Estado documental: EN_REVISIÓN · Owner: C.
 
 ## Autorización y estado actual
 
@@ -574,3 +576,112 @@ El gate prepara **ocho especificaciones documentales**04.01–04.04/08.01–08.0
 Trabajo detenido después de publicar/verificar este recibo. No se inició lote4, no se implementó producto, no hay recursos remotos del spike activos ni planes de pago contratados.
 
 Verificación final del recibo:52 Markdown versionados,246 PRE literales,125 decisiones con spec aprobada y121 futuras;3115 enlaces a archivos locales comprobados sin destinos ausentes, fences cerrados y sin patrones de credenciales observados. Cero diferencias en specs/fuentes/preliminares/ADR respecto al squash revisado. Cero archivos04/08 o código de producto. diff --check limpio; las comprobaciones de anchors/DAG/JSON del cierre independiente siguen aplicando y el nuevo anchor del recibo está presente.
+
+<a id="ejecucion-lote-4"></a>
+
+## Ejecución autorizada del lote 4 — 2026-10-26
+
+Autorización literal: «AUTORIZO LA GENERACIÓN Y PUBLICACIÓN DOCUMENTAL DEL LOTE 4». El propietario exige ocho specs completas, 55 decisiones con sus dueños originales, 17 secciones por spec, revisión especializada e independiente, actualización necesaria de IDX/TRZ/CONF/PLANS y publicación en rama `docs/specs-lote-04` con PR contra main sin fusionar. No solicita otra auditoría preliminar ni autorizaciones intermedias. La respuesta posterior sobre la excepción Vercel/hasta ocho builds corresponde al spike ya cerrado: no reactiva recursos o despliegues en esta entrega documental.
+
+Base verificada al preparar la rama: main local/remoto `74e8cf164dfb86f27883de5e966795da52eeeaa5`, fetch y fast-forward sin cambios; árbol versionado limpio. Se conservan las ramas y cachés locales ignoradas preexistentes. Se trabaja en la rama solicitada dentro del checkout existente, sin instalar o probar producto. Autenticación GitHub personal activa verificada; no se cambia la cuenta inactiva ni se renuevan credenciales de proveedores.
+
+### Restricciones globales y foco de revisión
+
+- Solo ocho altas Markdown del inventario y cuatro registros de soporte; ningún código, manifiesto, asset, script o archivo de lote 5. Ejemplos dentro de Markdown.
+- Preservar literalmente 246 PRE, propietarios canónicos, AD-NORM-001, TK-N1-1.0.0 y 14 ACC; tres servicios Go y un único motor Go, sin reglas frontend.
+- Specs nuevas EN_REVISIÓN; requisitos fuente APROBADO, diseños nuevos PROPUESTA y resultados no medidos POR_VERIFICAR. Evidencia del spike exclusivamente experimental.
+- Cálculo histórico/TT, IA en ramas de práctica, resultados tardíos, efecto único de Game, fallback legal y recuperación tras crash deben tener contratos y casos negativos explícitos.
+- HTML plenamente jugable, accesibilidad ES/EN, foco/intención preservados al cambiar renderer, mapeo estable de pozos y eventos confirmados; sin atribuir FPS, WCAG, fuerza o coste productivo medidos.
+- Propuestas de enlace IA/simulación no modifican silenciosamente 05.02/07.02: identificar el delta y revisión humana requerida antes de implementarlo. El lote puede especificar su solución propuesta sin cambiar archivos aprobados.
+
+### Plan de tareas y propiedad
+
+Plan documental adaptado a las rutas expresamente autorizadas; este registro es el ledger, sin crear briefs/reportes auxiliares en disco. La solicitud explícita de equipos y 11.02 permiten redacción paralela de dominios independientes, con un escritor por archivo.
+
+| Tarea | Autor / rutas propias | Entradas y salida verificable |
+|---|---|---|
+| L4-V | l4_visual_author:04.01–04.04 | PRE-04 y dueños IDX, ADR, 02/03/05/06/07 y 11.01/11.02; redactar 04.01→04.02/04.03→04.04, 25 VP y aceptación positiva/negativa |
+| L4-I | l4_ai_author:08.01–08.04 | PRE-08, PRE-03 y dueños IDX, perfil normativo, 02/03/05/06/07 y estándares; 08.01→08.02,08.03→08.04; 30 VP y contratos de búsqueda/práctica |
+| L4-C | Coordinación:IDX/TRZ/CONF/PLANS | Integrar estados, 55 VP→AC, diez recorridos UI/Game/AI, riesgos y evidencia documental; no escribir archivos de autores activos |
+| L4-R | l4_independent_review:solo lectura | Revisar fuentes y ocho specs, integridad, contratos, casos negativos y diff completo; correcciones devueltas a sus autores |
+
+- [x] Preparación: Git limpio, referencias actualizadas y rama exacta creada.
+- [x] L4-V: cuatro specs visuales entregadas y escritura cesada; revisión independiente en curso.
+- [x] L4-I: cuatro specs IA/educación entregadas y escritura cesada.
+- [x] L4-C: registros y contratos cruzados integrados.
+- [x] L4-R: revisión independiente y correcciones verificadas.
+- [x] Cierre: ocho altas/cuatro modificaciones autorizadas, 55 decisiones, 17 secciones, DAG/enlaces/JSON/fences, fuentes y lotes previos intactos.
+- [x] Publicación: commit/push/PR contra main verificados, sin fusión; entrega detenida para «APRUEBO LOTE 4».
+
+La aprobación del lote y la implementación siguen pendientes. No se inicia lote 5 ni se conectan o despliegan proveedores.
+
+<a id="lote-4-contratos-cruzados"></a>
+
+### Matriz de integración UI/Game/AI para revisión del lote 4
+
+Los recorridos siguientes son contratos y aceptación futura, no pruebas ejecutadas. Estado oficial siempre Game/PostgreSQL, reglas siempre motor Go; AI propone y HTML/Three presentan. `/api/v1`, commandVersion, revisión decimal uint64, rulesVersion TK-N1-1.0.0 y versiones de estado/eventos/historial son ejes diferentes. El versionado local de práctica y su generación no reemplazan una revisión oficial.
+
+| Flujo | Productor → contrato → consumidor / autoridad | Criterio positivo y negativo futuros / dueño |
+|---|---|---|
+| L4-X01 | SelecciónUI→CommandEnvelope/receipt/GameView/eventos→HTML/3D; Game confirma | Confirmación separada y animación de lote completo; preview/Notice/timeout no confirman movimiento. 04.01/04.03 consumen05.02/05.04/06.02 |
+| L4-X02 | Commit humano Game→grant/S2S→AI→revalidación Game→UI | Un candidato legal genera un efecto interno único; duplicado/obsoleto/grant repetido/versiones discordantes no mueven. 08.02 consume05.02/05.03/07.02 |
+| L4-X03 | Fallo/deadline AI→respaldo Go en Game→respuesta/estado | Respaldo legal barato tras revalidación; terminal/base vieja/resultado AI tardío no inventan otro movimiento ni derrota. Dueño08.02 |
+| L4-X04 | Escenario cliente→SimulationRequest/Go→authoritative=false→explicaciónHTML/3D | Estado hipotético validado no modifica historia oficial/Elo; tablero cliente en SubmitMove se rechaza. IA de rama requiere delta L4-P01 explícito, no API existente ficticia. Dueños08.03/08.04 y05.02 |
+| L4-X05 | Historial local→cursor/contexto/generación→simulación Go→presentación | Undo/redo restaura contexto íntegro; historia truncada o AI de generación anterior no habilita continuación falsa. Dueño08.03 con03.04 |
+| L4-X06 | Game/replay→header/checkpoint/ordinal/eventos→reproductor | Reproducción compatible y sin efectos deportivos; hueco/versión/corrupción requieren fallo explícito o snapshot verificado, nunca animación inventada. Dueños03.04/05.04/07.03 y08.04 |
+| L4-X07 | Réplica e intención común→rendererHTML al fallarWebGL | Mismo contrato/jugabilidad/foco y acciones; transición no confirma ni reenvía con ID nuevo una mutación incierta. Dueños04.01/04.04 |
+| L4-X08 | Pérdida de conexión→REST/receipt/RecoveryView→reconciliador | Revisión autorizada vigente reconstruye escena; epoch viejo/Notice/reintento no revierte estado ni adjudica expiración. Dueños06.02/06.03 y04.01/04.03 |
+| L4-X09 | Locale/cámara→presentación de PitRef estable | ES/EN y orientación preservan posición/turno/acciones; no cambian PositionKey o reglas. Dueños02.02/03.02 y04.01/04.02 |
+| L4-X10 | Modo/permiso sobre recurso oficial Game→acciones UI y autorización backend | Ranked conserva selección legal/preview básico y rechaza solicitudes de ayuda ligadas a ese recurso aunque el cliente cambie propósito o invoque la ruta directamente. Práctica no altera Elo. Una posición copiada como escenario sintético libre no tiene procedencia demostrable: no se promete detectarla o impedir toda ayuda externa. Dueños05.02/07.02/07.04 y08.04 |
+
+Además del DAG canónico,08.02/08.03 requieren revisión conjunta de binding IA/práctica;04.01/04.04 con08.03/08.04 revisan equivalencia de acceso. Son controles de compatibilidad, no aristas inversas añadidas al inventario. PRE-09 se aplica ahora como requisito previsto aunque09.* siga PENDIENTE_LOTE_5.
+
+<a id="informe-lote-4"></a>
+
+## Informe del lote 4 — entrega documental para revisión
+
+Estado de entrega: LOTE_4_EN_REVISIÓN; contenido y revisión documental completados. La publicación se verifica en el recibo posterior; el gate humano permanece pendiente. Los cortes intermedios siguientes conservan sus verificaciones y correcciones, sin atribuir pruebas de producto. La entrega se limita a ocho altas de04/08 y cuatro registros IDX/TRZ/CONF/PLANS, con aceptación humana y fusión pendientes.
+
+Integración previa a revisión: coordinación solicitó alinear nombres practiceSessionId/branchGeneration/requestId/commandId entre04/08. Detectó en borradores educativos una raíz de captura de163piedras usada como positivo y una defensa cuyo texto citaba pozos vacíos; se devolvieron al autorI para separar el negativo y cotejar raíz/acción/objetivo por aritmética documental contra03.01. Esto no modifica el corpus aprobado ni acredita ejecución Go. Los resultados finales y la revisión independiente se registran después del cese de ambos autores.
+
+Revisión independiente L4-V: lectura íntegra04.01–04.04 contra fuentes, cumplimiento y calidad conformes sin bloqueantes. Único P3: ambigüedad de «total3D» en presupuesto04.04. Su autor corrigió solo04.04: modelos/texturas≤8MiB, con JS≤9.5MiB, audio opt-in≤1MiB aparte y shell separado; casoF-PERF-01/AC-04 alineados. Cese de escritura confirmado; comprobación delimitada de la corrección incluida en revisión final. Son presupuestos propuestos y no bytes medidos de un producto.
+
+### Inventario entregado y decisiones
+
+Ambos autores entregaron y cesaron escritura:04.01–04.04, ownerV,25VP/30AC/29casos;08.01–08.04, ownerI,30VP/33AC/34casos. Las ocho rutas exactas están en [IDX](docs/index.md#spec-04-01) y el desglose individual en [TRZ](docs/traceability.md#trz-lote-4): **55VP→63AC y63 casos futuros**, no tests ejecutados. Son ocho altas Markdown y cuatro registros modificados. Cada spec v0.1/2026-10-26/EN_REVISIÓN conserva17 secciones, metodología ordenada, contratos/errores/versiones/autoridad, justificación, ejemplos, riesgos y aceptación positiva/negativa.
+
+Cambios propuestos destacados: shell React/HTML accesible y controlador común3D/HTML; PitRef y162instancias; cámara/materiales/procedencia; estados de confirmación/eventos y animación omisible; perfiles y presupuestos de medición sin afirmar rendimiento. IA Negamax/alfabeta/iterativa con TT solo de orden (sin scores/bounds), contexto completo por rama, fácil150ms/12.000nodos/profundidad4/16MiB y normal700ms/100.000/profundidad10/32MiB, siempre dentro del sobre07.02 y sin fuerza demostrada. Cancelación cooperativa, efecto interno único y respaldo legal Game; práctica versionada con undo/redo/IA opcional; tutorial completo/opcional, objetivos verificables y ayudas fuera de ranked, con HTML/ES/EN equivalentes.
+
+L4-P01 identifica un delta propuesto de05.02/05.03/07.02: solicitud/consulta/cancelación de IA de rama, recurso/grant discriminado, persistencia mínima no deportiva, recovery=fallback y metadatos pedagógicos de simulación. commandId deduplica negocio, requestId correlaciona transporte y branchGeneration invalida respuesta anterior. Esos documentos aprobados no se modifican; antes de implementar el delta requiere revisión/aprobación humana de contratos. No se añade cuarto servicio, motor frontend, DB AI, Redis o worker.
+
+Correcciones de integración de ejemplos completadas porI: capture-01 usa exactamente el inicial9×9 del DER-SOW-CAPTURE;163queda negativo separado. Defense-01 es una raíz sintética nueva de162: A=[1,1,0,0,0,0,0,0,0],B=[0,0,0,0,0,0,0,0,1],K=[79,80],sin tuz,turnA;A1 evita captura inmediata, mientrasA2 dejaA1capturable porB9yB alcanza82. Los esperados se cotejaron aritméticamente; no se afirma ejecución Go ni alcanzabilidad histórica de la raíz sintética. Fuente03.01 intacta.
+
+### Comprobación estructural previa a la revisión final
+
+Análisis en memoria sobre archivos reales:60Markdown,31specs;246 PRE y propietarios conservados;125 SPEC_APROBADO/55 SPEC_EN_REVISIÓN/66 futuras. DAG40nodos/80aristas idéntico al aprobado, sin ciclos. Ocho specs con17secciones y55VP exactos;63AC identificados.18bloquesJSON completos parseados (16previos y2nuevos), fences cerrados/IDs explícitos únicos y cero destinos/anclas locales ausentes. SHA256 del maestro28C24C498829FCFAD410F07AAA6BD036D5A33382294401E11E86D486E4ECBBEF. Las rutas cambiadas son exactamente las doce autorizadas; registro, fuente, preliminares, ADR y specs anteriores no tienen diferencias frente a74e8cf1. Revisión semántica final y publicación todavía pendientes en este corte.
+
+### Revisión independiente y corrección final
+
+Lectura independiente íntegra de ocho specs y diff de cuatro registros: sin P0/P1 y con dosP2 que exigían corrección de coherencia antes de entregar. L4-R01: el resultado de IA de rama no distinguía opponent_move de hint y podía prescribir adoptar una jugada al recibir una pista; se exige separar ambos efectos y probar que hint no envía move ni modifica timeline/progreso. L4-R02: la garantía de bloqueo ranked excedía lo verificable al admitir escenarios synthetic sin procedencia; se delimita a UI/contexto y recursos oficiales identificados, declarando que copiar un tablero como escenario libre no tiene detección antitrampa garantizada. No se añade prohibición global de práctica concurrente ni decisión deportiva nueva.
+
+Onda final1: correcciones devueltas al autorI en08.02/08.03/08.04; coordinación ajusta solo su matrizL4-X10 y registroCONF. El revisor comprobará únicamente ambos hallazgos, sus propagaciones y regresiones introducidas. Las verificaciones independientes ya reprodujeron55VP/63AC/63casos,246dueños,40nodos80aristas,18JSON y1.514 enlaces/anclas de las doce rutas, sin ausentes; fuentes y specs previas intactas. El dictamen previo era REQUIERE_CORRECCIÓN, no aprobación del lote, y no se declara resuelto hasta comprobar el cambio.
+
+### Dictamen documental final y límites
+
+Onda final1 cerrada: L4-R01 ADDRESSED y L4-R02 ADDRESSED, comprobados directamente por l4_independent_review sobre el diff de cinco rutas,43inserciones/24supresiones. Hint solo presenta ayuda/preview explícita sin adoptar una jugada ni cambiar timeline/progreso; mover después requiere otra intención humana. Control ranked limitado a recursos oficiales y UI del modo, sin procedencia sintética o antitrampa universal fingidas. Propagación en contratos, casos y AC verificada; sin regresiones introducidas. P3 visual también corregido/verificado. **CUMPLIMIENTO DOCUMENTAL=CONFORME; CALIDAD DOCUMENTAL=CONFORME**, sin hallazgos pendientes de esa revisión. El propietario conserva la aceptación: ocho specs EN_REVISIÓN, nunca APROBADO por dictamen de un agente.
+
+Comprobaciones coordinadas:55VP con88vínculos a63AC definidos y63casos futuros;74tablas nuevas con columnas coherentes;18JSON válidos;60Markdown/31specs;246decisiones/propietarios yDAG40/80 intactos,0ciclos;3.652 enlaces locales y2.606fragmentos comprobados sin ausentes, fences abiertos o IDs explícitos duplicados. Escaneo limitado de60Markdown contra claves privadas, tokens GitHub/JWT/Ably y DSN con contraseña: cero coincidencias; no certifica seguridad universal o historia completa. Diff y staged diff --check limpios después de normalizar LF solo en las cuatro altas visuales; no configuración Git cambiada, verificadores auxiliares o archivos no autorizados.
+
+Pendientes de implementación/revisión de propuestas: deltaL4-P01 de contratos, matriz de releases/generadores/SDK, presupuestos150/700ms y memoria/descarga, dispositivos/60–30FPS/WCAG, fuerza de IA, políticas de datos/retención, licencias y revisión cultural. No son elecciones reglamentarias. PRE-09 y14ACC conservan íntegros sus controles futuros de corrección/integridad, propiedades, fuzzing/race, contratos, integración, E2E, accesibilidad y rendimiento; el spike experimental no los reemplaza.
+
+No se implementó producto, generaron assets o manifiestos, instalaron dependencias, ejecutaron tests/builds/producto, iniciaron Docker, modificaron proveedores, crearon recursos o desplegaron servicios. El código experimental sigue exclusivamente en su rama. Solo resta publicar/verificar la entrega documental y detenerse para **«APRUEBO LOTE 4»**, sin fusión ni lote5.
+
+<a id="lote-4-publicado"></a>
+
+### Recibo de publicación — PR #4, 2026-10-26
+
+Publicación verificada: [PR #4](https://github.com/SebasChaconDev/toguz-kumalak/pull/4), título «docs: lote 4 — experiencia visual, IA y aprendizaje», estado OPEN, mergedAt=null, base main y head docs/specs-lote-04. Commit de contenido revisado: `a36619e90937fe534c1b7974ff5f0287cb900d03`, idéntico en local/remoto/PR al crear y consultar la entrega. GitHub confirmó doce rutas exactas, ocho ADDED y cuatro MODIFIED; cero código o cambios a specs/fuentes aprobadas. Cuenta CLI personal SebasChaconDev verificada; sin force push o bypass.
+
+Main permanece `74e8cf164dfb86f27883de5e966795da52eeeaa5`; no se fusionó ningún PR. El árbol local quedó limpio y alineado después del primer push. GitHub no reporta checks CI configurados; no se atribuyen pruebas de producto. Este recibo se publica mediante un segundo commit solo de PLANS, conservando intacto el contenido revisado de las ocho specs. Su HEAD final se verifica en GitHub después del push, sin intentar incrustar el hash de un commit dentro de sí mismo.
+
+Resultado de la entrega: **LOTE_4_EN_REVISIÓN**, con55 decisiones documentadas y gate **«APRUEBO LOTE 4»** pendiente del propietario. Generar/publicar no aprueba el contenido ni autoriza fusionar, implementar, desplegar o iniciar lote5. Trabajo detenido al concluir la verificación del recibo.
