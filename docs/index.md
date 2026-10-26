@@ -1,28 +1,30 @@
 # IDX — Índice e inventario documental
 
+> **Estado vigente — 2026-10-26: LOTE_4_EN_REVISIÓN.** Generación y publicación documental de ocho specs autorizadas en `docs/specs-lote-04`, para revisión y PR contra main sin fusionar. [Plan y alcance](../PLANS.md#ejecucion-lote-4) prevalecen sobre los cortes históricos siguientes. Los lotes 1–3 están integrados; no se autoriza producto, infraestructura o lote 5.
+
 > **Estado vigente — 2026-10-25: READY_FOR_LOTE_4_DOCUMENTATION.** PR #3 integrado en main mediante c50ba9f; GO_REMOTE experimental cerrado y recursos remotos propios retirados. [Recibo verificado](../PLANS.md#lote-3-integrado-verificado) prevalece sobre los cortes históricos siguientes. El lote 4 aún no se ha generado; el producto no está implementado.
 
-> Autorización posterior vigente: lote 3 documental autorizado en docs/specs-lote-03, once specs EN_REVISIÓN y cinco registros; PR contra main sin fusión. Sustituye las paradas históricas solo en ese alcance; aprobación, producto y lote 4 siguen sin autorizar.
+> Corte histórico de autorización del lote 3, superado por su integración y por el permiso posterior del lote 4: once specs inicialmente EN_REVISIÓN y PR sin fusión. Consultar el encabezado y PLANS para el alcance vigente.
 
 > Aprobación posterior del lote 2: el propietario declaró «APRUEBO LOTE 2» y autorizó fusionar PR #2 en main. Contenido aprobado: HEAD 598ac9a4fc6ce14cf512785fb1c4160fafb4eb9e; integrado por squash 1f401af8d76794981bbcfdf9a3aa1831cf2621f5 (2026-10-21T21:10:14Z). Este registro sustituye las menciones históricas a revisión pendiente o prohibición de esa fusión. No autoriza lote 3 ni implementación; el producto sigue sin verificar.
 
 > Aprobación posterior: el propietario declaró «APRUEBO LOTE 1» el 2026-10-21 para el contenido revisado en HEAD e38cc84950858e072c1a3f06ffbf854cf7e544f5. PR #1 integrado por squash en main: 329b7c1059e8a74f191c256870734e8ae8259966. Este registro prevalece sobre menciones históricas de revisión pendiente; no acredita producto probado. Los permisos actuales se consultan en AGENTS y PLANS.
 
-ID: IDX · Versión: 0.6 · Fecha: 2026-10-25 · Estado documental: APROBADO · Owner: C.
+ID: IDX · Versión: 0.7 · Fecha: 2026-10-26 · Estado documental: EN_REVISIÓN · Owner: C.
 
 ## Estado de la entrega
 
-El inventario aprobado conserva **81 archivos Markdown: 40 especificaciones y 41 documentos de soporte**. Los lotes 1 y 2 están APROBADOS e integrados en main. El lote 3 añade exactamente once specs EN_REVISIÓN y actualiza cinco registros: hay 52 Markdown físicos y `.gitignore`, con 29 rutas futuras de lotes 4–6. SRC conserva su estado histórico; las 246 decisiones y AD-NORM-001 permanecen intactas. Esta cobertura documental no acredita implementación.
+El inventario aprobado conserva **81 archivos Markdown: 40 especificaciones y 41 documentos de soporte**. Los lotes 1–3 están APROBADOS e integrados en main y cubren125 decisiones. La entrega del lote 4 comprende exactamente ocho specs EN_REVISIÓN y55 decisiones: hay60 Markdown físicos y `.gitignore`, con21 rutas futuras de lotes5–6. El recuento observado al cierre constará en [el informe](../PLANS.md#informe-lote-4). SRC conserva su estado histórico; las246 decisiones y AD-NORM-001 permanecen intactas. Esta cobertura documental no acredita implementación.
 
 Inicio recomendado: [README](../README.md), [objetivos](../GOALS.md), [plan y reporte](../PLANS.md), [registro](decision-register.md), [trazabilidad](traceability.md), [conflictos](conflicts.md), [norma 11.01](specs/11-orchestration/11.01-document-standard-and-change-control.md) y [orquestación 11.02](specs/11-orchestration/11.02-ownership-delegation-and-context.md).
 
 ## Convenciones
 
-Distribución vigente: `main` conserva los lotes 1 y 2; la propuesta de lote 3 se publica en `docs/specs-lote-03`, sin fusionar. `.gitignore` es la excepción operativa autorizada, ajena al inventario Markdown. El estado vigente y la auditoría se registran en [informe de lote 3](../PLANS.md#informe-lote-3); se requiere «APRUEBO LOTE 3» para su aceptación documental.
+Distribución vigente: `main` conserva los lotes1–3; la propuesta del lote4 se publica en `docs/specs-lote-04`, sin fusionar. `.gitignore` es la excepción operativa autorizada, ajena al inventario Markdown. El estado vigente y las comprobaciones se registran en [informe de lote4](../PLANS.md#informe-lote-4); se requiere «APRUEBO LOTE 4» para su aceptación documental.
 
 B/M/A: complejidad relativa baja/media/alta, sin fechas prometidas. Owners funcionales C coordinación/producto; A arquitectura/operación; M motor; S servicios/identidad/multiplayer; V UX/3D; I IA/aprendizaje; Q calidad. El autor efectivo y las revisiones de esta entrega constan en PLANS.
 
-Los vínculos de lotes 1, 2 y 3 apuntan a archivos entregados. Las rutas futuras se muestran como texto y se enlazan mediante el anchor de esta entrada, nunca mediante un vínculo que aparente un archivo existente. Estado futuro `PENDIENTE_LOTE_N` no equivale a deferimiento aprobado de la funcionalidad.
+Los vínculos de lotes1–4 apuntan a archivos entregados al cierre respectivo. Las rutas futuras se muestran como texto y se enlazan mediante el anchor de esta entrada, nunca mediante un vínculo que aparente un archivo existente. Estado futuro `PENDIENTE_LOTE_N` no equivale a deferimiento aprobado de la funcionalidad.
 
 <a id="inventario"></a>
 
@@ -99,14 +101,14 @@ Los vínculos de lotes 1, 2 y 3 apuntan a archivos entregados. Las rutas futuras
 
 | ID | Archivo o ruta prevista | Propósito / entradas y dependencias | Owner | Complejidad | Estado |
 |---|---|---|---|---|---|
-| <a id="spec-04-01"></a>04.01 | `specs/04-visual-experience/04.01-navigation-and-accessibility.md` | Navegación y accesibilidad; entradas PRE-04.A4, PRE-04.D1, PRE-04.D2, PRE-04.D3, PRE-04.D4. Dependencias: [02.02](#spec-02-02), [02.03](#spec-02-03), [03.03](#spec-03-03), [05.02](#spec-05-02), [06.01](#spec-06-01), [06.03](#spec-06-03). | V | A | PENDIENTE_LOTE_4 |
-| <a id="spec-04-02"></a>04.02 | `specs/04-visual-experience/04.02-board-assets-camera-and-materials.md` | Tablero, assets, cámara y materiales; entradas PRE-02.E1, PRE-02.E2, PRE-04.A1, PRE-04.A2, PRE-04.A3, PRE-04.B1, PRE-04.B2, PRE-04.B3, PRE-04.B4, PRE-04.B5, PRE-04.F2, PRE-04.F3. Dependencias: [04.01](#spec-04-01), [03.02](#spec-03-02). | V | A | PENDIENTE_LOTE_4 |
-| <a id="spec-04-03"></a>04.03 | `specs/04-visual-experience/04.03-interaction-animation-and-audio.md` | Interacción, animación y audio; entradas PRE-04.C1, PRE-04.C2, PRE-04.C3, PRE-04.C4. Dependencias: [04.01](#spec-04-01), [03.03](#spec-03-03), [06.02](#spec-06-02). | V | A | PENDIENTE_LOTE_4 |
-| <a id="spec-04-04"></a>04.04 | `specs/04-visual-experience/04.04-performance-and-html-fallback.md` | Rendimiento y alternativa HTML; entradas PRE-04.E1, PRE-04.E2, PRE-04.E3, PRE-04.E4. Dependencias: [04.02](#spec-04-02), [04.03](#spec-04-03). | V | A | PENDIENTE_LOTE_4 |
-| <a id="spec-08-01"></a>08.01 | `specs/08-ai-practice/08.01-search-heuristics-and-compute-limits.md` | Búsqueda, heurística y límites IA; entradas PRE-03.D3, PRE-03.D4, PRE-03.D5, PRE-08.A2, PRE-08.A4, PRE-08.B1, PRE-08.B2, PRE-08.B3, PRE-08.B4. Dependencias: [03.04](#spec-03-04), [01.02](#spec-01-02). | I | A | PENDIENTE_LOTE_4 |
-| <a id="spec-08-02"></a>08.02 | `specs/08-ai-practice/08.02-ai-orchestration-fallback-and-metrics.md` | Orquestación IA, respaldo y métricas; entradas PRE-08.A1, PRE-08.A3, PRE-08.F3, PRE-08.F4. Dependencias: [08.01](#spec-08-01), [05.02](#spec-05-02), [05.03](#spec-05-03), [07.02](#spec-07-02). | I | A | PENDIENTE_LOTE_4 |
-| <a id="spec-08-03"></a>08.03 | `specs/08-ai-practice/08.03-reversible-practice-and-scenarios.md` | Práctica reversible y escenarios; entradas PRE-02.C2, PRE-03.D1, PRE-03.D2, PRE-08.C1, PRE-08.C2, PRE-08.C3, PRE-08.C4, PRE-08.E1. Dependencias: [02.02](#spec-02-02), [03.04](#spec-03-04), [05.02](#spec-05-02). | I | A | PENDIENTE_LOTE_4 |
-| <a id="spec-08-04"></a>08.04 | `specs/08-ai-practice/08.04-tutorial-hints-and-educational-replay.md` | Tutorial, sugerencias y replay educativo; entradas PRE-02.B4, PRE-04.D5, PRE-08.D1, PRE-08.D2, PRE-08.D3, PRE-08.D4, PRE-08.E2, PRE-08.E3, PRE-08.E4. Dependencias: [08.03](#spec-08-03), [03.03](#spec-03-03). | I | A | PENDIENTE_LOTE_4 |
+| <a id="spec-04-01"></a>04.01 | [specs/04-visual-experience/04.01-navigation-and-accessibility.md](specs/04-visual-experience/04.01-navigation-and-accessibility.md) | Navegación y accesibilidad; entradas PRE-04.A4, PRE-04.D1, PRE-04.D2, PRE-04.D3, PRE-04.D4. Dependencias: [02.02](#spec-02-02), [02.03](#spec-02-03), [03.03](#spec-03-03), [05.02](#spec-05-02), [06.01](#spec-06-01), [06.03](#spec-06-03). | V | A | EN_REVISIÓN |
+| <a id="spec-04-02"></a>04.02 | [specs/04-visual-experience/04.02-board-assets-camera-and-materials.md](specs/04-visual-experience/04.02-board-assets-camera-and-materials.md) | Tablero, assets, cámara y materiales; entradas PRE-02.E1, PRE-02.E2, PRE-04.A1, PRE-04.A2, PRE-04.A3, PRE-04.B1, PRE-04.B2, PRE-04.B3, PRE-04.B4, PRE-04.B5, PRE-04.F2, PRE-04.F3. Dependencias: [04.01](#spec-04-01), [03.02](#spec-03-02). | V | A | EN_REVISIÓN |
+| <a id="spec-04-03"></a>04.03 | [specs/04-visual-experience/04.03-interaction-animation-and-audio.md](specs/04-visual-experience/04.03-interaction-animation-and-audio.md) | Interacción, animación y audio; entradas PRE-04.C1, PRE-04.C2, PRE-04.C3, PRE-04.C4. Dependencias: [04.01](#spec-04-01), [03.03](#spec-03-03), [06.02](#spec-06-02). | V | A | EN_REVISIÓN |
+| <a id="spec-04-04"></a>04.04 | [specs/04-visual-experience/04.04-performance-and-html-fallback.md](specs/04-visual-experience/04.04-performance-and-html-fallback.md) | Rendimiento y alternativa HTML; entradas PRE-04.E1, PRE-04.E2, PRE-04.E3, PRE-04.E4. Dependencias: [04.02](#spec-04-02), [04.03](#spec-04-03). | V | A | EN_REVISIÓN |
+| <a id="spec-08-01"></a>08.01 | [specs/08-ai-practice/08.01-search-heuristics-and-compute-limits.md](specs/08-ai-practice/08.01-search-heuristics-and-compute-limits.md) | Búsqueda, heurística y límites IA; entradas PRE-03.D3, PRE-03.D4, PRE-03.D5, PRE-08.A2, PRE-08.A4, PRE-08.B1, PRE-08.B2, PRE-08.B3, PRE-08.B4. Dependencias: [03.04](#spec-03-04), [01.02](#spec-01-02). | I | A | EN_REVISIÓN |
+| <a id="spec-08-02"></a>08.02 | [specs/08-ai-practice/08.02-ai-orchestration-fallback-and-metrics.md](specs/08-ai-practice/08.02-ai-orchestration-fallback-and-metrics.md) | Orquestación IA, respaldo y métricas; entradas PRE-08.A1, PRE-08.A3, PRE-08.F3, PRE-08.F4. Dependencias: [08.01](#spec-08-01), [05.02](#spec-05-02), [05.03](#spec-05-03), [07.02](#spec-07-02). | I | A | EN_REVISIÓN |
+| <a id="spec-08-03"></a>08.03 | [specs/08-ai-practice/08.03-reversible-practice-and-scenarios.md](specs/08-ai-practice/08.03-reversible-practice-and-scenarios.md) | Práctica reversible y escenarios; entradas PRE-02.C2, PRE-03.D1, PRE-03.D2, PRE-08.C1, PRE-08.C2, PRE-08.C3, PRE-08.C4, PRE-08.E1. Dependencias: [02.02](#spec-02-02), [03.04](#spec-03-04), [05.02](#spec-05-02). | I | A | EN_REVISIÓN |
+| <a id="spec-08-04"></a>08.04 | [specs/08-ai-practice/08.04-tutorial-hints-and-educational-replay.md](specs/08-ai-practice/08.04-tutorial-hints-and-educational-replay.md) | Tutorial, sugerencias y replay educativo; entradas PRE-02.B4, PRE-04.D5, PRE-08.D1, PRE-08.D2, PRE-08.D3, PRE-08.D4, PRE-08.E2, PRE-08.E3, PRE-08.E4. Dependencias: [08.03](#spec-08-03), [03.03](#spec-03-03). | I | A | EN_REVISIÓN |
 
 ### Lote 5 — 20 archivos
 
