@@ -1,5 +1,7 @@
 # PLANS — Lotes documentales, gates y estado
 
+> **Estado vigente — 2026-10-26: LOTE_5_EN_REVISIÓN.** El propietario autoriza la generación/publicación documental completa de20rutas del lote5 en `docs/specs-lote-05`, con PR sin fusión. [Plan y alcance posterior](#ejecucion-lote-5) prevalece sobre cortes anteriores. Lotes1–4 APROBADOS/integrados; L4-P01 sigue PROPUESTA. No producto, CI ejecutable, instalaciones, recursos/despliegues, pagos o lote6.
+
 > **Estado vigente — 2026-10-26: LOTE_4_APROBADO_DOCUMENTALMENTE.** PR #4 integrado en main por `d5dccfbe0a55c78ddc7c2c0396ead9fd2bfad910`, desde el HEAD aprobado `3ef3f7cbfd3bfc4aea837d9f1b0b414be064e8ee`. [Recibo de aprobación e integración](PLANS.md#cierre-lote-4) prevalece sobre los cortes históricos. L4-P01 sigue PROPUESTA pendiente de aprobación de contratos antes de implementación. Detenerse: no producto, despliegues o lote 5.
 
 > **Estado vigente — 2026-10-26: LOTE_4_EN_REVISIÓN.** El propietario declaró «AUTORIZO LA GENERACIÓN Y PUBLICACIÓN DOCUMENTAL DEL LOTE 4». Esta autorización posterior permite exactamente ocho specs, los cuatro registros de soporte y PR desde `docs/specs-lote-04` contra main, sin fusión. [Plan vigente](#ejecucion-lote-4) prevalece sobre los cortes históricos; producto, infraestructura y lote 5 siguen fuera de alcance.
@@ -12,7 +14,7 @@
 
 > Aprobación posterior: el propietario declaró «APRUEBO LOTE 1» el 2026-10-21 para el contenido revisado en HEAD e38cc84950858e072c1a3f06ffbf854cf7e544f5. PR #1 integrado por squash en main: 329b7c1059e8a74f191c256870734e8ae8259966. Este registro prevalece sobre menciones históricas de revisión pendiente; no acredita producto probado. Los permisos actuales se consultan en AGENTS y PLANS.
 
-ID: PLANS · Versión: 0.10 · Fecha: 2026-10-26 · Estado documental: APROBADO · Owner: C.
+ID: PLANS · Versión: 0.11 · Fecha: 2026-10-26 · Estado documental: EN_REVISIÓN · Owner: C.
 
 ## Autorización y estado actual
 
@@ -712,3 +714,200 @@ El commit posterior de estados se limita a15Markdown: ocho specs por metadatos/r
 La verificación documental del cierre comprueba secciones, cobertura, dueños, DAG, enlaces/fences/JSON, preservación íntegra de cuerpos técnicos y fuentes y estado Git. Es una comprobación documental, no una prueba de producto. Concluida su publicación y verificación, detenerse y comunicar el commit de integración y el estado final; lote5 continúa sin iniciar.
 
 Resultado observado de esos controles:60Markdown/31specs;246 PRE/propietarios y cuerpo íntegro del registro previo, incluidas AD-NORM-001 y sus14ACC, conservados. Cobertura180 SPEC_APROBADO/0 SPEC_EN_REVISIÓN/66 futuras;40nodos80aristas sin cambios/ciclos;18JSON válidos;3.670 enlaces locales y2.624fragmentos sin ausentes, IDs explícitos únicos y fences cerrados. En las ocho specs, comparación exacta de§§2–17 contra el HEAD aprobado: cero diferencias; en§1 solo versión0.1→0.2 y estadoEN_REVISIÓN→APROBADO, además del recibo superior. L4-P01 conserva íntegro su cuerpo PROPUESTA. Son15 modificaciones Markdown y cero altas; las specs de lotes anteriores, maestro, preliminares y ADR no cambian. Diff --check sin errores; la publicación de estados se verifica por HEAD local/remoto y PR MERGED antes de informar el cierre.
+
+<a id="ejecucion-lote-5"></a>
+
+## Ejecución documental del lote 5 — 2026-10-26
+
+Fuente: solicitud íntegra del propietario «TOGUZ KUMALAK — PROMPT MAESTRO DEL LOTE 5», leída en sus1.096líneas. Autorización literal: «AUTORIZO LA GENERACIÓN Y PUBLICACIÓN DOCUMENTAL COMPLETA DEL LOTE 5». Permite20altas Markdown inventariadas, coordinación especializada, controles documentales, commits/push y PR contra main, sin fusión. Se actualizan IDX/TRZ/CONF/PLANS y, por coherencia operativa/enlaces futuros, mínimamente AGENTS/PROMPTS/README. No se archiva otro archivo de fuente ni se crean briefs, reportes, verificadores o ejecutables auxiliares en disco.
+
+### Base, administración y automatizaciones
+
+Base local/remota verificada `b91ba98a380ea12b8b6ffc24155edd437e958ed0`; repositorio personal SebasChaconDev/toguz-kumalak. PR1–4 fusionados; PR4 squash `d5dccfbe0a55c78ddc7c2c0396ead9fd2bfad910` y recibo de estados posterior b91ba98. Ocho specs04/08 ya APROBADO, autorización humana AD-GATE-004 y cuerpos intactos: no existe regularización pendiente que requiera reeditarlos. Las menciones EN_REVISIÓN del lote4 en cortes históricos no revocan el recibo. Cobertura inicial180aprobadas/0enrevisión/66futuras.
+
+Git inicialmente limpio, rama nueva `docs/specs-lote-05`, sin trabajo previo de lote5 identificado ni otras worktrees. Se conservaron ramas y artefactos ignorados del spike. GitHub informa cero workflows, hooks o deployments registrados al preparar el trabajo. Antes del push se revalidará también la conexión de despliegue; un mecanismo que pueda publicar servicios sin autorización detiene la publicación documental antes de activarlo. No se renuevan credenciales o modifican proveedores para comprobarlo.
+
+### Restricciones globales
+
+- Exactamente20altas: nueve specs09/10/11.03, ochoPH y tresharness. Estados EN_REVISIÓN; solo nueve specs llevan las17secciones de11.01. No crear AUD-01 del lote6.
+- Conservar246 PRE/texto/dueños, AD-NORM-001, TK-N1-1.0.0 y14ACC; tres serviciosGo, motor único, PostgreSQL autoritativo, avisosAbly postcommit y HTML/3D equivalente. No modificar specs/ADR/fuentes aprobadas.
+- L4-P01 sigue PROPUESTA: aprobar el lote5 no aprueba sus contratos. El procedimiento de cambio debe preceder a editar05.02/05.03/07.02 o implementar consecuencias.
+- FuentesAPROBADO, diseño nuevoPROPUESTA, comportamientoPOR_VERIFICAR. Evidencia observada lleva procedencia/commit/entorno y limitaciones, sin crear un estado documental nuevo. Spike504caa5 demuestra solo experimento acotado; no se repite automáticamente.
+- Solo Markdown y ejemplos en fences; no producto, workflows/scripts/Compose reales, dependencias, tests/builds de producto, Docker, cuentas, secretos, proveedores operativos, pagos o despliegues.
+- Revisión independiente: pruebas positivas/negativas/evidencia por ruta crítica, guardas/límites compartidos, coherenciaQA/operaciones/fases/harness y separación de tres permisos: documentación, implementación y recursos/despliegues.
+
+### Tareas, propietarios y dependencias
+
+Este plan es el ledger de continuidad. El usuario autoriza equipos paralelos por dominios independientes; un escritor activo por archivo y coordinación exclusiva de registros. La revisión se hace sin escribir en archivos de sus autores.
+
+| Tarea | Escritura exclusiva | Entradas/salida y orden |
+|---|---|---|
+| L5-Q | l5_quality_author:09.01–09.04 | PRE09/decisionesIDX33; contratos aprobados01–08 y estándar11.01/02.09.01+09.02→09.03→09.04;33VP→AC, cobertura90/80 y matriz14ACC/riesgo/prueba/evidencia |
+| L5-A | l5_operations_author:10.01–10.04 | PRE10/decisionesIDX26; contratos01–08 y evidencia experimental.10.01→10.02/10.03→10.04;26VP→AC, regiones/secretos/cuotas/backup/retención/releases yrunbooks |
+| L5-C1 | Coordinación:11.03 y siete registros | Después de09.04+10.04;7VP→AC, gates por evidencia, procedimiento L4-P01, fuentes intactas y trazabilidad66decisiones |
+| L5-C2 | l5_delivery_author:PH00–07 yH-BUILD/H-CTX/H-LOG | Preparación en lectura entregada; escribir solo después de11.03 estable y después de ochoPH completar tresharness. Planes futuros con tareas/contratos/positivos/negativos/evidencia y permisos; sin entradas ficticias de implementación |
+| L5-R | l5_independent_review:solo lectura | Fuentes directas y entregas estables; coherencia de20archivos,66VP,pruebas previstas, contratos, permisos, DAG y diff; autores corrigen sus rutas |
+
+Foco de integración: QA/CI debe ejercer pruebas09.01/02; severidad/DoD09.04 y releases10.04 deben coincidir; métricas10.02 sustentan umbrales; backup10.03 requiere restauración observada; PH consumen todas sus dependencias y no anticipan Elo/contratos; harness aplica11.03. Sin exactly-once de notificación, rollback de datos automático, antitrampa de escenarios de procedencia desconocida o pruebas aprobadas por declaración de agente.
+
+- [x] Base y rama verificadas; lote4 ya regularizado, sin cambios a sus specs.
+- [x] L5-Q: cuatro specs de calidad entregadas y escritura cesada; revisión independiente conforme tras L5-R01/R02.
+- [x] L5-A: cuatro specs operativas entregadas y escritura cesada; revisión independiente conforme.
+- [x] L5-C1:11.03 después de09.04/10.04 estables, revisión independiente conforme; nueve specs y66filas integradas.
+- [x] L5-C2:ochoPH y tresharness entregados EN_REVISIÓN,65tickets/54casos y12campos porPH; correcciones R03/R04 aplicadas, revalidación independiente conforme tras R03/R04.
+- [x] L5-R:20documentos y deltas de siete registros CONFORMES; L5-R01–R04 ADDRESSED.
+- [x] Cierre documental:20altas, nueve×17secciones,66VP,180/66/0,246fuentes/dueños y DAG40/80 sin cambios; enlaces/tablas/fences/JSON y secretos.
+- [x] Publicación: automatizaciones revalidadas, commit/push/PR #5 con título exacto; OPEN/sin merge. Gate «APRUEBO LOTE 5» pendiente; detenerse tras verificar recibo.
+
+<a id="lote-5-integracion"></a>
+
+### Matriz de integración de calidad, operación y ejecución futura
+
+La matriz identifica pruebas y evidencias **por producir bajo autorización futura**, no resultados del producto. Los IDs L5-X son controles de revisión del lote, sin nuevos propietarios PRE o aristas inversas del DAG.
+
+| Control | Requisito/contrato y productores → consumidores | Positivo / negativo y evidencia futura exigida |
+|---|---|---|
+| L5-X01 | 03.01–03.04/R01–08/14ACC →09.01→PH01/09.04 | Corpus normativo y secuencias reproducibles,162/pureza/repetición reclamada; sintético válido no acredita alcanzabilidad, versión/historia inválida se rechaza |
+| L5-X02 | 05.02/05.03 recibos/TX →09.01→PH02/PH04/10.03 | Retry mismoID recupera efecto único; hash distinto/stale/rollback/commitunknown/carrera/reinicio observables en PostgreSQL real, sin inferir rollback de timeout |
+| L5-X03 | 07.04/05.03 Elo/lock guards →09.01→PH06 | Dos partidas del mismo jugador, ambos órdenes de cierre y doble finalización; conservación/ledger/secuencias, no Elo de invitado/IA/práctica |
+| L5-X04 | 07.01/07.02 sesión/cookies/JWKS →09.01/09.02→PH02/PH06 | Sesión válida y refresh/rotación; emisor/aud/firma/CSRF/UUID cruzados y dependencia caída rechazan sin privilegio alternativo |
+| L5-X05 | 08.01/08.02/07.02 búsqueda/grant →09.01→PH05 | Legalidad, perspectiva/signo,TT soloorden,contexto por rama,deadline/nodos/memoria; callback incierto/replay/IA tardía/fallback mantienen un efecto Game |
+| L5-X06 | 04.* /08.04 acceso →09.02→PH03/PH05/09.04 | HTML y3D conservan funciones/foco/ESEN/teclado/lector; WebGL ausente durante unknown no confirma ni duplica movimiento; evidencia manual además de herramientas |
+| L5-X07 | 05.04/06.02/06.03 avisos/REST →09.01/09.02→PH04/10.02/10.04 | Commit precede aviso; pérdida/desorden/duplicado/Ablycaído converge a REST autorizado, sin exactly-once prometido o cierre por timer cliente |
+| L5-X08 | 08.03 rama/versiones →09.01/09.02→PH05 | Undo/redo/restauración conservan contexto; generación descarta respuestas aunque revisión coincida, nueva jugada descarta futuro solo si se acepta |
+| L5-X09 | 08.04 hints y modo →09.01/09.02→PH05 | Hint no mueve ni cambia progreso; Game bloquea ayuda ligada a recurso ranked real. No prometer detectar tablero copiado como escenario sin procedencia |
+| L5-X10 | 09.01/09.02 →09.03→10.04/PH07/harness | Matriz de checks por trigger/consumidor; motor dispara Game/AI. PR externo sin secretos, check obligatorio omitido/infra no disponible no equivale a PASS |
+| L5-X11 | 01.03/07.02/10.02 cuotas →09.04/10.04/PH07 | Contadores persistidos y pruebas de frontera;50/75/90 activan revisión, sin pago/degradación nueva automática o límite global basado en RAM |
+| L5-X12 | 05.03/07.02/10.03 recuperación →09.01/09.04/PH06/PH07 | Restore aislado valida consistencia e integridad con tiempos medidos; backup presente no basta, no resucitar refresh/grant ni duplicar resultado/Elo tras perder recibos posteriores |
+| L5-X13 | 09.04+10.04 →11.03→PH/harness | DoD/evidencia/revisión y tres permisos independientes; compilación, mensaje de agente o aprobación documental no autoriza release/recursos |
+| L5-X14 | 07.03/RISK10 y02.03/RISK13 →10.03/11.03→PH06/PH07 | Política/derechos aprobados antes de acciones afectadas; sin plazo jurídico, anonimización irreversible o licencia inventados. Pendiente humano no bloquea escribir docs independientes |
+| L5-X15 | 10.02 observación →09.04/11.03/harness | Evidencia liga requisito/versión/commit/entorno/comando/salida; logs minimizados/cardinalidad acotada. No métricas sin muestra, SLO/RPO/RTO/fuerza o coste garantizados |
+
+<a id="informe-lote-5"></a>
+
+## Informe del lote 5 — entrega para revisión
+
+Estado LOTE_5_EN_REVISIÓN, sin aprobación humana. Los20documentos están entregados EN_REVISIÓN: nueve specs09/10/11.03, ochoPH y tresharness. Cobertura de decisiones180SPEC_APROBADO/66SPEC_EN_REVISIÓN/0sin spec redactada, con246dueños intactos. Los20documentos y deltas de los siete registros tienen revisión independiente CONFORME; L5-R01–R04 ADDRESSED. El cierre final y el recibo Git se añaden después de observarlos, sin atribuir pruebas de producto.
+
+### Entregas y revisión técnica de las nueve specs
+
+L5-A entregó10.01–10.04 con26VP/31AC/40familias de casos y cese de escritura; revisión independiente íntegra CONFORME, sin hallazgos accionables. L5-Q entregó09.01–09.04 con33VP/35AC/61casos, incluidos14ACCnormativos. Dos observaciones de revisión se devolvieron a su autor: L5-R01/P2 distinguía apariciones de repetición frente a historia de cierre; L5-R02/P3 aclaraba coordinación de incidentes. Correcciones limitadas a09.01§5/F-Q1-N13 y09.04§7, verificadas ADDRESSED por el revisor sin cambios a fuentes aprobadas: cierre conserva lifecycle/history_ordinal y no añade aparición, A coordina operación y C gobierno/escalamiento/dossier.
+
+Coordinación redactó11.03 solo después de09.04/10.04 estables:7VP/10AC/12casos y17secciones, triple permiso, cambio contractual L4-P01, hitos12campos y gate por pruebas observadas/revisión/decisión humana. Revisión independiente de11.03 CONFORME, sin nuevos hallazgos. Total intermedio de nueve specs:66VP→76AC y113casos futuros; no tests ejecutados. Los contratos QA-Evidence/1, AcceptanceDossier/1 y ReleaseManifest/1 permanecen PROPUESTA.
+
+Verificación coordinada intermedia en memoria:69Markdown/40specs, nueve×17secciones,66VP exactos del inventario,246PRE/propietarios,40nodos80aristas sin cambios/ciclos,18JSON completos válidos y3.982enlaces locales sin ausentes. Es un corte previo a PH/harness, no se declara todavía80Markdown o20altas. REG/maestro/PRE/ADR/specs aprobadas sin cambios; no se implementa o ejecuta producto. El revisor usó fuentes directas y artefactos del spike por Git, sin cuentas, instalaciones o mutaciones.
+
+### Entrega parcial de fases y revisión de dependencias
+
+C2 entregó ochoPH estables y después inició los tresharness. Revisión independiente:65tickets únicos (5/8/8/8/8/9/9/10),12campos Milestone por fase y EN_REVISIÓN. DosP2 a corregir por su autor: L5-R03 añadeT04 a la parte de recuperación oficial dePH05-T06, cuyo efecto/orquestación se produce enT04; L5-R04 separa enPH06-T07 barrera/revocación autorizada sin policyVersion y cleanup condicionado a política. El contrato aprobado05.03/07.03 permite ACK_REVOKED sin política; raíz+barrier quedan BLOCKED_PENDING_DATA_POLICY y cleanup null/cambiado no se acepta ni equivale a supresión completa. Estas correcciones no cambian fuentes, cantidad de tickets o permisos; sus negativos y propagación al harness se verificarán al recibir la entrega estable.
+
+### Observación de automatizaciones antes de publicar
+
+Ámbito consultado: repositorio personal SebasChaconDev/toguz-kumalak y sesión web preexistente UltraSéneca de Vercel. GitHub al preparar la rama:0workflows,0hooks,0deployments. Consulta de solo lectura a Projects Vercel,2026-10-26: sesión autenticada Hobby, búsqueda vacía y mensaje «Deploy your first project», sin proyectos en ese ámbito. No se identificó proyecto Git conectado al repositorio o mecanismo de despliegue activable por este push. No es un inventario de cuentas/organizaciones ajenas.
+
+No se inició sesión nueva, renovó tokenCLI, creó recurso, modificó protección/automatización o leyó un secreto para esa comprobación. Sin conector Vercel disponible se usó el navegador ya autorizado. Revalidar referencias/repositorio y ausencia de automatizaciones identificadas antes del push; si aparece un mecanismo concreto que active un despliegue no cubierto, detener publicación antes de activarlo.
+
+### Entrega completa e inventario final del lote 5
+
+C2 entregó y cesó escritura: ochoPH y tresharness v0.1,2026-10-26,OwnerC,EN_REVISIÓN. Revisor leyó íntegramente los3harness y revalidó L5-R03/R04: ADDRESSED, propagados a H-BUILD/H-CTX, sin nuevos hallazgos. Los20documentos son CONFORMES documentalmente; este resultado no es aprobación del propietario ni ejecución de producto.
+
+| Documento nuevo | PRE/VP del propietario | Estado |
+|---|---:|---|
+| [09.01](docs/specs/09-quality/09.01-engine-data-contract-and-ai-verification.md) |16| EN_REVISIÓN |
+| [09.02](docs/specs/09-quality/09.02-ui-e2e-accessibility-and-visual-verification.md) |6| EN_REVISIÓN |
+| [09.03](docs/specs/09-quality/09.03-ci-security-and-release-controls.md) |6| EN_REVISIÓN |
+| [09.04](docs/specs/09-quality/09.04-acceptance-performance-and-definition-of-done.md) |5| EN_REVISIÓN |
+| [10.01](docs/specs/10-operations/10.01-deployments-origins-regions-and-secrets.md) |7| EN_REVISIÓN |
+| [10.02](docs/specs/10-operations/10.02-observability-quotas-and-rate-limits.md) |11| EN_REVISIÓN |
+| [10.03](docs/specs/10-operations/10.03-backups-restoration-and-retention.md) |5| EN_REVISIÓN |
+| [10.04](docs/specs/10-operations/10.04-releases-incidents-and-portability.md) |3| EN_REVISIÓN |
+| [11.03](docs/specs/11-orchestration/11.03-milestones-gates-and-evidence.md) |7| EN_REVISIÓN |
+| [PH-00](docs/phases/phase-00-feasibility-spike.md) |consume specs, sin dueñoPRE nuevo| EN_REVISIÓN |
+| [PH-01](docs/phases/phase-01-go-engine.md) |consume specs, sin dueñoPRE nuevo| EN_REVISIÓN |
+| [PH-02](docs/phases/phase-02-contracts-persistence-guests.md) |consume specs, sin dueñoPRE nuevo| EN_REVISIÓN |
+| [PH-03](docs/phases/phase-03-accessible-client-and-3d.md) |consume specs, sin dueñoPRE nuevo| EN_REVISIÓN |
+| [PH-04](docs/phases/phase-04-private-multiplayer.md) |consume specs, sin dueñoPRE nuevo| EN_REVISIÓN |
+| [PH-05](docs/phases/phase-05-ai-practice-tutorial.md) |consume specs, sin dueñoPRE nuevo| EN_REVISIÓN |
+| [PH-06](docs/phases/phase-06-accounts-elo-statistics.md) |consume specs, sin dueñoPRE nuevo| EN_REVISIÓN |
+| [PH-07](docs/phases/phase-07-hardening-and-portfolio.md) |consume specs, sin dueñoPRE nuevo| EN_REVISIÓN |
+| [H-BUILD](harness/build/README.md) |consume11.03/QA/PH| EN_REVISIÓN |
+| [H-CTX](harness/context/README.md) |consume fuentes/contratos por tarea| EN_REVISIÓN |
+| [H-LOG](harness/build-log.md) |plantilla y ejemplo SYNTHETIC/NOT_RUN| EN_REVISIÓN |
+
+### Matriz de dependencias y ejecución futura
+
+Se conserva el DAG canónico del inventario,40nodos/80aristas/0ciclos; las referencias transversales de verificación no añaden aristas inversas. Esta tabla reproduce las entradas directas de las nueve specs, sin nuevos propietarios:
+
+| Consumidor | Prerrequisitos canónicos |
+|---|---|
+|09.01|05.04,07.04,08.02|
+|09.02|04.04,06.03,08.04|
+|09.03|09.01,09.02|
+|09.04|09.03|
+|10.01|01.03,05.04,07.02|
+|10.02|10.01,06.03,08.02|
+|10.03|10.01,05.03,07.03|
+|10.04|10.02,10.03|
+|11.03|09.04,10.04|
+
+PH00→PH01→PH02→PH03→PH04→PH05→PH06→PH07 es secuencia de hitos de implementación futura, separada del DAG de redacción. Leer contratos de una fase posterior no presupone implementarlos; interfaces/dobles deben declararse. Los planes contienen65tickets y54familias de casos futuros, no119pruebas ejecutadas. Doce campos Milestone porPH; cada ticket tiene alcance, dependencias, resultado y aceptación.
+
+| Fase | Tickets / casos | Objetivo y frontera |
+|---|---:|---|
+|PH-00|5 /5|Conservar GO_LOCAL/GO_REMOTE experimental504caa5 y sus límites; no repetir spike por este plan.|
+|PH-01|8 /4|Motor Go puro único, corpus14ACC/propiedades/fuzz y cobertura90%; sin regla deportivafrontend.|
+|PH-02|8 /7|Contratos, PostgreSQL real, idempotencia/atomicidad/guest/S2S; sin atribuir OIDC/Elo aún.|
+|PH-03|8 /6|Cliente HTML jugable primero y3D progresivo, mismas funciones/ESEN/foco y autoridadGo.|
+|PH-04|8 /7|Privado casual/invitados, avisosAbly y recuperaciónREST; ranked/Elo se completan enPH06.|
+|PH-05|9 /8|Negamax/TT/contexto/cancelación, práctica/hints/tutorial; deltaL4-P01 exige aprobación contractual específica.|
+|PH-06|9 /8|OIDC/cuentas, Elo concurrente/estadísticas y derechos; barrier/revocación sinpolicy no se aplaza, cleanup condicionado.|
+|PH-07|10 /9|Endurecimiento/DoD/restore/costes/licencias/cultura; demo/release solo tras permisos/evidencia.|
+
+H-BUILD selecciona ticket, verifica tres permisos y rutas, resuelve fuentes/versiones, planea positivos/negativos, ejecuta solo lo autorizado, recoge QA-Evidence y recibe revisión/decisión humana. H-CTX contiene nueve paquetes: motor, backend, Identity, multijugador, frontend, IA, seguridad, operaciones yQA; fuentes directas/hash/docCommit separados delcodeBase. H-LOG es plantilla con ejemplo SYNTHETIC/NOT_RUN: no inventa implementación, agente, comando o autorización observados.
+
+### Calidad, seguridad, operación y límites de aceptación
+
+QA consolida14ACC, propiedades/fuzz/race, motor90% y lógica de servicios80% más rutas críticas, PostgreSQL real con barreras/carreras/rollback/commitunknown, contratos/error/recibos, Elo concurrente, JWKS/CSRF/S2S/recurso, IA histórica y cancelación. UI añade Vitest/RTL/Playwright, tres navegadores, ES/EN/HTML/3D, visual/manual teclado/lector y dispositivos/medición pertinentes. Pruebas positivas/negativas y artefactos exigidos se relacionan en15recorridosL5-X y113familias futuras de las nueve specs.
+
+QA-Evidence/1 liga PRE/spec/AC/caso, commit/versiones/entorno, datos/seed, comando sanitizado, expected/observed, PASS/FAIL/BLOCKED/NOT_RUN y artefactos/hash/revisión. Las66VP tienen79vínculos a76AC definidos. Un check requerido omitido o sin evidencia suficiente no pasa; P0/P1/críticos bloquean. P2 exige propietario/plazo/mitigación/aceptación humana explícita y acotada, sin dispensar PRE o volver verde una prueba fallida.
+
+CI/DevSecOps es diseño futuro: gates por trigger/consumidor, motor compartido dispara Game/AI, PR externos sin secretos, análisis/vulnerabilidades/compatibilidad y release por dossier. Hoy no se instala CI ni se ejecuta código o herramienta del producto. Operación especifica cuatro proyectos/tresGo,orígenes/regiones/secretos/cuotas/telemetría, backups y restore aislado, releases/incidentes/portabilidad. Rollback de código no revierte datos ni resucita sesiones/grants/efectos; sin verdad posterior a backup se mantiene cuarentena. A coordina operación, C gobierno y Q verifica recuperación.
+
+Coste objetivo0USD se conserva sin garantía medida del producto. No hay recursos, builds o pagos nuevos.50/75/90% son umbrales candidatos de revisión; no upgrade/degradación automática. Toolchains, cuotas/capacidad, dispositivos/rendimiento/IA, SLO/RPO/RTO, destino/retención de backups y política de datos/licencias/cultura siguen pendientes de aprobación o medición en acciones afectadas. L4-P01 permanece PROPUESTA, también tras aprobar este lote; TK-N1-1.0.0 no tiene nueva elección reglamentaria pendiente.
+
+### Revisión independiente y correcciones
+
+Autores efectivos: l5_quality_author(09),l5_operations_author(10),coordinación(11.03 y siete registros),l5_delivery_author(PH/harness). Todos entregaron/cerraron su escritura antes de revisión final. l5_independent_review no escribió archivos; leyó fuentes directas, nueve specs, ochoPH y tresharness, revisó deltas de registros y revalidó las correcciones de los autores:
+
+| Hallazgo | Corrección y fuente | Resultado |
+|---|---|---|
+|L5-R01/P2|09.01§5/F-Q1-N13: no incrementar apariciones no significa omitir lifecycle/history_ordinal del cierre; conserva contrato03.04/05.03.|ADDRESSED|
+|L5-R02/P3|09.04§7: A operación/contención/timeline,C gobierno/escalamiento/dossier,Q verificación,compatible10.04.|ADDRESSED|
+|L5-R03/P2|PH05-T06 dependeT03+T04+T05; recuperación oficial consume orquestación/efectoT04.|ADDRESSED|
+|L5-R04/P2|PH06-T07/C07 yH-BUILD/H-CTX: barrierS2S sinpolicyVersion yACK_REVOKED durable, raíz+barrierBLOCKED_PENDING_DATA_POLICY; cleanup aprobado/non-null/inmutable,ACK_REVOKED≠COMPLETE.|ADDRESSED|
+
+Resultado de los20documentos y deltas finales de siete registros: CONFORME documentalmente, sin hallazgos restantes. Revisor verificó de nuevo80Markdown/40specs,65tickets/54casosPH,solo20altas+7registros y fuentes protegidas intactas; cese sin escrituras. La conformidad no sustituye «APRUEBO LOTE 5» o pruebas de producto.
+
+Los siete registros se modifican por necesidad concreta: IDX rutas/estados; TRZ66filas y evidencia; CONF propuestas/correcciones; PLANS autorización/ledger/informe/recibo; AGENTS límite vigente; PROMPTS contexto/permisos; README cantidades/gate y enlace a planes/harness. REG,maestro,PRE,ADR y31specs aprobadas no tienen cambios; no se regulariza otra vez el lote4 ni se cambian55decisiones o cuerpos aprobados.
+
+### Controles documentales de cierre — corte previo a publicación
+
+Análisis de texto en memoria, sin instalar ni escribir verificadores:80Markdown/40specs;20altas(9+8+3) y7registros modificados; nueve×17secciones y EN_REVISIÓN,66VP exactos/79vínculos→76AC;113familias en specs y54enPH.246textos/propietarios intactos;180SPEC_APROBADO+66SPEC_EN_REVISIÓN+0sin spec; DAG40/80 idéntico/sin ciclos;65tickets sin dependencias internas ausentes/cíclicas;12camposMilestone porPH;116tablas de altas coherentes.18bloquesJSON completos válidos, fences eIDs explícitos comprobados. Conteos finales de enlaces, scan acotado de secretos y diff/staged --check se añaden tras observarlos con registros cerrados.
+
+SHA256 del maestro conservado:28C24C498829FCFAD410F07AAA6BD036D5A33382294401E11E86D486E4ECBBEF. Los scripts ejecutados solo analizan texto/Git; no son pruebas de producto, benchmarks o certificación de seguridad. AUD-01 no existe: se mantiene PENDIENTE_LOTE_6. Sin código/manifiestos/workflows/assets nuevos, dependencias, producto, proveedores mutables o despliegues.
+
+Revalidación GitHub26oct:main=b91ba98a380ea12b8b6ffc24155edd437e958ed0,0workflows/0hooks/0deployments; rama remota del lote5 aún inexistente, sin force push. Observación Vercel autenticada Hobby/0proyectos en el ámbito indicado arriba. No se identifica automatismo de despliegue activable. La publicación será documental y el PR seguirá OPEN/sin merge; recibo con URL/HEAD observado se añade después. Recomendación: aceptar como documentación una vez revisado el contenido del PR; implementación y recursos continúan bajo permisos separados.
+
+Cierre previo a commit observado:4.431enlaces locales/2.853fragmentos sin destino o ancla ausente,18JSON válidos, fences cerrados eIDs explícitos únicos. Scan acotado de80Markdown contra cinco clases de secretos (claves privadas, tokensGitHub/JWT/Ably yDSN con contraseña): cero coincidencias, sin garantía sobre toda clase de secreto o historia ajena. Diff --check limpio. Se normalizaron exclusivamente11altasPH/harness deCRLF→LF; lectura Unicode antes/después idéntica11/11, sin cambios semánticos o fuentes aprobadas. El primer control de finales de línea falló y se repitió tras esa corrección: ceroCR en20altas. La revisión independiente de los últimos registros es CONFORME; staged --check y recibo Git se verificarán antes de declarar publicación.
+
+Staged diff --check observado sin errores sobre27rutas exactas(20A/7M). No hay core.hooksPath configurado ni hooks locales activos; no se han desactivado controles. Solo se publicará docs/specs-lote-05 y un PR contra main, sin fusionarlo. La revisión humana «APRUEBO LOTE 5» permanece pendiente.
+
+<a id="lote-5-publicacion"></a>
+
+### Recibo de publicación documental — 2026-10-26
+
+[PR #5](https://github.com/SebasChaconDev/toguz-kumalak/pull/5) creado y adjunto al chat. Título exacto: «docs: lote 5 — quality, operations, milestones and implementation plans». Base main, rama docs/specs-lote-05, estado OPEN y mergedAt=null. Commit de contenido `b6b7ee355291df2167836d77185fd906fdccd23a`, fecha2026-10-26T18:03:35Z; HEAD local/remoto/PR coincidían al verificar la creación. GitHub confirma27rutas exactas:20ADDED y7MODIFIED, soloMarkdown y ningún cambio protegido. Descripción con inventario/cobertura/grafo/QA/DevSecOps/operaciones/PH/harness/responsables/auditoría/propuestas/gate.
+
+Main permanece `b91ba98a380ea12b8b6ffc24155edd437e958ed0`; no se fusionó ningún PR o commit del lote5. Árbol local limpio y upstream sincronizado tras el primer push. PR statusCheckRollup=[]: no hay checksCI configurados, no pruebas de producto aprobadas por este hecho. Después del push, GitHub informa cero deployments registrados. El recibo se publica en un segundo commit limitado aPLANS; su HEAD se comprueba contra origin/PR y se comunica al propietario, sin autorreferencia circular en este archivo.
+
+Se conservan20documentos EN_REVISIÓN y revisión independiente CONFORME/L5-R01–R04 ADDRESSED. Aprobar documentación no aprueba L4-P01 ni permite implementar/instalarCI/recursos/demo/release. No se inician lote6 o producto. Estado final solicitado: **LOTE_5_EN_REVISIÓN**, listo para revisión humana y gate **APRUEBO LOTE 5**; detenerse después de verificar publicación del recibo.

@@ -1,5 +1,7 @@
 # AGENTS — Toguz Kumalak
 
+> **Autorización posterior vigente — 2026-10-26: LOTE_5_EN_REVISIÓN.** El propietario autoriza los20Markdown inventariados del lote5, siete registros mínimos y publicación desde `docs/specs-lote-05` con PR sin fusionar. [Alcance y ledger](PLANS.md#ejecucion-lote-5) prevalece sobre paradas anteriores. No producto, workflows ejecutables, instalaciones, tests de producto, proveedores/despliegues, pagos o lote6. L4-P01 sigue PROPUESTA pendiente de aprobación de contratos.
+
 > **Estado vigente — 2026-10-26: LOTE_4_APROBADO_DOCUMENTALMENTE.** PR #4 integrado en main por `d5dccfbe0a55c78ddc7c2c0396ead9fd2bfad910`, desde el HEAD aprobado `3ef3f7cbfd3bfc4aea837d9f1b0b414be064e8ee`. [Recibo de aprobación e integración](PLANS.md#cierre-lote-4) prevalece sobre los cortes históricos. L4-P01 sigue PROPUESTA pendiente de aprobación de contratos antes de implementación. Detenerse: no producto, despliegues o lote 5.
 
 > **Estado vigente — 2026-10-25: READY_FOR_LOTE_4_DOCUMENTATION.** PR #3 integrado en main mediante c50ba9f; GO_REMOTE experimental cerrado y recursos remotos propios retirados. [Recibo verificado](PLANS.md#lote-3-integrado-verificado) prevalece sobre los cortes históricos siguientes. El lote 4 aún no se ha generado; el producto no está implementado.
@@ -10,7 +12,7 @@
 
 > Aprobación posterior: el propietario declaró «APRUEBO LOTE 1» el 2026-10-21 para el contenido revisado en HEAD e38cc84950858e072c1a3f06ffbf854cf7e544f5. PR #1 integrado por squash en main: 329b7c1059e8a74f191c256870734e8ae8259966. Este registro prevalece sobre menciones históricas de revisión pendiente; no acredita producto probado. Los permisos actuales se consultan en AGENTS y PLANS.
 
-ID: AGENTS · Versión: 0.6 · Fecha: 2026-10-26 · Estado documental: APROBADO · Owner: coordinación.
+ID: AGENTS · Versión: 0.7 · Fecha: 2026-10-26 · Estado documental: EN_REVISIÓN · Owner: coordinación.
 
 ## Alcance autorizado
 
