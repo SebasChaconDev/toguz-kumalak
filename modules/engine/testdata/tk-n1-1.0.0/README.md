@@ -48,6 +48,10 @@ Las etiquetas `synthetic-occurrence-N` no afirman movimientos intermedios ni ord
 
 Los cierres administrativos no añaden apariciones de repetición, pero sí conservan su lifecycle e historial una vez. Los reintentos no duplican el cierre. Las carreras requieren dos conexiones PostgreSQL independientes y barreras; no se consideran probadas por estos datos.
 
+En HISTORY-RESIGNATION y HISTORY-MUTUAL_AGREEMENT, `expectedApplicationEffect.retryReusesReceipt:true` exige que el reintento de la misma intención recupere el receipt previo, actualmente legible, con el mismo actor, recurso, commandId y fingerprint y con autorización actual sobre actor y recurso. La consulta del receipt precede a las comprobaciones de turno o fase para una intención nueva; el cierre previo no debe causar un segundo rechazo por esas precondiciones ya alteradas. Un fingerprint diferente bajo la misma identidad de comando produce COMMAND_ID_REUSED, sin nuevo efecto ni reemplazo del receipt. Otro actor o recurso no se trata como la misma intención ni recibe el receipt previo. La falta de legibilidad o autorización actual tampoco permite recuperarlo.
+
+`retryReusesReceipt` es un booleano contractual cuando la fixture ensaya un reintento: `true` exige recuperación; `false` significaría que no se recupera. No representa «no aplicable». El campo se omite en HISTORY-PREVIEW, HISTORY-SIMULATION, HISTORY-INVALID_MOVE y HISTORY-HEARTBEAT porque esas entradas no ensayan reintentos. Todos estos `expectedApplicationEffect` son aceptación futura de contrato y permanecen `NOT_RUN`; no acreditan ejecución de Game o PostgreSQL.
+
 ## Eventos y testigos aritméticos
 
 Los movimientos enumeran los eventos del convenio 03.03 con `{eventSchemaVersion:1, sequence, revision, type, data}`. La secuencia comienza en cero, sin huecos, y usa la revisión candidata de salida. `MoveStarted` conserva la cantidad original. `StoneSown` describe solo un depósito real: la piedra retenida no genera ese evento. En este formato, el ordinal de depósito empieza en 1 y es distinto de la secuencia del evento.
@@ -190,6 +194,14 @@ for e in es:
     assert w['beforeBoardSum']==sum(map(sum,a['board'])) and w['beforeKazanSum']==sum(a['kazans'])
     assert w['afterBoardSum']==sum(map(sum,z['board'])) and w['afterKazanSum']==sum(z['kazans'])
     assert sum(map(sum,b))+sum(k)==162
+for fixture in ['HISTORY-RESIGNATION','HISTORY-MUTUAL_AGREEMENT']:
+    effect=byfixture[fixture]['expectedApplicationEffect']
+    assert effect['retryReusesReceipt'] is True and effect['retryLifecycleDelta']==0
+    assert effect['retryPreconditions']==dict(sameActor=True,sameResource=True,sameCommandId=True,sameFingerprint=True,receiptCurrentlyReadable=True,currentActorResourceAuthorization=True)
+    assert effect['retryReceiptLookupBeforeNewIntentTurnPhaseChecks'] is True
+    assert effect['retryNegativeExpectations']==dict(differentFingerprintWithSameActorResourceCommandId=dict(priorReceiptReturned=False,newEffect=False,receiptReplaced=False,code='COMMAND_ID_REUSED'),differentActorOrResource=dict(sameIntention=False,priorReceiptReturned=False),receiptUnreadableOrCurrentAuthorizationMissing=dict(priorReceiptReturned=False,newEffectFromRetry=False))
+for fixture in ['HISTORY-PREVIEW','HISTORY-SIMULATION','HISTORY-INVALID_MOVE','HISTORY-HEARTBEAT']:
+    assert 'retryReusesReceipt' not in byfixture[fixture]['expectedApplicationEffect']
 for s in specs.values():
     assert all(i in byid for i in s['positiveEntryIds']+s['negativeEntryIds'])
     assert all(f in byfixture for f in s['fixtureIds'])

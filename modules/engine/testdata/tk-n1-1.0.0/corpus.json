@@ -13351,8 +13351,7 @@
         "duplicateEffectCount": null,
         "lifecycleEntries": 0,
         "newHistoryEntries": 0,
-        "revisionPolicy": "Game may advance on accepted administrative action; never infer occurrence from revision",
-        "retryReusesReceipt": false
+        "revisionPolicy": "Game may advance on accepted administrative action; never infer occurrence from revision"
       },
       "entryId": "F-Q1-N13.PREVIEW",
       "relatedFixtureReferences": []
@@ -13490,8 +13489,7 @@
         "duplicateEffectCount": null,
         "lifecycleEntries": 0,
         "newHistoryEntries": 0,
-        "revisionPolicy": "Game may advance on accepted administrative action; never infer occurrence from revision",
-        "retryReusesReceipt": false
+        "revisionPolicy": "Game may advance on accepted administrative action; never infer occurrence from revision"
       },
       "entryId": "F-Q1-N13.SIMULATION",
       "relatedFixtureReferences": []
@@ -13629,8 +13627,7 @@
         "duplicateEffectCount": null,
         "lifecycleEntries": 0,
         "newHistoryEntries": 0,
-        "revisionPolicy": "Game may advance on accepted administrative action; never infer occurrence from revision",
-        "retryReusesReceipt": false
+        "revisionPolicy": "Game may advance on accepted administrative action; never infer occurrence from revision"
       },
       "entryId": "F-Q1-N13.INVALID_MOVE",
       "relatedFixtureReferences": []
@@ -13768,8 +13765,7 @@
         "duplicateEffectCount": null,
         "lifecycleEntries": 0,
         "newHistoryEntries": 0,
-        "revisionPolicy": "Game may advance on accepted administrative action; never infer occurrence from revision",
-        "retryReusesReceipt": false
+        "revisionPolicy": "Game may advance on accepted administrative action; never infer occurrence from revision"
       },
       "entryId": "F-Q1-N13.HEARTBEAT",
       "relatedFixtureReferences": []
@@ -14047,9 +14043,34 @@
         "lifecycleEntries": 1,
         "newHistoryEntries": 1,
         "revisionPolicy": "Game may advance on accepted administrative action; never infer occurrence from revision",
-        "retryReusesReceipt": false,
+        "retryReusesReceipt": true,
         "retryLifecycleDelta": 0,
-        "preconditions": "authorized resignation / bilateral accepted agreement"
+        "preconditions": "Initial closure: currently authorized resignation / bilateral accepted agreement. Retry: same actor, resource, commandId and fingerprint; receipt currently readable and current actor/resource authorization satisfied.",
+        "retryPreconditions": {
+          "sameActor": true,
+          "sameResource": true,
+          "sameCommandId": true,
+          "sameFingerprint": true,
+          "receiptCurrentlyReadable": true,
+          "currentActorResourceAuthorization": true
+        },
+        "retryReceiptLookupBeforeNewIntentTurnPhaseChecks": true,
+        "retryNegativeExpectations": {
+          "differentFingerprintWithSameActorResourceCommandId": {
+            "priorReceiptReturned": false,
+            "newEffect": false,
+            "receiptReplaced": false,
+            "code": "COMMAND_ID_REUSED"
+          },
+          "differentActorOrResource": {
+            "sameIntention": false,
+            "priorReceiptReturned": false
+          },
+          "receiptUnreadableOrCurrentAuthorizationMissing": {
+            "priorReceiptReturned": false,
+            "newEffectFromRetry": false
+          }
+        }
       },
       "entryId": "F-Q1-N13.RESIGNATION",
       "relatedFixtureReferences": []
@@ -14188,9 +14209,34 @@
         "lifecycleEntries": 1,
         "newHistoryEntries": 1,
         "revisionPolicy": "Game may advance on accepted administrative action; never infer occurrence from revision",
-        "retryReusesReceipt": false,
+        "retryReusesReceipt": true,
         "retryLifecycleDelta": 0,
-        "preconditions": "authorized resignation / bilateral accepted agreement"
+        "preconditions": "Initial closure: currently authorized resignation / bilateral accepted agreement. Retry: same actor, resource, commandId and fingerprint; receipt currently readable and current actor/resource authorization satisfied.",
+        "retryPreconditions": {
+          "sameActor": true,
+          "sameResource": true,
+          "sameCommandId": true,
+          "sameFingerprint": true,
+          "receiptCurrentlyReadable": true,
+          "currentActorResourceAuthorization": true
+        },
+        "retryReceiptLookupBeforeNewIntentTurnPhaseChecks": true,
+        "retryNegativeExpectations": {
+          "differentFingerprintWithSameActorResourceCommandId": {
+            "priorReceiptReturned": false,
+            "newEffect": false,
+            "receiptReplaced": false,
+            "code": "COMMAND_ID_REUSED"
+          },
+          "differentActorOrResource": {
+            "sameIntention": false,
+            "priorReceiptReturned": false
+          },
+          "receiptUnreadableOrCurrentAuthorizationMissing": {
+            "priorReceiptReturned": false,
+            "newEffectFromRetry": false
+          }
+        }
       },
       "entryId": "F-Q1-N13.MUTUAL_AGREEMENT",
       "relatedFixtureReferences": []
