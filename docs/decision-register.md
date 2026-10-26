@@ -1,10 +1,12 @@
 # REG — Registro canónico de decisiones
 
+> **Autorización posterior vigente — 2026-10-25.** El propietario autoriza completar los pasos necesarios para preparar lote4; se cierra documentalmente lote3 para integración y el spike acredita GO_REMOTE acotado, con recursos propios retirados. [Registro fiel y límites](../PLANS.md#preparacion-lote-4) sustituye las paradas históricas siguientes. No se genera lote4 ni se implementa producto en este cierre.
+
 > Aprobación posterior del lote 2: el propietario declaró «APRUEBO LOTE 2» y autorizó fusionar PR #2 en main. Contenido aprobado: HEAD 598ac9a4fc6ce14cf512785fb1c4160fafb4eb9e; integrado por squash 1f401af8d76794981bbcfdf9a3aa1831cf2621f5 (2026-10-21T21:10:14Z). Este registro sustituye las menciones históricas a revisión pendiente o prohibición de esa fusión. No autoriza lote 3 ni implementación; el producto sigue sin verificar.
 
 > Aprobación posterior: el propietario declaró «APRUEBO LOTE 1» el 2026-10-21 para el contenido revisado en HEAD e38cc84950858e072c1a3f06ffbf854cf7e544f5. PR #1 integrado por squash en main: 329b7c1059e8a74f191c256870734e8ae8259966. Este registro prevalece sobre menciones históricas de revisión pendiente; no acredita producto probado. Los permisos actuales se consultan en AGENTS y PLANS.
 
-ID: REG · Versión: 0.4 · Fecha: 2026-10-21 · Estado documental: APROBADO · Owner: C.
+ID: REG · Versión: 0.5 · Fecha: 2026-10-25 · Estado documental: APROBADO · Owner: C.
 
 ## Procedencia y autoridad
 
@@ -1699,3 +1701,12 @@ R-01–R-08 y ACC-N1-01–ACC-N1-14 se integran en [03.01](specs/03-game-engine/
 ## Adenda de estado — aprobación e integración del lote 2
 
 El propietario declaró «APRUEBO LOTE 2» y autorizó fusionar PR #2, verificar main y actualizar estados. Contenido aprobado: HEAD `598ac9a4fc6ce14cf512785fb1c4160fafb4eb9e`; squash integrado `1f401af8d76794981bbcfdf9a3aa1831cf2621f5`, `2026-10-21T21:10:14Z`. Se aprueba la integración documental de AD-NORM-001 y las diez specs; las 246 decisiones originales y la transcripción íntegra de la resolución permanecen intactas. Los estados EN_REVISIÓN anteriores quedan como historial. No se autoriza lote 3 ni implementación; PRE-09 continúa pendiente de ejecución futura autorizada.
+<a id="ad-gate-003"></a>
+
+## AD-GATE-003 — Autorización posterior de preparación documental, 2026-10-25
+
+Fuente: instrucción expresa del propietario en este chat: «Autorizo los pasos y requerimientos que sean necesarios para poder empezar a desarrollar lote 4. Aplica lo necesario y cuando todo esté listo para lote 4 avisa».
+
+Alcance aplicado por coordinación: terminar spike gratuito/aislado, corregir los dos detalles menores de05.02, cerrar estado documental de las once specs del lote3, integrar PR3 y verificar main para dejar preparado el siguiente lote. No se registra como cita la frase «APRUEBO LOTE3». Esta instrucción posterior sustituye la parada anterior únicamente para ese cierre; no genera lote4 ni implementa producto ahora.
+
+Las246 decisiones originales y AD-NORM-001 se conservan literalmente. Propuestas técnicas mantienen su etiqueta y el spike solo acredita factibilidad experimental; no certifica producto. [Evidencia, límites y seguimiento](../PLANS.md#preparacion-lote-4).

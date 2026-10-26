@@ -1,12 +1,18 @@
 # AGENTS — Toguz Kumalak
 
+> **Autorización posterior vigente — 2026-10-25.** El propietario autoriza completar los pasos necesarios para preparar lote4; se cierra documentalmente lote3 para integración y el spike acredita GO_REMOTE acotado, con recursos propios retirados. [Registro fiel y límites](PLANS.md#preparacion-lote-4) sustituye las paradas históricas siguientes. No se genera lote4 ni se implementa producto en este cierre.
+
+> Autorización posterior vigente: el propietario autoriza generar y publicar exclusivamente el lote 3 documental en docs/specs-lote-03: once specs EN_REVISIÓN, registros necesarios y PR contra main sin fusionar. Esta instrucción sustituye las paradas históricas de lotes anteriores; no autoriza producto, lote 4, infraestructura o pagos.
+
 > Aprobación posterior del lote 2: el propietario declaró «APRUEBO LOTE 2» y autorizó fusionar PR #2 en main. Contenido aprobado: HEAD 598ac9a4fc6ce14cf512785fb1c4160fafb4eb9e; integrado por squash 1f401af8d76794981bbcfdf9a3aa1831cf2621f5 (2026-10-21T21:10:14Z). Este registro sustituye las menciones históricas a revisión pendiente o prohibición de esa fusión. No autoriza lote 3 ni implementación; el producto sigue sin verificar.
 
 > Aprobación posterior: el propietario declaró «APRUEBO LOTE 1» el 2026-10-21 para el contenido revisado en HEAD e38cc84950858e072c1a3f06ffbf854cf7e544f5. PR #1 integrado por squash en main: 329b7c1059e8a74f191c256870734e8ae8259966. Este registro prevalece sobre menciones históricas de revisión pendiente; no acredita producto probado. Los permisos actuales se consultan en AGENTS y PLANS.
 
-ID: AGENTS · Versión: 0.3 · Fecha: 2026-10-21 · Estado documental: APROBADO · Owner: coordinación.
+ID: AGENTS · Versión: 0.5 · Fecha: 2026-10-25 · Estado documental: APROBADO · Owner: coordinación.
 
 ## Alcance autorizado
+
+Autorización actual: «AUTORIZO LA GENERACIÓN Y PUBLICACIÓN DOCUMENTAL DEL LOTE 3», según solicitud íntegra adjunta del propietario. Crear únicamente las once specs 05.01–05.04, 07.01–07.04 y 06.01–06.03 del inventario; actualizar IDX/TRZ/CONF/PLANS y este registro operativo mínimo. Se permiten rama docs/specs-lote-03 basada en main, commits, push y PR, sin force push ni fusión. Las restricciones de cierre que siguen son historia de lotes 1 y 2. Al publicar, pedir «APRUEBO LOTE 3» y detenerse. Ningún permiso para implementar, instalar, probar producto, conectar proveedores, desplegar o generar lote 4.
 
 El propietario aprobó el inventario y después declaró «APRUEBO LOTE 1», autorizando integrar PR #1 únicamente si su HEAD coincidía con e38cc84950858e072c1a3f06ffbf854cf7e544f5. La comprobación se cumplió y el squash en main es 329b7c1059e8a74f191c256870734e8ae8259966. También autorizó el lote 2: exactamente diez specs de los dominios 01, 02 y 03 del [inventario](docs/index.md#inventario), y las actualizaciones necesarias de índice, trazabilidad, riesgos y planes. La instrucción posterior «APRUEBO LOTE 2» autorizó fusionar el PR #2 en main, verificar la integración y actualizar los estados documentales. La fusión ya está realizada; solo procede cerrar estos registros y detenerse. No generar lote 3, implementar, instalar ni desplegar.
 
@@ -49,3 +55,12 @@ La aprobación de un inventario no aprueba el contenido todavía no revisado. Di
 ## Parada obligatoria
 
 El propietario aprobó expresamente el lote 2 y su integración. Las diez specs y sus registros están APROBADOS documentalmente; las pruebas de producto permanecen pendientes. Tras verificar main y publicar los estados, informar el cierre y detenerse. No iniciar lote 3 ni implementar código sin nuevas instrucciones.
+<a id="agentes-continuidad-lote-4"></a>
+
+## Alcance posterior — preparación de lote4, 2026-10-25
+
+La autorización posterior del propietario permite cerrar e integrar documentalmente lote3 y registrar GO_REMOTE experimental para preparar lote4. [PLANS](PLANS.md#preparacion-lote-4) conserva la cita íntegra y la interpretación operativa; no inventar una frase de aprobación literal ni una prueba de producto.
+
+Se permiten únicamente las correcciones documentales menores, estados, trazabilidad, integración del PR3 y recibo de main necesarios para ese cierre. Código experimental queda en spike/infra-feasibility-01, no se integra en main. Concluida la verificación, detenerse y avisar: no generar las ocho specs del lote4 ni iniciar código de producción en este turno.
+
+Al trabajar posteriormente, usar los permisos más recientes y preservar246 PRE, AD-NORM-001, tres microservicios Go y PRE-09. No reabrir reglas ni convertir propuestas en decisiones canónicas por cambiar su estado documental.
