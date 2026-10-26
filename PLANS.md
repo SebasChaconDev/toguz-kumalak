@@ -963,7 +963,7 @@ Plan y propiedad: coordinación único escritor deAUD-01/los cuatro registros; a
 - [x] Auditorías semánticas A/B/C/D completas por fuentes originales y evidencia experimental; alcance por fase delimitado.
 - [x] AUD-01 con17apartados, matriz de contratos, condiciones/primer ticketPH01 y veredicto único READY_WITH_SCOPED_CONDITIONS.
 - [x] Revisión independiente B CONFORME; dos referencias editoriales corregidas/revalidadas ADDRESSED. Controles finales de rutas/links/secretos/fuentes/trabajo ajeno se conservan abajo.
-- [ ] Publicar rama y PR con título exacto; dejarEN_REVISIÓN, pedir «APRUEBO LOTE 6» y detenerse. No fusión/implementación.
+- [x] Rama docs/audit-lote-06 publicada y PR #6 OPEN con título exacto. AUD EN_REVISIÓN; gate «APRUEBO LOTE 6» pendiente. Detenerse tras verificar recibo, sin fusión/implementación.
 
 ### Resultado de auditoría e independencia
 
@@ -988,3 +988,13 @@ REG/SRC/ADR/PRE/las40specs/PH/harness/AGENTS/README/PROMPTS permanecen protegido
 Cierre previo a publicación observado:81Markdown/508tablas,4.620enlaces locales/2.961fragmentos sin ausentes,18JSON válidos,17seccionesAUD yveredicto único;40specs/246decisiones aprobadas intactas.77archivos protegidos byte a byte iguales,246filas TRZ idénticas,solo1alta+4modificaciones. Scan acotado de81Markdown contra cinco clases de secretos: cero coincidencias; no garantiza toda clase de secreto/historia. Diff --check limpio, cero hooks locales activos. Trabajo local ajeno:2SHA256 idénticos. Staged --check yrecibo remoto se verifican al publicar, sin convertir documentación en pruebas de producto.
 
 El primer staged diff --check detectó una línea vacía adicional al final de AUD-01 (no incluida en el diff previo de archivos no versionados). Se eliminó exclusivamente ese blanco final, sin cambio de contenido o fuentes, y se repite staged --check antes de commit. No es prueba de producto; el intento se conserva como evidencia de formato.
+
+<a id="lote-6-publicacion"></a>
+
+### Recibo factual de publicación del lote 6 — 2026-10-26
+
+[PR #6](https://github.com/SebasChaconDev/toguz-kumalak/pull/6) creado y adjunto al chat, título exacto «docs: lote 6 — final documentation and implementation readiness audit». Base main00c8e121f96e990beb052f72d19132f282d08cfa, head docs/audit-lote-06, OPEN ymergedAt=null. Commit de contenido0c8aa677d0bc82033e2a014a3a9014215adaf6d0 coincidente en local/origin/PR al crear. GitHub confirmó5rutas exactas:1ADDED(AUD-01) y4MODIFIED(PLANS/IDX/TRZ/CONF), soloMarkdown.
+
+Main permanece00c8e121f96e990beb052f72d19132f282d08cfa; no se fusionó PR, ejecutó código oinstaló CI. statusCheckRollup=[] significa ausencia de checks configurados, no tests de producto superados. Después del push:0deployments registrados, árbol local limpio yupstream sincronizado. El segundo commit se limita a este recibo dePLANS; su HEAD final se verifica contra origin/PR yse comunica al propietario sin autorreferencia circular.
+
+Resultado formal READY_WITH_SCOPED_CONDITIONS, AUD EN_REVISIÓN ygate APRUEBO LOTE 6 pendiente. Las40specs/246decisiones aprobadas ypropuestas específicas siguen intactas. Primer trabajo solicitable:PH01T01corpus; primerGoT02trascorpusaceptado conpermiso concreto. No se inicióPH00/01,producto,workflows,proveedores,recursos,despliegue opago. Detenerse al verificar publicación del recibo.
