@@ -26,6 +26,12 @@ func New(a probe.Auth, p *pgxpool.Pool) http.Handler {
 		}
 		c.JSON(200, gin.H{"syntheticRows": n})
 	})
+	if os.Getenv("SPIKE_REMOTE_ENABLED") == "1" {
+		r.GET("/cookie-probe", func(c *gin.Context) {
+			value, e := c.Cookie("__Host-spike-cookie")
+			c.JSON(200, gin.H{"cookieReceived": e == nil && value == "synthetic-cookie-only", "originObserved": c.GetHeader("Origin") != ""})
+		})
+	}
 	return r
 }
 func FromEnv() http.Handler {

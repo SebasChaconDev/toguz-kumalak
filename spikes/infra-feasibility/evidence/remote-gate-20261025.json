@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 1,
+  "sql": {
+    "reconstructedConservativeAcrossPhases": 117,
+    "directInstrumentedAcrossPhases": 49,
+    "plannedOriginalTarget": 80,
+    "compliance": "EXCEEDED_RECORDED",
+    "exactWireCount": null
+  },
+  "result": "GO_REMOTE",
+  "resources": {
+    "remainingOwn": 0,
+    "created20261025": {
+      "ablySequentialApps": 2,
+      "vercelProjects": 4,
+      "neonSequentialProjects": 2
+    },
+    "preserved": [
+      "Neon9Stones",
+      "AblyPlayerChat",
+      "Ably9stones"
+    ],
+    "remainingDeployments": 0,
+    "revokedAppKeys": 8
+  },
+  "lot4Generated": false,
+  "cost": {
+    "plans": [
+      "VercelHobby",
+      "NeonFree",
+      "AblyFree"
+    ],
+    "purchasedAdditionalUSD": 0,
+    "noFutureCostGuarantee": true
+  },
+  "evidence": [
+    "remote-functional-20261025.json",
+    "remote-latency-followup-20261025.json",
+    "remote-source-equivalence-20261025.json",
+    "remote-preconditions-budget-20261022.json",
+    "remote-documentary-checks-20261025.json"
+  ],
+  "sourceBase": "94094620637b6705193ce984e8e5d54e39a3e45e",
+  "productAccepted": false,
+  "builds": {
+    "historicalCanceled": 2,
+    "total": 8,
+    "additionalMetricsBuilds": 0,
+    "newReady": 6
+  },
+  "matrix": [
+    {
+      "status": "PASS",
+      "scope": "Disposable infrastructure; specific limits in TEST_MATRIX current matrix",
+      "id": "POC-01"
+    },
+    {
+      "status": "PASS",
+      "scope": "Disposable infrastructure; specific limits in TEST_MATRIX current matrix",
+      "id": "POC-02"
+    },
+    {
+      "status": "PASS",
+      "scope": "Disposable infrastructure; specific limits in TEST_MATRIX current matrix",
+      "id": "POC-03"
+    },
+    {
+      "status": "PASS",
+      "scope": "Disposable infrastructure; specific limits in TEST_MATRIX current matrix",
+      "id": "POC-04"
+    },
+    {
+      "status": "PASS",
+      "scope": "Disposable infrastructure; specific limits in TEST_MATRIX current matrix",
+      "id": "POC-05"
+    },
+    {
+      "status": "PASS",
+      "scope": "Disposable infrastructure; specific limits in TEST_MATRIX current matrix",
+      "id": "POC-06"
+    },
+    {
+      "status": "PASS",
+      "scope": "Disposable infrastructure; specific limits in TEST_MATRIX current matrix",
+      "id": "POC-07"
+    },
+    {
+      "status": "PASS",
+      "scope": "Disposable infrastructure; specific limits in TEST_MATRIX current matrix",
+      "id": "POC-08"
+    },
+    {
+      "status": "PASS",
+      "scope": "Disposable infrastructure; specific limits in TEST_MATRIX current matrix",
+      "id": "POC-09"
+    },
+    {
+      "status": "PASS",
+      "scope": "Disposable infrastructure; specific limits in TEST_MATRIX current matrix",
+      "id": "POC-10"
+    },
+    {
+      "status": "PASS",
+      "scope": "Disposable infrastructure; specific limits in TEST_MATRIX current matrix",
+      "id": "POC-11"
+    }
+  ],
+  "observedUTC": "2026-10-26T02:09:30.4842337+00:00",
+  "reviews": {
+    "functional": "remote_evidence_review; C6 initially missing, resolved by measured followup",
+    "documentary": "lot3_readiness_review; two Minor corrections before lot3 integration"
+  },
+  "limitations": [
+    "No product acceptance",
+    "No p95/SLO/strength",
+    "No Neon suspend/resume or PgBouncer client-queue measurement",
+    "Response loss modeled; OIDC rejection instead of physical outage",
+    "Provider counters delayed/rounded; SQL reconstructed"
+  ]
+}

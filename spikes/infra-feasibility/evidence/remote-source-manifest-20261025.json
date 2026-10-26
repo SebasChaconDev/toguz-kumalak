@@ -1,0 +1,245 @@
+{
+  "scope": "Disposable remote spike adapters; product unchanged",
+  "sourceDigest": "13d05fe56ab9ea49ae7a122b47e4a2f8ad32e6eb65fff928eee646e9d5fa839d",
+  "files": [
+    {
+      "bytes": 1244,
+      "path": "apps/web/app/cookie-probe/route.ts",
+      "sha256": "4df92fb06f58a8a6ccb2cf489f7c986afece544bd35eecdf43e464579e032f14"
+    },
+    {
+      "bytes": 343,
+      "path": "apps/web/app/layout.tsx",
+      "sha256": "ebcf38830b64ad0e69836ae0eba4fa6b1881231823ed879d8f999ffac5d184d3"
+    },
+    {
+      "bytes": 417,
+      "path": "apps/web/app/page.tsx",
+      "sha256": "8dbfd8c28862144cdc784b0c957355dd76506effdacaeeea09ba9f6dde49e572"
+    },
+    {
+      "bytes": 889,
+      "path": "apps/web/lib/origins.mjs",
+      "sha256": "78c153950607d332c713683610ea1c1bf8052d336f3c5e60ddc0f694ca96b5ff"
+    },
+    {
+      "bytes": 288,
+      "path": "apps/web/next-env.d.ts",
+      "sha256": "1862ac4bbbc5192d4bf562161df66ea547ed3e67173100656ab606ae9797db2b"
+    },
+    {
+      "bytes": 649,
+      "path": "apps/web/next.config.mjs",
+      "sha256": "7bd71af6ebeead8643f2de728222a6223dc2f8bf674275ffe52311e7d1a6adb2"
+    },
+    {
+      "bytes": 33531,
+      "path": "apps/web/package-lock.json",
+      "sha256": "54c056fb7252d33d29ca382dcb1d038c953d64bd61f07162cc302fa2cad7263f"
+    },
+    {
+      "bytes": 680,
+      "path": "apps/web/package.json",
+      "sha256": "66d75ae4df84718dbc02cbcc28e618444b8c064796c423744200556783a76faf"
+    },
+    {
+      "bytes": 728,
+      "path": "apps/web/proxy.ts",
+      "sha256": "04a7e9d366e14e9d5263a0c074442c025707bf0aab6433fd102fb5e11414e2c8"
+    },
+    {
+      "bytes": 557,
+      "path": "apps/web/tsconfig.json",
+      "sha256": "6e3e1fba1547e5d6ffe754598bdda409e008dd043476ac82513eb778c12ccdd0"
+    },
+    {
+      "bytes": 98,
+      "path": "apps/web/vercel.json",
+      "sha256": "6dc1e0e720f6eb621ea04885da24e09965020ff47c1615bbf749d6e5cc41ee35"
+    },
+    {
+      "bytes": 288,
+      "path": "modules/engine/engine.go",
+      "sha256": "bd0d2f40296e32b6c832dea9b22c0cb1b957e428d2dc01e20456c303ab14c973"
+    },
+    {
+      "bytes": 98,
+      "path": "modules/engine/go.mod",
+      "sha256": "04416787b1aba891f260185ae0d6fb868cf47d4de62c5b03ba5445e53fe11d69"
+    },
+    {
+      "bytes": 1722,
+      "path": "modules/probe/auth.go",
+      "sha256": "b6371feadc73f348f764325ed30903fdc10057db83b5ceb32e52be824dca88a6"
+    },
+    {
+      "bytes": 1847,
+      "path": "modules/probe/go.mod",
+      "sha256": "33ebb725d3e23bed56902e5eed98ebfc8d6ceac5f05a517c82ba20977222d347"
+    },
+    {
+      "bytes": 8851,
+      "path": "modules/probe/go.sum",
+      "sha256": "26e48c915042fc2a165b77e1dfb645a5b1e9f8db497e6a9e826679f2ed030774"
+    },
+    {
+      "bytes": 172,
+      "path": "modules/probe/instance.go",
+      "sha256": "3ff4d09bcff9721960b124dc17d131ad697a62668d34490734a4deec145cfabe"
+    },
+    {
+      "bytes": 1358,
+      "path": "modules/probe/remote.go",
+      "sha256": "61833bb810c07e0a36f5d1ee8093d2c8c55ebb81695ad346d884b642d18e0844"
+    },
+    {
+      "bytes": 2614,
+      "path": "modules/probe/runtime.go",
+      "sha256": "e49ca4f35449df657707cded1b06b6c82bac25e235fd87ac58a5fc96a28fe1a6"
+    },
+    {
+      "bytes": 967,
+      "path": "modules/probe/testkit/sign.go",
+      "sha256": "c12dfdf2b47cc4a4159c27afb4a67d75cb4e10f07d3cb1b9601517c0db23113b"
+    },
+    {
+      "bytes": 371,
+      "path": "services/ai/api/index.go",
+      "sha256": "9b8cb5263e441d27dcdc6c0ee089a8414ce9c7259b6a78cb417456f4281782ea"
+    },
+    {
+      "bytes": 599,
+      "path": "services/ai/app/compute.go",
+      "sha256": "4ae5822e284a33a43bbf83ed564ef9ab1fc403a71989cd10c25c5b02d46108d2"
+    },
+    {
+      "bytes": 1486,
+      "path": "services/ai/app/http.go",
+      "sha256": "84c44bd6a63c04299a90c078b209e314188f08544c42310c66a61a5387b2d9f5"
+    },
+    {
+      "bytes": 2256,
+      "path": "services/ai/go.mod",
+      "sha256": "d62cf6f7f1c653a1ebf70d94833928480ada7293160ff72c76eb993c72a15e65"
+    },
+    {
+      "bytes": 8851,
+      "path": "services/ai/go.sum",
+      "sha256": "26e48c915042fc2a165b77e1dfb645a5b1e9f8db497e6a9e826679f2ed030774"
+    },
+    {
+      "bytes": 166,
+      "path": "services/ai/vercel.json",
+      "sha256": "78276ea9b998e8c39617eb63a7c8ddeca9f2ec548e22a8406fa238044ac042e0"
+    },
+    {
+      "bytes": 373,
+      "path": "services/game/api/index.go",
+      "sha256": "03384164ef73d6a2171b5aac6e88d2c6f04788c42deaa4470faa33eab15eddd1"
+    },
+    {
+      "bytes": 2934,
+      "path": "services/game/app/http.go",
+      "sha256": "d9a2ba3a201848dee2bd33ad105699e5f4679e50ff84762a2f9ab8a5790cca4b"
+    },
+    {
+      "bytes": 1256,
+      "path": "services/game/app/internal_probe.go",
+      "sha256": "0d6d7b010702a6467acdb49002b15e247a05431c1ab273fb3a61e3fb2bd967f6"
+    },
+    {
+      "bytes": 59,
+      "path": "services/game/app/migrations/down.sql",
+      "sha256": "213dd5ef50cadb6e87458f9fcc8e5c222e585037303b946d3df3f139c80cd08d"
+    },
+    {
+      "bytes": 495,
+      "path": "services/game/app/migrations/up.sql",
+      "sha256": "e37bdb027bc7c6fdfd0026dac421da389bb43e37a8c44e6cf06df944d4284c65"
+    },
+    {
+      "bytes": 6695,
+      "path": "services/game/app/remote.go",
+      "sha256": "135abec1d91e4fef5c7f0ace861ea0e338b04a6212e9c0d4ee1d1f0139440b1d"
+    },
+    {
+      "bytes": 283,
+      "path": "services/game/app/stale.go",
+      "sha256": "c1deb77f031f0e4bb46047929d2533cce1c65358e616cd0a5b71497741e1df0f"
+    },
+    {
+      "bytes": 3125,
+      "path": "services/game/app/store.go",
+      "sha256": "9f44b3b18e71a051c3811041155ee99b7d750be723d78ae374d7e5a889a690ed"
+    },
+    {
+      "bytes": 2246,
+      "path": "services/game/go.mod",
+      "sha256": "3ef8edced4b75c8498d7d0d7945c07ece905cb887fb72042409bf7a50457a06a"
+    },
+    {
+      "bytes": 8851,
+      "path": "services/game/go.sum",
+      "sha256": "26e48c915042fc2a165b77e1dfb645a5b1e9f8db497e6a9e826679f2ed030774"
+    },
+    {
+      "bytes": 166,
+      "path": "services/game/vercel.json",
+      "sha256": "78276ea9b998e8c39617eb63a7c8ddeca9f2ec548e22a8406fa238044ac042e0"
+    },
+    {
+      "bytes": 377,
+      "path": "services/identity/api/index.go",
+      "sha256": "94ab3dd244bdfab4ea1cce2c936870622190b1e4d778d1e605532808050ee683"
+    },
+    {
+      "bytes": 1287,
+      "path": "services/identity/app/http.go",
+      "sha256": "f66c9efeb04445304dc912b3b2a1cd161ffa751ef56a9ed68fed1823fcb54030"
+    },
+    {
+      "bytes": 2049,
+      "path": "services/identity/go.mod",
+      "sha256": "666c20c379d83b09a36925cd5324e2622241b43e3f96abe35c4bcd29d0db8e51"
+    },
+    {
+      "bytes": 8851,
+      "path": "services/identity/go.sum",
+      "sha256": "26e48c915042fc2a165b77e1dfb645a5b1e9f8db497e6a9e826679f2ed030774"
+    },
+    {
+      "bytes": 166,
+      "path": "services/identity/vercel.json",
+      "sha256": "78276ea9b998e8c39617eb63a7c8ddeca9f2ec548e22a8406fa238044ac042e0"
+    }
+  ],
+  "sourceBase": "94094620637b6705193ce984e8e5d54e39a3e45e",
+  "legacySerializationVariants": [
+    {
+      "order": "path,sha256,bytes",
+      "digest": "fec65c640be0c423d164eae1b1db086bfd0abbf1d1a68e3c5c31229d0445fefe"
+    },
+    {
+      "order": "path,bytes,sha256",
+      "digest": "674fabf4bdc8916f9bfb571e8f3f261ff0d27247dd817690660ff86558df7ddf"
+    },
+    {
+      "order": "sha256,path,bytes",
+      "digest": "21772974b15f4ead34f36eeab0e501c60586726061d2fa6d24f555b399fea1b1"
+    },
+    {
+      "order": "sha256,bytes,path",
+      "digest": "ddf8e0b72c4cb7c0167e18387317257b0668c8e7c949a33f3605b48ea630d620"
+    },
+    {
+      "order": "bytes,path,sha256",
+      "digest": "13d05fe56ab9ea49ae7a122b47e4a2f8ad32e6eb65fff928eee646e9d5fa839d"
+    },
+    {
+      "order": "bytes,sha256,path",
+      "digest": "9a2b04c04b797cb2ce038f325d5d3f622949703f6b5eae587182c15fd696c0f0"
+    }
+  ],
+  "canonicalSourceDigest": "5323f1fe8cdb6a1bc3ca7da8d3d9da8b7d0ac6f5509f40727f280c6675477773",
+  "canonicalAlgorithm": "SHA256 UTF8 sorted path:sha256:bytes lines separated LF; no trailing LF"
+}

@@ -1,5 +1,20 @@
 # Gate 3.5 — verificación integral local, 2026-10-22
 
+
+> **Estado vigente — 2026-10-25 (Caracas): GO_REMOTE, limitado al spike desechable.** Seis builds remotos READY, ocho intentos acumulados contando dos cancelados históricos; pruebas reales Neon/Ably/OIDC/cookie y seguimiento C6 completados. Todos los recursos propios retirados y recursos anteriores preservados. [Cierre, evidencias y límites](REMOTE_AUDIT.md#remote-close-20261025). Las notas anteriores de bloqueo que siguen son cortes históricos, sustituidos por esta adenda. No acredita producto, aprobación automática de propuestas ni generación del lote 4.
+
+> **Cierre actual: BLOCKED_REMOTE por destino Vercel, recursos propios retirados.** Cuotas y protección gratuita verificadas; techo100 retirado por el propietario. Dos builds fueron cancelados porque Vercel devolvió `production` incluso solicitando staging; cero secretos y alias sin asignar. Los cuatro proyectos y ambos deployments se retiraron: inventarios finales vacíos.41 API directas más navegación UI; sin lote4. [Evidencia y decisión pendiente](REMOTE_AUDIT.md#12-prueba-real-de-protección-y-destino-inicial-bloqueo-específico-recursos-retirados). Notas anteriores conservadas como historia.
+
+> **Estado vigente: cuotas verificadas; techo de100 solicitudes retirado por el propietario.** Se conservan18 lecturas API directas y errores históricos; las lecturas UI posteriores no equivalen a un total HTTP exacto. Sigue el spike remoto previamente autorizado con0USD y máximo6builds. Aún no hay PASS remoto ni permiso de lote4. [Auditoría actual](REMOTE_AUDIT.md#11-decisión-posterior-y-comprobación-de-cuotas--2026-10-22). Las notas siguientes son cortes históricos.
+
+> **Última continuación: Control API Ably verificada; `BLOCKED_REMOTE` por presupuesto/cuotas pendientes.** Se observaron HTTP 200, cuenta esperada y apps preexistentes Player chat/9 stones, sin modificarlas. Contador **16/100**, diez reservadas, 74 para otras operaciones; cero builds o recursos creados. [Detalle y repetición explícita contabilizada](REMOTE_AUDIT.md#10-control-api-autenticada-con-el-token-posterior-del-propietario). El bloqueo histórico de credencial Ably ya está resuelto; GO_LOCAL permanece intacto.
+
+> **Última continuación: `BLOCKED_REMOTE`, 12 solicitudes operativas, cero builds y cero escrituras externas.** La clave de aplicación aportada permitió intentar una lectura Ably: GET estadísticas rechazado **401 / 40160**, sin retry. No sustituye al PAT exigido por Control API. Se conservan 10 solicitudes para retirada y 78 para otras operaciones. [Detalle sanitizado](REMOTE_AUDIT.md#9-clave-de-aplicación-proporcionada-por-el-propietario); los contadores anteriores son históricos. No se incluyó la credencial en los archivos del repositorio.
+
+> **Continuación vigente: `BLOCKED_REMOTE`, sin aprovisionamiento.** El propietario renovó Neon y confirmó que el techo incluye 100 solicitudes operativas acumuladas, con SQL/documentación aparte. Neon/Vercel ya responden con Free/Hobby; el contador es **11**, incluidas las diez lecturas nuevas y el 401 histórico. Quedan presupuesto completo, Ably y cuotas por cerrar. [Evidencia](evidence/remote-preconditions-budget-20261022.json). Esta actualización prevalece sobre el bloqueo histórico de la sesión Neon descrito a continuación.
+
+> **Adenda vigente — intento remoto, 2026-10-22, 20:27 UTC: `BLOCKED_REMOTE`.** Se recibió `APRUEBO SPIKE REMOTO`. La primera comprobación operativa, de la sesión CLI de Neon, devolvió **401**; se aplicó la parada obligatoria anterior al aprovisionamiento. Hubo **una solicitud API a proveedores, cero builds y cero recursos o credenciales creados**. La investigación pública se contabiliza por separado y no permite certificar el total HTTP global. [Registro sanitizado](evidence/remote-execution-20261022.json). Los resultados locales siguientes se conservan como historia; sus solicitudes de permiso y estados antiguos de cuenta quedan subordinados a esta adenda.
+
 **Conclusión de salida: GO_LOCAL.** Se ejecutaron las pruebas locales obligatorias del spike existente con PostgreSQL real. Es un gate del experimento local, sin GO de plataforma, MVP o seguridad de producción. [Registro observado](evidence/integral-local-gate.json). La validación remota requiere autorización y comprobaciones de cuenta.
 
 La ejecución partió de `cf5d3973adc977f0ec09c738cbe6cfc078883593`, rama `spike/infra-feasibility-01`, sin reconstruir otro experimento. Los cambios posteriores están en el diff de entrega y los hashes de fuentes de builds. Los resultados previos no se reutilizaron como PASS de esta ejecución.
@@ -111,3 +126,44 @@ Quedan fuera del PASS local: OIDC/navegador/cookies reales, Ably, Neon y Vercel;
 Publicación retenida: la auditoría no pudo descartar automatización GitHub/Vercel. Se conserva el resultado en la rama local; no se hizo push ni se abrió Draft PR. Título reservado: `spike: local infrastructure verification and remote feasibility plan`.
 
 Se solicita **APRUEBO SPIKE REMOTO** para ejecutar el plan acotado, además de cuenta/plan/cuota y seguridad efectiva verificados. GO_LOCAL no sustituye ese permiso.
+
+## F. Intento remoto autorizado — parada anterior a etapa A
+
+El propietario autorizó únicamente cuatro proyectos Vercel protegidos, un proyecto Neon nuevo y una aplicación Ably nueva, con coste adicional autorizado **0 USD**, máximo **100 solicitudes instrumentadas totales**, al menos **10 reservadas para retirada** y máximo **seis builds**. Esta autorización sustituye la petición del apartado E, sin eliminar las precondiciones.
+
+Al comenzar se observó HEAD `94094620637b6705193ce984e8e5d54e39a3e45e`, rama `spike/infra-feasibility-01` y árbol limpio. El registro `GO_LOCAL` permanece intacto; no se repitieron pruebas de producto ni builds. `REMOTE-001`, GET Neon `/api/v2/users/me`, respondió **401** el **2026-10-22 a las 20:27:50 UTC**. La credencial CLI utilizada tenía caducidad **20:15:13.583 UTC**. No hubo refresh, retry ni redirect. Esto demuestra el rechazo de esa credencial, sin demostrar que la sesión del navegador esté cerrada o que la cuenta carezca de permisos.
+
+Se aplicó «Si falla una precondición, detente sin aprovisionar». No se completó una nueva comprobación de los tres planes, cuotas, inventarios o automatizaciones. Las lecturas del preflight anterior no se presentan como actuales. No se hizo push, configuración externa, contratación, despliegue, emisión de credenciales ni modificación de **9 Stones** o **Player chat**. No se volvió a verificar su estado externo después de parar.
+
+Los once POC remotos quedan **BLOCKED**, con ejecución **NOT_RUN**. No hay incompatibilidad arquitectónica nueva demostrada que justifique `NO_GO_REMOTE`, ni evidencia para `GO_REMOTE`. La retirada es **no necesaria en este intento**, pues no hay recursos o credenciales propios. Se conserva la autorización recibida: para reanudar hacen falta una sesión Neon válida, repetir las precondiciones y demostrar un presupuesto ejecutable. La contabilidad y sus límites figuran en [el plan actualizado](REMOTE_PLAN.md#7-adenda-de-ejecución-y-contabilidad). PR #3, lote 4 y producto no fueron modificados.
+
+## G. Continuación de precondiciones y revisión del cupo
+
+Se comprobó la sesión renovada Neon (200), su organización Free y el único proyecto 9 Stones; Vercel confirmó OWNER/Hobby activo y cero proyectos/deployments/integraciones. GitHub confirmó main y PR #3 intactos, cero workflows/webhooks/deployments/environments. Son **prechecks de lectura**, no POC de producto. GO_LOCAL mantiene su blob original `1c22815c323b61635a334d3008f2cbbcf1c5b361`; no se repitieron pruebas locales ni cambió el código.
+
+El contador mantiene el 401 y registra **11/100**, con **10 reservadas** y **79 como máximo para operaciones distintas de retirada**. La decisión expresa del propietario excluye documentación y SQL del cupo operativo; sus contadores se conservan separados. La propuesta completa revisada suma **108 más pendientes**, incluso al validar protección en el POST de proyecto y enviar env en el despliegue posterior. No se presenta esa propuesta como un mínimo universal ni como ejecución que cabe en 100. [Detalle y retirada](REMOTE_PLAN.md#8-continuación-tras-renovar-neon-unidad-y-presupuesto-revisados).
+
+Faltan acceso Control API de Ably disponible para consultas instrumentadas, cuotas residuales actuales y prueba de un plan íntegro de operación/retirada dentro del cupo. Leer la UI Ably ya renderizada no acredita esas condiciones. Resultado **BLOCKED_REMOTE** antes de crear recursos: ninguna credencial emitida por el agente, recurso creado, build, push o cambio al PR #3. Todos los POC remotos siguen BLOCKED/NOT_RUN. No hay retirada que ejecutar en esta continuación.
+
+## J. Cierre de esta continuación y comprobación documental
+
+Resultado actual **BLOCKED_REMOTE** por la promoción inicial `production` de Vercel, observada dos veces y retirada. Las cuotas y All Deployments gratuitos quedaron comprobados; los casos de integración no pasaron por ello. Dos intentos de build cancelados, sin compilación completada, cero secretos y cero SQL remoto. Las cuatro configuraciones creadas y los dos deployments se eliminaron y su ausencia quedó verificada. No se creó ningún recurso Neon o Ably; no hubo push ni cambio al PR #3 o inicio del lote 4. El techo de 100 solicitudes fue retirado por el propietario, sin borrar las 41 llamadas API directas ni sus fallos; tráfico UI posterior registrado con su limitación de medida.
+
+Comprobaciones documentales: HEAD y blob/SHA256 GO_LOCAL intactos; exactamente seis rutas autorizadas cambiadas, sin código. Nueve Markdown, 69 JSON válidos, 129 destinos de archivo locales y 24 anclas sin ausencias, fences cerrados, once filas POC únicas y `git diff --check` correcto. Escaneo en memoria contra credenciales conocidas: cero coincidencias en los seis archivos. Ledger de 40 llamadas nuevas más la histórica conserva IDs REMOTE-001–041, dos cancelaciones y retirada completa. La primera comprobación de status falló por la coexistencia histórica `status`/`httpStatus`; se corrigió el lector, preservando las entradas originales. Estos son controles documentales y de contabilidad, no pruebas de producto.
+
+La propuesta que necesita decisión humana está en REMOTE_PLAN §10: excepción solo para la inicialización automática de cuatro proyectos aislados protegidos y máximo ocho builds acumulados, incluidos los dos cancelados. No se ejecuta hasta aprobación expresa. La credencial Neon consultada expiró después de sus lecturas válidas; debe renovarse/revalidarse por el mecanismo oficial antes de futuras operaciones, sin compartir secretos en el chat.
+<a id="integral-remote-close-20261025"></a>
+
+## Cierre de factibilidad remota — 2026-10-25 Caracas
+
+**GO_REMOTE acotado al spike.** [Once filas vigentes](TEST_MATRIX.md#remote-matrix-20261025), [auditoría/evidencias/límites](REMOTE_AUDIT.md#remote-close-20261025). GO_LOCAL conserva su objeto y hash originales.
+
+Se verificaron Vercel/Go/Gin, motor compartido, Neon aislado, transacciones/concurrencia, Ably real posterior al commit, permisos, cookie Chrome y OIDC entre proyectos protegidos. Seis builds READY sin caché y dos cancelados históricos suman ocho. Código nuevo solo experimental bajo spikes/infra-feasibility; producto sin implementar.
+
+Revisión independiente detectó cronómetros C6 ausentes. El seguimiento de reemplazo aportó519,170ms pooled,287,993ms transacción y258,356ms publicación→recepción; una muestra operador→proveedores, sin atribuirla a Game en Vercel. Otro dictamen cerró ese hallazgo.
+
+Desviación explícita: SQL80 previsto superado;105 operaciones principales reconstruidas conservadoramente más12 instrumentadas. Sin conteo wire exhaustivo ni excepción SQL literal inventada. Se mantuvieron0USD, planes gratuitos y carga acotada.
+
+Retirada final verificada: cuatro proyectos Vercel/seis deployments, dos generaciones secuenciales Neon/Ably y ocho claves de aplicación revocadas. Recursos previos del propietario preservados. Sin claims de p95, seguridad completa, fuerza IA, coste productivo indefinido, reactivación Neon, clientes/colas PgBouncer, corte físico S2S o caída TCP real.
+
+La revisión documental independiente de las once specs del PR3 solo encontró dos precisiones menores05.02. Corregirlas y registrar la autorización efectiva del propietario sin inventar la frase «APRUEBO LOTE3». Lote4 mantiene ocho specs04.01–04.04/08.01–08.04 y55 decisiones, todavía sin generar; pruebas de producto PRE-09 pendientes.

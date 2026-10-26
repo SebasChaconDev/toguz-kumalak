@@ -1,0 +1,13 @@
+{
+  "secretFindings": 0,
+  "changedFiles": 36,
+  "productTestsRun": false,
+  "issues": [],
+  "goLocalSHA256": "0987362327984C32743827BB060C64CFAB5FD06601580EA3089B70571B19612A",
+  "goLocalBlob": "1c22815c323b61635a334d3008f2cbbcf1c5b361",
+  "scope": "Changed spike files; not product acceptance",
+  "observedUTC": "2026-10-26T02:08:39.8123192+00:00",
+  "jsonParsed": 9,
+  "localFileLinksChecked": 107,
+  "status": "PASS"
+}

@@ -1,0 +1,22 @@
+{
+  "aliases": {
+    "9409462+fec65c640be0c423d164eae1b1db086bfd0abbf1d1a68e3c5c31229d0445fefe": "5323f1fe8cdb6a1bc3ca7da8d3d9da8b7d0ac6f5509f40727f280c6675477773",
+    "9409462+13d05fe56ab9ea49ae7a122b47e4a2f8ad32e6eb65fff928eee646e9d5fa839d": "5323f1fe8cdb6a1bc3ca7da8d3d9da8b7d0ac6f5509f40727f280c6675477773"
+  },
+  "cause": "Unordered PowerShell hashtable property serialization changed the manifest fingerprint across processes, while every file digest stayed identical",
+  "canonicalSourceDigest": "5323f1fe8cdb6a1bc3ca7da8d3d9da8b7d0ac6f5509f40727f280c6675477773",
+  "acceptedVariants": [
+    {
+      "order": "path,sha256,bytes",
+      "digest": "fec65c640be0c423d164eae1b1db086bfd0abbf1d1a68e3c5c31229d0445fefe"
+    },
+    {
+      "order": "bytes,path,sha256",
+      "digest": "13d05fe56ab9ea49ae7a122b47e4a2f8ad32e6eb65fff928eee646e9d5fa839d"
+    }
+  ],
+  "allDeploymentFingerprintsReproduced": true,
+  "resolution": "Stable ordered serialization in operator; no additional build, source change, engine duplication or architectural change",
+  "fileCount": 42,
+  "observedUTC": "2026-10-26T01:45:40.6098802+00:00"
+}

@@ -8,6 +8,7 @@ import (
 	"github.com/SebasChaconDev/toguz-kumalak/spikes/infra-feasibility/modules/engine"
 	"github.com/jackc/pgx/v5"
 	"github.com/jackc/pgx/v5/pgxpool"
+	"os"
 	"time"
 )
 
@@ -103,7 +104,11 @@ func (s *Store) Apply(ctx context.Context, id, actor string, in Intent) (State, 
 		return State{}, e
 	}
 	if s.Notify != nil {
-		noticeCtx, cancel := context.WithTimeout(ctx, 100*time.Millisecond)
+		limit := 100 * time.Millisecond
+		if os.Getenv("SPIKE_REMOTE_ENABLED") == "1" {
+			limit = 5 * time.Second
+		}
+		noticeCtx, cancel := context.WithTimeout(ctx, limit)
 		defer cancel()
 		_ = s.Notify(noticeCtx, Notice{id, st.Revision})
 	}

@@ -93,6 +93,7 @@ func New(a probe.Auth, s *Store) http.Handler {
 		}
 		c.JSON(200, st)
 	})
+	addRemoteRoutes(r, a, s)
 	return r
 }
 func FromEnv() http.Handler {

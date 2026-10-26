@@ -1,0 +1,44 @@
+{
+  "limits": {
+    "sqlFunctionalLimit": 80,
+    "buildsCumulative": 8,
+    "separateFixtureDDLAndSeedStatements": 27,
+    "capHttpWithdrawn": true,
+    "additionalUSD": 0
+  },
+  "vercel": {
+    "fluidMemory": "0 displayed GB-Hrs / 360",
+    "cdnRequests": "99 / 1000000",
+    "originTransfer": "48.63kB / 10GB",
+    "functionInvocations": "67 / 1000000",
+    "buildCPU": "26m",
+    "source": "Authenticated browser Usage; account-wide sampled metrics, delayed and rounded",
+    "fluidCPU": "1s / 4h",
+    "buildTime": "10m / 100h",
+    "classicDuration": "0 displayed GB-Hrs / 100",
+    "plan": "Hobby",
+    "additionalPurchaseUSD": 0,
+    "billableBuildMinutes": "0s / 0s",
+    "fastDataTransfer": "656.64kB / 100GB"
+  },
+  "ably": {
+    "messages": "13 / 6000000",
+    "source": "Authenticated Package and package_limits browser",
+    "connections": "1 displayed / 200",
+    "warning": "Sampled dashboard can lag stream closure; not exact lifetime counters",
+    "reset": "in6days",
+    "priceUSD": 0,
+    "plan": "Free",
+    "transfer": "585bytes / 28.6GiB",
+    "channels": "1 displayed / 200"
+  },
+  "observedUTC": "2026-10-26T01:47:39.2332503+00:00",
+  "neon": {
+    "retireImmediatelyAfterEvidence": true,
+    "suspendTimeoutReturned": 0,
+    "warning": "Project API counters still0 despite verified SQL; delayed or unavailable metering, never interpret as zero consumption",
+    "fixedCU": 0.25,
+    "plan": "Free",
+    "source": "Organization048 and owned-project final103"
+  }
+}

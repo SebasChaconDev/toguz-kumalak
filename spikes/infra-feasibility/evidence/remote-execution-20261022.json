@@ -1,0 +1,203 @@
+{
+  "schemaVersion": 1,
+  "classification": "BLOCKED_REMOTE",
+  "authorization": "APRUEBO SPIKE REMOTO — user-authored attachment fa0d1574-4ed8-45c1-b492-5cb3b5cb3475",
+  "branch": "spike/infra-feasibility-01",
+  "baseCommit": "94094620637b6705193ce984e8e5d54e39a3e45e",
+  "initiallyClean": true,
+  "localGate": "GO_LOCAL historical evidence preserved; product tests not rerun",
+  "stopReason": "Mandatory precondition rejected: existing Neon CLI credential returned HTTP 401; stopped before provisioning",
+  "requests": [
+    {
+      "id": "REMOTE-001",
+      "startedUTC": "2026-10-22T20:27:50.1431851Z",
+      "provider": "Neon",
+      "method": "GET",
+      "endpoint": "/api/v2/users/me",
+      "purpose": "Mandatory authorized-session precondition",
+      "credentialExpiresUTC": "2026-10-22T20:15:13.583Z",
+      "automaticRefresh": false,
+      "automaticRetries": 0,
+      "followRedirects": false,
+      "status": 401,
+      "outcome": "BLOCKED_EXISTING_SESSION_REJECTED",
+      "completedUTC": "2026-10-22T20:27:50.4895703Z"
+    }
+  ],
+  "counters": {
+    "directProviderApiRequests": 1,
+    "githubToguzRepositoryAccountRequests": 0,
+    "functionalRequests": 0,
+    "sqlRequests": 0,
+    "automaticRetries": 0,
+    "redirects": 0,
+    "credentialRefreshes": 0,
+    "remoteBuilds": 0,
+    "resourcesCreated": 0,
+    "credentialsCreated": 0,
+    "resourcesDeleted": 0,
+    "externalWrites": 0,
+    "publicDocumentation": {
+      "webToolInvocations": 13,
+      "searchOperations": 8,
+      "findOperations": 18,
+      "openOrClickAttempts": 31,
+      "successfulOpenOrClick": 14,
+      "failedOpenOrClick": 17,
+      "underlyingHttpCount": null,
+      "limitation": "Web service internal HTTP count not observable; do not claim direct provider count is total global traffic"
+    },
+    "globalHttpTotal": null,
+    "globalRemaining": null,
+    "limit": 100,
+    "minimumTeardownReserve": 10,
+    "remoteBuildLimit": 6
+  },
+  "preconditions": {
+    "commitAndLocalGate": "PASS_INTEGRITY_ONLY",
+    "neonApiSession": "BLOCKED_401",
+    "neonBrowserSession": "NOT_REVALIDATED",
+    "allThreeCurrentPlansQuotasSessions": "NOT_RUN_COMPLETE",
+    "currentAutomationAudit": "NOT_RUN",
+    "currentInventory": "NOT_RUN_COMPLETE",
+    "demonstrableGlobalRequestBudget": "BLOCKED_UNVERIFIED"
+  },
+  "pocResults": [
+    {
+      "id": "POC-01",
+      "remoteStatus": "BLOCKED",
+      "execution": "NOT_RUN",
+      "reason": "Stopped at mandatory precondition before stage A"
+    },
+    {
+      "id": "POC-02",
+      "remoteStatus": "BLOCKED",
+      "execution": "NOT_RUN",
+      "reason": "Stopped at mandatory precondition before stage A"
+    },
+    {
+      "id": "POC-03",
+      "remoteStatus": "BLOCKED",
+      "execution": "NOT_RUN",
+      "reason": "Stopped at mandatory precondition before stage A"
+    },
+    {
+      "id": "POC-04",
+      "remoteStatus": "BLOCKED",
+      "execution": "NOT_RUN",
+      "reason": "Stopped at mandatory precondition before stage A"
+    },
+    {
+      "id": "POC-05",
+      "remoteStatus": "BLOCKED",
+      "execution": "NOT_RUN",
+      "reason": "Stopped at mandatory precondition before stage A"
+    },
+    {
+      "id": "POC-06",
+      "remoteStatus": "BLOCKED",
+      "execution": "NOT_RUN",
+      "reason": "Stopped at mandatory precondition before stage A"
+    },
+    {
+      "id": "POC-07",
+      "remoteStatus": "BLOCKED",
+      "execution": "NOT_RUN",
+      "reason": "Stopped at mandatory precondition before stage A"
+    },
+    {
+      "id": "POC-08",
+      "remoteStatus": "BLOCKED",
+      "execution": "NOT_RUN",
+      "reason": "Stopped at mandatory precondition before stage A"
+    },
+    {
+      "id": "POC-09",
+      "remoteStatus": "BLOCKED",
+      "execution": "NOT_RUN",
+      "reason": "Stopped at mandatory precondition before stage A"
+    },
+    {
+      "id": "POC-10",
+      "remoteStatus": "BLOCKED",
+      "execution": "NOT_RUN",
+      "reason": "Stopped at mandatory precondition before stage A"
+    },
+    {
+      "id": "POC-11",
+      "remoteStatus": "BLOCKED",
+      "execution": "NOT_RUN",
+      "reason": "Stopped at mandatory precondition before stage A"
+    }
+  ],
+  "stages": {
+    "A": "NOT_RUN",
+    "B": "NOT_RUN",
+    "C": "NOT_RUN",
+    "D": "NOT_RUN",
+    "E": "NOT_RUN"
+  },
+  "resourcesCreated": [],
+  "credentialsCreated": [],
+  "protectedExistingResources": {
+    "neon": {
+      "name": "9 Stones",
+      "projectId": "summer-thunder-19865667",
+      "organizationId": "org-royal-mountain-44404235",
+      "branchId": "br-solitary-credit-b5lwxosv",
+      "computeId": "ep-plain-tree-b5zuzsvn"
+    },
+    "ably": {
+      "name": "Player chat",
+      "appId": "rfrH2Q",
+      "accountId": "107133",
+      "accountSlug": "Mkf2Mg"
+    },
+    "provenance": "Reference inventory from prior preflight, not revalidated after the stop",
+    "agentWritesToExistingResources": 0
+  },
+  "financial": {
+    "authorizedAdditionalUSD": 0,
+    "newPaidCommitments": 0,
+    "billingRechecked": false,
+    "resourceUsageMetricsCollected": false
+  },
+  "cleanup": {
+    "status": "NOT_NEEDED",
+    "reason": "No resources or credentials created in this attempt",
+    "postStopRemoteVerification": "NOT_RUN"
+  },
+  "scope": {
+    "pushPerformed": false,
+    "pr3Modified": false,
+    "pr3Merged": false,
+    "lot4Started": false,
+    "productionCodeModified": false,
+    "architectureModified": false
+  },
+  "verification": {
+    "observedUTC": "2026-10-22T20:32:45.4769249Z",
+    "result": "PASS",
+    "markdownFiles": 9,
+    "jsonFiles": 68,
+    "relativeLinks": 100,
+    "pocRows": 11,
+    "baseCommitExists": true,
+    "historicalLocalGateUnchanged": true,
+    "expectedChangedPaths": [
+      "spikes/infra-feasibility/INTEGRAL_REPORT.md",
+      "spikes/infra-feasibility/TEST_MATRIX.md",
+      "spikes/infra-feasibility/REMOTE_AUDIT.md",
+      "spikes/infra-feasibility/REMOTE_PLAN.md",
+      "spikes/infra-feasibility/evidence/remote-execution-20261022.json"
+    ],
+    "unexpectedChanges": [],
+    "exposureScanFiles": 5,
+    "knownCredentialValuesCompared": 12,
+    "credentialFindings": 0,
+    "productTestsRun": 0,
+    "providerRequestsAdded": 0,
+    "problems": [],
+    "limits": "Documentary integrity and selected credential values/patterns only; no provider behavior or current account/quota certification"
+  }
+}

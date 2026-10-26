@@ -1,0 +1,14 @@
+{
+  "method": "Real Chrome browser navigation, authenticated Vercel session, no bypass URL",
+  "cookieFixture": "__Host-spike-cookie; Secure; HttpOnly; SameSite=Lax; Path=/; synthetic only",
+  "renderedResult": {
+    "httpOnlyHidden": true,
+    "status": 200,
+    "pass": true,
+    "cookieReceived": true
+  },
+  "browserTab": "1569259884",
+  "limitation": "Cookie transport fixture, not product session implementation; browser-internal HTTP not counted individually",
+  "url": "https://tk-spike01-web-ultra-seneca.vercel.app/cookie-probe",
+  "observedUTC": "2026-10-26T01:40:39.7073580+00:00"
+}

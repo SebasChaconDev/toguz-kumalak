@@ -1,0 +1,143 @@
+{
+  "ok": true,
+  "label": null,
+  "records": [
+    {
+      "label": "create-identity-owner",
+      "ordinal": 1,
+      "status": "PASS"
+    },
+    {
+      "label": "create-identity-app",
+      "ordinal": 2,
+      "status": "PASS"
+    },
+    {
+      "label": "create-game-owner",
+      "ordinal": 3,
+      "status": "PASS"
+    },
+    {
+      "label": "create-game-app",
+      "ordinal": 4,
+      "status": "PASS"
+    },
+    {
+      "label": "admin-owner-membership",
+      "ordinal": 5,
+      "status": "PASS"
+    },
+    {
+      "label": "create-identity-database",
+      "ordinal": 6,
+      "status": "PASS"
+    },
+    {
+      "label": "revoke-public-identity-connect",
+      "ordinal": 7,
+      "status": "PASS"
+    },
+    {
+      "label": "grant-identity-connect",
+      "ordinal": 8,
+      "status": "PASS"
+    },
+    {
+      "label": "create-game-database",
+      "ordinal": 9,
+      "status": "PASS"
+    },
+    {
+      "label": "revoke-public-game-connect",
+      "ordinal": 10,
+      "status": "PASS"
+    },
+    {
+      "label": "grant-game-connect",
+      "ordinal": 11,
+      "status": "PASS"
+    },
+    {
+      "label": "revoke-identity-schema-create",
+      "ordinal": 12,
+      "status": "PASS"
+    },
+    {
+      "label": "identity-table",
+      "ordinal": 13,
+      "status": "PASS"
+    },
+    {
+      "label": "identity-synthetic-row",
+      "ordinal": 14,
+      "status": "PASS"
+    },
+    {
+      "label": "identity-minimal-select",
+      "ordinal": 15,
+      "status": "PASS"
+    },
+    {
+      "label": "identity-minimal-table-select",
+      "ordinal": 16,
+      "status": "PASS"
+    },
+    {
+      "label": "revoke-game-schema-create",
+      "ordinal": 17,
+      "status": "PASS"
+    },
+    {
+      "label": "game-up-first-1",
+      "ordinal": 18,
+      "status": "PASS"
+    },
+    {
+      "label": "game-up-first-2",
+      "ordinal": 19,
+      "status": "PASS"
+    },
+    {
+      "label": "game-up-first-3",
+      "ordinal": 20,
+      "status": "PASS"
+    },
+    {
+      "label": "game-down-receipts",
+      "ordinal": 21,
+      "status": "PASS"
+    },
+    {
+      "label": "game-down-games",
+      "ordinal": 22,
+      "status": "PASS"
+    },
+    {
+      "label": "game-up-reinstall-1",
+      "ordinal": 23,
+      "status": "PASS"
+    },
+    {
+      "label": "game-up-reinstall-2",
+      "ordinal": 24,
+      "status": "PASS"
+    },
+    {
+      "label": "game-up-reinstall-3",
+      "ordinal": 25,
+      "status": "PASS"
+    },
+    {
+      "label": "game-minimal-schema",
+      "ordinal": 26,
+      "status": "PASS"
+    },
+    {
+      "label": "game-minimal-tables",
+      "ordinal": 27,
+      "status": "PASS"
+    }
+  ],
+  "sqlstate": null,
+  "statements": 27
+}

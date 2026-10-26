@@ -8,6 +8,7 @@ import (
 	"io"
 	"net/http"
 	"os"
+	"runtime"
 	"time"
 
 	"github.com/gin-gonic/gin"
@@ -35,7 +36,13 @@ func Router(service, engine string, a Auth) *gin.Engine {
 	r := gin.New()
 	r.Use(gin.CustomRecoveryWithWriter(io.Discard, func(c *gin.Context, _ any) { c.AbortWithStatus(500) }))
 	r.GET("/health", a.Require(service, "user", ""), func(c *gin.Context) { c.JSON(200, gin.H{"status": "experimental", "service": service}) })
-	r.GET("/version", a.Require(service, "user", ""), func(c *gin.Context) { c.JSON(200, gin.H{"build": BuildVersion, "engine": engine, "service": service}) })
+	r.GET("/version", a.Require(service, "user", ""), func(c *gin.Context) {
+		if os.Getenv("SPIKE_REMOTE_ENABLED") == "1" {
+			c.JSON(200, gin.H{"build": os.Getenv("SPIKE_SOURCE_REVISION"), "engine": engine, "service": service, "go": runtime.Version(), "instance": remoteInstance, "region": os.Getenv("VERCEL_REGION"), "oidcPresent": c.GetHeader("x-vercel-oidc-token") != ""})
+			return
+		}
+		c.JSON(200, gin.H{"build": BuildVersion, "engine": engine, "service": service})
+	})
 	r.POST("/internal/probe", a.Require(service, "service", "game"), func(c *gin.Context) { c.JSON(200, gin.H{"authenticated": true, "service": service}) })
 	return r
 }

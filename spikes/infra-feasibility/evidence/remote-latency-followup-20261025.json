@@ -1,0 +1,41 @@
+{
+  "ablyApp": "ujZ-YA",
+  "automaticHTTPRetries": 0,
+  "commitBeforeReceive": true,
+  "commitToPublishStartMs": 363.617,
+  "commitToReceiveMs": 621.974,
+  "directAdminConnectMs": 577.476,
+  "httpRequests": [
+    {
+      "host": "main.realtime.ably.net",
+      "method": "GET",
+      "path": "/sse",
+      "status": 200
+    },
+    {
+      "host": "main.realtime.ably.net",
+      "method": "POST",
+      "path": "/channels/spike:game:owned-game/messages",
+      "status": 201
+    }
+  ],
+  "maximumSubscribers": 1,
+  "neonProject": "winter-wind-87809024",
+  "observedUTC": "2026-10-26T01:59:16.2658323Z",
+  "payloadBytes": 93,
+  "poolMaxConnections": 2,
+  "pooledFirstAcquireMs": 519.17,
+  "pooledFirstSelectMs": 144.507,
+  "pooledWarmSelectMs": 71.654,
+  "publishAckMs": 258.356,
+  "publishStartToReceiveMs": 258.356,
+  "receiveBeforePublishAck": false,
+  "samplesPerMetric": 1,
+  "scope": "C6 timing only; operator-to-provider, not Vercel Game timing or product performance",
+  "sqlRevisionConfirmedBeforePublish": 1,
+  "sqlStatementsInstrumented": 12,
+  "status": "PASS",
+  "subscribeHeadersMs": 291.937,
+  "successfulPublications": 1,
+  "transactionBeginUpdateCommitMs": 287.993
+}

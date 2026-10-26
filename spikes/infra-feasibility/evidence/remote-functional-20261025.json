@@ -1,0 +1,1989 @@
+{
+  "automaticRetries": 0,
+  "cases": [
+    {
+      "id": "CAP-01",
+      "observed": "JWT message-subscribe accepted on exact channel; key withheld",
+      "pass": true
+    },
+    {
+      "id": "CAP-02-client-publish",
+      "observed": {
+        "providerError": {
+          "code": 40160,
+          "href": "https://help.ably.io/error/40160",
+          "message": "Unauthorized to publish to channel",
+          "statusCode": 401
+        },
+        "status": 401
+      },
+      "pass": true
+    },
+    {
+      "id": "CAP-03-other-channel",
+      "observed": {
+        "providerError": null,
+        "status": 200
+      },
+      "pass": false
+    },
+    {
+      "id": "PROTECT-identity",
+      "observed": {
+        "status": 302
+      },
+      "pass": true
+    },
+    {
+      "id": "RUNTIME-identity",
+      "observed": {
+        "expected": 200,
+        "status": 200
+      },
+      "pass": true
+    },
+    {
+      "id": "OIDC-RUNTIME-identity",
+      "observed": {
+        "build": "9409462+fec65c640be0c423d164eae1b1db086bfd0abbf1d1a68e3c5c31229d0445fefe",
+        "engine": "none",
+        "go": "go1.26.0",
+        "instance": "b22d0c4155c15d44b1898c779c1070e0",
+        "oidcPresent": true,
+        "region": "iad1",
+        "service": "identity"
+      },
+      "pass": true
+    },
+    {
+      "id": "PROTECT-game",
+      "observed": {
+        "status": 302
+      },
+      "pass": true
+    },
+    {
+      "id": "RUNTIME-game",
+      "observed": {
+        "expected": 200,
+        "status": 200
+      },
+      "pass": true
+    },
+    {
+      "id": "OIDC-RUNTIME-game",
+      "observed": {
+        "build": "9409462+fec65c640be0c423d164eae1b1db086bfd0abbf1d1a68e3c5c31229d0445fefe",
+        "engine": "spike-engine/v0.1.0",
+        "go": "go1.26.0",
+        "instance": "ef9e2145abceb91706eb81bd0dc21620",
+        "oidcPresent": true,
+        "region": "iad1",
+        "service": "game"
+      },
+      "pass": true
+    },
+    {
+      "id": "PROTECT-ai",
+      "observed": {
+        "status": 302
+      },
+      "pass": true
+    },
+    {
+      "id": "RUNTIME-ai",
+      "observed": {
+        "expected": 200,
+        "status": 200
+      },
+      "pass": true
+    },
+    {
+      "id": "OIDC-RUNTIME-ai",
+      "observed": {
+        "build": "9409462+fec65c640be0c423d164eae1b1db086bfd0abbf1d1a68e3c5c31229d0445fefe",
+        "engine": "spike-engine/v0.1.0",
+        "go": "go1.26.0",
+        "instance": "95047fac52a82d7286973cc4e40542b4",
+        "oidcPresent": true,
+        "region": "iad1",
+        "service": "ai"
+      },
+      "pass": true
+    },
+    {
+      "id": "PROTECT-web",
+      "observed": {
+        "status": 302
+      },
+      "pass": true
+    },
+    {
+      "id": "RUNTIME-web",
+      "observed": {
+        "expected": 200,
+        "status": 200
+      },
+      "pass": true
+    },
+    {
+      "id": "CONNECT-identity",
+      "observed": {
+        "expected": 200,
+        "status": 200
+      },
+      "pass": true
+    },
+    {
+      "id": "CONNECT-game",
+      "observed": {
+        "expected": 204,
+        "status": 204
+      },
+      "pass": true
+    },
+    {
+      "id": "CONNECT-ai",
+      "observed": {
+        "expected": 200,
+        "status": 200
+      },
+      "pass": true
+    },
+    {
+      "id": "S2S-identity",
+      "observed": {
+        "expected": 204,
+        "status": 204
+      },
+      "pass": true
+    },
+    {
+      "id": "S2S-ai",
+      "observed": {
+        "expected": 204,
+        "status": 204
+      },
+      "pass": true
+    },
+    {
+      "id": "S2S-DOWN",
+      "observed": {
+        "expected": 503,
+        "status": 503
+      },
+      "pass": true
+    },
+    {
+      "id": "S2S-DENIED-AT-PROTECTION",
+      "observed": {
+        "upstreamStatus": 401
+      },
+      "pass": true
+    },
+    {
+      "id": "S2S-RECOVERY",
+      "observed": {
+        "expected": 204,
+        "status": 204
+      },
+      "pass": true
+    },
+    {
+      "id": "AUTH-MISSING",
+      "observed": {
+        "expected": 401,
+        "status": 401
+      },
+      "pass": true
+    },
+    {
+      "id": "AUTH-INVALID",
+      "observed": {
+        "expected": 401,
+        "status": 401
+      },
+      "pass": true
+    },
+    {
+      "id": "AUTH-AUDIENCE",
+      "observed": {
+        "expected": 401,
+        "status": 401
+      },
+      "pass": true
+    },
+    {
+      "id": "AUTH-FOREIGN",
+      "observed": {
+        "expected": 403,
+        "status": 403
+      },
+      "pass": true
+    },
+    {
+      "id": "AUTH-AI-FORGE",
+      "observed": {
+        "expected": 401,
+        "status": 401
+      },
+      "pass": true
+    },
+    {
+      "id": "AUTH-AI-WRITE",
+      "observed": {
+        "expected": 401,
+        "status": 401
+      },
+      "pass": true
+    },
+    {
+      "id": "WEB-FORWARD-identity",
+      "observed": {
+        "expected": 200,
+        "status": 200
+      },
+      "pass": true
+    },
+    {
+      "id": "WEB-FORWARD-game",
+      "observed": {
+        "expected": 204,
+        "status": 204
+      },
+      "pass": true
+    },
+    {
+      "id": "WEB-FORWARD-AUTH",
+      "observed": {
+        "expected": 401,
+        "status": 401
+      },
+      "pass": true
+    },
+    {
+      "id": "DB-CONNECT-identity",
+      "observed": null,
+      "pass": true
+    },
+    {
+      "id": "DB-ROLE-LIMIT-identity",
+      "observed": {
+        "connectionLimit": 4,
+        "database": "spike_identity",
+        "role": "spike_identity_app"
+      },
+      "pass": true
+    },
+    {
+      "id": "DB-NO-DDL-identity",
+      "observed": {
+        "sqlstate": "42501"
+      },
+      "pass": true
+    },
+    {
+      "id": "DB-CROSS-DENIED-identity",
+      "observed": {
+        "sqlstate": "connection-error"
+      },
+      "pass": false
+    },
+    {
+      "id": "CAP-06",
+      "observed": {
+        "expected": 201,
+        "status": 201
+      },
+      "pass": true
+    },
+    {
+      "id": "CAP-01-REAL-EVENT",
+      "observed": {
+        "expected": 0,
+        "revision": 0
+      },
+      "pass": true
+    },
+    {
+      "id": "CAP-03-other-channel",
+      "observed": {
+        "errorCode": 40160,
+        "event": "error",
+        "host": "main.realtime.ably.net",
+        "httpStatus": 200,
+        "label": "CAP-03-other-channel",
+        "method": "GET",
+        "ordinal": 30,
+        "path": "/sse"
+      },
+      "pass": true
+    },
+    {
+      "id": "CAP-07-publisher-subscribe",
+      "observed": {
+        "errorCode": 40160,
+        "event": "error",
+        "host": "main.realtime.ably.net",
+        "httpStatus": 200,
+        "label": "CAP-07-publisher-subscribe",
+        "method": "GET",
+        "ordinal": 31,
+        "path": "/sse"
+      },
+      "pass": true
+    },
+    {
+      "id": "CAP-02-client-publish",
+      "observed": {
+        "providerError": {
+          "code": 40160,
+          "href": "https://help.ably.io/error/40160",
+          "message": "Unauthorized to publish to channel",
+          "statusCode": 401
+        },
+        "status": 401
+      },
+      "pass": true
+    },
+    {
+      "id": "CAP-04-expired",
+      "observed": {
+        "providerError": {
+          "code": 40142,
+          "href": "https://help.ably.io/error/40142",
+          "message": "token expired",
+          "statusCode": 401
+        },
+        "status": 401
+      },
+      "pass": true
+    },
+    {
+      "id": "CAP-05-signature",
+      "observed": {
+        "providerError": {
+          "code": 40144,
+          "href": "https://help.ably.io/error/40144",
+          "message": "could not decode JWT claims: go-jose/go-jose: error in cryptographic primitive",
+          "statusCode": 401
+        },
+        "status": 401
+      },
+      "pass": true
+    },
+    {
+      "id": "CAP-08-missing",
+      "observed": {
+        "providerError": {
+          "code": 40101,
+          "href": "https://help.ably.io/error/40101",
+          "message": "unable to handle request; no application id found in request",
+          "statusCode": 401
+        },
+        "status": 401
+      },
+      "pass": true
+    },
+    {
+      "id": "CAP-09-no-presence-read",
+      "observed": {
+        "providerError": {
+          "code": 40160,
+          "href": "https://help.ably.io/error/40160",
+          "message": "Unauthorized to request presence for this channel",
+          "statusCode": 401
+        },
+        "status": 401
+      },
+      "pass": true
+    },
+    {
+      "id": "CAP-10-no-history",
+      "observed": {
+        "providerError": {
+          "code": 40160,
+          "href": "https://help.ably.io/error/40160",
+          "message": "action not permitted, app = MEQwvA. (See https://help.ably.io/error/40160 for help.)",
+          "nonfatal": false,
+          "serverId": "frontend.b36b.1.us-east-2-A.i-0929ee3471abc9ec1.86fe7iKvgC8JA7",
+          "statusCode": 401
+        },
+        "status": 401
+      },
+      "pass": true
+    },
+    {
+      "id": "DB-CONNECT-identity",
+      "observed": null,
+      "pass": true
+    },
+    {
+      "id": "DB-ROLE-LIMIT-identity",
+      "observed": {
+        "connectionLimit": 4,
+        "database": "spike_identity",
+        "role": "spike_identity_app"
+      },
+      "pass": true
+    },
+    {
+      "id": "DB-NO-DDL-identity",
+      "observed": {
+        "sqlstate": "42501"
+      },
+      "pass": true
+    },
+    {
+      "id": "DB-CROSS-DENIED-identity",
+      "observed": {
+        "sqlstate": "42501"
+      },
+      "pass": true
+    },
+    {
+      "id": "DB-CONNECT-game",
+      "observed": null,
+      "pass": true
+    },
+    {
+      "id": "DB-ROLE-LIMIT-game",
+      "observed": {
+        "connectionLimit": 4,
+        "database": "spike_game",
+        "role": "spike_game_app"
+      },
+      "pass": true
+    },
+    {
+      "id": "DB-NO-DDL-game",
+      "observed": {
+        "sqlstate": "42501"
+      },
+      "pass": true
+    },
+    {
+      "id": "DB-CROSS-DENIED-game",
+      "observed": {
+        "sqlstate": "42501"
+      },
+      "pass": true
+    },
+    {
+      "id": "TX-FIRST",
+      "observed": {
+        "expected": 200,
+        "status": 200
+      },
+      "pass": true
+    },
+    {
+      "id": "TX-FIRST-STATE",
+      "observed": {
+        "committedBeforePublish": true,
+        "publishStatus": 201,
+        "state": {
+          "effects": 1,
+          "revision": 1
+        }
+      },
+      "pass": true
+    },
+    {
+      "id": "NOT-COMMIT-BEFORE-PUBLISH",
+      "observed": {
+        "committedBeforePublish": true,
+        "publishStatus": 201,
+        "state": {
+          "effects": 1,
+          "revision": 1
+        }
+      },
+      "pass": true
+    },
+    {
+      "id": "NOT-REAL-DELIVERY",
+      "observed": {
+        "expected": 1,
+        "revision": 1
+      },
+      "pass": true
+    },
+    {
+      "id": "TX-RETRY",
+      "observed": {
+        "expected": 200,
+        "status": 200
+      },
+      "pass": true
+    },
+    {
+      "id": "TX-RETRY-STATE",
+      "observed": {
+        "committedBeforePublish": false,
+        "publishStatus": 0,
+        "state": {
+          "effects": 1,
+          "revision": 1
+        }
+      },
+      "pass": true
+    },
+    {
+      "id": "TX-CONFLICT",
+      "observed": {
+        "expected": 409,
+        "status": 409
+      },
+      "pass": true
+    },
+    {
+      "id": "TX-CONCURRENT-TWO",
+      "observed": {
+        "commits": 1,
+        "conflicts": 1
+      },
+      "pass": true
+    },
+    {
+      "id": "NOT-RACE-ONE-EVENT",
+      "observed": {
+        "expected": 2,
+        "revision": 2
+      },
+      "pass": true
+    },
+    {
+      "id": "TX-ROLLBACK",
+      "observed": {
+        "expected": 503,
+        "status": 503
+      },
+      "pass": true
+    },
+    {
+      "id": "TX-ROLLBACK-UNCHANGED",
+      "observed": {
+        "effects": 2,
+        "revision": 2
+      },
+      "pass": true
+    },
+    {
+      "id": "TX-LOST-RESPONSE-COMMIT",
+      "observed": {
+        "expected": 200,
+        "status": 200
+      },
+      "pass": true
+    },
+    {
+      "id": "NOT-PUBLISH-FAIL-PRESERVES-COMMIT",
+      "observed": {
+        "committedBeforePublish": true,
+        "publishStatus": 401,
+        "state": {
+          "effects": 3,
+          "revision": 3
+        }
+      },
+      "pass": true
+    },
+    {
+      "id": "TX-LOST-RESPONSE-RECOVERY",
+      "observed": {
+        "committedBeforePublish": false,
+        "publishStatus": 0,
+        "state": {
+          "effects": 3,
+          "revision": 3
+        }
+      },
+      "pass": true
+    },
+    {
+      "id": "NOT-REST-AUTHORITY",
+      "observed": {
+        "effects": 3,
+        "revision": 3
+      },
+      "pass": true
+    },
+    {
+      "id": "NOT-PUBLISH-2",
+      "observed": {
+        "expected": 200,
+        "status": 200
+      },
+      "pass": true
+    },
+    {
+      "id": "NOT-RECEIVE-2",
+      "observed": {
+        "expected": 2,
+        "revision": 2
+      },
+      "pass": true
+    },
+    {
+      "id": "NOT-PUBLISH-1",
+      "observed": {
+        "expected": 200,
+        "status": 200
+      },
+      "pass": true
+    },
+    {
+      "id": "NOT-RECEIVE-1",
+      "observed": {
+        "expected": 1,
+        "revision": 1
+      },
+      "pass": true
+    },
+    {
+      "id": "NOT-PUBLISH-2",
+      "observed": {
+        "expected": 200,
+        "status": 200
+      },
+      "pass": true
+    },
+    {
+      "id": "NOT-RECEIVE-2",
+      "observed": {
+        "expected": 2,
+        "revision": 2
+      },
+      "pass": true
+    },
+    {
+      "id": "NOT-DUPLICATE-OUT-OF-ORDER",
+      "observed": {
+        "ignoredNotices": 3,
+        "retainedRevision": 3
+      },
+      "pass": true
+    },
+    {
+      "id": "NOT-OFFLINE-COMMIT",
+      "observed": {
+        "expected": 200,
+        "status": 200
+      },
+      "pass": true
+    },
+    {
+      "id": "NOT-RECONNECT-REST",
+      "observed": {
+        "effects": 4,
+        "revision": 4
+      },
+      "pass": true
+    },
+    {
+      "id": "AI-current",
+      "observed": {
+        "expected": 200,
+        "status": 200
+      },
+      "pass": true
+    },
+    {
+      "id": "AI-budget",
+      "observed": {
+        "expected": 503,
+        "status": 503
+      },
+      "pass": true
+    },
+    {
+      "id": "AI-BUDGET-UPSTREAM",
+      "observed": {
+        "upstreamStatus": 422
+      },
+      "pass": true
+    },
+    {
+      "id": "AI-timeout",
+      "observed": {
+        "expected": 503,
+        "status": 503
+      },
+      "pass": true
+    },
+    {
+      "id": "AI-TIMEOUT-UPSTREAM",
+      "observed": {
+        "upstreamStatus": 408
+      },
+      "pass": true
+    },
+    {
+      "id": "AI-stale",
+      "observed": {
+        "expected": 409,
+        "status": 409
+      },
+      "pass": true
+    },
+    {
+      "id": "SQL-final-connect",
+      "observed": null,
+      "pass": true
+    },
+    {
+      "id": "TX-FINAL-SQL",
+      "observed": {
+        "effects": 4,
+        "receipts": 4,
+        "revision": 4
+      },
+      "pass": true
+    },
+    {
+      "id": "ASSET-NO-SECRETS-/",
+      "observed": {
+        "bytes": 5558,
+        "secretMatches": false,
+        "status": 200
+      },
+      "pass": true
+    },
+    {
+      "id": "ASSET-NO-SECRETS-/_next/static/immutable/chunks/3nik_p81vwtbn.js",
+      "observed": {
+        "bytes": 185417,
+        "secretMatches": false,
+        "status": 200
+      },
+      "pass": true
+    },
+    {
+      "id": "ASSET-NO-SECRETS-/_next/static/immutable/chunks/1xom_cd5et471.js",
+      "observed": {
+        "bytes": 230281,
+        "secretMatches": false,
+        "status": 200
+      },
+      "pass": true
+    },
+    {
+      "id": "ASSET-NO-SECRETS-/_next/static/immutable/chunks/turbopack-1cvbnb3nlabgn.js",
+      "observed": {
+        "bytes": 10030,
+        "secretMatches": false,
+        "status": 200
+      },
+      "pass": true
+    },
+    {
+      "id": "ASSET-NO-SECRETS-/_next/static/immutable/chunks/00z4pmesk2f4f.js",
+      "observed": {
+        "bytes": 13822,
+        "secretMatches": false,
+        "status": 200
+      },
+      "pass": true
+    },
+    {
+      "id": "ASSET-NO-SECRETS-/_next/static/immutable/chunks/0c0hxoamwjsbw.js",
+      "observed": {
+        "bytes": 112594,
+        "secretMatches": false,
+        "status": 200
+      },
+      "pass": true
+    },
+    {
+      "id": "ASSET-NO-SECRETS-/_next/static/immutable/chunks/3vvmgpd_iqxl-.js",
+      "observed": {
+        "bytes": 16898,
+        "secretMatches": false,
+        "status": 200
+      },
+      "pass": true
+    },
+    {
+      "id": "ASSET-CHUNKS-CHECKED",
+      "observed": {
+        "chunks": 6
+      },
+      "pass": true
+    },
+    {
+      "id": "COLD-RUNTIME-game",
+      "observed": {
+        "expected": 200,
+        "status": 200
+      },
+      "pass": true
+    },
+    {
+      "id": "COLD-INSTANCE-game",
+      "observed": {
+        "current": {
+          "build": "9409462+13d05fe56ab9ea49ae7a122b47e4a2f8ad32e6eb65fff928eee646e9d5fa839d",
+          "engine": "spike-engine/v0.1.0",
+          "go": "go1.26.0",
+          "instance": "ffcdbfd1f3dac40b5d60e9fefdfab6c2",
+          "oidcPresent": true,
+          "region": "iad1",
+          "service": "game"
+        },
+        "priorInstance": "ef9e2145abceb91706eb81bd0dc21620"
+      },
+      "pass": false
+    },
+    {
+      "id": "COLD-RUNTIME-game",
+      "observed": {
+        "expected": 200,
+        "status": 200
+      },
+      "pass": true
+    },
+    {
+      "id": "COLD-INSTANCE-game",
+      "observed": {
+        "canonicalSourceDigest": "5323f1fe8cdb6a1bc3ca7da8d3d9da8b7d0ac6f5509f40727f280c6675477773",
+        "current": {
+          "build": "9409462+13d05fe56ab9ea49ae7a122b47e4a2f8ad32e6eb65fff928eee646e9d5fa839d",
+          "engine": "spike-engine/v0.1.0",
+          "go": "go1.26.0",
+          "instance": "ffcdbfd1f3dac40b5d60e9fefdfab6c2",
+          "oidcPresent": true,
+          "region": "iad1",
+          "service": "game"
+        },
+        "priorInstance": "ef9e2145abceb91706eb81bd0dc21620",
+        "sameSourcesVerified": true
+      },
+      "pass": true
+    },
+    {
+      "id": "COLD-RUNTIME-ai",
+      "observed": {
+        "expected": 200,
+        "status": 200
+      },
+      "pass": true
+    },
+    {
+      "id": "COLD-INSTANCE-ai",
+      "observed": {
+        "canonicalSourceDigest": "5323f1fe8cdb6a1bc3ca7da8d3d9da8b7d0ac6f5509f40727f280c6675477773",
+        "current": {
+          "build": "9409462+13d05fe56ab9ea49ae7a122b47e4a2f8ad32e6eb65fff928eee646e9d5fa839d",
+          "engine": "spike-engine/v0.1.0",
+          "go": "go1.26.0",
+          "instance": "7c77846f9d34f2393fb9d5e20dbe94da",
+          "oidcPresent": true,
+          "region": "iad1",
+          "service": "ai"
+        },
+        "priorInstance": "95047fac52a82d7286973cc4e40542b4",
+        "sameSourcesVerified": true
+      },
+      "pass": true
+    },
+    {
+      "id": "TX-RECEIPT-AFTER-NEW-DEPLOYMENT",
+      "observed": {
+        "committedBeforePublish": false,
+        "publishStatus": 0,
+        "state": {
+          "effects": 1,
+          "revision": 1
+        }
+      },
+      "pass": true
+    },
+    {
+      "id": "TX-STATE-AFTER-NEW-DEPLOYMENT",
+      "observed": {
+        "effects": 4,
+        "revision": 4
+      },
+      "pass": true
+    },
+    {
+      "id": "DB-STATS-CONNECT",
+      "observed": null,
+      "pass": true
+    },
+    {
+      "id": "DB-ACTIVITY-QUERY",
+      "observed": null,
+      "pass": true
+    },
+    {
+      "id": "DB-BACKEND-CONNECTIONS",
+      "observed": {
+        "aggregateCeiling": 8,
+        "limitPerRole": 4,
+        "observed": {
+          "spike_game_app": 1,
+          "spike_identity_app": 1
+        },
+        "scope": "PostgreSQL backends, not PgBouncer client sockets",
+        "total": 2
+      },
+      "pass": true
+    },
+    {
+      "id": "DATASET-CONNECT-identity",
+      "observed": null,
+      "pass": true
+    },
+    {
+      "id": "DATASET-BOUNDED-identity",
+      "observed": {
+        "physicalDatabaseBytesIncludingPostgreSQLCatalogs": 7725056,
+        "relationBytesIncludingIndexes": 32768,
+        "syntheticTablesUnder1MiB": true
+      },
+      "pass": true
+    },
+    {
+      "id": "DATASET-CONNECT-game",
+      "observed": null,
+      "pass": true
+    },
+    {
+      "id": "DATASET-BOUNDED-game",
+      "observed": {
+        "physicalDatabaseBytesIncludingPostgreSQLCatalogs": 7815168,
+        "relationBytesIncludingIndexes": 65536,
+        "syntheticTablesUnder1MiB": true
+      },
+      "pass": true
+    }
+  ],
+  "lastCompletedMode": "dataset",
+  "lastFailure": null,
+  "observedUTC": "2026-10-26T01:48:43.7099768Z",
+  "records": [
+    {
+      "automaticRetries": 0,
+      "channel": "spike:game:owned-game",
+      "elapsedMs": 417,
+      "host": "main.realtime.ably.net",
+      "label": "CAP-01-granular-subscribe",
+      "method": "GET",
+      "ordinal": 1,
+      "path": "/event-stream",
+      "status": 200
+    },
+    {
+      "automaticRetries": 0,
+      "data": {
+        "errorCode": 40160
+      },
+      "elapsedMs": 267,
+      "host": "main.realtime.ably.net",
+      "label": "CAP-02-client-publish",
+      "method": "POST",
+      "ordinal": 2,
+      "path": "/channels/spike:game:owned-game/messages",
+      "regionHeader": "",
+      "startedUTC": "2026-10-26T01:37:18.9887991Z",
+      "status": 401
+    },
+    {
+      "automaticRetries": 0,
+      "data": {},
+      "elapsedMs": 30000,
+      "host": "main.realtime.ably.net",
+      "label": "CAP-03-other-channel",
+      "method": "GET",
+      "ordinal": 3,
+      "path": "/event-stream",
+      "regionHeader": "",
+      "startedUTC": "2026-10-26T01:37:19.2572956Z",
+      "status": 200
+    },
+    {
+      "automaticRetries": 0,
+      "elapsedMs": 398,
+      "host": "tk-spike01-identity-ultra-seneca.vercel.app",
+      "label": "public-protection-identity",
+      "method": "GET",
+      "ordinal": 4,
+      "path": "/version",
+      "regionHeader": "iad1::c7n6r-1792978681655-a803fb2463ee",
+      "startedUTC": "2026-10-26T01:38:03.0326519Z",
+      "status": 302
+    },
+    {
+      "automaticRetries": 0,
+      "data": {
+        "build": "9409462+fec65c640be0c423d164eae1b1db086bfd0abbf1d1a68e3c5c31229d0445fefe",
+        "engine": "none",
+        "go": "go1.26.0",
+        "instance": "b22d0c4155c15d44b1898c779c1070e0",
+        "oidcPresent": true,
+        "region": "iad1",
+        "service": "identity"
+      },
+      "elapsedMs": 369,
+      "host": "tk-spike01-identity-ultra-seneca.vercel.app",
+      "label": "runtime-identity",
+      "method": "GET",
+      "ordinal": 5,
+      "path": "/version",
+      "regionHeader": "iad1::iad1::b2xkj-1792978681879-4f9d6b2cd2c0",
+      "startedUTC": "2026-10-26T01:38:03.4321407Z",
+      "status": 200
+    },
+    {
+      "automaticRetries": 0,
+      "elapsedMs": 333,
+      "host": "tk-spike01-game-ultra-seneca.vercel.app",
+      "label": "public-protection-game",
+      "method": "GET",
+      "ordinal": 6,
+      "path": "/version",
+      "regionHeader": "iad1::87nr6-1792978682335-cbba4d801706",
+      "startedUTC": "2026-10-26T01:38:03.8020563Z",
+      "status": 302
+    },
+    {
+      "automaticRetries": 0,
+      "data": {
+        "build": "9409462+fec65c640be0c423d164eae1b1db086bfd0abbf1d1a68e3c5c31229d0445fefe",
+        "engine": "spike-engine/v0.1.0",
+        "go": "go1.26.0",
+        "instance": "ef9e2145abceb91706eb81bd0dc21620",
+        "oidcPresent": true,
+        "region": "iad1",
+        "service": "game"
+      },
+      "elapsedMs": 285,
+      "host": "tk-spike01-game-ultra-seneca.vercel.app",
+      "label": "runtime-game",
+      "method": "GET",
+      "ordinal": 7,
+      "path": "/version",
+      "regionHeader": "iad1::iad1::6rtzk-1792978682603-1b724d88053e",
+      "startedUTC": "2026-10-26T01:38:04.1364565Z",
+      "status": 200
+    },
+    {
+      "automaticRetries": 0,
+      "elapsedMs": 318,
+      "host": "tk-spike01-ai-ultra-seneca.vercel.app",
+      "label": "public-protection-ai",
+      "method": "GET",
+      "ordinal": 8,
+      "path": "/version",
+      "regionHeader": "iad1::8lhmf-1792978682965-cd7dc2ec9c00",
+      "startedUTC": "2026-10-26T01:38:04.4232571Z",
+      "status": 302
+    },
+    {
+      "automaticRetries": 0,
+      "data": {
+        "build": "9409462+fec65c640be0c423d164eae1b1db086bfd0abbf1d1a68e3c5c31229d0445fefe",
+        "engine": "spike-engine/v0.1.0",
+        "go": "go1.26.0",
+        "instance": "95047fac52a82d7286973cc4e40542b4",
+        "oidcPresent": true,
+        "region": "iad1",
+        "service": "ai"
+      },
+      "elapsedMs": 274,
+      "host": "tk-spike01-ai-ultra-seneca.vercel.app",
+      "label": "runtime-ai",
+      "method": "GET",
+      "ordinal": 9,
+      "path": "/version",
+      "regionHeader": "iad1::iad1::v4mbw-1792978683193-4364e266dc2f",
+      "startedUTC": "2026-10-26T01:38:04.742807Z",
+      "status": 200
+    },
+    {
+      "automaticRetries": 0,
+      "elapsedMs": 318,
+      "host": "tk-spike01-web-ultra-seneca.vercel.app",
+      "label": "public-protection-web",
+      "method": "GET",
+      "ordinal": 10,
+      "path": "/",
+      "regionHeader": "iad1::7r9ml-1792978683552-ab95a2ddeb31",
+      "startedUTC": "2026-10-26T01:38:05.0183422Z",
+      "status": 302
+    },
+    {
+      "automaticRetries": 0,
+      "elapsedMs": 327,
+      "host": "tk-spike01-web-ultra-seneca.vercel.app",
+      "label": "protected-web",
+      "method": "GET",
+      "ordinal": 11,
+      "path": "/",
+      "regionHeader": "iad1::z7ft9-1792978683805-1b23b0ff583d",
+      "startedUTC": "2026-10-26T01:38:05.3373339Z",
+      "status": 200
+    },
+    {
+      "automaticRetries": 0,
+      "data": {
+        "syntheticRows": 1
+      },
+      "elapsedMs": 286,
+      "host": "tk-spike01-identity-ultra-seneca.vercel.app",
+      "label": "connectivity-identity",
+      "method": "GET",
+      "ordinal": 12,
+      "path": "/connectivity",
+      "regionHeader": "iad1::iad1::55vv7-1792978684115-1b886062d5dd",
+      "startedUTC": "2026-10-26T01:38:05.6657208Z",
+      "status": 200
+    },
+    {
+      "automaticRetries": 0,
+      "elapsedMs": 282,
+      "host": "tk-spike01-game-ultra-seneca.vercel.app",
+      "label": "connectivity-game",
+      "method": "GET",
+      "ordinal": 13,
+      "path": "/connectivity",
+      "regionHeader": "iad1::iad1::75sjd-1792978684407-57eecd81c152",
+      "startedUTC": "2026-10-26T01:38:05.9528067Z",
+      "status": 204
+    },
+    {
+      "automaticRetries": 0,
+      "data": {
+        "engine": "ad115a63824900808965d969f189d5f1fda92fbe8fdfefa82f7a0d25023154ad"
+      },
+      "elapsedMs": 309,
+      "host": "tk-spike01-ai-ultra-seneca.vercel.app",
+      "label": "connectivity-ai",
+      "method": "GET",
+      "ordinal": 14,
+      "path": "/connectivity",
+      "regionHeader": "iad1::iad1::7r9ml-1792978684750-36e621196d8a",
+      "startedUTC": "2026-10-26T01:38:06.2359335Z",
+      "status": 200
+    },
+    {
+      "automaticRetries": 0,
+      "elapsedMs": 439,
+      "host": "tk-spike01-game-ultra-seneca.vercel.app",
+      "label": "S2S-identity",
+      "method": "POST",
+      "ordinal": 15,
+      "path": "/internal/remote/call/identity",
+      "regionHeader": "iad1::iad1::nbmrz-1792978684997-662b1a344977",
+      "startedUTC": "2026-10-26T01:38:06.5466727Z",
+      "status": 204
+    },
+    {
+      "automaticRetries": 0,
+      "elapsedMs": 293,
+      "host": "tk-spike01-game-ultra-seneca.vercel.app",
+      "label": "S2S-ai",
+      "method": "POST",
+      "ordinal": 16,
+      "path": "/internal/remote/call/ai",
+      "regionHeader": "iad1::iad1::4fd7p-1792978685447-7dff07ddb9b2",
+      "startedUTC": "2026-10-26T01:38:06.9949554Z",
+      "status": 204
+    },
+    {
+      "automaticRetries": 0,
+      "data": {
+        "upstreamStatus": 401
+      },
+      "elapsedMs": 242,
+      "host": "tk-spike01-game-ultra-seneca.vercel.app",
+      "label": "S2S-invalid-protection",
+      "method": "POST",
+      "ordinal": 17,
+      "path": "/internal/remote/call/ai",
+      "regionHeader": "iad1::iad1::n8xfr-1792978685737-dc6e1eb6649c",
+      "startedUTC": "2026-10-26T01:38:07.2897273Z",
+      "status": 503
+    },
+    {
+      "automaticRetries": 0,
+      "elapsedMs": 255,
+      "host": "tk-spike01-game-ultra-seneca.vercel.app",
+      "label": "S2S-recovered",
+      "method": "POST",
+      "ordinal": 18,
+      "path": "/internal/remote/call/ai",
+      "regionHeader": "iad1::iad1::kzzcw-1792978685983-3b10083e73c9",
+      "startedUTC": "2026-10-26T01:38:07.5339423Z",
+      "status": 204
+    },
+    {
+      "automaticRetries": 0,
+      "elapsedMs": 209,
+      "host": "tk-spike01-game-ultra-seneca.vercel.app",
+      "label": "AUTH-MISSING",
+      "method": "GET",
+      "ordinal": 19,
+      "path": "/games/owned-game",
+      "regionHeader": "iad1::iad1::84pcm-1792978686239-95dbfeaad767",
+      "startedUTC": "2026-10-26T01:38:07.7908227Z",
+      "status": 401
+    },
+    {
+      "automaticRetries": 0,
+      "elapsedMs": 235,
+      "host": "tk-spike01-game-ultra-seneca.vercel.app",
+      "label": "AUTH-INVALID",
+      "method": "GET",
+      "ordinal": 20,
+      "path": "/games/owned-game",
+      "regionHeader": "iad1::iad1::xrpjw-1792978686457-a1790a032b12",
+      "startedUTC": "2026-10-26T01:38:08.0017252Z",
+      "status": 401
+    },
+    {
+      "automaticRetries": 0,
+      "elapsedMs": 228,
+      "host": "tk-spike01-game-ultra-seneca.vercel.app",
+      "label": "AUTH-AUDIENCE",
+      "method": "GET",
+      "ordinal": 21,
+      "path": "/games/owned-game",
+      "regionHeader": "iad1::iad1::kzhp9-1792978686694-eae571fbee1d",
+      "startedUTC": "2026-10-26T01:38:08.2377632Z",
+      "status": 401
+    },
+    {
+      "automaticRetries": 0,
+      "elapsedMs": 222,
+      "host": "tk-spike01-game-ultra-seneca.vercel.app",
+      "label": "AUTH-FOREIGN",
+      "method": "GET",
+      "ordinal": 22,
+      "path": "/games/foreign-game",
+      "regionHeader": "iad1::iad1::tj5z6-1792978686915-5ecf7c01621f",
+      "startedUTC": "2026-10-26T01:38:08.4671142Z",
+      "status": 403
+    },
+    {
+      "automaticRetries": 0,
+      "elapsedMs": 257,
+      "host": "tk-spike01-game-ultra-seneca.vercel.app",
+      "label": "AUTH-AI-FORGE",
+      "method": "GET",
+      "ordinal": 23,
+      "path": "/games/owned-game",
+      "regionHeader": "iad1::iad1::vftkn-1792978687153-c39efd2df188",
+      "startedUTC": "2026-10-26T01:38:08.6904956Z",
+      "status": 401
+    },
+    {
+      "automaticRetries": 0,
+      "elapsedMs": 215,
+      "host": "tk-spike01-game-ultra-seneca.vercel.app",
+      "label": "AUTH-AI-WRITE",
+      "method": "POST",
+      "ordinal": 24,
+      "path": "/internal/remote/operation",
+      "regionHeader": "iad1::iad1::xb2ft-1792978687398-830be2e59b4c",
+      "startedUTC": "2026-10-26T01:38:08.9489923Z",
+      "status": 401
+    },
+    {
+      "automaticRetries": 0,
+      "data": {
+        "syntheticRows": 1
+      },
+      "elapsedMs": 459,
+      "host": "tk-spike01-web-ultra-seneca.vercel.app",
+      "label": "WEB-FORWARD-identity",
+      "method": "GET",
+      "ordinal": 25,
+      "path": "/probe/identity/connectivity",
+      "regionHeader": "iad1:iad1:iad1::iad1::mjft6-1792978687617-03ab5324e753",
+      "startedUTC": "2026-10-26T01:38:09.1653298Z",
+      "status": 200
+    },
+    {
+      "automaticRetries": 0,
+      "elapsedMs": 304,
+      "host": "tk-spike01-web-ultra-seneca.vercel.app",
+      "label": "WEB-FORWARD-game",
+      "method": "GET",
+      "ordinal": 26,
+      "path": "/probe/game/connectivity",
+      "regionHeader": "iad1:iad1:iad1::iad1::m9mxf-1792978688076-1af416b86b1e",
+      "startedUTC": "2026-10-26T01:38:09.6260388Z",
+      "status": 204
+    },
+    {
+      "automaticRetries": 0,
+      "elapsedMs": 264,
+      "host": "tk-spike01-web-ultra-seneca.vercel.app",
+      "label": "WEB-FORWARD-unauthorized",
+      "method": "GET",
+      "ordinal": 27,
+      "path": "/probe/game/connectivity",
+      "regionHeader": "iad1:iad1:iad1::iad1::w9dnh-1792978688382-cc4493431a67",
+      "startedUTC": "2026-10-26T01:38:09.9320555Z",
+      "status": 401
+    },
+    {
+      "automaticRetries": 0,
+      "channel": "spike:game:owned-game",
+      "elapsedMs": 309,
+      "host": "main.realtime.ably.net",
+      "label": "CAP-01-granular-subscribe",
+      "method": "GET",
+      "ordinal": 28,
+      "path": "/event-stream",
+      "status": 200
+    },
+    {
+      "automaticRetries": 0,
+      "data": {},
+      "elapsedMs": 255,
+      "host": "main.realtime.ably.net",
+      "label": "CAP-06-publisher",
+      "method": "POST",
+      "ordinal": 29,
+      "path": "/channels/spike:game:owned-game/messages",
+      "regionHeader": "",
+      "startedUTC": "2026-10-26T01:39:55.4798649Z",
+      "status": 201
+    },
+    {
+      "errorCode": 40160,
+      "event": "error",
+      "host": "main.realtime.ably.net",
+      "httpStatus": 200,
+      "label": "CAP-03-other-channel",
+      "method": "GET",
+      "ordinal": 30,
+      "path": "/sse"
+    },
+    {
+      "errorCode": 40160,
+      "event": "error",
+      "host": "main.realtime.ably.net",
+      "httpStatus": 200,
+      "label": "CAP-07-publisher-subscribe",
+      "method": "GET",
+      "ordinal": 31,
+      "path": "/sse"
+    },
+    {
+      "automaticRetries": 0,
+      "data": {
+        "errorCode": 40160
+      },
+      "elapsedMs": 244,
+      "host": "main.realtime.ably.net",
+      "label": "CAP-02-client-publish",
+      "method": "POST",
+      "ordinal": 32,
+      "path": "/channels/spike:game:owned-game/messages",
+      "regionHeader": "",
+      "startedUTC": "2026-10-26T01:39:56.329634Z",
+      "status": 401
+    },
+    {
+      "automaticRetries": 0,
+      "data": {
+        "errorCode": 40142
+      },
+      "elapsedMs": 250,
+      "host": "main.realtime.ably.net",
+      "label": "CAP-04-expired",
+      "method": "GET",
+      "ordinal": 33,
+      "path": "/channels/spike:game:owned-game/presence",
+      "regionHeader": "",
+      "startedUTC": "2026-10-26T01:39:56.5751573Z",
+      "status": 401
+    },
+    {
+      "automaticRetries": 0,
+      "data": {
+        "errorCode": 40144
+      },
+      "elapsedMs": 193,
+      "host": "main.realtime.ably.net",
+      "label": "CAP-05-signature",
+      "method": "GET",
+      "ordinal": 34,
+      "path": "/channels/spike:game:owned-game/presence",
+      "regionHeader": "",
+      "startedUTC": "2026-10-26T01:39:56.8278313Z",
+      "status": 401
+    },
+    {
+      "automaticRetries": 0,
+      "data": {
+        "errorCode": 40101
+      },
+      "elapsedMs": 190,
+      "host": "main.realtime.ably.net",
+      "label": "CAP-08-missing",
+      "method": "GET",
+      "ordinal": 35,
+      "path": "/channels/spike:game:owned-game/presence",
+      "regionHeader": "",
+      "startedUTC": "2026-10-26T01:39:57.0229088Z",
+      "status": 401
+    },
+    {
+      "automaticRetries": 0,
+      "data": {
+        "errorCode": 40160
+      },
+      "elapsedMs": 189,
+      "host": "main.realtime.ably.net",
+      "label": "CAP-09-no-presence-read",
+      "method": "GET",
+      "ordinal": 36,
+      "path": "/channels/spike:game:owned-game/presence",
+      "regionHeader": "",
+      "startedUTC": "2026-10-26T01:39:57.214297Z",
+      "status": 401
+    },
+    {
+      "automaticRetries": 0,
+      "data": {
+        "errorCode": 40160
+      },
+      "elapsedMs": 297,
+      "host": "main.realtime.ably.net",
+      "label": "CAP-10-no-history",
+      "method": "GET",
+      "ordinal": 37,
+      "path": "/channels/spike:game:owned-game/messages",
+      "regionHeader": "",
+      "startedUTC": "2026-10-26T01:39:57.4137218Z",
+      "status": 401
+    },
+    {
+      "automaticRetries": 0,
+      "channel": "spike:game:owned-game",
+      "elapsedMs": 213,
+      "host": "main.realtime.ably.net",
+      "label": "NOT-subscribe",
+      "method": "GET",
+      "ordinal": 38,
+      "path": "/event-stream",
+      "status": 200
+    },
+    {
+      "automaticRetries": 0,
+      "data": {
+        "committedBeforePublish": true,
+        "publishStatus": 201,
+        "state": {
+          "effects": 1,
+          "revision": 1
+        }
+      },
+      "elapsedMs": 350,
+      "host": "tk-spike01-game-ultra-seneca.vercel.app",
+      "label": "remote-once",
+      "method": "POST",
+      "ordinal": 39,
+      "path": "/internal/remote/operation",
+      "regionHeader": "iad1::iad1::mkxbb-1792978839717-cc454591f9a7",
+      "startedUTC": "2026-10-26T01:40:41.265842Z",
+      "status": 200
+    },
+    {
+      "automaticRetries": 0,
+      "data": {
+        "committedBeforePublish": false,
+        "publishStatus": 0,
+        "state": {
+          "effects": 1,
+          "revision": 1
+        }
+      },
+      "elapsedMs": 233,
+      "host": "tk-spike01-game-ultra-seneca.vercel.app",
+      "label": "remote-once",
+      "method": "POST",
+      "ordinal": 40,
+      "path": "/internal/remote/operation",
+      "regionHeader": "iad1::iad1::rqnsm-1792978840086-aab797f8db1f",
+      "startedUTC": "2026-10-26T01:40:41.6324079Z",
+      "status": 200
+    },
+    {
+      "automaticRetries": 0,
+      "elapsedMs": 233,
+      "host": "tk-spike01-game-ultra-seneca.vercel.app",
+      "label": "remote-once",
+      "method": "POST",
+      "ordinal": 41,
+      "path": "/internal/remote/operation",
+      "regionHeader": "iad1::iad1::mm9bc-1792978840326-180cdbbf6a8d",
+      "startedUTC": "2026-10-26T01:40:41.8746016Z",
+      "status": 409
+    },
+    {
+      "automaticRetries": 0,
+      "elapsedMs": 291,
+      "host": "tk-spike01-game-ultra-seneca.vercel.app",
+      "label": "remote-race-a",
+      "method": "POST",
+      "ordinal": 42,
+      "path": "/internal/remote/operation",
+      "regionHeader": "iad1::iad1::vrwhv-1792978840571-9540b4b40041",
+      "startedUTC": "2026-10-26T01:40:42.1092644Z",
+      "status": 409
+    },
+    {
+      "automaticRetries": 0,
+      "data": {
+        "committedBeforePublish": true,
+        "publishStatus": 201,
+        "state": {
+          "effects": 2,
+          "revision": 2
+        }
+      },
+      "elapsedMs": 318,
+      "host": "tk-spike01-game-ultra-seneca.vercel.app",
+      "label": "remote-race-b",
+      "method": "POST",
+      "ordinal": 43,
+      "path": "/internal/remote/operation",
+      "regionHeader": "iad1::iad1::8mqcn-1792978840561-6ac49b9e8767",
+      "startedUTC": "2026-10-26T01:40:42.1092644Z",
+      "status": 200
+    },
+    {
+      "automaticRetries": 0,
+      "elapsedMs": 228,
+      "host": "tk-spike01-game-ultra-seneca.vercel.app",
+      "label": "remote-rollback",
+      "method": "POST",
+      "ordinal": 44,
+      "path": "/internal/remote/operation",
+      "regionHeader": "iad1::iad1::287sk-1792978840889-538259b994fd",
+      "startedUTC": "2026-10-26T01:40:42.4361279Z",
+      "status": 503
+    },
+    {
+      "automaticRetries": 0,
+      "data": {
+        "effects": 2,
+        "revision": 2
+      },
+      "elapsedMs": 214,
+      "host": "tk-spike01-game-ultra-seneca.vercel.app",
+      "label": "REST-after-rollback",
+      "method": "GET",
+      "ordinal": 45,
+      "path": "/games/owned-game",
+      "regionHeader": "iad1::iad1::b8f7f-1792978841119-cb7e9f93211f",
+      "startedUTC": "2026-10-26T01:40:42.6659833Z",
+      "status": 200
+    },
+    {
+      "automaticRetries": 0,
+      "data": {
+        "committedBeforePublish": true,
+        "publishStatus": 401,
+        "state": {
+          "effects": 3,
+          "revision": 3
+        }
+      },
+      "elapsedMs": 350,
+      "host": "tk-spike01-game-ultra-seneca.vercel.app",
+      "label": "remote-lost-response",
+      "method": "POST",
+      "ordinal": 46,
+      "path": "/internal/remote/operation",
+      "regionHeader": "iad1::iad1::mwdbh-1792978841335-12fb9cd57184",
+      "startedUTC": "2026-10-26T01:40:42.8816547Z",
+      "status": 200
+    },
+    {
+      "automaticRetries": 0,
+      "data": {
+        "committedBeforePublish": false,
+        "publishStatus": 0,
+        "state": {
+          "effects": 3,
+          "revision": 3
+        }
+      },
+      "elapsedMs": 231,
+      "host": "tk-spike01-game-ultra-seneca.vercel.app",
+      "label": "remote-lost-response",
+      "method": "POST",
+      "ordinal": 47,
+      "path": "/internal/remote/operation",
+      "regionHeader": "iad1::iad1::4gzlb-1792978841695-4e0a03ee8c10",
+      "startedUTC": "2026-10-26T01:40:43.2407038Z",
+      "status": 200
+    },
+    {
+      "automaticRetries": 0,
+      "data": {
+        "effects": 3,
+        "revision": 3
+      },
+      "elapsedMs": 220,
+      "host": "tk-spike01-game-ultra-seneca.vercel.app",
+      "label": "REST-recover-missed-notice",
+      "method": "GET",
+      "ordinal": 48,
+      "path": "/games/owned-game",
+      "regionHeader": "iad1::iad1::b8f7f-1792978841924-89a900a4dfd4",
+      "startedUTC": "2026-10-26T01:40:43.4734234Z",
+      "status": 200
+    },
+    {
+      "automaticRetries": 0,
+      "data": {
+        "publishStatus": 201
+      },
+      "elapsedMs": 266,
+      "host": "tk-spike01-game-ultra-seneca.vercel.app",
+      "label": "NOT-replay-2",
+      "method": "POST",
+      "ordinal": 49,
+      "path": "/internal/remote/notice",
+      "regionHeader": "iad1::iad1::w9brj-1792978842144-2160c743f8de",
+      "startedUTC": "2026-10-26T01:40:43.6948533Z",
+      "status": 200
+    },
+    {
+      "automaticRetries": 0,
+      "data": {
+        "publishStatus": 201
+      },
+      "elapsedMs": 244,
+      "host": "tk-spike01-game-ultra-seneca.vercel.app",
+      "label": "NOT-replay-1",
+      "method": "POST",
+      "ordinal": 50,
+      "path": "/internal/remote/notice",
+      "regionHeader": "iad1::iad1::hrcmd-1792978842427-d41ca3d56961",
+      "startedUTC": "2026-10-26T01:40:43.9699068Z",
+      "status": 200
+    },
+    {
+      "automaticRetries": 0,
+      "data": {
+        "publishStatus": 201
+      },
+      "elapsedMs": 304,
+      "host": "tk-spike01-game-ultra-seneca.vercel.app",
+      "label": "NOT-replay-2",
+      "method": "POST",
+      "ordinal": 51,
+      "path": "/internal/remote/notice",
+      "regionHeader": "iad1::iad1::qrfqx-1792978842677-b9fc74042bcf",
+      "startedUTC": "2026-10-26T01:40:44.2219532Z",
+      "status": 200
+    },
+    {
+      "automaticRetries": 0,
+      "data": {
+        "committedBeforePublish": true,
+        "publishStatus": 201,
+        "state": {
+          "effects": 4,
+          "revision": 4
+        }
+      },
+      "elapsedMs": 331,
+      "host": "tk-spike01-game-ultra-seneca.vercel.app",
+      "label": "remote-offline",
+      "method": "POST",
+      "ordinal": 52,
+      "path": "/internal/remote/operation",
+      "regionHeader": "iad1::iad1::fml4f-1792978842995-3f42fca9414e",
+      "startedUTC": "2026-10-26T01:40:44.5444372Z",
+      "status": 200
+    },
+    {
+      "automaticRetries": 0,
+      "channel": "spike:game:owned-game",
+      "elapsedMs": 242,
+      "host": "main.realtime.ably.net",
+      "label": "NOT-resubscribe",
+      "method": "GET",
+      "ordinal": 53,
+      "path": "/event-stream",
+      "status": 200
+    },
+    {
+      "automaticRetries": 0,
+      "data": {
+        "effects": 4,
+        "revision": 4
+      },
+      "elapsedMs": 214,
+      "host": "tk-spike01-game-ultra-seneca.vercel.app",
+      "label": "REST-after-reconnect",
+      "method": "GET",
+      "ordinal": 54,
+      "path": "/games/owned-game",
+      "regionHeader": "iad1::iad1::5zwgh-1792978843580-27078d820da6",
+      "startedUTC": "2026-10-26T01:40:45.1272986Z",
+      "status": 200
+    },
+    {
+      "automaticRetries": 0,
+      "data": {
+        "accepted": true,
+        "baseRevision": 4,
+        "engine": "spike-engine/v0.1.0"
+      },
+      "elapsedMs": 294,
+      "host": "tk-spike01-game-ultra-seneca.vercel.app",
+      "label": "AI-current",
+      "method": "POST",
+      "ordinal": 55,
+      "path": "/internal/remote/ai",
+      "regionHeader": "iad1::iad1::l22lg-1792978843797-e3e54bf81f16",
+      "startedUTC": "2026-10-26T01:40:45.3430914Z",
+      "status": 200
+    },
+    {
+      "automaticRetries": 0,
+      "data": {
+        "upstreamStatus": 422
+      },
+      "elapsedMs": 259,
+      "host": "tk-spike01-game-ultra-seneca.vercel.app",
+      "label": "AI-budget",
+      "method": "POST",
+      "ordinal": 56,
+      "path": "/internal/remote/ai",
+      "regionHeader": "iad1::iad1::jxwx7-1792978844101-eb471d64353d",
+      "startedUTC": "2026-10-26T01:40:45.6465554Z",
+      "status": 503
+    },
+    {
+      "automaticRetries": 0,
+      "data": {
+        "upstreamStatus": 408
+      },
+      "elapsedMs": 321,
+      "host": "tk-spike01-game-ultra-seneca.vercel.app",
+      "label": "AI-timeout",
+      "method": "POST",
+      "ordinal": 57,
+      "path": "/internal/remote/ai",
+      "regionHeader": "iad1::iad1::8mqcn-1792978844367-09e5cdfbb471",
+      "startedUTC": "2026-10-26T01:40:45.9152425Z",
+      "status": 503
+    },
+    {
+      "automaticRetries": 0,
+      "elapsedMs": 284,
+      "host": "tk-spike01-game-ultra-seneca.vercel.app",
+      "label": "AI-stale",
+      "method": "POST",
+      "ordinal": 58,
+      "path": "/internal/remote/ai",
+      "regionHeader": "iad1::iad1::rsl6w-1792978844710-7f81cef9d375",
+      "startedUTC": "2026-10-26T01:40:46.2471527Z",
+      "status": 409
+    },
+    {
+      "bytes": 5558,
+      "elapsedMs": 241,
+      "host": "tk-spike01-web-ultra-seneca.vercel.app",
+      "label": "ASSET-SCAN",
+      "method": "GET",
+      "ordinal": 59,
+      "path": "/",
+      "status": 200
+    },
+    {
+      "bytes": 185417,
+      "elapsedMs": 285,
+      "host": "tk-spike01-web-ultra-seneca.vercel.app",
+      "label": "ASSET-SCAN",
+      "method": "GET",
+      "ordinal": 60,
+      "path": "/_next/static/immutable/chunks/3nik_p81vwtbn.js",
+      "status": 200
+    },
+    {
+      "bytes": 230281,
+      "elapsedMs": 350,
+      "host": "tk-spike01-web-ultra-seneca.vercel.app",
+      "label": "ASSET-SCAN",
+      "method": "GET",
+      "ordinal": 61,
+      "path": "/_next/static/immutable/chunks/1xom_cd5et471.js",
+      "status": 200
+    },
+    {
+      "bytes": 10030,
+      "elapsedMs": 233,
+      "host": "tk-spike01-web-ultra-seneca.vercel.app",
+      "label": "ASSET-SCAN",
+      "method": "GET",
+      "ordinal": 62,
+      "path": "/_next/static/immutable/chunks/turbopack-1cvbnb3nlabgn.js",
+      "status": 200
+    },
+    {
+      "bytes": 13822,
+      "elapsedMs": 243,
+      "host": "tk-spike01-web-ultra-seneca.vercel.app",
+      "label": "ASSET-SCAN",
+      "method": "GET",
+      "ordinal": 63,
+      "path": "/_next/static/immutable/chunks/00z4pmesk2f4f.js",
+      "status": 200
+    },
+    {
+      "bytes": 112594,
+      "elapsedMs": 283,
+      "host": "tk-spike01-web-ultra-seneca.vercel.app",
+      "label": "ASSET-SCAN",
+      "method": "GET",
+      "ordinal": 64,
+      "path": "/_next/static/immutable/chunks/0c0hxoamwjsbw.js",
+      "status": 200
+    },
+    {
+      "bytes": 16898,
+      "elapsedMs": 217,
+      "host": "tk-spike01-web-ultra-seneca.vercel.app",
+      "label": "ASSET-SCAN",
+      "method": "GET",
+      "ordinal": 65,
+      "path": "/_next/static/immutable/chunks/3vvmgpd_iqxl-.js",
+      "status": 200
+    },
+    {
+      "automaticRetries": 0,
+      "data": {
+        "build": "9409462+13d05fe56ab9ea49ae7a122b47e4a2f8ad32e6eb65fff928eee646e9d5fa839d",
+        "engine": "spike-engine/v0.1.0",
+        "go": "go1.26.0",
+        "instance": "ffcdbfd1f3dac40b5d60e9fefdfab6c2",
+        "oidcPresent": true,
+        "region": "iad1",
+        "service": "game"
+      },
+      "elapsedMs": 385,
+      "host": "tk-spike01-game-9ciqrdamv-ultra-seneca.vercel.app",
+      "label": "cold-repeat-game",
+      "method": "GET",
+      "ordinal": 66,
+      "path": "/version",
+      "regionHeader": "iad1::iad1::8mqcn-1792979071840-173a3cbd9f06",
+      "startedUTC": "2026-10-26T01:44:33.3182478Z",
+      "status": 200
+    },
+    {
+      "automaticRetries": 0,
+      "data": {
+        "build": "9409462+13d05fe56ab9ea49ae7a122b47e4a2f8ad32e6eb65fff928eee646e9d5fa839d",
+        "engine": "spike-engine/v0.1.0",
+        "go": "go1.26.0",
+        "instance": "ffcdbfd1f3dac40b5d60e9fefdfab6c2",
+        "oidcPresent": true,
+        "region": "iad1",
+        "service": "game"
+      },
+      "elapsedMs": 312,
+      "host": "tk-spike01-game-9ciqrdamv-ultra-seneca.vercel.app",
+      "label": "cold-repeat-game",
+      "method": "GET",
+      "ordinal": 67,
+      "path": "/version",
+      "regionHeader": "iad1::iad1::c5hr8-1792979141082-501454313ba3",
+      "startedUTC": "2026-10-26T01:45:42.5932301Z",
+      "status": 200
+    },
+    {
+      "automaticRetries": 0,
+      "data": {
+        "build": "9409462+13d05fe56ab9ea49ae7a122b47e4a2f8ad32e6eb65fff928eee646e9d5fa839d",
+        "engine": "spike-engine/v0.1.0",
+        "go": "go1.26.0",
+        "instance": "7c77846f9d34f2393fb9d5e20dbe94da",
+        "oidcPresent": true,
+        "region": "iad1",
+        "service": "ai"
+      },
+      "elapsedMs": 310,
+      "host": "tk-spike01-6lfx477e1-ultra-seneca.vercel.app",
+      "label": "cold-repeat-ai",
+      "method": "GET",
+      "ordinal": 68,
+      "path": "/version",
+      "regionHeader": "iad1::iad1::jhwt6-1792979141424-243829216a71",
+      "startedUTC": "2026-10-26T01:45:42.9162341Z",
+      "status": 200
+    },
+    {
+      "automaticRetries": 0,
+      "data": {
+        "committedBeforePublish": false,
+        "publishStatus": 0,
+        "state": {
+          "effects": 1,
+          "revision": 1
+        }
+      },
+      "elapsedMs": 322,
+      "host": "tk-spike01-game-9ciqrdamv-ultra-seneca.vercel.app",
+      "label": "remote-once",
+      "method": "POST",
+      "ordinal": 69,
+      "path": "/internal/remote/operation",
+      "regionHeader": "iad1::iad1::nhr8c-1792979141694-72719c8f4cda",
+      "startedUTC": "2026-10-26T01:45:43.2356295Z",
+      "status": 200
+    },
+    {
+      "automaticRetries": 0,
+      "data": {
+        "effects": 4,
+        "revision": 4
+      },
+      "elapsedMs": 294,
+      "host": "tk-spike01-game-9ciqrdamv-ultra-seneca.vercel.app",
+      "label": "REST-after-new-deployment",
+      "method": "GET",
+      "ordinal": 70,
+      "path": "/games/owned-game",
+      "regionHeader": "iad1::iad1::b96kg-1792979142055-3ab6a6a4c091",
+      "startedUTC": "2026-10-26T01:45:43.5594727Z",
+      "status": 200
+    }
+  ],
+  "schemaVersion": 1,
+  "scope": "Remote disposable infrastructure; not product acceptance",
+  "sqlFunctionalStatements": 10,
+  "historicalFailureResolutions": [
+    {
+      "historicalFailurePreserved": true,
+      "laterPassingCaseExists": true,
+      "caseId": "CAP-03-other-channel"
+    },
+    {
+      "historicalFailurePreserved": true,
+      "laterPassingCaseExists": true,
+      "caseId": "DB-CROSS-DENIED-identity"
+    },
+    {
+      "historicalFailurePreserved": true,
+      "laterPassingCaseExists": true,
+      "caseId": "COLD-INSTANCE-game"
+    }
+  ],
+  "currentResult": "PASS_WITH_DECLARED_SCOPE",
+  "sqlCounterScope": "sqlFunctionalStatements=10 direct operator statements only; service statements reconstructed separately in control ledger"
+}
