@@ -1,5 +1,7 @@
 # AGENTS — Toguz Kumalak
 
+> **Estado vigente — 2026-10-26: LOTE_4_APROBADO_DOCUMENTALMENTE.** PR #4 integrado en main por `d5dccfbe0a55c78ddc7c2c0396ead9fd2bfad910`, desde el HEAD aprobado `3ef3f7cbfd3bfc4aea837d9f1b0b414be064e8ee`. [Recibo de aprobación e integración](PLANS.md#cierre-lote-4) prevalece sobre los cortes históricos. L4-P01 sigue PROPUESTA pendiente de aprobación de contratos antes de implementación. Detenerse: no producto, despliegues o lote 5.
+
 > **Estado vigente — 2026-10-25: READY_FOR_LOTE_4_DOCUMENTATION.** PR #3 integrado en main mediante c50ba9f; GO_REMOTE experimental cerrado y recursos remotos propios retirados. [Recibo verificado](PLANS.md#lote-3-integrado-verificado) prevalece sobre los cortes históricos siguientes. El lote 4 aún no se ha generado; el producto no está implementado.
 
 > Autorización posterior vigente: el propietario autoriza generar y publicar exclusivamente el lote 3 documental en docs/specs-lote-03: once specs EN_REVISIÓN, registros necesarios y PR contra main sin fusionar. Esta instrucción sustituye las paradas históricas de lotes anteriores; no autoriza producto, lote 4, infraestructura o pagos.
@@ -8,7 +10,7 @@
 
 > Aprobación posterior: el propietario declaró «APRUEBO LOTE 1» el 2026-10-21 para el contenido revisado en HEAD e38cc84950858e072c1a3f06ffbf854cf7e544f5. PR #1 integrado por squash en main: 329b7c1059e8a74f191c256870734e8ae8259966. Este registro prevalece sobre menciones históricas de revisión pendiente; no acredita producto probado. Los permisos actuales se consultan en AGENTS y PLANS.
 
-ID: AGENTS · Versión: 0.5 · Fecha: 2026-10-25 · Estado documental: APROBADO · Owner: coordinación.
+ID: AGENTS · Versión: 0.6 · Fecha: 2026-10-26 · Estado documental: APROBADO · Owner: coordinación.
 
 ## Alcance autorizado
 
@@ -64,3 +66,9 @@ La autorización posterior del propietario permite cerrar e integrar documentalm
 Se permiten únicamente las correcciones documentales menores, estados, trazabilidad, integración del PR3 y recibo de main necesarios para ese cierre. Código experimental queda en spike/infra-feasibility-01, no se integra en main. Concluida la verificación, detenerse y avisar: no generar las ocho specs del lote4 ni iniciar código de producción en este turno.
 
 Al trabajar posteriormente, usar los permisos más recientes y preservar246 PRE, AD-NORM-001, tres microservicios Go y PRE-09. No reabrir reglas ni convertir propuestas en decisiones canónicas por cambiar su estado documental.
+
+## Alcance posterior — cierre del lote4, 2026-10-26
+
+El propietario declaró «APRUEBO LOTE 4 como documentación técnica.» y autorizó integrar PR #4 únicamente tras comprobar su HEAD `3ef3f7cbfd3bfc4aea837d9f1b0b414be064e8ee`. Condición cumplida; squash `d5dccfbe0a55c78ddc7c2c0396ead9fd2bfad910` integrado y árbol idéntico al revisado. Las ocho specs están APROBADAS documentalmente. Se permiten solo estados, trazabilidad y registros de este cierre; al verificarlos/publicarlos, detenerse.
+
+L4-P01 sigue PROPUESTA, pendiente de aprobación de contratos antes de implementarla; la aprobación documental no modifica05.02/05.03/07.02 ni otras decisiones. No implementar producto, desplegar, iniciar lote5 o reabrir reglas. [Recibo y autoridad posterior](PLANS.md#cierre-lote-4) prevalece sobre las paradas históricas anteriores.

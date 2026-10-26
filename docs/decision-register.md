@@ -1,12 +1,14 @@
 # REG — Registro canónico de decisiones
 
+> **Estado vigente — 2026-10-26: LOTE_4_APROBADO_DOCUMENTALMENTE.** PR #4 integrado en main por `d5dccfbe0a55c78ddc7c2c0396ead9fd2bfad910`, desde el HEAD aprobado `3ef3f7cbfd3bfc4aea837d9f1b0b414be064e8ee`. [Recibo de aprobación e integración](../PLANS.md#cierre-lote-4) prevalece sobre los cortes históricos. L4-P01 sigue PROPUESTA pendiente de aprobación de contratos antes de implementación. Detenerse: no producto, despliegues o lote 5.
+
 > **Estado vigente — 2026-10-25: READY_FOR_LOTE_4_DOCUMENTATION.** PR #3 integrado en main mediante c50ba9f; GO_REMOTE experimental cerrado y recursos remotos propios retirados. [Recibo verificado](../PLANS.md#lote-3-integrado-verificado) prevalece sobre los cortes históricos siguientes. El lote 4 aún no se ha generado; el producto no está implementado.
 
 > Aprobación posterior del lote 2: el propietario declaró «APRUEBO LOTE 2» y autorizó fusionar PR #2 en main. Contenido aprobado: HEAD 598ac9a4fc6ce14cf512785fb1c4160fafb4eb9e; integrado por squash 1f401af8d76794981bbcfdf9a3aa1831cf2621f5 (2026-10-21T21:10:14Z). Este registro sustituye las menciones históricas a revisión pendiente o prohibición de esa fusión. No autoriza lote 3 ni implementación; el producto sigue sin verificar.
 
 > Aprobación posterior: el propietario declaró «APRUEBO LOTE 1» el 2026-10-21 para el contenido revisado en HEAD e38cc84950858e072c1a3f06ffbf854cf7e544f5. PR #1 integrado por squash en main: 329b7c1059e8a74f191c256870734e8ae8259966. Este registro prevalece sobre menciones históricas de revisión pendiente; no acredita producto probado. Los permisos actuales se consultan en AGENTS y PLANS.
 
-ID: REG · Versión: 0.5 · Fecha: 2026-10-25 · Estado documental: APROBADO · Owner: C.
+ID: REG · Versión: 0.6 · Fecha: 2026-10-26 · Estado documental: APROBADO · Owner: C.
 
 ## Procedencia y autoridad
 
@@ -1712,3 +1714,13 @@ Alcance aplicado por coordinación: terminar spike gratuito/aislado, corregir lo
 Las246 decisiones originales y AD-NORM-001 se conservan literalmente. Propuestas técnicas mantienen su etiqueta y el spike solo acredita factibilidad experimental; no certifica producto. [Evidencia, límites y seguimiento](../PLANS.md#preparacion-lote-4).
 
 Evidencia de ejecución de AD-GATE-003: PR3 MERGED2026-10-26T02:19:22Z, HEAD fa714d7ba0be34df790a926667492b246e691a3d, squash c50ba9f58edd386100364cb396bf69f15d2d3a20. Árbol integrado idéntico al revisado; [recibo final y parada](../PLANS.md#lote-3-integrado-verificado). No modifica ninguna PRE ni autoriza implementación de producto.
+
+<a id="ad-gate-004"></a>
+
+## AD-GATE-004 — Aprobación documental e integración del lote 4, 2026-10-26
+
+Fuente expresa del propietario: «APRUEBO LOTE 4 como documentación técnica.» Autoriza verificar el HEAD `3ef3f7cbfd3bfc4aea837d9f1b0b414be064e8ee`, ausencia de cambios posteriores sin revisar y comprobaciones obligatorias fallidas; si coincide, fusionar PR #4 en main y actualizar solo estados, trazabilidad y registros necesarios, deteniéndose sin producto, despliegues o lote5.
+
+Condición verificada: HEAD local/remoto/PR idéntico, dos commits revisados, árbol limpio, cero reglas de checks obligatorios, check-runs, statuses o workflows configurados. La respuesta agregada de statuses indicaba pending con total_count=0, sin trabajo CI pendiente/fallido identificable; no se declara CI aprobada. PR #4 MERGED `2026-10-26T16:48:00Z`, squash `d5dccfbe0a55c78ddc7c2c0396ead9fd2bfad910`, con coincidencia de HEAD exigida y sin bypass. Árbol del squash idéntico al HEAD revisado antes de actualizar estados.
+
+Alcance de aprobación: ocho specs04.01–04.04/08.01–08.04 como documentación técnica y sus registros. **L4-P01 permanece PROPUESTA técnica pendiente de aprobación de contratos antes de implementarla**; no se aprueban silenciosamente deltas en05.02/05.03/07.02. Las246 decisiones originales, propietarios, AD-NORM-001, TK-N1-1.0.0,14ACC, PRE-09 y cuerpos técnicos aprobados se conservan. [Cierre, evidencia y parada](../PLANS.md#cierre-lote-4). Esta adenda registra autoridad y estado; no añade funcionalidad ni autorización del lote5.

@@ -1,16 +1,18 @@
 # Toguz Kumalak
 
+> **Estado vigente — 2026-10-26: LOTE_4_APROBADO_DOCUMENTALMENTE.** PR #4 integrado en main por `d5dccfbe0a55c78ddc7c2c0396ead9fd2bfad910`, desde el HEAD aprobado `3ef3f7cbfd3bfc4aea837d9f1b0b414be064e8ee`. [Recibo de aprobación e integración](PLANS.md#cierre-lote-4) prevalece sobre los cortes históricos. L4-P01 sigue PROPUESTA pendiente de aprobación de contratos antes de implementación. Detenerse: no producto, despliegues o lote 5.
+
 > **Estado vigente — 2026-10-25: READY_FOR_LOTE_4_DOCUMENTATION.** PR #3 integrado en main mediante c50ba9f; GO_REMOTE experimental cerrado y recursos remotos propios retirados. [Recibo verificado](PLANS.md#lote-3-integrado-verificado) prevalece sobre los cortes históricos siguientes. El lote 4 aún no se ha generado; el producto no está implementado.
 
 > Aprobación posterior del lote 2: el propietario declaró «APRUEBO LOTE 2» y autorizó fusionar PR #2 en main. Contenido aprobado: HEAD 598ac9a4fc6ce14cf512785fb1c4160fafb4eb9e; integrado por squash 1f401af8d76794981bbcfdf9a3aa1831cf2621f5 (2026-10-21T21:10:14Z). Este registro sustituye las menciones históricas a revisión pendiente o prohibición de esa fusión. No autoriza lote 3 ni implementación; el producto sigue sin verificar.
 
 > Aprobación posterior: el propietario declaró «APRUEBO LOTE 1» el 2026-10-21 para el contenido revisado en HEAD e38cc84950858e072c1a3f06ffbf854cf7e544f5. PR #1 integrado por squash en main: 329b7c1059e8a74f191c256870734e8ae8259966. Este registro prevalece sobre menciones históricas de revisión pendiente; no acredita producto probado. Los permisos actuales se consultan en AGENTS y PLANS.
 
-ID: README · Versión: 0.4 · Fecha: 2026-10-25 · Estado documental: APROBADO · Owner: C.
+ID: README · Versión: 0.5 · Fecha: 2026-10-26 · Estado documental: APROBADO · Owner: C.
 
-**Estado actual: lotes 1, 2 y 3 aprobados documentalmente e integrados en main. Lote 4 documental preparado, todavía no iniciado.** El spike remoto tiene evidencia publicada y sus recursos fueron retirados. No hay aplicación jugable ni pruebas de producto acreditadas.
+**Estado actual: lotes1–4 aprobados como documentación técnica e integrados en main. Lote5 no iniciado.** El spike remoto tiene evidencia publicada y sus recursos fueron retirados. No hay aplicación jugable ni pruebas de producto acreditadas.
 
-Repositorio público de portafolio `SebasChaconDev/toguz-kumalak`: `main` contiene los 52 Markdown de los lotes 1 a 3 y `.gitignore`. El [PR #1](https://github.com/SebasChaconDev/toguz-kumalak/pull/1) fue integrado por squash 329b7c1059e8a74f191c256870734e8ae8259966 tras aprobación humana y verificación del HEAD autorizado. Las diez specs del lote 2 fueron aprobadas e integradas mediante [PR #2](https://github.com/SebasChaconDev/toguz-kumalak/pull/2), squash `1f401af8d76794981bbcfdf9a3aa1831cf2621f5`. El [PR #3](https://github.com/SebasChaconDev/toguz-kumalak/pull/3) se integró mediante squash c50ba9f58edd386100364cb396bf69f15d2d3a20. La aprobación documental no acredita implementación.
+Repositorio público de portafolio `SebasChaconDev/toguz-kumalak`: `main` contiene60Markdown de los lotes1–4 y `.gitignore`, con31specs y180decisiones documentadas en specs aprobadas. El [PR #1](https://github.com/SebasChaconDev/toguz-kumalak/pull/1) fue integrado por squash 329b7c1059e8a74f191c256870734e8ae8259966 tras aprobación humana y verificación del HEAD autorizado. Las diez specs del lote 2 fueron aprobadas e integradas mediante [PR #2](https://github.com/SebasChaconDev/toguz-kumalak/pull/2), squash `1f401af8d76794981bbcfdf9a3aa1831cf2621f5`. El [PR #3](https://github.com/SebasChaconDev/toguz-kumalak/pull/3) se integró mediante squash c50ba9f58edd386100364cb396bf69f15d2d3a20. La aprobación documental no acredita implementación.
 
 ## Producto previsto
 
@@ -50,7 +52,7 @@ Se prevén cuatro proyectos Vercel Hobby, Neon PostgreSQL, OpenAPI 3.1, sqlc/pgx
 
 | Entrada | Contenido |
 |---|---|
-| [Índice e inventario](docs/index.md) | 81 rutas de inventario, 41 Markdown entregados y aprobados; 40 rutas futuras |
+| [Índice e inventario](docs/index.md) | 81 rutas de inventario;60 Markdown entregados,31specs aprobadas y21rutas futuras |
 | [Registro](docs/decision-register.md) | 246 decisiones literales y sustituciones |
 | [Trazabilidad](docs/traceability.md) | Decisión→spec→fase→componente→prueba→evidencia |
 | [Conflictos](docs/conflicts.md) | Estado de riesgos técnicos, adendas y cierre normativo TK-N1-1.0.0 |
@@ -71,4 +73,4 @@ No hay instrucciones ejecutables de arranque: todavía no existen código ni dep
 
 La demo de portafolio está prevista, sin URL ni fecha acreditada. La licencia no ha sido elegida; el objetivo de repositorio público no sustituye esa decisión. Los recursos visuales y sonoros serán originales o autorizados, con procedencia documentada. RDomino es una referencia de experiencia, sin permiso de copia.
 
-**Gates de lotes 1 y 2 satisfechos por aprobación humana.** No hay autorización de lote 3 ni implementación. Trabajo detenido tras verificar la integración y publicar los estados.
+**Gates de lotes1–4 satisfechos como documentación técnica e integrados en main.** L4-P01 sigue propuesta pendiente de aprobación de contratos antes de implementación. No hay autorización de producto, despliegues o lote5. Trabajo detenido tras verificar la integración y publicar los estados.

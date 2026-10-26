@@ -1,5 +1,7 @@
 # CONF — Conflictos, riesgos y validaciones pendientes
 
+> **Estado vigente — 2026-10-26: LOTE_4_APROBADO_DOCUMENTALMENTE.** PR #4 integrado en main por `d5dccfbe0a55c78ddc7c2c0396ead9fd2bfad910`, desde el HEAD aprobado `3ef3f7cbfd3bfc4aea837d9f1b0b414be064e8ee`. [Recibo de aprobación e integración](../PLANS.md#cierre-lote-4) prevalece sobre los cortes históricos. L4-P01 sigue PROPUESTA pendiente de aprobación de contratos antes de implementación. Detenerse: no producto, despliegues o lote 5.
+
 > **Estado vigente — 2026-10-26: LOTE_4_EN_REVISIÓN.** Ocho specs documentales autorizadas para revisión y PR sin fusión; [alcance posterior](../PLANS.md#ejecucion-lote-4). Los cortes previos son históricos. Ninguna propuesta nueva está implementada o aprobada por el mero hecho de redactarla.
 
 > **Estado vigente — 2026-10-25: READY_FOR_LOTE_4_DOCUMENTATION.** PR #3 integrado en main mediante c50ba9f; GO_REMOTE experimental cerrado y recursos remotos propios retirados. [Recibo verificado](../PLANS.md#lote-3-integrado-verificado) prevalece sobre los cortes históricos siguientes. El lote 4 aún no se ha generado; el producto no está implementado.
@@ -8,7 +10,7 @@
 
 > Aprobación posterior: el propietario declaró «APRUEBO LOTE 1» el 2026-10-21 para el contenido revisado en HEAD e38cc84950858e072c1a3f06ffbf854cf7e544f5. PR #1 integrado por squash en main: 329b7c1059e8a74f191c256870734e8ae8259966. Este registro prevalece sobre menciones históricas de revisión pendiente; no acredita producto probado. Los permisos actuales se consultan en AGENTS y PLANS.
 
-ID: CONF · Versión: 0.9 · Fecha: 2026-10-26 · Estado documental: EN_REVISIÓN · Owner: C; responsables técnicos por caso.
+ID: CONF · Versión: 0.10 · Fecha: 2026-10-26 · Estado documental: APROBADO · Owner: C; responsables técnicos por caso.
 
 ## Estado y reglas de uso
 
@@ -321,3 +323,9 @@ Las propuestas técnicas se someten a la revisión del lote, sin transformar su 
 Los rótulos históricos de README/PROMPTS/AGENTS y las specs aprobadas se conservan por estar fuera del alcance de edición; el permiso explícito posterior y los encabezados de estos cuatro registros identifican el estado vigente. Una limpieza editorial futura no autoriza cambiar contenido canónico.
 
 Revisión independiente final: L4-R01 exige discriminar intent=hint/opponent_move en08.02/08.03 y negativos08.02/08.04: recibir una pista no selecciona, envía movimiento ni cambia timeline/progreso; posterior jugada exige intención humana separada. L4-R02 exige acotar la garantía ranked comoL4-P10. Son correcciones de coherencia de borradores dentro de PRE-08.D2, no cambios de reglas o funcionalidades aprobadas; su verificación final consta enPLANS. El P3 visual de sumas de bytes se corrigió en04.04 sin convertir presupuesto propuesto en medición.
+
+## Adenda de aprobación documental del lote 4 — 2026-10-26
+
+El propietario aprobó el lote4 como documentación técnica sobre HEAD `3ef3f7cbfd3bfc4aea837d9f1b0b414be064e8ee`. PR #4 integrado por squash `d5dccfbe0a55c78ddc7c2c0396ead9fd2bfad910`; [recibo y condiciones](../PLANS.md#cierre-lote-4). Los estados de revisión anteriores son cortes históricos; L4-R01/L4-R02 y P3 visual ya fueron corregidos/verificados antes de esa aprobación.
+
+**L4-P01 se conserva PROPUESTA técnica pendiente de aprobación de contratos antes de implementar**. La aprobación del lote no modifica el catálogo, persistencia o permisos de05.02/05.03/07.02. Tampoco convierte presupuestos, SDK, rendimiento, fuerza, licencias, privacidad o seguridad productiva POR_VERIFICAR en resultados demostrados. No se cierra globalmente ningún riesgo por cambiar el estado de una spec. TK-N1-1.0.0 y sus reglas/14ACC permanecen intactos; no se implementa producto, despliega o inicia lote5.

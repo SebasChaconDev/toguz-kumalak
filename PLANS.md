@@ -1,5 +1,7 @@
 # PLANS — Lotes documentales, gates y estado
 
+> **Estado vigente — 2026-10-26: LOTE_4_APROBADO_DOCUMENTALMENTE.** PR #4 integrado en main por `d5dccfbe0a55c78ddc7c2c0396ead9fd2bfad910`, desde el HEAD aprobado `3ef3f7cbfd3bfc4aea837d9f1b0b414be064e8ee`. [Recibo de aprobación e integración](PLANS.md#cierre-lote-4) prevalece sobre los cortes históricos. L4-P01 sigue PROPUESTA pendiente de aprobación de contratos antes de implementación. Detenerse: no producto, despliegues o lote 5.
+
 > **Estado vigente — 2026-10-26: LOTE_4_EN_REVISIÓN.** El propietario declaró «AUTORIZO LA GENERACIÓN Y PUBLICACIÓN DOCUMENTAL DEL LOTE 4». Esta autorización posterior permite exactamente ocho specs, los cuatro registros de soporte y PR desde `docs/specs-lote-04` contra main, sin fusión. [Plan vigente](#ejecucion-lote-4) prevalece sobre los cortes históricos; producto, infraestructura y lote 5 siguen fuera de alcance.
 
 > **Estado vigente — 2026-10-25: READY_FOR_LOTE_4_DOCUMENTATION.** PR #3 integrado en main mediante c50ba9f; GO_REMOTE experimental cerrado y recursos remotos propios retirados. [Recibo verificado](PLANS.md#lote-3-integrado-verificado) prevalece sobre los cortes históricos siguientes. El lote 4 aún no se ha generado; el producto no está implementado.
@@ -10,7 +12,7 @@
 
 > Aprobación posterior: el propietario declaró «APRUEBO LOTE 1» el 2026-10-21 para el contenido revisado en HEAD e38cc84950858e072c1a3f06ffbf854cf7e544f5. PR #1 integrado por squash en main: 329b7c1059e8a74f191c256870734e8ae8259966. Este registro prevalece sobre menciones históricas de revisión pendiente; no acredita producto probado. Los permisos actuales se consultan en AGENTS y PLANS.
 
-ID: PLANS · Versión: 0.9 · Fecha: 2026-10-26 · Estado documental: EN_REVISIÓN · Owner: C.
+ID: PLANS · Versión: 0.10 · Fecha: 2026-10-26 · Estado documental: APROBADO · Owner: C.
 
 ## Autorización y estado actual
 
@@ -685,3 +687,28 @@ Publicación verificada: [PR #4](https://github.com/SebasChaconDev/toguz-kumalak
 Main permanece `74e8cf164dfb86f27883de5e966795da52eeeaa5`; no se fusionó ningún PR. El árbol local quedó limpio y alineado después del primer push. GitHub no reporta checks CI configurados; no se atribuyen pruebas de producto. Este recibo se publica mediante un segundo commit solo de PLANS, conservando intacto el contenido revisado de las ocho specs. Su HEAD final se verifica en GitHub después del push, sin intentar incrustar el hash de un commit dentro de sí mismo.
 
 Resultado de la entrega: **LOTE_4_EN_REVISIÓN**, con55 decisiones documentadas y gate **«APRUEBO LOTE 4»** pendiente del propietario. Generar/publicar no aprueba el contenido ni autoriza fusionar, implementar, desplegar o iniciar lote5. Trabajo detenido al concluir la verificación del recibo.
+
+<a id="cierre-lote-4"></a>
+
+## Cierre aprobado e integrado del lote 4 — 2026-10-26
+
+Estado vigente: **LOTE_4_APROBADO_DOCUMENTALMENTE**. Fuente expresa: «APRUEBO LOTE 4 como documentación técnica.» El propietario autorizó verificar HEAD del PR #4, cambios posteriores y comprobaciones obligatorias; si coincidía, fusionar y actualizar únicamente estados documentales, trazabilidad y registros necesarios, conservando L4-P01 pendiente de aprobación de contratos. Esta instrucción posterior sustituye la prohibición de fusionar el PR4 solo para ese cierre; no permite código, despliegues o lote5.
+
+### Condiciones e integración verificadas
+
+- HEAD exacto `3ef3f7cbfd3bfc4aea837d9f1b0b414be064e8ee` confirmado en local, rama remota y PR. Dos commits de entrega, sin posteriores sin revisar; árbol versionado limpio. Main previo `74e8cf164dfb86f27883de5e966795da52eeeaa5`.
+- GitHub: PR OPEN/MERGEABLE/CLEAN antes de integrar; cero reglas activas de checks obligatorios, check-runs, statuses registrados y workflows. El agregado statuses devolvía pending con total_count=0: no se presenta como fallo o como ejecución CI aprobada. No existían comprobaciones obligatorias fallidas identificadas.
+- Fusión squash con coincidencia de HEAD exigida, sin admin/bypass/force push: PR #4 MERGED `2026-10-26T16:48:00Z`, commit `d5dccfbe0a55c78ddc7c2c0396ead9fd2bfad910`.
+- Fetch y fast-forward de main completados. Comparación íntegra del árbol entre HEAD aprobado y squash: cero diferencias antes de actualizar estados. La integración contiene exactamente la entrega revisada.
+
+### Estados y alcance del registro de cierre
+
+Ocho specs04.01–04.04/08.01–08.04 pasan a v0.2/APROBADO documentalmente con recibo de autoridad y precedencia de cortes históricos. Sus cuerpos técnicos, ejemplos, parámetros y naturalezas PROPUESTA/POR_VERIFICAR se conservan. No se modifican semánticamente05.02/05.03/07.02 ni otras specs anteriores. IDX y55 filas TRZ reflejan180decisiones aprobadas, cero en revisión y66 futuras; REG incorpora solo AD-GATE-004, sin reescribir246PRE o AD-NORM-001. AGENTS/README y registros muestran el estado real y la parada.
+
+**L4-P01 sigue PROPUESTA técnica pendiente de aprobación de contratos antes de implementarla**. La aprobación como documentación técnica no aprueba por inferencia rutas, recursos/grants, schemas, persistencia o permisos del delta. Las cifras y demás alternativas técnicas conservan su naturaleza; PRE-09,14ACC, un único motor Go y tres servicios permanecen intactos. No existe permiso para implementar o iniciar lote5.
+
+El commit posterior de estados se limita a15Markdown: ocho specs por metadatos/recibo y siete registros AGENTS/README/PLANS/IDX/TRZ/CONF/REG. No hay altas, código, manifiestos, assets, verificadores en disco, instalaciones, pruebas de producto, Docker, mutaciones de proveedores o despliegues. Su hash final y la coincidencia local/remoto se informan tras el push; el squash anterior identifica inequívocamente la fusión del contenido aprobado.
+
+La verificación documental del cierre comprueba secciones, cobertura, dueños, DAG, enlaces/fences/JSON, preservación íntegra de cuerpos técnicos y fuentes y estado Git. Es una comprobación documental, no una prueba de producto. Concluida su publicación y verificación, detenerse y comunicar el commit de integración y el estado final; lote5 continúa sin iniciar.
+
+Resultado observado de esos controles:60Markdown/31specs;246 PRE/propietarios y cuerpo íntegro del registro previo, incluidas AD-NORM-001 y sus14ACC, conservados. Cobertura180 SPEC_APROBADO/0 SPEC_EN_REVISIÓN/66 futuras;40nodos80aristas sin cambios/ciclos;18JSON válidos;3.670 enlaces locales y2.624fragmentos sin ausentes, IDs explícitos únicos y fences cerrados. En las ocho specs, comparación exacta de§§2–17 contra el HEAD aprobado: cero diferencias; en§1 solo versión0.1→0.2 y estadoEN_REVISIÓN→APROBADO, además del recibo superior. L4-P01 conserva íntegro su cuerpo PROPUESTA. Son15 modificaciones Markdown y cero altas; las specs de lotes anteriores, maestro, preliminares y ADR no cambian. Diff --check sin errores; la publicación de estados se verifica por HEAD local/remoto y PR MERGED antes de informar el cierre.
