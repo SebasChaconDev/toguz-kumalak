@@ -1,5 +1,7 @@
 # TRZ — Matriz de trazabilidad
 
+> **Estado de trabajo — 2026-10-26: LOTE_6_EN_REVISIÓN.** Autorizada auditoría y publicación documental en docs/audit-lote-06. [AUD-01](audits/documentation-readiness.md) contrasta la base00c8e12; las40specs y246decisiones mantienen aprobación documental. Este permiso posterior sustituye la parada histórica únicamente para esta auditoría; sin cambios a specs, código, workflows, recursos, despliegues o fusión. [Alcance y ledger](../PLANS.md#ejecucion-lote-6).
+
 > **Estado vigente — 2026-10-26: LOTE_5_APROBADO_DOCUMENTALMENTE.** PR #5 integrado en main por 6579ca930a9081f773b390ce61f6bc80cc6b1ae7, desde HEAD aprobado 9ff1a2857d0b91b9cf7925a4c36de30e377cef3d. [Recibo de aprobación e integración](../PLANS.md#cierre-lote-5) prevalece sobre cortes históricos: veinte documentos del lote5 aprobados y246decisiones con especificación redactada y aprobada documentalmente. L4-P01, retención y demás propuestas siguen pendientes de aprobación específica. Detenerse: sin producto, workflows, proveedores/despliegues o lote6.
 
 > **Estado vigente — 2026-10-26: LOTE_5_EN_REVISIÓN.** Veinte documentos del lote5 autorizados para redacción/revisión y PR sin fusión; [alcance vigente](../PLANS.md#ejecucion-lote-5) prevalece sobre cortes históricos. Lotes1–4 APROBADOS/integrados;180decisiones con spec aprobada y66 con spec EN_REVISIÓN. L4-P01 sigue PROPUESTA pendiente de aprobación de contratos; sin implementación, recursos/despliegues o lote6.
@@ -16,7 +18,7 @@
 
 > Aprobación posterior: el propietario declaró «APRUEBO LOTE 1» el 2026-10-21 para el contenido revisado en HEAD e38cc84950858e072c1a3f06ffbf854cf7e544f5. PR #1 integrado por squash en main: 329b7c1059e8a74f191c256870734e8ae8259966. Este registro prevalece sobre menciones históricas de revisión pendiente; no acredita producto probado. Los permisos actuales se consultan en AGENTS y PLANS.
 
-ID: TRZ · Versión: 0.12 · Fecha: 2026-10-26 · Estado documental: APROBADO · Owner: C.
+ID: TRZ · Versión: 0.13 · Fecha: 2026-10-26 · Estado documental: EN_REVISIÓN · Owner: C.
 
 ## Lectura y alcance de evidencia
 
@@ -522,3 +524,7 @@ L4-P01 sigue PROPUESTA pendiente de aprobación de contratos antes de05.02/05.03
 ## Adenda de cierre aprobado del lote 5 — 2026-10-26
 
 Aprobación expresa sobre HEAD 9ff1a2857d0b91b9cf7925a4c36de30e377cef3d; PR #5 integrado por squash 6579ca930a9081f773b390ce61f6bc80cc6b1ae7. [Recibo y restricciones](../PLANS.md#cierre-lote-5). Las66filas canónicas de09/10/11.03 pasan a Documento APROBADO/SPEC_APROBADO, sin cambiar PRE, dueño, fase, componente, VP, AC o pruebas futuras. Cobertura vigente: **246 SPEC_APROBADO +0 SPEC_EN_REVISIÓN +0 sin spec redactada**; cuarenta specs aprobadas y veinte documentos del lote5 aprobados. Las adendas180/66 previas conservan evidencia histórica de entrega. No hay evidencia nueva de producto; PRE-09/14ACC y propuestas mantienen sus condiciones.
+
+## Adenda de auditoría documental del lote 6 — 2026-10-26
+
+[AUD-01](audits/documentation-readiness.md) contrasta las40specs y246filas canónicas de la base00c8e121f96e990beb052f72d19132f282d08cfa. Las246filas SPEC_APROBADO, sus PRE/dueños/fases/componentes/VP y evidencia histórica permanecen sin cambios. El informe relaciona contratos/casos/AC,65tickets/54familiasPH y condiciones específicas para autorización futura. Los controles ejecutados son documentales; no se añade evidencia de producto por auditar o aprobar Markdown. AUD6-F01/F02 yC01–C06 no reasignan propietarios o crean decisiones normativas. AUD permanece EN_REVISIÓN hasta gate humano.
