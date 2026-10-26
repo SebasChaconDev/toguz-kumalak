@@ -611,7 +611,7 @@ Plan documental adaptado a las rutas expresamente autorizadas; este registro es 
 - [x] L4-C: registros y contratos cruzados integrados.
 - [x] L4-R: revisión independiente y correcciones verificadas.
 - [x] Cierre: ocho altas/cuatro modificaciones autorizadas, 55 decisiones, 17 secciones, DAG/enlaces/JSON/fences, fuentes y lotes previos intactos.
-- [ ] Publicación: commit/push/PR contra main, no fusionar; solicitar «APRUEBO LOTE 4» y detenerse.
+- [x] Publicación: commit/push/PR contra main verificados, sin fusión; entrega detenida para «APRUEBO LOTE 4».
 
 La aprobación del lote y la implementación siguen pendientes. No se inicia lote 5 ni se conectan o despliegan proveedores.
 
@@ -675,3 +675,13 @@ Comprobaciones coordinadas:55VP con88vínculos a63AC definidos y63casos futuros;
 Pendientes de implementación/revisión de propuestas: deltaL4-P01 de contratos, matriz de releases/generadores/SDK, presupuestos150/700ms y memoria/descarga, dispositivos/60–30FPS/WCAG, fuerza de IA, políticas de datos/retención, licencias y revisión cultural. No son elecciones reglamentarias. PRE-09 y14ACC conservan íntegros sus controles futuros de corrección/integridad, propiedades, fuzzing/race, contratos, integración, E2E, accesibilidad y rendimiento; el spike experimental no los reemplaza.
 
 No se implementó producto, generaron assets o manifiestos, instalaron dependencias, ejecutaron tests/builds/producto, iniciaron Docker, modificaron proveedores, crearon recursos o desplegaron servicios. El código experimental sigue exclusivamente en su rama. Solo resta publicar/verificar la entrega documental y detenerse para **«APRUEBO LOTE 4»**, sin fusión ni lote5.
+
+<a id="lote-4-publicado"></a>
+
+### Recibo de publicación — PR #4, 2026-10-26
+
+Publicación verificada: [PR #4](https://github.com/SebasChaconDev/toguz-kumalak/pull/4), título «docs: lote 4 — experiencia visual, IA y aprendizaje», estado OPEN, mergedAt=null, base main y head docs/specs-lote-04. Commit de contenido revisado: `a36619e90937fe534c1b7974ff5f0287cb900d03`, idéntico en local/remoto/PR al crear y consultar la entrega. GitHub confirmó doce rutas exactas, ocho ADDED y cuatro MODIFIED; cero código o cambios a specs/fuentes aprobadas. Cuenta CLI personal SebasChaconDev verificada; sin force push o bypass.
+
+Main permanece `74e8cf164dfb86f27883de5e966795da52eeeaa5`; no se fusionó ningún PR. El árbol local quedó limpio y alineado después del primer push. GitHub no reporta checks CI configurados; no se atribuyen pruebas de producto. Este recibo se publica mediante un segundo commit solo de PLANS, conservando intacto el contenido revisado de las ocho specs. Su HEAD final se verifica en GitHub después del push, sin intentar incrustar el hash de un commit dentro de sí mismo.
+
+Resultado de la entrega: **LOTE_4_EN_REVISIÓN**, con55 decisiones documentadas y gate **«APRUEBO LOTE 4»** pendiente del propietario. Generar/publicar no aprueba el contenido ni autoriza fusionar, implementar, desplegar o iniciar lote5. Trabajo detenido al concluir la verificación del recibo.
