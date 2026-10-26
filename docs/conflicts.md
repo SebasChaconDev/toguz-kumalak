@@ -1,5 +1,7 @@
 # CONF — Conflictos, riesgos y validaciones pendientes
 
+> **Estado vigente — 2026-10-26: LOTE_6_APROBADO_DOCUMENTALMENTE.** El propietario aprobó AUD-01 como auditoría documental final sobre HEAD 6052689ff9b15a19214267d7cc6a614d17f8fcdd; PR #6 integrado por e81f01a0e94c3037e3b922894202b6eee80534e8. [Recibo de cierre](../PLANS.md#cierre-lote-6) prevalece sobre estados y paradas históricos. AUD6-F01, AUD6-F02 y AUD6-C01–C06 permanecen pendientes para sus fases. No se autoriza implementación, ejecución de PH00/PH01, workflows o despliegues.
+
 > **Estado de trabajo — 2026-10-26: LOTE_6_EN_REVISIÓN.** Autorizada auditoría y publicación documental en docs/audit-lote-06. [AUD-01](audits/documentation-readiness.md) contrasta la base00c8e12; las40specs y246decisiones mantienen aprobación documental. Este permiso posterior sustituye la parada histórica únicamente para esta auditoría; sin cambios a specs, código, workflows, recursos, despliegues o fusión. [Alcance y ledger](../PLANS.md#ejecucion-lote-6).
 
 > **Estado vigente — 2026-10-26: LOTE_5_APROBADO_DOCUMENTALMENTE.** PR #5 integrado en main por 6579ca930a9081f773b390ce61f6bc80cc6b1ae7, desde HEAD aprobado 9ff1a2857d0b91b9cf7925a4c36de30e377cef3d. [Recibo de aprobación e integración](../PLANS.md#cierre-lote-5) prevalece sobre cortes históricos: veinte documentos del lote5 aprobados y246decisiones con especificación redactada y aprobada documentalmente. L4-P01, retención y demás propuestas siguen pendientes de aprobación específica. Detenerse: sin producto, workflows, proveedores/despliegues o lote6.
@@ -16,7 +18,7 @@
 
 > Aprobación posterior: el propietario declaró «APRUEBO LOTE 1» el 2026-10-21 para el contenido revisado en HEAD e38cc84950858e072c1a3f06ffbf854cf7e544f5. PR #1 integrado por squash en main: 329b7c1059e8a74f191c256870734e8ae8259966. Este registro prevalece sobre menciones históricas de revisión pendiente; no acredita producto probado. Los permisos actuales se consultan en AGENTS y PLANS.
 
-ID: CONF · Versión: 0.13 · Fecha: 2026-10-26 · Estado documental: EN_REVISIÓN · Owner: C; responsables técnicos por caso.
+ID: CONF · Versión: 0.14 · Fecha: 2026-10-26 · Estado documental: APROBADO · Owner: C; responsables técnicos por caso.
 
 ## Estado y reglas de uso
 
@@ -371,3 +373,9 @@ El propietario aprobó HEAD 9ff1a2857d0b91b9cf7925a4c36de30e377cef3d; PR #5 inte
 [AUD-01§11](audits/documentation-readiness.md#11-hallazgos-p0p3) registra AUD6-F01(P2/NON_BLOCKING), precisión de perspectiva lógica para oráculoIA sin contradicción normativa, yAUD6-F02(P3/NON_BLOCKING), ejemplo /api/v1/game/... inconsistente con catálogo /games. Solo correcciones propuestas, con fuentes/escenario/impacto/owner/verificación; no se editan09.01/10.01. La discrepancia de revisores sobre F01 se conserva con juicio coordinado y evidencia en el informe.
 
 No se demuestra P0/P1 que bloqueePH01. [Condiciones§12](audits/documentation-readiness.md#12-condiciones-pendientes):L4-P01/PH05,retención/cleanupPH06,licencias/publicación,restauración/release y capacidades/recursos afectados conservan sus gates. No se cierran esos riesgos ni se aprueban propuestas por este informe; NORM-01–03/TK-N1-1.0.0 no se reabren. Auditoría no es certificación de producto o permiso de código. Dictamen formal y gate humano pendientes de revisión de AUD.
+
+## Adenda de cierre aprobado del lote 6 — 2026-10-26
+
+El propietario aceptó la auditoría final y READY_WITH_SCOPED_CONDITIONS sobre HEAD 6052689ff9b15a19214267d7cc6a614d17f8fcdd; PR #6 integrado por e81f01a0e94c3037e3b922894202b6eee80534e8. [Recibo](../PLANS.md#cierre-lote-6). Gate documentalL6 satisfecho; menciones previas de revisión pendiente son historia.
+
+**AUD6-F01, AUD6-F02 y las seis condiciones AUD6-C01–C06 permanecen pendientes** con sus propietarios, escenarios, verificaciones y fases originales. No se aplica la precisión de09.01 o la corrección de10.01; no se resuelveL4-P01/retención/licencias/restore/capacidades/permisos por aprobar AUD. La preparación dePH00/PH01 no es ejecución o autorización de código. REG/TK-N1-1.0.0/14ACC/PRE09 yspecs aprobadas no cambian.

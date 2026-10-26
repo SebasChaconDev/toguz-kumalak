@@ -1,5 +1,7 @@
 # IDX — Índice e inventario documental
 
+> **Estado vigente — 2026-10-26: LOTE_6_APROBADO_DOCUMENTALMENTE.** El propietario aprobó AUD-01 como auditoría documental final sobre HEAD 6052689ff9b15a19214267d7cc6a614d17f8fcdd; PR #6 integrado por e81f01a0e94c3037e3b922894202b6eee80534e8. [Recibo de cierre](../PLANS.md#cierre-lote-6) prevalece sobre estados y paradas históricos. AUD6-F01, AUD6-F02 y AUD6-C01–C06 permanecen pendientes para sus fases. No se autoriza implementación, ejecución de PH00/PH01, workflows o despliegues.
+
 > **Estado de trabajo — 2026-10-26: LOTE_6_EN_REVISIÓN.** Autorizada auditoría y publicación documental en docs/audit-lote-06. [AUD-01](audits/documentation-readiness.md) contrasta la base00c8e12; las40specs y246decisiones mantienen aprobación documental. Este permiso posterior sustituye la parada histórica únicamente para esta auditoría; sin cambios a specs, código, workflows, recursos, despliegues o fusión. [Alcance y ledger](../PLANS.md#ejecucion-lote-6).
 
 > **Estado vigente — 2026-10-26: LOTE_5_APROBADO_DOCUMENTALMENTE.** PR #5 integrado en main por 6579ca930a9081f773b390ce61f6bc80cc6b1ae7, desde HEAD aprobado 9ff1a2857d0b91b9cf7925a4c36de30e377cef3d. [Recibo de aprobación e integración](../PLANS.md#cierre-lote-5) prevalece sobre cortes históricos: veinte documentos del lote5 aprobados y246decisiones con especificación redactada y aprobada documentalmente. L4-P01, retención y demás propuestas siguen pendientes de aprobación específica. Detenerse: sin producto, workflows, proveedores/despliegues o lote6.
@@ -18,11 +20,11 @@
 
 > Aprobación posterior: el propietario declaró «APRUEBO LOTE 1» el 2026-10-21 para el contenido revisado en HEAD e38cc84950858e072c1a3f06ffbf854cf7e544f5. PR #1 integrado por squash en main: 329b7c1059e8a74f191c256870734e8ae8259966. Este registro prevalece sobre menciones históricas de revisión pendiente; no acredita producto probado. Los permisos actuales se consultan en AGENTS y PLANS.
 
-ID: IDX · Versión: 0.11 · Fecha: 2026-10-26 · Estado documental: EN_REVISIÓN · Owner: C.
+ID: IDX · Versión: 0.12 · Fecha: 2026-10-26 · Estado documental: APROBADO · Owner: C.
 
 ## Estado de la entrega
 
-El inventario aprobado conserva **81 archivos Markdown:40 especificaciones y41 documentos de soporte**. En la rama del lote6 existen las81rutas:40specs APROBADAS que cubren246decisiones, ochoPH y tresharness aprobados documentalmente, y AUD-01 EN_REVISIÓN. La base main00c8e12 contenía80Markdown; AUD es la única alta. El veredicto y condiciones están en AUD-01, sin autorizar implementación ni aprobar L4-P01, retención u otras propuestas específicas.
+El inventario aprobado conserva **81 archivos Markdown:40 especificaciones y41 documentos de soporte**. En main existen las81rutas, tras integrar el lote6:40specs APROBADAS que cubren246decisiones, ochoPH y tresharness aprobados documentalmente, y AUD-01 APROBADO documentalmente. La base main00c8e12 contenía80Markdown; AUD es la única alta. El veredicto y condiciones están en AUD-01, sin autorizar implementación ni aprobar L4-P01, retención u otras propuestas específicas.
 
 Inicio recomendado: [README](../README.md), [objetivos](../GOALS.md), [plan y reporte](../PLANS.md), [registro](decision-register.md), [trazabilidad](traceability.md), [conflictos](conflicts.md), [norma 11.01](specs/11-orchestration/11.01-document-standard-and-change-control.md) y [orquestación 11.02](specs/11-orchestration/11.02-ownership-delegation-and-context.md).
 
@@ -147,7 +149,7 @@ Los vínculos de lotes1–4 apuntan a archivos entregados al cierre respectivo. 
 
 | ID | Archivo o ruta prevista | Propósito / entradas y dependencias | Owner | Complejidad | Estado |
 |---|---|---|---|---|---|
-| <a id="aud-01"></a>AUD-01 | [audits/documentation-readiness.md](audits/documentation-readiness.md) | Auditoría documental integral de la base00c8e12; hallazgos, condiciones y preparación PH-01 | C | M | EN_REVISIÓN |
+| <a id="aud-01"></a>AUD-01 | [audits/documentation-readiness.md](audits/documentation-readiness.md) | Auditoría documental integral de la base00c8e12; hallazgos, condiciones y preparación PH-01 | C | M | APROBADO |
 
 ## Dependencias de redacción
 

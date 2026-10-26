@@ -1,5 +1,7 @@
 # AGENTS — Toguz Kumalak
 
+> **Estado vigente — 2026-10-26: LOTE_6_APROBADO_DOCUMENTALMENTE.** El propietario aprobó AUD-01 como auditoría documental final sobre HEAD 6052689ff9b15a19214267d7cc6a614d17f8fcdd; PR #6 integrado por e81f01a0e94c3037e3b922894202b6eee80534e8. [Recibo de cierre](PLANS.md#cierre-lote-6) prevalece sobre estados y paradas históricos. AUD6-F01, AUD6-F02 y AUD6-C01–C06 permanecen pendientes para sus fases. No se autoriza implementación, ejecución de PH00/PH01, workflows o despliegues.
+
 > **Estado vigente — 2026-10-26: LOTE_5_APROBADO_DOCUMENTALMENTE.** PR #5 integrado en main por 6579ca930a9081f773b390ce61f6bc80cc6b1ae7, desde HEAD aprobado 9ff1a2857d0b91b9cf7925a4c36de30e377cef3d. [Recibo de aprobación e integración](PLANS.md#cierre-lote-5) prevalece sobre cortes históricos: veinte documentos del lote5 aprobados y246decisiones con especificación redactada y aprobada documentalmente. L4-P01, retención y demás propuestas siguen pendientes de aprobación específica. Detenerse: sin producto, workflows, proveedores/despliegues o lote6.
 
 > **Autorización posterior vigente — 2026-10-26: LOTE_5_EN_REVISIÓN.** El propietario autoriza los20Markdown inventariados del lote5, siete registros mínimos y publicación desde `docs/specs-lote-05` con PR sin fusionar. [Alcance y ledger](PLANS.md#ejecucion-lote-5) prevalece sobre paradas anteriores. No producto, workflows ejecutables, instalaciones, tests de producto, proveedores/despliegues, pagos o lote6. L4-P01 sigue PROPUESTA pendiente de aprobación de contratos.
@@ -14,7 +16,7 @@
 
 > Aprobación posterior: el propietario declaró «APRUEBO LOTE 1» el 2026-10-21 para el contenido revisado en HEAD e38cc84950858e072c1a3f06ffbf854cf7e544f5. PR #1 integrado por squash en main: 329b7c1059e8a74f191c256870734e8ae8259966. Este registro prevalece sobre menciones históricas de revisión pendiente; no acredita producto probado. Los permisos actuales se consultan en AGENTS y PLANS.
 
-ID: AGENTS · Versión: 0.8 · Fecha: 2026-10-26 · Estado documental: APROBADO · Owner: coordinación.
+ID: AGENTS · Versión: 0.9 · Fecha: 2026-10-26 · Estado documental: APROBADO · Owner: coordinación.
 
 ## Alcance autorizado
 
@@ -82,3 +84,9 @@ L4-P01 sigue PROPUESTA, pendiente de aprobación de contratos antes de implement
 El propietario declaró «APRUEBO LOTE 5 como documentación técnica.» y autorizó verificar HEAD 9ff1a2857d0b91b9cf7925a4c36de30e377cef3d, ausencia de cambios posteriores sin revisar y comprobaciones obligatorias fallidas; si coincide, fusionar PR #5 en main y actualizar únicamente estados, trazabilidad y registros necesarios. Condición cumplida: squash 6579ca930a9081f773b390ce61f6bc80cc6b1ae7, 2026-10-26T18:25:50Z, árbol integrado idéntico al revisado y27rutas exactas(20altas/7registros). [Recibo](PLANS.md#cierre-lote-5) prevalece sobre todas las paradas históricas.
 
 Los20documentos del lote5 pasan a v0.2/APROBADO documentalmente sin cambios a cuerpos técnicos; las40specs cubren246decisiones aprobadas, cero en revisión o sin redactar. REG añade solo AD-GATE-005;246PRE y adendas anteriores intactas. L4-P01, política de retención y demás propuestas técnicas mantienen aprobación específica pendiente. No implementar, instalar workflows, desplegar proveedores o iniciar lote6. Trabajo local ajeno se preserva en la carpeta original y no se publica con este cierre. Tras verificar main/estados y publicar el cierre, detenerse.
+
+## Alcance posterior — cierre aprobado del lote 6, 2026-10-26
+
+El propietario declaró «APRUEBO LOTE 6 como auditoría documental final, con resultado READY_WITH_SCOPED_CONDITIONS.» y autorizó fusionar PR #6 únicamente tras verificar HEAD 6052689ff9b15a19214267d7cc6a614d17f8fcdd, ausencia de cambios posteriores sin revisar y comprobaciones obligatorias fallidas. Condición cumplida: squash e81f01a0e94c3037e3b922894202b6eee80534e8,2026-10-26T19:39:26Z, árbol idéntico al aprobado e integración exacta deAUD-01 y cuatro registros. [Recibo](PLANS.md#cierre-lote-6).
+
+Se permite solo cierre de estados/trazabilidad/recibos y estados operativos mínimosAGENTS/README; las40specs,REG,246PRE,ADR,TK-N1-1.0.0 y14ACC no cambian. AUD6-F01/F02 yAUD6-C01–C06 permanecen pendientes, no resueltos por aprobar la auditoría. L4-P01 yretención mantienen aprobación específica. PH00/PH01 están preparados para solicitar alcance posterior, sin ejecución autorizada. Tras verificar/publicar main, detenerse: no código,instalaciones,workflows,proveedores odespliegues.

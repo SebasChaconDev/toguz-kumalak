@@ -1,8 +1,10 @@
 # Auditoría integral de preparación documental para implementación — Toguz Kumalak
 
+> **Estado vigente — 2026-10-26: LOTE_6_APROBADO_DOCUMENTALMENTE.** El propietario aprobó AUD-01 como auditoría documental final sobre HEAD 6052689ff9b15a19214267d7cc6a614d17f8fcdd; PR #6 integrado por e81f01a0e94c3037e3b922894202b6eee80534e8. [Recibo de cierre](../../PLANS.md#cierre-lote-6) prevalece sobre estados y paradas históricos. AUD6-F01, AUD6-F02 y AUD6-C01–C06 permanecen pendientes para sus fases. No se autoriza implementación, ejecución de PH00/PH01, workflows o despliegues.
+
 ## 1. Identificación
 
-ID: AUD-01 · Versión: 0.1 · Fecha: 2026-10-26 · Estado documental: EN_REVISIÓN · Owner: C — coordinación.
+ID: AUD-01 · Versión: 0.2 · Fecha: 2026-10-26 · Estado documental: APROBADO · Owner: C — coordinación.
 
 | Campo | Base examinada / alcance |
 |---|---|

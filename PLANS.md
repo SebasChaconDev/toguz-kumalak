@@ -1,5 +1,7 @@
 # PLANS — Lotes documentales, gates y estado
 
+> **Estado vigente — 2026-10-26: LOTE_6_APROBADO_DOCUMENTALMENTE.** El propietario aprobó AUD-01 como auditoría documental final sobre HEAD 6052689ff9b15a19214267d7cc6a614d17f8fcdd; PR #6 integrado por e81f01a0e94c3037e3b922894202b6eee80534e8. [Recibo de cierre](PLANS.md#cierre-lote-6) prevalece sobre estados y paradas históricos. AUD6-F01, AUD6-F02 y AUD6-C01–C06 permanecen pendientes para sus fases. No se autoriza implementación, ejecución de PH00/PH01, workflows o despliegues.
+
 > **Estado de trabajo — 2026-10-26: LOTE_6_EN_REVISIÓN.** Autorizada auditoría y publicación documental en docs/audit-lote-06. [AUD-01](docs/audits/documentation-readiness.md) contrasta la base00c8e12; las40specs y246decisiones mantienen aprobación documental. Este permiso posterior sustituye la parada histórica únicamente para esta auditoría; sin cambios a specs, código, workflows, recursos, despliegues o fusión. [Alcance y ledger](PLANS.md#ejecucion-lote-6).
 
 > **Estado vigente — 2026-10-26: LOTE_5_APROBADO_DOCUMENTALMENTE.** PR #5 integrado en main por 6579ca930a9081f773b390ce61f6bc80cc6b1ae7, desde HEAD aprobado 9ff1a2857d0b91b9cf7925a4c36de30e377cef3d. [Recibo de aprobación e integración](PLANS.md#cierre-lote-5) prevalece sobre cortes históricos: veinte documentos del lote5 aprobados y246decisiones con especificación redactada y aprobada documentalmente. L4-P01, retención y demás propuestas siguen pendientes de aprobación específica. Detenerse: sin producto, workflows, proveedores/despliegues o lote6.
@@ -18,7 +20,7 @@
 
 > Aprobación posterior: el propietario declaró «APRUEBO LOTE 1» el 2026-10-21 para el contenido revisado en HEAD e38cc84950858e072c1a3f06ffbf854cf7e544f5. PR #1 integrado por squash en main: 329b7c1059e8a74f191c256870734e8ae8259966. Este registro prevalece sobre menciones históricas de revisión pendiente; no acredita producto probado. Los permisos actuales se consultan en AGENTS y PLANS.
 
-ID: PLANS · Versión: 0.13 · Fecha: 2026-10-26 · Estado documental: EN_REVISIÓN · Owner: C.
+ID: PLANS · Versión: 0.14 · Fecha: 2026-10-26 · Estado documental: APROBADO · Owner: C.
 
 ## Autorización y estado actual
 
@@ -998,3 +1000,32 @@ El primer staged diff --check detectó una línea vacía adicional al final de A
 Main permanece00c8e121f96e990beb052f72d19132f282d08cfa; no se fusionó PR, ejecutó código oinstaló CI. statusCheckRollup=[] significa ausencia de checks configurados, no tests de producto superados. Después del push:0deployments registrados, árbol local limpio yupstream sincronizado. El segundo commit se limita a este recibo dePLANS; su HEAD final se verifica contra origin/PR yse comunica al propietario sin autorreferencia circular.
 
 Resultado formal READY_WITH_SCOPED_CONDITIONS, AUD EN_REVISIÓN ygate APRUEBO LOTE 6 pendiente. Las40specs/246decisiones aprobadas ypropuestas específicas siguen intactas. Primer trabajo solicitable:PH01T01corpus; primerGoT02trascorpusaceptado conpermiso concreto. No se inicióPH00/01,producto,workflows,proveedores,recursos,despliegue opago. Detenerse al verificar publicación del recibo.
+
+<a id="cierre-lote-6"></a>
+
+## Cierre aprobado del lote 6 — 2026-10-26
+
+Autoridad posterior expresa: «APRUEBO LOTE 6 como auditoría documental final, con resultado READY_WITH_SCOPED_CONDITIONS.» El propietario autoriza verificar HEAD 6052689ff9b15a19214267d7cc6a614d17f8fcdd, ausencia de cambios posteriores sin revisar/checks obligatorios fallidos; si coincide, fusionar PR6 enmain, verificar AUD-01/cuatroregistros ycerrar estados. Ordena conservarF01/F02/seiscondiciones, no modificar reglas/decisiones/specs ni iniciar código; detenerse e informarPH00/PH01.
+
+### Condición e integración verificadas
+
+- HEAD local/remoto/PR exacto6052689ff9b15a19214267d7cc6a614d17f8fcdd; dos commits revisados0c8aa677d0bc82033e2a014a3a9014215adaf6d0 y6052689ff9b15a19214267d7cc6a614d17f8fcdd, sin posteriores. Worktree aislada inicialmente limpia; main previo00c8e121f96e990beb052f72d19132f282d08cfa.
+- PR OPEN/MERGEABLE/CLEAN. Reglas activas de checks obligatorios=[],main no protegida;0check-runs/0statuses/0workflows/0hooks/0deployments registrados. Combined status pending con total_count=0 no identifica una ejecuciónCI pendiente/fallida ni acredita tests aprobados. Sin bypass.
+- Fusión por squash y --match-head-commit exacto: PR6 MERGED2026-10-26T19:39:26Z,commit e81f01a0e94c3037e3b922894202b6eee80534e8. No --admin/force push. Fetch/fast-forward main ydiff completo contra HEAD aprobado: cero diferencias; exactamente1ADDED(AUD) y4MODIFIED(PLANS/IDX/TRZ/CONF).
+- Preflight documental fresco:81Markdown/40specs aprobadas,246PRE/propietarios/filasAPROBADO,40nodos80aristas sin ciclos,4.620enlaces válidos. No pruebas de producto.
+
+### Estados, pendientes y preparación
+
+AUD-01 pasa de0.1/EN_REVISIÓN a0.2/APROBADO con aviso de autoridad; sus17apartados técnicos,veredicto,hallazgos,condiciones,pruebas y recomendaciones permanecen idénticos al HEAD aceptado. IDX marca la auditoríaAPROBADO; TRZmantiene246filas sin cambio yañade solo adenda. CONFconserva pendientes,PLANS registra cierre. AGENTS/README actualizan únicamente permiso/estado ycontador de81rutas, para no presentar lote6/80Markdown como futuros. REG/decisiones/ADR/specs/PH/harness/PROMPTS no se editan.
+
+AUD6-F01(P2/NON_BLOCKING,perspectivaoráculoIA) yAUD6-F02(P3/NON_BLOCKING,ejemploruta) siguen PROPUESTA, sin editar09.01/10.01. C01L4-P01→deltaPH05;C02retención→cleanup/PH06completo;C03licencias/cultura→publicación;C04restore/métricas→reapertura/release;C05capacidades→operaciónexterna;C06permisos/formatos→entrada de tickets conservan el alcance deAUD§12. No se da por aprobada política,contrato,corrección o recurso al cerrar un estado documental.
+
+PH00: fuentes,recibo experimental,límites ycondiciones contrastados; dossier deentrada preparado para su siguiente alcance, sin repetirspike/recrearproveedores ni declarar tickets ejecutados. PH01: documentación suficiente para solicitarPH-01-T01(corpus/oráculos14ACC) yT02(tipos/versiones/validación/fábrica/copiasGo) tras corpus aceptado. Primero se requiere autorización concreta de tickets,rutas,formatos,toolchain,pruebas yoperaciones. Esta aprobación documental no es ese permiso;los65tickets continúan planificados.
+
+Cierre limitado a sieteMarkdown existentes(AUD/cuatroregistros yAGENTS/README operativos), ceroaltas. Sin cambios a reglas/246PRE/AD-NORM/14ACC/40specs aprobadas; no código,instalaciones,workflows,migraciones,recursos,proveedores,despliegues oejecuciónPH00/PH01. Los dos archivos ajenos de la carpeta original se preservan porSHA256,sin stash/copia/publicación. El hash de estados se informa tras verificar local/origin/main, sin autorreferencia circular.
+
+### Comprobaciones documentales del cierre
+
+Observado:81Markdown/40specs APROBADO,246PRE/dueños/filas SPEC_APROBADO idénticos;DAG40nodos80aristas/0ciclos;4.632enlaces locales y2.972fragmentos válidos,18JSON parseados,fences/IDs correctos. AUD conserva17secciones; comparación quitando únicamente aviso/metadatos: cuerpo completo idéntico al HEAD aprobado, incluidosF01/F02/C01–C06 yveredicto.75archivos protegidos byte a byte idénticos,incluidas40specs,REG/maestro/ADR/PRE/PH/harness;sin reglas odecisiones alteradas.
+
+Cierre:7modificaciones Markdown/ceroaltas o bajas,soloestados/recibos. Scan acotado de81Markdown contra privadas/tokensGitHub/JWT/Ably/DSNconcontraseña:cero coincidencias,sin garantía universal. Diff --check limpio;dosSHA256 ajenos preservados. Comprobar staged --check,publicar yverificar HEAD local/origin/main yPR6MERGED antes de declarar finalización. Sin código,tests deproducto,workflows,proveedores oejecuciónPH00/PH01.

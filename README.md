@@ -1,5 +1,7 @@
 # Toguz Kumalak
 
+> **Estado vigente — 2026-10-26: LOTE_6_APROBADO_DOCUMENTALMENTE.** El propietario aprobó AUD-01 como auditoría documental final sobre HEAD 6052689ff9b15a19214267d7cc6a614d17f8fcdd; PR #6 integrado por e81f01a0e94c3037e3b922894202b6eee80534e8. [Recibo de cierre](PLANS.md#cierre-lote-6) prevalece sobre estados y paradas históricos. AUD6-F01, AUD6-F02 y AUD6-C01–C06 permanecen pendientes para sus fases. No se autoriza implementación, ejecución de PH00/PH01, workflows o despliegues.
+
 > **Estado vigente — 2026-10-26: LOTE_5_APROBADO_DOCUMENTALMENTE.** PR #5 integrado en main por 6579ca930a9081f773b390ce61f6bc80cc6b1ae7, desde HEAD aprobado 9ff1a2857d0b91b9cf7925a4c36de30e377cef3d. [Recibo de aprobación e integración](PLANS.md#cierre-lote-5) prevalece sobre cortes históricos: veinte documentos del lote5 aprobados y246decisiones con especificación redactada y aprobada documentalmente. L4-P01, retención y demás propuestas siguen pendientes de aprobación específica. Detenerse: sin producto, workflows, proveedores/despliegues o lote6.
 
 > **Estado de trabajo — 2026-10-26: LOTE_5_EN_REVISIÓN.** Entregados nueve specs de calidad/operaciones/gobierno, ocho planes y tres documentos de harness, para PR y revisión humana; [alcance vigente](PLANS.md#ejecucion-lote-5). Lotes1–4 siguen APROBADOS/integrados. No hay implementación de producto, CI instalada o despliegue autorizado por esta entrega; L4-P01 sigue propuesta de contratos pendiente.
@@ -12,11 +14,11 @@
 
 > Aprobación posterior: el propietario declaró «APRUEBO LOTE 1» el 2026-10-21 para el contenido revisado en HEAD e38cc84950858e072c1a3f06ffbf854cf7e544f5. PR #1 integrado por squash en main: 329b7c1059e8a74f191c256870734e8ae8259966. Este registro prevalece sobre menciones históricas de revisión pendiente; no acredita producto probado. Los permisos actuales se consultan en AGENTS y PLANS.
 
-ID: README · Versión: 0.7 · Fecha: 2026-10-26 · Estado documental: APROBADO · Owner: C.
+ID: README · Versión: 0.8 · Fecha: 2026-10-26 · Estado documental: APROBADO · Owner: C.
 
-**Estado actual: lotes1–5 aprobados como documentación técnica e integrados en main;246decisiones con especificación redactada y aprobada documentalmente.** El spike remoto tiene evidencia publicada y sus recursos fueron retirados. No hay aplicación jugable ni pruebas de producto acreditadas.
+**Estado actual: lotes1–6 documentales aprobados e integrados en main; AUD-01 aceptada con condiciones de alcance y246decisiones con especificación redactada/aprobada.** El spike remoto tiene evidencia publicada y sus recursos fueron retirados. No hay aplicación jugable ni pruebas de producto acreditadas.
 
-Repositorio público de portafolio `SebasChaconDev/toguz-kumalak`: `main` contiene los lotes1–5:80Markdown y `.gitignore`, con40specs aprobadas que cubren246decisiones. [PR #5](https://github.com/SebasChaconDev/toguz-kumalak/pull/5) integrado; [recibo y límites](PLANS.md#cierre-lote-5). Solo AUD-01 del lote6 continúa como ruta futura del inventario. El [PR #1](https://github.com/SebasChaconDev/toguz-kumalak/pull/1) fue integrado por squash 329b7c1059e8a74f191c256870734e8ae8259966 tras aprobación humana y verificación del HEAD autorizado. Las diez specs del lote 2 fueron aprobadas e integradas mediante [PR #2](https://github.com/SebasChaconDev/toguz-kumalak/pull/2), squash `1f401af8d76794981bbcfdf9a3aa1831cf2621f5`. El [PR #3](https://github.com/SebasChaconDev/toguz-kumalak/pull/3) se integró mediante squash c50ba9f58edd386100364cb396bf69f15d2d3a20. La aprobación documental no acredita implementación.
+Repositorio público de portafolio `SebasChaconDev/toguz-kumalak`: `main` contiene los lotes1–6:81Markdown y `.gitignore`, con40specs aprobadas que cubren246decisiones. [PR #5](https://github.com/SebasChaconDev/toguz-kumalak/pull/5) integrado; [recibo y límites](PLANS.md#cierre-lote-5). [AUD-01](docs/audits/documentation-readiness.md) está aprobada como auditoría final; [recibo L6](PLANS.md#cierre-lote-6). Las81rutas del inventario están entregadas. El [PR #1](https://github.com/SebasChaconDev/toguz-kumalak/pull/1) fue integrado por squash 329b7c1059e8a74f191c256870734e8ae8259966 tras aprobación humana y verificación del HEAD autorizado. Las diez specs del lote 2 fueron aprobadas e integradas mediante [PR #2](https://github.com/SebasChaconDev/toguz-kumalak/pull/2), squash `1f401af8d76794981bbcfdf9a3aa1831cf2621f5`. El [PR #3](https://github.com/SebasChaconDev/toguz-kumalak/pull/3) se integró mediante squash c50ba9f58edd386100364cb396bf69f15d2d3a20. La aprobación documental no acredita implementación.
 
 ## Producto previsto
 
@@ -56,7 +58,7 @@ Se prevén cuatro proyectos Vercel Hobby, Neon PostgreSQL, OpenAPI 3.1, sqlc/pgx
 
 | Entrada | Contenido |
 |---|---|
-| [Índice e inventario](docs/index.md) | 81 rutas de inventario;80Markdown entregados,40specs aprobadas y una ruta futura |
+| [Índice e inventario](docs/index.md) | 81 rutas de inventario entregadas;40specs aprobadas y auditoría final aprobada con condiciones |
 | [Registro](docs/decision-register.md) | 246 decisiones literales y sustituciones |
 | [Trazabilidad](docs/traceability.md) | Decisión→spec→fase→componente→prueba→evidencia |
 | [Conflictos](docs/conflicts.md) | Estado de riesgos técnicos, adendas y cierre normativo TK-N1-1.0.0 |
@@ -77,4 +79,4 @@ No hay instrucciones ejecutables de arranque: todavía no existen código ni dep
 
 La demo de portafolio está prevista, sin URL ni fecha acreditada. La licencia no ha sido elegida; el objetivo de repositorio público no sustituye esa decisión. Los recursos visuales y sonoros serán originales o autorizados, con procedencia documentada. RDomino es una referencia de experiencia, sin permiso de copia.
 
-**Gates de lotes1–5 satisfechos como documentación técnica e integrados en main; «APRUEBO LOTE 5 como documentación técnica.» recibido.** L4-P01 sigue propuesta pendiente de aprobación de contratos antes de implementación. Los [ocho planes PH](docs/index.md#phase-00) y el [harness](harness/build/README.md) guían trabajo futuro autorizado; el cierre documental no inicia producto, CI, recursos, despliegues o lote6. Retención y demás propuestas específicas conservan sus gates. Trabajo detenido tras verificar la integración.
+**Gates documentales1–6 satisfechos e integrados en main; auditoría final aceptada con READY_WITH_SCOPED_CONDITIONS.** L4-P01 sigue propuesta pendiente de aprobación de contratos antes de implementación. Los [ocho planes PH](docs/index.md#phase-00) y el [harness](harness/build/README.md) guían trabajo futuro autorizado; el cierre documental no inicia producto, CI, recursos, despliegues o ejecuciónPH00/PH01. AUD6-F01/F02 y las seis condiciones mantienen sus gates. Retención y demás propuestas específicas conservan sus gates. Trabajo detenido tras verificar la integración.
