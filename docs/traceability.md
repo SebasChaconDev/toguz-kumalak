@@ -1,6 +1,6 @@
 # TRZ — Matriz de trazabilidad
 
-> **Autorización posterior vigente — 2026-10-25.** El propietario autoriza completar los pasos necesarios para preparar lote4; se cierra documentalmente lote3 para integración y el spike acredita GO_REMOTE acotado, con recursos propios retirados. [Registro fiel y límites](../PLANS.md#preparacion-lote-4) sustituye las paradas históricas siguientes. No se genera lote4 ni se implementa producto en este cierre.
+> **Estado vigente — 2026-10-25: READY_FOR_LOTE_4_DOCUMENTATION.** PR #3 integrado en main mediante c50ba9f; GO_REMOTE experimental cerrado y recursos remotos propios retirados. [Recibo verificado](../PLANS.md#lote-3-integrado-verificado) prevalece sobre los cortes históricos siguientes. El lote 4 aún no se ha generado; el producto no está implementado.
 
 > Estado vigente de lote 3: once specs EN_REVISIÓN, 66 decisiones adicionales documentadas y gate «APRUEBO LOTE 3» pendiente. Las adendas de lotes anteriores son historia; prevalece [el informe actual](../PLANS.md#informe-lote-3). No se acredita producto.
 

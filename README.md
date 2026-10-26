@@ -1,6 +1,6 @@
 # Toguz Kumalak
 
-> **Autorización posterior vigente — 2026-10-25.** El propietario autoriza completar los pasos necesarios para preparar lote4; se cierra documentalmente lote3 para integración y el spike acredita GO_REMOTE acotado, con recursos propios retirados. [Registro fiel y límites](PLANS.md#preparacion-lote-4) sustituye las paradas históricas siguientes. No se genera lote4 ni se implementa producto en este cierre.
+> **Estado vigente — 2026-10-25: READY_FOR_LOTE_4_DOCUMENTATION.** PR #3 integrado en main mediante c50ba9f; GO_REMOTE experimental cerrado y recursos remotos propios retirados. [Recibo verificado](PLANS.md#lote-3-integrado-verificado) prevalece sobre los cortes históricos siguientes. El lote 4 aún no se ha generado; el producto no está implementado.
 
 > Aprobación posterior del lote 2: el propietario declaró «APRUEBO LOTE 2» y autorizó fusionar PR #2 en main. Contenido aprobado: HEAD 598ac9a4fc6ce14cf512785fb1c4160fafb4eb9e; integrado por squash 1f401af8d76794981bbcfdf9a3aa1831cf2621f5 (2026-10-21T21:10:14Z). Este registro sustituye las menciones históricas a revisión pendiente o prohibición de esa fusión. No autoriza lote 3 ni implementación; el producto sigue sin verificar.
 
@@ -8,9 +8,9 @@
 
 ID: README · Versión: 0.4 · Fecha: 2026-10-25 · Estado documental: APROBADO · Owner: C.
 
-**Estado actual: lotes 1 y 2 aprobados e integrados en main. Implementación no iniciada; continuidad detenida hasta nuevas instrucciones.** No hay aplicación jugable, demo desplegada, pruebas de producto o proveedores conectados acreditados.
+**Estado actual: lotes 1, 2 y 3 aprobados documentalmente e integrados en main. Lote 4 documental preparado, todavía no iniciado.** El spike remoto tiene evidencia publicada y sus recursos fueron retirados. No hay aplicación jugable ni pruebas de producto acreditadas.
 
-Repositorio público de portafolio `SebasChaconDev/toguz-kumalak`: `main` contiene los 41 Markdown de los lotes 1 y 2 y `.gitignore`. El [PR #1](https://github.com/SebasChaconDev/toguz-kumalak/pull/1) fue integrado por squash 329b7c1059e8a74f191c256870734e8ae8259966 tras aprobación humana y verificación del HEAD autorizado. Las diez specs del lote 2 fueron aprobadas e integradas mediante [PR #2](https://github.com/SebasChaconDev/toguz-kumalak/pull/2), squash `1f401af8d76794981bbcfdf9a3aa1831cf2621f5`. La aprobación documental no acredita implementación.
+Repositorio público de portafolio `SebasChaconDev/toguz-kumalak`: `main` contiene los 52 Markdown de los lotes 1 a 3 y `.gitignore`. El [PR #1](https://github.com/SebasChaconDev/toguz-kumalak/pull/1) fue integrado por squash 329b7c1059e8a74f191c256870734e8ae8259966 tras aprobación humana y verificación del HEAD autorizado. Las diez specs del lote 2 fueron aprobadas e integradas mediante [PR #2](https://github.com/SebasChaconDev/toguz-kumalak/pull/2), squash `1f401af8d76794981bbcfdf9a3aa1831cf2621f5`. El [PR #3](https://github.com/SebasChaconDev/toguz-kumalak/pull/3) se integró mediante squash c50ba9f58edd386100364cb396bf69f15d2d3a20. La aprobación documental no acredita implementación.
 
 ## Producto previsto
 

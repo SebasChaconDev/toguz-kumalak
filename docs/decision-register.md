@@ -1,6 +1,6 @@
 # REG — Registro canónico de decisiones
 
-> **Autorización posterior vigente — 2026-10-25.** El propietario autoriza completar los pasos necesarios para preparar lote4; se cierra documentalmente lote3 para integración y el spike acredita GO_REMOTE acotado, con recursos propios retirados. [Registro fiel y límites](../PLANS.md#preparacion-lote-4) sustituye las paradas históricas siguientes. No se genera lote4 ni se implementa producto en este cierre.
+> **Estado vigente — 2026-10-25: READY_FOR_LOTE_4_DOCUMENTATION.** PR #3 integrado en main mediante c50ba9f; GO_REMOTE experimental cerrado y recursos remotos propios retirados. [Recibo verificado](../PLANS.md#lote-3-integrado-verificado) prevalece sobre los cortes históricos siguientes. El lote 4 aún no se ha generado; el producto no está implementado.
 
 > Aprobación posterior del lote 2: el propietario declaró «APRUEBO LOTE 2» y autorizó fusionar PR #2 en main. Contenido aprobado: HEAD 598ac9a4fc6ce14cf512785fb1c4160fafb4eb9e; integrado por squash 1f401af8d76794981bbcfdf9a3aa1831cf2621f5 (2026-10-21T21:10:14Z). Este registro sustituye las menciones históricas a revisión pendiente o prohibición de esa fusión. No autoriza lote 3 ni implementación; el producto sigue sin verificar.
 
@@ -1710,3 +1710,5 @@ Fuente: instrucción expresa del propietario en este chat: «Autorizo los pasos 
 Alcance aplicado por coordinación: terminar spike gratuito/aislado, corregir los dos detalles menores de05.02, cerrar estado documental de las once specs del lote3, integrar PR3 y verificar main para dejar preparado el siguiente lote. No se registra como cita la frase «APRUEBO LOTE3». Esta instrucción posterior sustituye la parada anterior únicamente para ese cierre; no genera lote4 ni implementa producto ahora.
 
 Las246 decisiones originales y AD-NORM-001 se conservan literalmente. Propuestas técnicas mantienen su etiqueta y el spike solo acredita factibilidad experimental; no certifica producto. [Evidencia, límites y seguimiento](../PLANS.md#preparacion-lote-4).
+
+Evidencia de ejecución de AD-GATE-003: PR3 MERGED2026-10-26T02:19:22Z, HEAD fa714d7ba0be34df790a926667492b246e691a3d, squash c50ba9f58edd386100364cb396bf69f15d2d3a20. Árbol integrado idéntico al revisado; [recibo final y parada](../PLANS.md#lote-3-integrado-verificado). No modifica ninguna PRE ni autoriza implementación de producto.

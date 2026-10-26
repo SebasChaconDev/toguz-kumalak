@@ -1,6 +1,6 @@
 # PLANS — Lotes documentales, gates y estado
 
-> **Autorización posterior vigente — 2026-10-25.** El propietario autoriza completar los pasos necesarios para preparar lote4; se cierra documentalmente lote3 para integración y el spike acredita GO_REMOTE acotado, con recursos propios retirados. [Registro fiel y límites](PLANS.md#preparacion-lote-4) sustituye las paradas históricas siguientes. No se genera lote4 ni se implementa producto en este cierre.
+> **Estado vigente — 2026-10-25: READY_FOR_LOTE_4_DOCUMENTATION.** PR #3 integrado en main mediante c50ba9f; GO_REMOTE experimental cerrado y recursos remotos propios retirados. [Recibo verificado](PLANS.md#lote-3-integrado-verificado) prevalece sobre los cortes históricos siguientes. El lote 4 aún no se ha generado; el producto no está implementado.
 
 > Autorización posterior vigente: el propietario autoriza generar y publicar exclusivamente el lote 3 documental en docs/specs-lote-03: once specs EN_REVISIÓN, registros necesarios y PR contra main sin fusionar. Esta instrucción sustituye las paradas históricas de lotes anteriores; no autoriza producto, lote 4, infraestructura o pagos.
 
@@ -558,3 +558,19 @@ Orden del DAG:04.01→04.02/04.03→04.04;08.01→08.02 y08.03→08.04, conserva
 Política jurídica/retención, generadores/SDK, restauración, seguridad completa, p95/rendimiento/fuerza IA y pruebas PRE-09 siguen pendientes antes de implementar lo afectado; no bloquean redactar04/08. El cierre prepara exclusivamente la **siguiente etapa documental**. No se empieza lote4 ni código del producto en este turno. Después de verificar merge/main y publicar el recibo final, informar y detenerse.
 
 Comprobaciones de este cierre antes de publicar: 18 modificaciones Markdown y cero altas/código; 246 PRE literales y propietarios intactos;125/0/121;11 specs APROBADO con17 secciones y13 ejemplos JSON válidos. Revisor independiente reprodujo40 nodos/80 aristas sin ciclos,66 VP→99 AC/175 casos futuros y3.195 enlaces sin destinos/anclas ausentes. Fuente conserva28C24C498829FCFAD410F07AAA6BD036D5A33382294401E11E86D486E4ECBBEF; AD-NORM-001 intacta; diff --check limpio. Son comprobaciones documentales, no pruebas del producto.
+
+<a id="lote-3-integrado-verificado"></a>
+
+## Recibo final — lote3 integrado, lote4 preparado
+
+Resultado vigente: **READY_FOR_LOTE_4_DOCUMENTATION**. El [PR #3](https://github.com/SebasChaconDev/toguz-kumalak/pull/3) está MERGED desde2026-10-26T02:19:22Z, con HEAD revisado fa714d7ba0be34df790a926667492b246e691a3d y squash c50ba9f58edd386100364cb396bf69f15d2d3a20. Se usó coincidencia obligatoria de HEAD, sin bypass ni force push. GitHub no tenía CI configurada; no se atribuyen pruebas de producto.
+
+Main local se actualizó mediante fast-forward. Comparación íntegra del árbol entre HEAD revisado y squash: cero diferencias antes de este recibo. Main conserva52 Markdown y .gitignore, sin Go/TS/SQL/YAML, código experimental ni archivos de lote4. Las246 PRE y sus propietarios, AD-NORM-001,14ACC, PRE-09 y cuerpos aprobados anteriores permanecen intactos. Cobertura125/0/121; once nuevas specs APROBADAS documentalmente.
+
+Gate3.5 cerrado como GO_REMOTE acotado y publicado en504caa5d8d4f538e131e1beffc8843cb8938772a, exclusivamente rama spike/infra-feasibility-01. Todos sus recursos remotos propios y deployments se retiraron; credenciales de aplicación revocadas y caché DPAPI temporal eliminada. Se conservaron recursos previos del propietario. El informe registra SQL80 superado, mediciones de una muestra y demás límites sin convertirlos en garantías productivas.
+
+El gate prepara **ocho especificaciones documentales**04.01–04.04/08.01–08.04 y55 decisiones del inventario. No autoriza saltar a implementación del producto ni presenta propuestas técnicas como nuevas PRE aprobadas. No quedan requisitos documentales o hallazgos técnicos Critical/Important que impidan iniciar esa redacción cuando el propietario lo indique.
+
+Trabajo detenido después de publicar/verificar este recibo. No se inició lote4, no se implementó producto, no hay recursos remotos del spike activos ni planes de pago contratados.
+
+Verificación final del recibo:52 Markdown versionados,246 PRE literales,125 decisiones con spec aprobada y121 futuras;3115 enlaces a archivos locales comprobados sin destinos ausentes, fences cerrados y sin patrones de credenciales observados. Cero diferencias en specs/fuentes/preliminares/ADR respecto al squash revisado. Cero archivos04/08 o código de producto. diff --check limpio; las comprobaciones de anchors/DAG/JSON del cierre independiente siguen aplicando y el nuevo anchor del recibo está presente.

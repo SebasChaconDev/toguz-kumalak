@@ -1,6 +1,6 @@
 # IDX — Índice e inventario documental
 
-> **Autorización posterior vigente — 2026-10-25.** El propietario autoriza completar los pasos necesarios para preparar lote4; se cierra documentalmente lote3 para integración y el spike acredita GO_REMOTE acotado, con recursos propios retirados. [Registro fiel y límites](../PLANS.md#preparacion-lote-4) sustituye las paradas históricas siguientes. No se genera lote4 ni se implementa producto en este cierre.
+> **Estado vigente — 2026-10-25: READY_FOR_LOTE_4_DOCUMENTATION.** PR #3 integrado en main mediante c50ba9f; GO_REMOTE experimental cerrado y recursos remotos propios retirados. [Recibo verificado](../PLANS.md#lote-3-integrado-verificado) prevalece sobre los cortes históricos siguientes. El lote 4 aún no se ha generado; el producto no está implementado.
 
 > Autorización posterior vigente: lote 3 documental autorizado en docs/specs-lote-03, once specs EN_REVISIÓN y cinco registros; PR contra main sin fusión. Sustituye las paradas históricas solo en ese alcance; aprobación, producto y lote 4 siguen sin autorizar.
 
