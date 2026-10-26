@@ -1,5 +1,7 @@
 # CONF — Conflictos, riesgos y validaciones pendientes
 
+> **Estado de trabajo — 2026-10-26: LOTE_6_EN_REVISIÓN.** Autorizada auditoría y publicación documental en docs/audit-lote-06. [AUD-01](audits/documentation-readiness.md) contrasta la base00c8e12; las40specs y246decisiones mantienen aprobación documental. Este permiso posterior sustituye la parada histórica únicamente para esta auditoría; sin cambios a specs, código, workflows, recursos, despliegues o fusión. [Alcance y ledger](../PLANS.md#ejecucion-lote-6).
+
 > **Estado vigente — 2026-10-26: LOTE_5_APROBADO_DOCUMENTALMENTE.** PR #5 integrado en main por 6579ca930a9081f773b390ce61f6bc80cc6b1ae7, desde HEAD aprobado 9ff1a2857d0b91b9cf7925a4c36de30e377cef3d. [Recibo de aprobación e integración](../PLANS.md#cierre-lote-5) prevalece sobre cortes históricos: veinte documentos del lote5 aprobados y246decisiones con especificación redactada y aprobada documentalmente. L4-P01, retención y demás propuestas siguen pendientes de aprobación específica. Detenerse: sin producto, workflows, proveedores/despliegues o lote6.
 
 > **Estado vigente — 2026-10-26: LOTE_5_EN_REVISIÓN.** Veinte documentos del lote5 autorizados para redacción/revisión y PR sin fusión; [alcance vigente](../PLANS.md#ejecucion-lote-5) prevalece sobre cortes históricos. Lotes1–4 APROBADOS/integrados;180decisiones con spec aprobada y66 con spec EN_REVISIÓN. L4-P01 sigue PROPUESTA pendiente de aprobación de contratos; sin implementación, recursos/despliegues o lote6.
@@ -14,7 +16,7 @@
 
 > Aprobación posterior: el propietario declaró «APRUEBO LOTE 1» el 2026-10-21 para el contenido revisado en HEAD e38cc84950858e072c1a3f06ffbf854cf7e544f5. PR #1 integrado por squash en main: 329b7c1059e8a74f191c256870734e8ae8259966. Este registro prevalece sobre menciones históricas de revisión pendiente; no acredita producto probado. Los permisos actuales se consultan en AGENTS y PLANS.
 
-ID: CONF · Versión: 0.12 · Fecha: 2026-10-26 · Estado documental: APROBADO · Owner: C; responsables técnicos por caso.
+ID: CONF · Versión: 0.13 · Fecha: 2026-10-26 · Estado documental: EN_REVISIÓN · Owner: C; responsables técnicos por caso.
 
 ## Estado y reglas de uso
 
@@ -363,3 +365,9 @@ Revalidación final dePH/harness: L5-R03/P2 yL5-R04/P2 ADDRESSED. PH05-T06 consu
 El propietario aprobó HEAD 9ff1a2857d0b91b9cf7925a4c36de30e377cef3d; PR #5 integrado por squash 6579ca930a9081f773b390ce61f6bc80cc6b1ae7. [Recibo](../PLANS.md#cierre-lote-5). L5-R01–R04 siguen ADDRESSED y gate documentalL5 satisfecho; las menciones anteriores de gate pendiente son cortes históricos.
 
 **L4-P01, política de retención y demás propuestas L5-P01–L5-P09 permanecen pendientes de aprobación específica.** No se cierra RISK-10 ni se fija policyVersion/plazo/backup/RPO/RTO/SLO/cuota/licencia por aprobar Markdown. Las condiciones aprobadas de barrera/revocación sin política y cleanup con política aprobada permanecen intactas. APROBADO documental no promueve afirmaciones PROPUESTA/POR_VERIFICAR. No se añaden elecciones reglamentarias aTK-N1-1.0.0, pruebas de producto o permisos de implementación/CI/proveedores/lote6.
+
+## Adenda de hallazgos de auditoría — lote 6, 2026-10-26
+
+[AUD-01§11](audits/documentation-readiness.md#11-hallazgos-p0p3) registra AUD6-F01(P2/NON_BLOCKING), precisión de perspectiva lógica para oráculoIA sin contradicción normativa, yAUD6-F02(P3/NON_BLOCKING), ejemplo /api/v1/game/... inconsistente con catálogo /games. Solo correcciones propuestas, con fuentes/escenario/impacto/owner/verificación; no se editan09.01/10.01. La discrepancia de revisores sobre F01 se conserva con juicio coordinado y evidencia en el informe.
+
+No se demuestra P0/P1 que bloqueePH01. [Condiciones§12](audits/documentation-readiness.md#12-condiciones-pendientes):L4-P01/PH05,retención/cleanupPH06,licencias/publicación,restauración/release y capacidades/recursos afectados conservan sus gates. No se cierran esos riesgos ni se aprueban propuestas por este informe; NORM-01–03/TK-N1-1.0.0 no se reabren. Auditoría no es certificación de producto o permiso de código. Dictamen formal y gate humano pendientes de revisión de AUD.

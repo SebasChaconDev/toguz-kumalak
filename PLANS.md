@@ -1,5 +1,7 @@
 # PLANS — Lotes documentales, gates y estado
 
+> **Estado de trabajo — 2026-10-26: LOTE_6_EN_REVISIÓN.** Autorizada auditoría y publicación documental en docs/audit-lote-06. [AUD-01](docs/audits/documentation-readiness.md) contrasta la base00c8e12; las40specs y246decisiones mantienen aprobación documental. Este permiso posterior sustituye la parada histórica únicamente para esta auditoría; sin cambios a specs, código, workflows, recursos, despliegues o fusión. [Alcance y ledger](PLANS.md#ejecucion-lote-6).
+
 > **Estado vigente — 2026-10-26: LOTE_5_APROBADO_DOCUMENTALMENTE.** PR #5 integrado en main por 6579ca930a9081f773b390ce61f6bc80cc6b1ae7, desde HEAD aprobado 9ff1a2857d0b91b9cf7925a4c36de30e377cef3d. [Recibo de aprobación e integración](PLANS.md#cierre-lote-5) prevalece sobre cortes históricos: veinte documentos del lote5 aprobados y246decisiones con especificación redactada y aprobada documentalmente. L4-P01, retención y demás propuestas siguen pendientes de aprobación específica. Detenerse: sin producto, workflows, proveedores/despliegues o lote6.
 
 > **Estado vigente — 2026-10-26: LOTE_5_EN_REVISIÓN.** El propietario autoriza la generación/publicación documental completa de20rutas del lote5 en `docs/specs-lote-05`, con PR sin fusión. [Plan y alcance posterior](#ejecucion-lote-5) prevalece sobre cortes anteriores. Lotes1–4 APROBADOS/integrados; L4-P01 sigue PROPUESTA. No producto, CI ejecutable, instalaciones, recursos/despliegues, pagos o lote6.
@@ -16,7 +18,7 @@
 
 > Aprobación posterior: el propietario declaró «APRUEBO LOTE 1» el 2026-10-21 para el contenido revisado en HEAD e38cc84950858e072c1a3f06ffbf854cf7e544f5. PR #1 integrado por squash en main: 329b7c1059e8a74f191c256870734e8ae8259966. Este registro prevalece sobre menciones históricas de revisión pendiente; no acredita producto probado. Los permisos actuales se consultan en AGENTS y PLANS.
 
-ID: PLANS · Versión: 0.12 · Fecha: 2026-10-26 · Estado documental: APROBADO · Owner: C.
+ID: PLANS · Versión: 0.13 · Fecha: 2026-10-26 · Estado documental: EN_REVISIÓN · Owner: C.
 
 ## Autorización y estado actual
 
@@ -945,3 +947,54 @@ Controles observados en memoria:80Markdown/40specs; veinte documentos v0.2/APROB
 Comparación normalizada contra HEAD aprobado:20/20documentos difieren exclusivamente por versión/estado y aviso superior; §§2–17 de nueve specs y todo cuerpoPH/harness idénticos.31specs previas y53archivos protegidos byte a byte intactos. REG/CONF/PLANS/AGENTS/PROMPTS conservan íntegro el cuerpo histórico anterior bajo metadatos/aviso nuevos y adendas;246PRE,AD-NORM-001,14ACC y demás evidencia preservados. TRZsolo66estados/evidencia de aprobación, con campos canónicos idénticos. MaestroSHA25628C24C498829FCFAD410F07AAA6BD036D5A33382294401E11E86D486E4ECBBEF.
 
 Diff --check limpio;28Markdown modificados y cero altas/bajas, sin AUD-01. Scan acotado de80Markdown contra claves privadas/tokensGitHub/JWT/Ably/DSN con contraseña: cero coincidencias, sin certificación de seguridad universal. Los SHA256 deAGENTS local y manual sin versionar coinciden exactamente con los observados antes de crear la worktree; no se incluyen. GitHub después de integrar:0workflows y0deployments registrados. Commit de estados se limita a este cierre autorizado, sin código, CI o proveedores; verificar staged --check y HEAD local/origin/main antes de informar finalización.
+
+<a id="ejecucion-lote-6"></a>
+
+## Ejecución documental del lote 6 — 2026-10-26
+
+Autorización posterior expresa del propietario: «AUTORIZO LA EJECUCIÓN Y PUBLICACIÓN DOCUMENTAL DEL LOTE 6.» Encargo íntegro leído:759líneas/22.618bytes, SHA25688554893b57fbefbc5a93bb410b1e4d0601eec1236201d2fac1fd016aa03544b. Autoriza auditoría crítica por fuentes originales, una única alta docs/audits/documentation-readiness.md(AUD-01), cambios mínimosIDX/TRZ/CONF/PLANS, commits/push/PR sin fusión. Esta autoridad posterior prevalece sobre la parada histórica del lote5 solo para auditoría y publicación documental; no autoriza PH00/01, código, instalaciones, tests de producto, workflows, migraciones, recursos, proveedores o despliegues.
+
+Base remota/local reconfirmada00c8e121f96e990beb052f72d19132f282d08cfa; PR5MERGED(squash6579ca930a9081f773b390ce61f6bc80cc6b1ae7), spike remoto504caa5d8d4f538e131e1beffc8843cb8938772a. Sin commits posteriores o cambios en la worktree administrada de cierre; se reutiliza aislamiento existente y se crea docs/audit-lote-06, antes inexistente local/remoto. Carpeta original conservaAGENTS modificado y manual sin versionar, sin stash/copia/publicación; SHA256iniciales coinciden con reciboL5 y se revalidarán al cerrar.
+
+Plan y propiedad: coordinación único escritor deAUD-01/los cuatro registros; auditores solo lectura, sin subdelegación/archivos auxiliares. A:arquitectura/reglas/infra/contratos/14ACC yPH01; B:identidad/seguridad/calidadCI/operación; C:visual/IA/práctica/UI/Game; D:planes/harness/permisos/gates en segunda tanda por capacidad. Se leen fuentes directas; no aceptar informes anteriores sin contraste. La coordinación recalcula integridad/cobertura/DAG, verifica evidencia experimental porGit y elimina duplicados/falsos positivos. Un revisor independiente contrastará el informe antes de publicar.
+
+- [x] Encargo íntegro, autoridad/base/PR5/spike, rama y preservación inicial verificados.
+- [x] Integridad de base80Markdown/40specs/246PRE/14ACC/40nodos80aristas; ochoPH/tresharness y65tickets/54familias recalculados.
+- [x] Auditorías semánticas A/B/C/D completas por fuentes originales y evidencia experimental; alcance por fase delimitado.
+- [x] AUD-01 con17apartados, matriz de contratos, condiciones/primer ticketPH01 y veredicto único READY_WITH_SCOPED_CONDITIONS.
+- [x] Revisión independiente B CONFORME; dos referencias editoriales corregidas/revalidadas ADDRESSED. Controles finales de rutas/links/secretos/fuentes/trabajo ajeno se conservan abajo.
+- [x] Rama docs/audit-lote-06 publicada y PR #6 OPEN con título exacto. AUD EN_REVISIÓN; gate «APRUEBO LOTE 6» pendiente. Detenerse tras verificar recibo, sin fusión/implementación.
+
+### Resultado de auditoría e independencia
+
+Entregas de solo lectura A/B/C/D con fuentes originales íntegras, rangos truncados recuperados y cese sin escritura. Cobertura primaria colectiva40specs: A13(01/02.01/03/05/09.01),B11(02.03/07/09.03–04/10),C13(02.02/04/06/08/09.02),D3(11.01–03), con fronteras cruzadas adicionales. D leyó completos ochoPH y tresharness, además de09/03/10 pertinentes. Coordinación verificó integridad, evidencia experimental y propuestas, y es único escritor de los cinco archivos autorizados.
+
+AUD-01 emite READY_WITH_SCOPED_CONDITIONS: solicitar PH01T01(corpus/oráculos) y primerGoT02trascorpusaceptado; no permiso de ejecutarlos. Sin P0/P1 demostrados o bloqueoPH01. AUD6-F01 P2/NON_BLOCKING precisa perspectiva lógica deoráculoIA(09.01L91/08.01L74), sin contradicción normativa: se conserva disenso A/C y juicio D/coordinación; AUD6-F02 P3/NON_BLOCKING propone corregir ejemplo /game a/games en10.01L129, sin editar fuente. C01–C06 delimitan L4-P01/PH05,retención/cleanupPH06,licencias/publicación,restore/release,capacidades externas ypermisos/formatos de entrada. No se convierten en bloqueos globales de motor.
+
+A/D consideran suficiente solicitar el primer alcance; B recomienda explicitar condiciones posteriores. El veredicto coordinado abarca el conjunto de fases y conserva esas condiciones. No se declara producto listo, seguridad certificada, normativa federativa, coste o rendimiento medidos por revisar documentos.
+
+B revisó íntegro AUD ydelta deIDX/TRZ/CONF/PLANS sin escribir: CONFORME, con dosP3editoriales de referencia en el propio informe. Se corrigió C04 a10.03§9L83–91/§11L104–111 yF01 aPRE-03.D3/PRE-08.B1/PRE-09.B2 tras contraste directo. B revalidó ambos ADDRESSED/CONFORME, sin observaciones pendientes. No se cambiaron las specs afectadas.
+
+### Comprobaciones y publicación
+
+Recuento directo:base80Markdown/40specs;entrega81Markdown,unaaltaAUD ycuatromodificaciones de registros.40specs APROBADO/17secciones;246PRE literales/dueños/filas SPEC_APROBADO conservados,14ACC REG=03.01 idénticos,495tablas base y508conAUD sin columnas inválidas,18JSON válidos yreferenciasPRE sin desconocidos. DAG40/80 sin cambios/ciclos.65tickets,54familiasPH,96camposMilestone; expansión de intervalosT03–T08 por dos métodos independientes dio71aristas internas/65visitas y13entrePH/8visitas, ceroausentes/ciclos. Los recuentos finales de enlaces ydiff/scans se conservan al ejecutar cierre.
+
+Evidencia spike leída en504caa5:INTEGRAL_REPORT/TEST_MATRIX completos,REMOTE_AUDIT§13/REMOTE_PLAN§11 yartefactos JSON granulares. PGlocal reinicio3/3/3,remoteSQL/REST4/4/4,108registroscasos con3falloshistóricosylaterpassing,6READY+2cancelados,SQL80superado a117reconstruidas y49directas instrumentadas,unamuestra porlatencia. Hashengine/AI/consumidor sintéticos no son producto;proveedores/retirada ycoste0USD son observaciones históricas limitadas. No se repitió spike oconsultaron planes/cuotas actuales para afirmar capacidad.
+
+Preflight de publicación26oct:GitHub0workflows/0hooks/0deployments,main00c8e121f96e990beb052f72d19132f282d08cfa. Navegador existente autorizado Vercel,ámbito UltraSéneca,Hobby:AllProjects,búsqueda vacía,“Deploy your first project”;sinproyectos Git conectados identificados. No se detectó un mecanismo de despliegue activable por este push. No es un inventario de cuentas ajenas; no login nuevo,token,protección,configuración,recurso opago cambiado. Rama documental sinforcepush/merge.
+
+REG/SRC/ADR/PRE/las40specs/PH/harness/AGENTS/README/PROMPTS permanecen protegidos sin diferencias. TRZconserva literalmente246filas ysolo añade adenda de auditoría. Archivo manual sinversionar yAGENTSlocal de la carpeta original conservan SHA256iniciales fuera de esta publicación;no stash/reset/copia/commit ajeno. El reciboPR/HEAD será factual tras crearlo, con AUD EN_REVISIÓN ygate APRUEBO LOTE 6 pendiente.
+
+Cierre previo a publicación observado:81Markdown/508tablas,4.620enlaces locales/2.961fragmentos sin ausentes,18JSON válidos,17seccionesAUD yveredicto único;40specs/246decisiones aprobadas intactas.77archivos protegidos byte a byte iguales,246filas TRZ idénticas,solo1alta+4modificaciones. Scan acotado de81Markdown contra cinco clases de secretos: cero coincidencias; no garantiza toda clase de secreto/historia. Diff --check limpio, cero hooks locales activos. Trabajo local ajeno:2SHA256 idénticos. Staged --check yrecibo remoto se verifican al publicar, sin convertir documentación en pruebas de producto.
+
+El primer staged diff --check detectó una línea vacía adicional al final de AUD-01 (no incluida en el diff previo de archivos no versionados). Se eliminó exclusivamente ese blanco final, sin cambio de contenido o fuentes, y se repite staged --check antes de commit. No es prueba de producto; el intento se conserva como evidencia de formato.
+
+<a id="lote-6-publicacion"></a>
+
+### Recibo factual de publicación del lote 6 — 2026-10-26
+
+[PR #6](https://github.com/SebasChaconDev/toguz-kumalak/pull/6) creado y adjunto al chat, título exacto «docs: lote 6 — final documentation and implementation readiness audit». Base main00c8e121f96e990beb052f72d19132f282d08cfa, head docs/audit-lote-06, OPEN ymergedAt=null. Commit de contenido0c8aa677d0bc82033e2a014a3a9014215adaf6d0 coincidente en local/origin/PR al crear. GitHub confirmó5rutas exactas:1ADDED(AUD-01) y4MODIFIED(PLANS/IDX/TRZ/CONF), soloMarkdown.
+
+Main permanece00c8e121f96e990beb052f72d19132f282d08cfa; no se fusionó PR, ejecutó código oinstaló CI. statusCheckRollup=[] significa ausencia de checks configurados, no tests de producto superados. Después del push:0deployments registrados, árbol local limpio yupstream sincronizado. El segundo commit se limita a este recibo dePLANS; su HEAD final se verifica contra origin/PR yse comunica al propietario sin autorreferencia circular.
+
+Resultado formal READY_WITH_SCOPED_CONDITIONS, AUD EN_REVISIÓN ygate APRUEBO LOTE 6 pendiente. Las40specs/246decisiones aprobadas ypropuestas específicas siguen intactas. Primer trabajo solicitable:PH01T01corpus; primerGoT02trascorpusaceptado conpermiso concreto. No se inicióPH00/01,producto,workflows,proveedores,recursos,despliegue opago. Detenerse al verificar publicación del recibo.
