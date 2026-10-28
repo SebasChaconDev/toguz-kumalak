@@ -1,0 +1,137 @@
+name: Engine CI
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  corpus-integrity:
+    name: corpus-integrity
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # official v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Validate approved corpus
+        run: |
+          set -euo pipefail
+          mkdir -p "$RUNNER_TEMP/corpus-evidence"
+          {
+            git rev-parse HEAD
+            python3 --version
+            echo '+ python3 -I .github/scripts/verify_corpus.py'
+            python3 -I .github/scripts/verify_corpus.py
+          } 2>&1 | tee "$RUNNER_TEMP/corpus-evidence/verification.log"
+      - name: Preserve corpus evidence
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # official v4
+        with:
+          name: corpus-integrity-evidence
+          path: ${{ runner.temp }}/corpus-evidence/
+          if-no-files-found: error
+
+  engine-go:
+    name: engine-go
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    env:
+      GOTOOLCHAIN: local
+      GOWORK: 'off'
+      GOPROXY: 'off'
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # official v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Select source and enforce bootstrap boundary
+        id: source
+        run: |
+          set -euo pipefail
+          mkdir -p "$RUNNER_TEMP/engine-evidence"
+          exec > >(tee "$RUNNER_TEMP/engine-evidence/source.log") 2>&1
+          echo "Workflow checkout: $(git rev-parse HEAD)"
+          if [[ -f modules/engine/go.mod ]]; then
+            echo 'bootstrap=false' >> "$GITHUB_OUTPUT"
+            echo "module=$GITHUB_WORKSPACE/modules/engine" >> "$GITHUB_OUTPUT"
+            echo 'Engine target: event checkout (HEAD or PR merge ref)'
+          else
+            # Full ancestry, not a path filter: once introduced, deletion fails.
+            history=$(git rev-list --full-history HEAD -- modules/engine/go.mod)
+            if [[ -n "$history" ]] || [[ -e modules/engine/state.go ]] || [[ -e modules/engine/state_test.go ]]; then
+              echo 'FAIL: engine module removed or partially missing; no bootstrap exemption'
+              exit 1
+            fi
+            echo 'NOT_RUN: event engine absent in pre-engine CI-01 bootstrap'
+            echo 'Separate validation target: PR #11 @ e5f3d6bf28fca28d9fc1f0ef48144f8dcf08be87'
+            echo 'NOT_RUN: event engine absent; separate PR #11 validation follows.' >> "$GITHUB_STEP_SUMMARY"
+            echo 'bootstrap=true' >> "$GITHUB_OUTPUT"
+            echo "module=$GITHUB_WORKSPACE/bootstrap-reference/modules/engine" >> "$GITHUB_OUTPUT"
+          fi
+      - name: Checkout frozen PR 11 reference only for pre-engine bootstrap
+        if: steps.source.outputs.bootstrap == 'true'
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # official v4
+        with:
+          ref: e5f3d6bf28fca28d9fc1f0ef48144f8dcf08be87
+          path: bootstrap-reference
+          persist-credentials: false
+      - name: Install exact module Go version
+        uses: actions/setup-go@40f1582b2485089dde7abd97c1529aa768e1baff # official v5
+        with:
+          go-version-file: ${{ steps.source.outputs.module }}/go.mod
+          check-latest: false
+          cache: false
+      - name: Format, build, vet, unit, race, coverage and bounded fuzz
+        env:
+          ENGINE_MODULE: ${{ steps.source.outputs.module }}
+        run: |
+          set -euo pipefail
+          cd "$ENGINE_MODULE"
+          LOG="$RUNNER_TEMP/engine-evidence/commands.log"
+          run() {
+            printf '+ ' | tee -a "$LOG"
+            printf '%q ' "$@" | tee -a "$LOG"
+            printf '\n' | tee -a "$LOG"
+            "$@" 2>&1 | tee -a "$LOG"
+          }
+          trap 'rc=$?; printf "Step exit code: %s\n" "$rc" | tee -a "$LOG"' EXIT
+          run git rev-parse HEAD
+          run go version
+          expected=$(awk '$1 == "go" { print $2 }' go.mod)
+          [[ "$expected" =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]]
+          [[ "$(go env GOVERSION)" == "go$expected" ]]
+          run gofmt -l .
+          [[ -z "$(gofmt -l .)" ]]
+          run go build ./...
+          run go vet ./...
+          run go test -count=1 -v ./...
+          run go test -race -count=1 ./...
+          run go test -count=1 -coverprofile="$RUNNER_TEMP/engine-evidence/coverage.out" ./...
+          run go tool cover -func="$RUNNER_TEMP/engine-evidence/coverage.out"
+          run go test -list '^FuzzDecodeState$' ./...
+          go test -list '^FuzzDecodeState$' ./... | grep -Fx 'FuzzDecodeState'
+          # Informative coverage only: no premature full-engine threshold.
+          # Fuzz in an external copy so failing seeds are preserved separately.
+          fuzzdir=$(mktemp -d "$RUNNER_TEMP/engine-fuzz.XXXXXX")
+          cp -R . "$fuzzdir/"
+          cd "$fuzzdir"
+          run go test -run='^$' -fuzz=FuzzDecodeState -fuzztime=10s -parallel=2 ./...
+      - name: Preserve engine evidence including failures
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # official v4
+        with:
+          name: engine-go-evidence
+          path: |
+            ${{ runner.temp }}/engine-evidence/
+            ${{ runner.temp }}/engine-fuzz.*/testdata/fuzz/
+          if-no-files-found: error
